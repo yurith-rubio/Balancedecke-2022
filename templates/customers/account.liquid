@@ -1,0 +1,53 @@
+<section class="section account">
+
+  <h1 class="account__heading type-heading-1">{{ 'customer.account.title' | t }}</h1>
+
+  <h2 class="account__section-heading type-heading-1">{{ 'customer.orders.title' | t }}</h2>
+
+  {% paginate customer.orders by 20 %}
+    {% if customer.orders.size != 0 %}
+      <div class="account__table">
+      <table class="responsive-table">
+        <thead>
+          <tr>
+            <th>{{ 'customer.orders.order_number' | t }}</th>
+            <th>{{ 'customer.orders.date' | t }}</th>
+            <th>{{ 'customer.orders.payment_status' | t }}</th>
+            <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+            <th>{{ 'customer.orders.total' | t }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for order in customer.orders %}
+            <tr class="responsive-table-row">
+              <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
+              <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: "%B %d, %Y" }}</td>
+              <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+              <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
+              <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+    {% else %}
+      <p class="tc">{{ 'customer.orders.none' | t }}</p>
+    {% endif %}
+
+    {% if paginate.pages > 1 %}
+      {% render 'pagination' with
+        type: 'general.pagination.orders',
+        paginate: paginate
+      %}
+    {% endif %}
+
+  {% endpaginate %}
+
+  <h2 class="account__section-heading type-heading-1">{{ 'customer.account.details' | t }}</h2>
+  <div class="type-body-regular tc">
+    {{ customer.default_address | format_address }}
+    <a class="tc underline db" href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
+  </div>
+
+  <div class="account__logout"><a class="underline" href="{{ routes.account_logout_url }}">{{ 'general.menu.logout' | t }}</a></div>
+</section>

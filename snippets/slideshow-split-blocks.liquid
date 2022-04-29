@@ -1,0 +1,38 @@
+{% for block in blocks %}
+  {% assign video_link_verified = false %}
+
+  {%- assign focal_alignment = block.settings.focal_point | replace: "_", " " -%}
+  {%- assign mobile_focal_alignment = block.settings.mobile_focal_point | replace: "_", " " -%}
+
+  {% if block.settings.video_url contains '.mp4' %}
+    {% assign video_link_verified = true %}
+  {% endif %}
+
+  <div 
+    class="slideshow-split__slide" 
+    {{ block.shopify_attributes }} 
+    data-index="{{ forloop.index0 }}"
+    style="
+      --media-focal-alignment: {{ focal_alignment }};
+      --mobile-media-focal-alignment: {{ mobile_focal_alignment }};
+    ">
+    {% if block.settings.image or video_link_verified %}
+      <div class="slideshow-split__image">
+        {% render 'image' with image: block.settings.image, disable_style: true %}
+      </div>
+
+      {% unless block.settings.mobile_image == blank %}
+        <div class="slideshow-split__image  slideshow-split__image--mobile">
+          {% render 'image' with image: block.settings.mobile_image, disable_style: true %}
+        </div>
+      {% endunless %}
+
+      {% if video_link_verified %}
+        <video class="slideshow-split__video image__img" autoplay playsinline loop muted src="{{ block.settings.video_url }}"></video>
+        {% render 'video-pause' %}
+      {% endif %}
+    {% else %}
+      <div class="slideshow__placeholder slideshow-split__image">{{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg image__img' }}</div>
+    {% endif %}
+  </div>
+{% endfor %}

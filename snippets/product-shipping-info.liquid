@@ -1,0 +1,30 @@
+
+{% style %}
+.shipping-info-wrapper{
+  display: flex;
+  color: #00730B;
+  font-weight: bold;
+  margin-top: 15px;
+  align-items: center;
+}
+.shipping-info{
+  font-size: 14px;
+  padding-left: 8px;
+  margin-top: 4px;
+}
+.product-shipping-info_iconDelivery{
+  font-size: 22px;
+  position: relative;
+  top: 3px;
+}
+{% endstyle %}
+
+{% if product.metafields.gravitydecke.product_shipping_info != blank %}
+
+<div class="shipping-info-wrapper">
+  <span class="product-shipping-info_iconDelivery icon-Schneller-Versand"></span>  
+  
+  <span class="shipping-info">{{ product.metafields.gravitydecke.product_shipping_info }}</span>
+</div>
+
+{% endif %}

@@ -1,0 +1,69 @@
+{% capture settings %}
+  {
+    "limit": {{ settings.search_max_result_size | json }},
+    "show_articles": {{ settings.search_show_articles | json }},
+    "show_pages": {{ settings.search_show_pages | json }},
+    "show_products": {{ settings.search_show_products | json }},
+    "show_price": {{ settings.search_show_price | json }},
+    "show_vendor": {{ settings.search_show_vendor | json }}
+  }
+{% endcapture %}
+
+<div class="quick-search">
+  <script type="application/json" data-settings>{{ settings }}</script>
+
+  <a
+    href="{{ routes.search_url }}"
+    class="color-inherit no-ajax quick-search__trigger"
+    aria-expanded="false"
+    aria-controls="quick-search"
+    aria-label="{{ 'general.accessibility.quick_search' | t }}"
+  >
+  {%- if header_style_is_icon -%}
+    {% render 'icon-header-button' with icon: 'search' %}
+  {%- else -%}
+    {{ 'layout.navigation.search' | t }}
+  {%- endif -%}
+  </a>
+
+  <div class="search hidden" id="quick-search" role="dialog">
+    <div class="search__container">
+      <form action="{{ routes.search_url }}" class="search__input-container" autocomplete="off">
+        <input
+          autofocus
+          type="search"
+          name="q"
+          class="search__input"
+          placeholder="{{ 'search.placeholder' | t }}"
+        />
+
+        <div class="search__input-actions">
+          <a href="#" class="search__input-clear accent underline">
+            {{ 'search.clear' | t }}
+          </a>
+          <button
+            type="submit"
+            class="search__submit-button"
+            aria-label="{{ 'search.submit' | t }}"
+          >
+            {% render 'icon-arrow-forward' %}
+          </button>
+
+          <a 
+            href="#" 
+            class="search__input-close"
+            aria-label="{{ 'general.accessibility.close_modal' | t }}"  
+            aria-expanded="false"
+            aria-controls="quick-search"
+          >
+            {% render 'icon-close' %}
+          </a>
+        </div>
+
+        <div class="search__results"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="search__overlay"></div>
+</div>

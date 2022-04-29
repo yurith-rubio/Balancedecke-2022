@@ -1,0 +1,35 @@
+<section
+  class="page section"
+  data-section-id="{{ section.id }}"
+  data-section-type="page"
+>
+  <header class="page__header center">
+    <h1 class="type-heading-1 tc mt0 mb5">{{ page.title }}</h1>
+  </header>
+
+  <div class="page__content center" style="--content-max-width: {{ section.settings.content_max_width }}px;">
+    <div class="rte">
+      {{ page.content }}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:sections.main_page.name",
+  "tag": "section",
+  "class": "spaced-section section-borderable",
+  "settings": [
+    {
+      "id": "content_max_width",
+      "type": "range",
+      "min": 400,
+      "max": 1300,
+      "step": 100,
+      "default": 500,
+      "label": "t:sections.main_page.settings.content_max_width.label",
+      "info": "t:sections.main_page.settings.content_max_width.info"
+    }
+  ]
+}
+{% endschema %}
