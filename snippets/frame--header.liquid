@@ -227,6 +227,7 @@
                 href="{{ routes.account_url }}"
                 class="quick-cart__trigger color-inherit"
                 aria-label="{% if customer.id == null %}{{ 'layout.navigation.login' | t }}{% else %}{ 'layout.navigation.account' | t }}{% endif %}"
+                data-ajax-cart-toggle-class-button="js-my-cart-open"
               >
                 {%- if header_style_is_icon -%}
                   {% render 'icon-header-button' with icon: 'account' %}
