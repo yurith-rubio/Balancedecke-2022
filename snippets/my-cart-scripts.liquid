@@ -16,7 +16,7 @@
 {% assign promoVariant = settings.gift_product_variant_id  %}
 {% assign promoSubtotal = settings.gift_product_min_spend  %}
 
-{% if promoVariant != blank and if promoSubtotal != blank %}
+{% if promoVariant != blank and promoSubtotal != blank %}
   <script type="module">
       import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
