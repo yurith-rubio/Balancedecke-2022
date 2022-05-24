@@ -1,1 +1,60 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"content_max_width":800}},"1651791118fc9b40d4":{"type":"collection-list-grid","blocks":{"c3622196-4c1d-4b3d-8ec2-ae5966c2d497":{"type":"collection","settings":{"collection":"erwachsene"}},"c2a38e3d-f61a-4d9e-a780-34038ad3046b":{"type":"collection","settings":{"collection":"kinder"}},"16ffb900-8902-412e-924b-1f2ff329fcca":{"type":"collection","settings":{"collection":"gravity-extras"}},"5e7e0faa-35e5-4084-a923-fb9b805479c8":{"type":"collection","settings":{"collection":"sparsets"}}},"block_order":["c3622196-4c1d-4b3d-8ec2-ae5966c2d497","c2a38e3d-f61a-4d9e-a780-34038ad3046b","16ffb900-8902-412e-924b-1f2ff329fcca","5e7e0faa-35e5-4084-a923-fb9b805479c8"],"settings":{"section_style":"default","columns":3,"aspect_ratio":"square","overline":"","title":"Unsere Kollektionen","subheading":"","heading_alignment":"center","text_max_width":30}}},"order":["main","1651791118fc9b40d4"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_max_width": 800
+      }
+    },
+    "1651791118fc9b40d4": {
+      "type": "collection-list-grid",
+      "blocks": {
+        "c3622196-4c1d-4b3d-8ec2-ae5966c2d497": {
+          "type": "collection",
+          "settings": {
+            "collection": "erwachsene"
+          }
+        },
+        "c2a38e3d-f61a-4d9e-a780-34038ad3046b": {
+          "type": "collection",
+          "settings": {
+            "collection": "kinder"
+          }
+        },
+        "16ffb900-8902-412e-924b-1f2ff329fcca": {
+          "type": "collection",
+          "settings": {
+            "collection": "gravity-extras"
+          }
+        },
+        "5e7e0faa-35e5-4084-a923-fb9b805479c8": {
+          "type": "collection",
+          "settings": {
+            "collection": "sparsets"
+          }
+        }
+      },
+      "block_order": [
+        "c3622196-4c1d-4b3d-8ec2-ae5966c2d497",
+        "c2a38e3d-f61a-4d9e-a780-34038ad3046b",
+        "16ffb900-8902-412e-924b-1f2ff329fcca",
+        "5e7e0faa-35e5-4084-a923-fb9b805479c8"
+      ],
+      "settings": {
+        "section_style": "default",
+        "columns": 3,
+        "aspect_ratio": "square",
+        "overline": "",
+        "title": "Unsere Kollektionen",
+        "subheading": "",
+        "heading_alignment": "center",
+        "text_max_width": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1651791118fc9b40d4"
+  ]
+}

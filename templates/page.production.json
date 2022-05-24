@@ -1,1 +1,336 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"content_max_width":800}},"16517809183fb77d91":{"type":"image-hero","blocks":{"16517809186efcf82a-0":{"type":"heading","settings":{"heading":"Hergestellt in Europa","heading_text_size":48,"text_max_width":46}}},"block_order":["16517809186efcf82a-0"],"settings":{"image_aspect":"custom","desktop_height":60,"mobile_height":100,"image":"shopify:\/\/shop_images\/production_main.jpg","mobile_image":"shopify:\/\/shop_images\/production_main.jpg","focal_point":"center_center","mobile_focal_point":"center_center","alignment":"left_center","text_container_color":"rgba(0,0,0,0)","text_color":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","overlay_color":"#000000","overlay_opacity":10}},"16527829020b1b94dc":{"type":"text-columns-with-images","blocks":{"165278290234d45af2-0":{"type":"column","settings":{"icon_span":"<span class=\"icon-europe\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><span class=\"path19\"><\/span><\/span>","image_max_width":50,"title":"Hergestellt in Europa","subheading":"","text_max_width":50,"link":"","link_text":"Read more"}},"165278290234d45af2-1":{"type":"column","settings":{"icon_span":"<span class=\"icon-cotton\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><\/span>","image_max_width":50,"title":"100% Organische Baumwolle","subheading":"","text_max_width":50,"link":"","link_text":"Read more"}},"165278290234d45af2-2":{"type":"column","settings":{"icon_span":"<span class=\"icon-sustainable\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><\/span>","image_max_width":50,"title":"Nachhaltige Herstellung","subheading":"","text_max_width":50,"link":"","link_text":"Read more"}},"da01f324-293c-423d-8da3-84476835960d":{"type":"column","settings":{"icon_span":"<span class=\"icon-hypoallergenic\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><\/span>","image_max_width":50,"title":"Anti-Allergen","subheading":"","text_max_width":50,"link":"","link_text":"Read more"}},"af4d5e1f-d525-43a8-8627-8930263f3fb8":{"type":"column","settings":{"icon_span":"<span class=\"icon-washing-machine\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><span class=\"path19\"><\/span><span class=\"path20\"><\/span><span class=\"path21\"><\/span><span class=\"path22\"><\/span><\/span>","image_max_width":50,"title":"Waschmaschinen","subheading":"","text_max_width":50,"link":"","link_text":"Read more"}}},"block_order":["165278290234d45af2-0","165278290234d45af2-1","165278290234d45af2-2","da01f324-293c-423d-8da3-84476835960d","af4d5e1f-d525-43a8-8627-8930263f3fb8"],"settings":{"section_style":"contrast","main_bg":"#f7f7f7","columns":5,"overline":"","title":"","subheading":"","link":"","link_text":"","text_alignment":"center","text_max_width":36}},"16526895272ec51fc7":{"type":"image-with-text","blocks":{"165268952723a2b7d9-0":{"type":"overline","settings":{"overline":""}},"165268952723a2b7d9-1":{"type":"heading","settings":{"heading":"Herstellung","text_max_width":46}},"165268952723a2b7d9-2":{"type":"subheading","settings":{"subheading":"<p>Die Gravity Decken werden in Handarbeit hergestellt und bestehen zu 100% aus zertifizierter Baumwolle (Öko Tex Standard 100 Siegel), die in Spanien ökologisch angebaut wird. Die Gewichtsdecke ist mit vielen, quadratischen Feldern durchzogen, die mit sandfeinen Glasperlen gefüllt sind. Dadurch wird sichergestellt, dass das Gewicht der Decke gleichmäßig über die gesamte Länge verteilt wird.\n<\/p>\n<img style=\"width:150px; height:auto\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0050\/7717\/2288\/files\/OEKO.svg?v=1652789091\">","text_max_width":50}}},"block_order":["165268952723a2b7d9-0","165268952723a2b7d9-1","165268952723a2b7d9-2"],"settings":{"section_style":"default","image":"shopify:\/\/shop_images\/production-cotton.jpg","video_url":"","image_width":"one-half","aspect_ratio":"natural","focal_point":"center_center","image_position":"right","text_alignment":"left","text_color":"#000000","text_container_color":"","button_background_color":"#000000"}},"1652689688f515572e":{"type":"image-with-text","blocks":{"165268968841e42f2c-0":{"type":"overline","settings":{"overline":""}},"165268968841e42f2c-1":{"type":"heading","settings":{"heading":"Materialien","text_max_width":46}},"165268968841e42f2c-2":{"type":"subheading","settings":{"subheading":"Viele Gewichtsdecken werden mit Plastikperlen gefüllt. Wir haben uns jedoch für die Verwendung von Glasperlen entschieden, da diese qualitativ hochwertiger sind und sanfter auf Ihren Körper wirken werden.\n<br><br>\nDie Glasperlen werden in der Tschechischen Republik hergestellt und bestehen zu 85% aus Siliciumdioxid (SiO2) und Natriumoxid (Na2O).\n<br><br>\nDie Glasperlen tragen dazu bei, dass die Gravity Decke atmungsaktiv bleibt. Durch die Luftdurchlässigkeit wird die Temperatur unter der Decke ausgeglichen und es entsteht ein angenehmes Wärmegefühl.\n<br><br>\nDer kuschelige Bezug der Gravity-Decke besteht zu 100% aus weichem Nickistoff und wird in Polen ver- und bearbeitet. Die eine Seite ist mit einem glatten Stoff überzogen, die andere setzt sich zusammen aus einem Quadraten Muster. Beide Seiten fühlen sich angenehm auf der Haut an und schmiegen sich sanft an den Körper an.\n<br><br>\nAlle Gravity Gewichtsdecken sind für Allergiker geeignet, da sie hypoallergen sind.","text_max_width":50}}},"block_order":["165268968841e42f2c-0","165268968841e42f2c-1","165268968841e42f2c-2"],"settings":{"section_style":"contrast","image":"shopify:\/\/shop_images\/materials.png","video_url":"","image_width":"one-half","aspect_ratio":"natural","focal_point":"center_center","image_position":"left","text_alignment":"left","text_color":"#000000","text_container_color":"","button_background_color":"#000000"}},"1652689774e94df3ca":{"type":"image-with-text","blocks":{"16526897745dad091b-0":{"type":"overline","settings":{"overline":""}},"16526897745dad091b-1":{"type":"heading","settings":{"heading":"Nachhaltigkeit","text_max_width":46}},"16526897745dad091b-2":{"type":"subheading","settings":{"subheading":"Wir fördern eine nachhaltige Produktion mit der Vorstellung, dass wirtschaftliche Leistungsfähigkeit, soziale Verantwortung und der Schutz der Umwelt untrennbar zusammengehören. Es ist für uns wichtig, dass bei dem gesamten Herstellungsprozess nachhaltige Materialien verwendet werden und faire Arbeitsbedingungen herrschen. So wird z.B. der Strom für unsere Produktionshalle aus Solarenergie gewonnen und der Abfall getrennt. Außerdem beziehen wir geistig und körperlich beeinträchtigte Menschen in einen Teil des Herstellungsprozesses mit ein.\n<br><br>\nWir verwenden nur umweltfreundliche Verpackungen, die biologisch abbaubar sind.","text_max_width":50}}},"block_order":["16526897745dad091b-0","16526897745dad091b-1","16526897745dad091b-2"],"settings":{"section_style":"default","image":"shopify:\/\/shop_images\/sustainability.jpg","video_url":"","image_width":"one-half","aspect_ratio":"natural","focal_point":"center_center","image_position":"right","text_alignment":"left","text_color":"#000000","text_container_color":"","button_background_color":"#000000"}},"1652689844da04ba2c":{"type":"image-with-text","blocks":{"1652689844c772285d-0":{"type":"overline","settings":{"overline":""}},"1652689844c772285d-1":{"type":"heading","settings":{"heading":"Reinigung","text_max_width":46}},"1652689844c772285d-2":{"type":"subheading","settings":{"subheading":"Bei der Gravity Decke öffnen Sie den Reißverschluss, um den Nickibezug von der Gravity-Decke abzuziehen. Dieser kann dann bei 30°C in einem schonenden Waschgang in der Waschmaschine gewaschen werden. Das Gravity Gewichtsdecken Inlett kann auch gewaschen werden, allerdings muss hier beachtet werden, ob das Gewicht der Decke für die Trommel nicht zu groß ist. Von der Verwendung eines Trockners raten wir ab.","text_max_width":50}}},"block_order":["1652689844c772285d-0","1652689844c772285d-1","1652689844c772285d-2"],"settings":{"section_style":"contrast","image":"shopify:\/\/shop_images\/cleaning.jpg","video_url":"","image_width":"one-half","aspect_ratio":"natural","focal_point":"center_center","image_position":"left","text_alignment":"left","text_color":"#000000","text_container_color":"","button_background_color":"#000000"}},"1651783995c46c0e2a":{"type":"rich-text","blocks":{"1651783995bbb42eb4-1":{"type":"title","settings":{"title":"Fragen?","text_max_width":38}},"1651783995bbb42eb4-2":{"type":"text","settings":{"text":"Bei weiteren Fragen besuchen Sie bitte unseren <a href='\/apps\/help-center'>FAQ Seite<\/a> oder schreiben Sie uns eine E-Mail an <a href='mailto: kundenservice@gravitydecke.de'>kundenservice@gravitydecke.de<\/a>","text_max_width":80}}},"block_order":["1651783995bbb42eb4-1","1651783995bbb42eb4-2"],"settings":{"section_style":"default","alignment":"center"}}},"order":["main","16517809183fb77d91","16527829020b1b94dc","16526895272ec51fc7","1652689688f515572e","1652689774e94df3ca","1652689844da04ba2c","1651783995c46c0e2a"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_max_width": 800
+      }
+    },
+    "16517809183fb77d91": {
+      "type": "image-hero",
+      "blocks": {
+        "16517809186efcf82a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hergestellt in Europa",
+            "heading_text_size": 48,
+            "text_max_width": 46
+          }
+        }
+      },
+      "block_order": [
+        "16517809186efcf82a-0"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 60,
+        "mobile_height": 100,
+        "image": "shopify:\/\/shop_images\/production_main.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/production_main.jpg",
+        "focal_point": "center_center",
+        "mobile_focal_point": "center_center",
+        "alignment": "left_center",
+        "text_container_color": "rgba(0,0,0,0)",
+        "text_color": "#ffffff",
+        "color_text_button": "#181818",
+        "color_background_button": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10
+      }
+    },
+    "16527829020b1b94dc": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "165278290234d45af2-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-europe\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><span class=\"path19\"><\/span><\/span>",
+            "image_max_width": 50,
+            "title": "Hergestellt in Europa",
+            "subheading": "",
+            "text_max_width": 50,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "165278290234d45af2-1": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-cotton\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><\/span>",
+            "image_max_width": 50,
+            "title": "100% Organische Baumwolle",
+            "subheading": "",
+            "text_max_width": 50,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "165278290234d45af2-2": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-sustainable\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><\/span>",
+            "image_max_width": 50,
+            "title": "Nachhaltige Herstellung",
+            "subheading": "",
+            "text_max_width": 50,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "da01f324-293c-423d-8da3-84476835960d": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-hypoallergenic\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><\/span>",
+            "image_max_width": 50,
+            "title": "Anti-Allergen",
+            "subheading": "",
+            "text_max_width": 50,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "af4d5e1f-d525-43a8-8627-8930263f3fb8": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-washing-machine\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><span class=\"path19\"><\/span><span class=\"path20\"><\/span><span class=\"path21\"><\/span><span class=\"path22\"><\/span><\/span>",
+            "image_max_width": 50,
+            "title": "Waschmaschinen",
+            "subheading": "",
+            "text_max_width": 50,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "165278290234d45af2-0",
+        "165278290234d45af2-1",
+        "165278290234d45af2-2",
+        "da01f324-293c-423d-8da3-84476835960d",
+        "af4d5e1f-d525-43a8-8627-8930263f3fb8"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "main_bg": "#f7f7f7",
+        "columns": 5,
+        "overline": "",
+        "title": "",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "text_alignment": "center",
+        "text_max_width": 36
+      }
+    },
+    "16526895272ec51fc7": {
+      "type": "image-with-text",
+      "blocks": {
+        "165268952723a2b7d9-0": {
+          "type": "overline",
+          "settings": {
+            "overline": ""
+          }
+        },
+        "165268952723a2b7d9-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Herstellung",
+            "text_max_width": 46
+          }
+        },
+        "165268952723a2b7d9-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Die Gravity Decken werden in Handarbeit hergestellt und bestehen zu 100% aus zertifizierter Baumwolle (Öko Tex Standard 100 Siegel), die in Spanien ökologisch angebaut wird. Die Gewichtsdecke ist mit vielen, quadratischen Feldern durchzogen, die mit sandfeinen Glasperlen gefüllt sind. Dadurch wird sichergestellt, dass das Gewicht der Decke gleichmäßig über die gesamte Länge verteilt wird.\n<\/p>\n<img style=\"width:150px; height:auto\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0050\/7717\/2288\/files\/OEKO.svg?v=1652789091\">",
+            "text_max_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "165268952723a2b7d9-0",
+        "165268952723a2b7d9-1",
+        "165268952723a2b7d9-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "image": "shopify:\/\/shop_images\/production-cotton.jpg",
+        "video_url": "",
+        "image_width": "one-half",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
+    "1652689688f515572e": {
+      "type": "image-with-text",
+      "blocks": {
+        "165268968841e42f2c-0": {
+          "type": "overline",
+          "settings": {
+            "overline": ""
+          }
+        },
+        "165268968841e42f2c-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Materialien",
+            "text_max_width": 46
+          }
+        },
+        "165268968841e42f2c-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Viele Gewichtsdecken werden mit Plastikperlen gefüllt. Wir haben uns jedoch für die Verwendung von Glasperlen entschieden, da diese qualitativ hochwertiger sind und sanfter auf Ihren Körper wirken werden.\n<br><br>\nDie Glasperlen werden in der Tschechischen Republik hergestellt und bestehen zu 85% aus Siliciumdioxid (SiO2) und Natriumoxid (Na2O).\n<br><br>\nDie Glasperlen tragen dazu bei, dass die Gravity Decke atmungsaktiv bleibt. Durch die Luftdurchlässigkeit wird die Temperatur unter der Decke ausgeglichen und es entsteht ein angenehmes Wärmegefühl.\n<br><br>\nDer kuschelige Bezug der Gravity-Decke besteht zu 100% aus weichem Nickistoff und wird in Polen ver- und bearbeitet. Die eine Seite ist mit einem glatten Stoff überzogen, die andere setzt sich zusammen aus einem Quadraten Muster. Beide Seiten fühlen sich angenehm auf der Haut an und schmiegen sich sanft an den Körper an.\n<br><br>\nAlle Gravity Gewichtsdecken sind für Allergiker geeignet, da sie hypoallergen sind.",
+            "text_max_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "165268968841e42f2c-0",
+        "165268968841e42f2c-1",
+        "165268968841e42f2c-2"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "image": "shopify:\/\/shop_images\/materials.png",
+        "video_url": "",
+        "image_width": "one-half",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "left",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
+    "1652689774e94df3ca": {
+      "type": "image-with-text",
+      "blocks": {
+        "16526897745dad091b-0": {
+          "type": "overline",
+          "settings": {
+            "overline": ""
+          }
+        },
+        "16526897745dad091b-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nachhaltigkeit",
+            "text_max_width": 46
+          }
+        },
+        "16526897745dad091b-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Wir fördern eine nachhaltige Produktion mit der Vorstellung, dass wirtschaftliche Leistungsfähigkeit, soziale Verantwortung und der Schutz der Umwelt untrennbar zusammengehören. Es ist für uns wichtig, dass bei dem gesamten Herstellungsprozess nachhaltige Materialien verwendet werden und faire Arbeitsbedingungen herrschen. So wird z.B. der Strom für unsere Produktionshalle aus Solarenergie gewonnen und der Abfall getrennt. Außerdem beziehen wir geistig und körperlich beeinträchtigte Menschen in einen Teil des Herstellungsprozesses mit ein.\n<br><br>\nWir verwenden nur umweltfreundliche Verpackungen, die biologisch abbaubar sind.",
+            "text_max_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "16526897745dad091b-0",
+        "16526897745dad091b-1",
+        "16526897745dad091b-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "image": "shopify:\/\/shop_images\/sustainability.jpg",
+        "video_url": "",
+        "image_width": "one-half",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
+    "1652689844da04ba2c": {
+      "type": "image-with-text",
+      "blocks": {
+        "1652689844c772285d-0": {
+          "type": "overline",
+          "settings": {
+            "overline": ""
+          }
+        },
+        "1652689844c772285d-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reinigung",
+            "text_max_width": 46
+          }
+        },
+        "1652689844c772285d-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Bei der Gravity Decke öffnen Sie den Reißverschluss, um den Nickibezug von der Gravity-Decke abzuziehen. Dieser kann dann bei 30°C in einem schonenden Waschgang in der Waschmaschine gewaschen werden. Das Gravity Gewichtsdecken Inlett kann auch gewaschen werden, allerdings muss hier beachtet werden, ob das Gewicht der Decke für die Trommel nicht zu groß ist. Von der Verwendung eines Trockners raten wir ab.",
+            "text_max_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "1652689844c772285d-0",
+        "1652689844c772285d-1",
+        "1652689844c772285d-2"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "image": "shopify:\/\/shop_images\/cleaning.jpg",
+        "video_url": "",
+        "image_width": "one-half",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "left",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
+    "1651783995c46c0e2a": {
+      "type": "rich-text",
+      "blocks": {
+        "1651783995bbb42eb4-1": {
+          "type": "title",
+          "settings": {
+            "title": "Fragen?",
+            "text_max_width": 38
+          }
+        },
+        "1651783995bbb42eb4-2": {
+          "type": "text",
+          "settings": {
+            "text": "Bei weiteren Fragen besuchen Sie bitte unseren <a href='\/apps\/help-center'>FAQ Seite<\/a> oder schreiben Sie uns eine E-Mail an <a href='mailto: kundenservice@gravitydecke.de'>kundenservice@gravitydecke.de<\/a>",
+            "text_max_width": 80
+          }
+        }
+      },
+      "block_order": [
+        "1651783995bbb42eb4-1",
+        "1651783995bbb42eb4-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16517809183fb77d91",
+    "16527829020b1b94dc",
+    "16526895272ec51fc7",
+    "1652689688f515572e",
+    "1652689774e94df3ca",
+    "1652689844da04ba2c",
+    "1651783995c46c0e2a"
+  ]
+}

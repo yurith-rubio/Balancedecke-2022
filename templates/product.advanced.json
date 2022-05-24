@@ -1,1 +1,335 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"vendor","settings":{}},"title":{"type":"title","settings":{"title_text_size":28}},"e41dd61f-6610-4e47-95f1-e907647031be":{"type":"shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}},"border":{"type":"border","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"variant_popup_option":"Size","variant_popup_text":"Size guide","variant_popup_page":""}},"inventory_counter":{"type":"inventory_counter","settings":{"show_label":true,"inventory_max":"100","low_inventory_threshold":"40"}},"price":{"type":"price","settings":{"price_text_size":22}},"de43123d-3117-4f62-97db-09d721c31ef8":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false}},"payment_feature_widget":{"type":"payment_feature_widget","settings":{"column":"right","show_payment_icons":true,"title":"Zahlungsmethoden","text":"<p>Folgende Zahlungsmethoden stehen Ihnen bei Gravity Decke zur Verfügung. Sie haben auch die Möglichkeit auf Raten zu bezahlen.<\/p>","text_alignment":"left_top","heading_max_width":40,"text_max_width":60,"link_text":"Read more","link":"","background_color":"#f4f4f4","color_text":"#1b1b1b","color_text_button":"#ffffff","color_background_button":"#1b1b1b"}},"81966693-87a8-4f66-ac69-fca46e9297c1":{"type":"feature_widget","settings":{"column":"right","feature_height":"content","aspect_ratio":"landscape","media_fit":"cover","focal_point":"center_center","title":"Zertifizierte Gewichtsdecken","text":"<p>Die Gravity Gewichtsdecke ist ein offizielles medizinisches Hilfsmittel. Die aufgeführten Zertifikate bestätigen die Sicherheit und Wirksamkeit.<\/p>\n\n{% render 'certificate-icons-product-page' %}","text_position":"left_center","heading_max_width":40,"text_max_width":60,"link_text":"Read more","link":"","background_color":"#f4f4f4","color_text":"#1b1b1b","color_text_button":"#ffffff","color_background_button":"#1b1b1b","overlay_color":"#000000","overlay_opacity":0}}},"block_order":["vendor","title","e41dd61f-6610-4e47-95f1-e907647031be","border","variant_picker","inventory_counter","price","de43123d-3117-4f62-97db-09d721c31ef8","buy_buttons","payment_feature_widget","81966693-87a8-4f66-ac69-fca46e9297c1"],"settings":{"enable_full_width":true,"image_size":"50","enable_thumbnails":true,"thumbnail_position":"horizontal","thumbnail_size":"small","thumbnail_aspect_ratio":"square","enable_video_looping":true}},"165220396040161e27":{"type":"custom-liquid","settings":{"paddings":false,"custom_liquid":"{% render 'slider-quote-logos' %}"}},"1650264258930fa44c":{"type":"mosaic-grid","blocks":{"1650264257d6ea0cfd-1":{"type":"small_square","settings":{"image":"shopify:\/\/shop_images\/mosaic_1.jpg","video_url":"","media_fit":"cover","focal_point":"center_center","background_color":""}},"1650264257d6ea0cfd-0":{"type":"medium_square","settings":{"image":"shopify:\/\/shop_images\/mosaic_2.jpg","video_url":"","media_fit":"cover","focal_point":"center_center","overline":"","title":"","subheading":"","text_max_width":32,"link_text":"","link":"","text_position":"center_center","background_color":"","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_text_container":"","overlay_color":"#000000","overlay_opacity":20}},"d6ec6483-6ce9-4745-a457-d92967797f3f":{"type":"small_square","settings":{"image":"shopify:\/\/shop_images\/mosaic_3.jpg","video_url":"","media_fit":"cover","focal_point":"center_center","background_color":""}}},"block_order":["1650264257d6ea0cfd-1","1650264257d6ea0cfd-0","d6ec6483-6ce9-4745-a457-d92967797f3f"],"settings":{"section_style":"default","title":"","heading":"","subheading":"","heading_alignment":"center","text_max_width":42}},"16522047234ea09167":{"type":"text-columns-with-images","blocks":{"16522047237f6b0db8-0":{"type":"column","settings":{"icon_span":"<span class=\"icon-days\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>","image_max_width":30,"title":"28 Tage Probeschlafen ab Erhalt","subheading":"","text_max_width":36,"link":"","link_text":""}},"16522047237f6b0db8-1":{"type":"column","settings":{"icon_span":"<span class=\"icon-europe\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><span class=\"path19\"><\/span><\/span>","image_max_width":30,"title":"Nachhaltig hergestellt in Europa","subheading":"","text_max_width":36,"link":"","link_text":"Read more"}},"16522047237f6b0db8-2":{"type":"column","settings":{"icon_span":"<span class=\"icon-shipping\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><\/span>","image_max_width":30,"title":"Schneller Versand aus Deutschland","subheading":"","text_max_width":36,"link":"","link_text":"Read more"}},"623373b8-c3ab-4a8b-851e-d9719dd9f46d":{"type":"column","settings":{"icon_span":"<span class=\"icon-payment\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><\/span>","image_max_width":30,"title":"Bequem in Raten\/auf Rechnung zahlen","subheading":"","text_max_width":36,"link":"","link_text":"Read more"}}},"block_order":["16522047237f6b0db8-0","16522047237f6b0db8-1","16522047237f6b0db8-2","623373b8-c3ab-4a8b-851e-d9719dd9f46d"],"settings":{"section_style":"contrast","main_bg":"#efefef","columns":4,"overline":"","title":"","subheading":"","link":"","link_text":"","text_alignment":"center","text_max_width":36}},"1651665881c5d4bfcf":{"type":"image-with-text","blocks":{"165166588192e61c4f-2":{"type":"subheading","settings":{"subheading":"<style>\n.image-with-list .media span{\n  font-size: 60px;\n}\n<\/style>\n<ul class=\"image-with-list\">\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-handmade\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Handgefertigte und hochwertige Gewichtsdecke<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-wellbeing\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Steigerung des Wohlbefindens<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-relax\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span\n                    class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Völlige Entspannung des Körpers und Nervensystems<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-days\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>28-Tage Probeschlafen<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-four-seasons\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span\n                    class=\"path16\"><\/span><span class=\"path17\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Hochwertiger 4-Jahreszeiten- oder Baumwollbezug<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n<\/ul>","text_max_width":36}}},"block_order":["165166588192e61c4f-2"],"settings":{"section_style":"default","image":"shopify:\/\/shop_images\/icons_side_57f7fa3d-b173-4eb3-ba94-e434bf94df7c.jpg","video_url":"","image_width":"two-third","aspect_ratio":"landscape","focal_point":"center_center","image_position":"right","text_alignment":"left","text_color":"#000000","text_container_color":"","button_background_color":"#000000"}},"16524575286abbaef8":{"type":"image-text-slider","settings":{}},"16502641772d80f71a":{"type":"apps","blocks":{"70004911-e47c-45ba-b160-eea0f1fbb4fc":{"type":"shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["70004911-e47c-45ba-b160-eea0f1fbb4fc"],"settings":{"include_margins":true}},"recommendations":{"type":"product-recommendations","settings":{"columns":4,"aspect_ratio":"square","overline":"","title":"Weitere Produkte","subheading":"<p>Weitere Produkte, die Ihnen auch gefallen können.<\/p>","text_max_width":32}}},"order":["main","165220396040161e27","1650264258930fa44c","16522047234ea09167","1651665881c5d4bfcf","16524575286abbaef8","16502641772d80f71a","recommendations"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_text_size": 28
+          }
+        },
+        "e41dd61f-6610-4e47-95f1-e907647031be": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "border": {
+          "type": "border",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": ""
+          }
+        },
+        "inventory_counter": {
+          "type": "inventory_counter",
+          "settings": {
+            "show_label": true,
+            "inventory_max": "100",
+            "low_inventory_threshold": "40"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_text_size": 22
+          }
+        },
+        "de43123d-3117-4f62-97db-09d721c31ef8": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "payment_feature_widget": {
+          "type": "payment_feature_widget",
+          "settings": {
+            "column": "right",
+            "show_payment_icons": true,
+            "title": "Zahlungsmethoden",
+            "text": "<p>Folgende Zahlungsmethoden stehen Ihnen bei Gravity Decke zur Verfügung. Sie haben auch die Möglichkeit auf Raten zu bezahlen.<\/p>",
+            "text_alignment": "left_top",
+            "heading_max_width": 40,
+            "text_max_width": 60,
+            "link_text": "Read more",
+            "link": "",
+            "background_color": "#f4f4f4",
+            "color_text": "#1b1b1b",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#1b1b1b"
+          }
+        },
+        "81966693-87a8-4f66-ac69-fca46e9297c1": {
+          "type": "feature_widget",
+          "settings": {
+            "column": "right",
+            "feature_height": "content",
+            "aspect_ratio": "landscape",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Zertifizierte Gewichtsdecken",
+            "text": "<p>Die Gravity Gewichtsdecke ist ein offizielles medizinisches Hilfsmittel. Die aufgeführten Zertifikate bestätigen die Sicherheit und Wirksamkeit.<\/p>\n\n{% render 'certificate-icons-product-page' %}",
+            "text_position": "left_center",
+            "heading_max_width": 40,
+            "text_max_width": 60,
+            "link_text": "Read more",
+            "link": "",
+            "background_color": "#f4f4f4",
+            "color_text": "#1b1b1b",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#1b1b1b",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "e41dd61f-6610-4e47-95f1-e907647031be",
+        "border",
+        "variant_picker",
+        "inventory_counter",
+        "price",
+        "de43123d-3117-4f62-97db-09d721c31ef8",
+        "buy_buttons",
+        "payment_feature_widget",
+        "81966693-87a8-4f66-ac69-fca46e9297c1"
+      ],
+      "settings": {
+        "enable_full_width": true,
+        "image_size": "50",
+        "enable_thumbnails": true,
+        "thumbnail_position": "horizontal",
+        "thumbnail_size": "small",
+        "thumbnail_aspect_ratio": "square",
+        "enable_video_looping": true
+      }
+    },
+    "165220396040161e27": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'slider-quote-logos' %}"
+      }
+    },
+    "1650264258930fa44c": {
+      "type": "mosaic-grid",
+      "blocks": {
+        "1650264257d6ea0cfd-1": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mosaic_1.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "background_color": ""
+          }
+        },
+        "1650264257d6ea0cfd-0": {
+          "type": "medium_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mosaic_2.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "overline": "",
+            "title": "",
+            "subheading": "",
+            "text_max_width": 32,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_text_container": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "d6ec6483-6ce9-4745-a457-d92967797f3f": {
+          "type": "small_square",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mosaic_3.jpg",
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "background_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650264257d6ea0cfd-1",
+        "1650264257d6ea0cfd-0",
+        "d6ec6483-6ce9-4745-a457-d92967797f3f"
+      ],
+      "settings": {
+        "section_style": "default",
+        "title": "",
+        "heading": "",
+        "subheading": "",
+        "heading_alignment": "center",
+        "text_max_width": 42
+      }
+    },
+    "16522047234ea09167": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16522047237f6b0db8-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-days\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>",
+            "image_max_width": 30,
+            "title": "28 Tage Probeschlafen ab Erhalt",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "16522047237f6b0db8-1": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-europe\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><span class=\"path19\"><\/span><\/span>",
+            "image_max_width": 30,
+            "title": "Nachhaltig hergestellt in Europa",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16522047237f6b0db8-2": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-shipping\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><\/span>",
+            "image_max_width": 30,
+            "title": "Schneller Versand aus Deutschland",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "623373b8-c3ab-4a8b-851e-d9719dd9f46d": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-payment\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><\/span>",
+            "image_max_width": 30,
+            "title": "Bequem in Raten\/auf Rechnung zahlen",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "16522047237f6b0db8-0",
+        "16522047237f6b0db8-1",
+        "16522047237f6b0db8-2",
+        "623373b8-c3ab-4a8b-851e-d9719dd9f46d"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "main_bg": "#efefef",
+        "columns": 4,
+        "overline": "",
+        "title": "",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "text_alignment": "center",
+        "text_max_width": 36
+      }
+    },
+    "1651665881c5d4bfcf": {
+      "type": "image-with-text",
+      "blocks": {
+        "165166588192e61c4f-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<style>\n.image-with-list .media span{\n  font-size: 60px;\n}\n<\/style>\n<ul class=\"image-with-list\">\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-handmade\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Handgefertigte und hochwertige Gewichtsdecke<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-wellbeing\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Steigerung des Wohlbefindens<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-relax\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span\n                    class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Völlige Entspannung des Körpers und Nervensystems<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-days\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>28-Tage Probeschlafen<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-four-seasons\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span\n                    class=\"path16\"><\/span><span class=\"path17\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Hochwertiger 4-Jahreszeiten- oder Baumwollbezug<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n<\/ul>",
+            "text_max_width": 36
+          }
+        }
+      },
+      "block_order": [
+        "165166588192e61c4f-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "image": "shopify:\/\/shop_images\/icons_side_57f7fa3d-b173-4eb3-ba94-e434bf94df7c.jpg",
+        "video_url": "",
+        "image_width": "two-third",
+        "aspect_ratio": "landscape",
+        "focal_point": "center_center",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
+    "16524575286abbaef8": {
+      "type": "image-text-slider",
+      "settings": {
+      }
+    },
+    "16502641772d80f71a": {
+      "type": "apps",
+      "blocks": {
+        "70004911-e47c-45ba-b160-eea0f1fbb4fc": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "70004911-e47c-45ba-b160-eea0f1fbb4fc"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "columns": 4,
+        "aspect_ratio": "square",
+        "overline": "",
+        "title": "Weitere Produkte",
+        "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen können.<\/p>",
+        "text_max_width": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165220396040161e27",
+    "1650264258930fa44c",
+    "16522047234ea09167",
+    "1651665881c5d4bfcf",
+    "16524575286abbaef8",
+    "16502641772d80f71a",
+    "recommendations"
+  ]
+}

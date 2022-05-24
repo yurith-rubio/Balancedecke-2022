@@ -1,1 +1,459 @@
-{"sections":{"slideshow_split_1":{"type":"slideshow-split","blocks":{"slide_1":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Gravity_balance_cover.jpg","mobile_image":"shopify:\/\/shop_images\/home_main_mobile.jpg","focal_point":"center_center","mobile_focal_point":"center_center","video_url":""}}},"block_order":["slide_1"],"settings":{"desktop_height":100,"mobile_height":100,"timer":7,"overline":"","title":"Original Gravity Gewichtsdecke","subheading":"<p>Schlaf verbessern dank der Gravity Gewichtsdecke<\/p>","link":"shopify:\/\/products\/gravity-gewichtsdecke","link_text":"Jetzt testen","alignment":"left_center","heading_text_size":70,"subheading_text_size":21,"heading_max_width":60,"text_max_width":48,"text_container_color":"rgba(0,0,0,0)","text_color":"#ffffff","overlay_color":"#000000","overlay_opacity":40}},"1651603791b59fab4d":{"type":"custom-liquid","settings":{"paddings":false,"custom_liquid":"{% render 'slider-quote-logos' %}"}},"1650852998ebd91b2a":{"type":"image-with-video","blocks":{"16508529985fafcb83-1":{"type":"heading","settings":{"heading":"Das Konzept der Gravity Gewichtsdecke","text_max_width":46}},"16508529985fafcb83-2":{"type":"subheading","settings":{"subheading":"<p>Etwa 80% aller Deutschen kommen innerlich nicht zur Ruhe. Stress und Schlafprobleme sind oft Ursache und Folge zugleich. Mit der Gravity Gewichtsdecke haben wir eine Idee umgesetzt, die diesen Menschen helfen soll. Die Gravity Gewichtsdecke bringt den Körper aufgrund des gleichmäßig ausgeübten Druck innerlich und körperlich zur Ruhe. Die Ausschüttung von Glücks- und Schlafhormonen führt den Körper auf natürliche Weise in einen Zustand der Entspannung.<\/p><p>Ein besserer Schlaf, reduzierter Stress und ein gesteigertes Wohlbefinden sind das Ergebnis.<\/p>","text_max_width":50}},"65a9a744-de08-4a3e-84ab-f8db7fa681cf":{"type":"button","settings":{"link":"shopify:\/\/products\/gravity-gewichtsdecke","link_text":"Zur Gravity Decke"}}},"block_order":["16508529985fafcb83-1","16508529985fafcb83-2","65a9a744-de08-4a3e-84ab-f8db7fa681cf"],"settings":{"section_style":"contrast","video_url":"https:\/\/vimeo.com\/386953516","image_width":"two-third","aspect_ratio":"natural","focal_point":"center_center","image_position":"right","text_alignment":"left","text_color":"#3a3a3a","text_container_color":"","button_background_color":"#fac636"}},"16502631901a60459b":{"type":"custom-liquid","settings":{"paddings":true,"custom_liquid":"{% render 'reviews-info' %}"}},"16505782497c419352":{"type":"text-columns-with-images","blocks":{"1650578249346cf38e-0":{"type":"column","settings":{"icon_span":"<span class=\"icon-days\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>","image_max_width":30,"title":"28 Tage Probeschlafen ab Erhalt","subheading":"","text_max_width":36,"link":"","link_text":"Read more"}},"1650578249346cf38e-1":{"type":"column","settings":{"icon_span":"<span class=\"icon-europe\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><span class=\"path19\"><\/span><\/span>","image_max_width":30,"title":"Nachhaltig hergestellt in Europa","subheading":"","text_max_width":40,"link":"","link_text":"Read more"}},"1650578249346cf38e-2":{"type":"column","settings":{"icon_span":"<span class=\"icon-shipping\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><\/span>","image_max_width":30,"title":"Schneller Versand aus Deutschland","subheading":"","text_max_width":40,"link":"","link_text":"Read more"}},"50b12fa2-9be9-41b3-a2f5-225e6134b8c3":{"type":"column","settings":{"icon_span":"<span class=\"icon-payment\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><\/span>","image_max_width":30,"title":"Bequem in Raten\/auf Rechnung zahlen","subheading":"","text_max_width":36,"link":"","link_text":"Read more"}}},"block_order":["1650578249346cf38e-0","1650578249346cf38e-1","1650578249346cf38e-2","50b12fa2-9be9-41b3-a2f5-225e6134b8c3"],"settings":{"section_style":"contrast","main_bg":"#efefef","columns":4,"overline":"","title":"","subheading":"","link":"","link_text":"","text_alignment":"center","text_max_width":36}},"165159607509277cef":{"type":"custom-liquid","settings":{"paddings":false,"custom_liquid":"<span id=\"gravity\"><\/span>"}},"1652452390bee6e1a7":{"type":"image-text-slider","settings":{}},"16502629331d2ca294":{"type":"custom-liquid","settings":{"paddings":false,"custom_liquid":"{% render 'brand-intro-logos' %}"}},"1650263212d53823fc":{"type":"featured-product","blocks":{"16502632124da8419d-0":{"type":"title","settings":{"title_text_size":26}},"f10ad0a7-2bd6-4659-bce1-e740adc0816a":{"type":"text","settings":{"text":"{% render 'featured-product-reviews' %}"}},"16502632124da8419d-2":{"type":"border","settings":{}},"16502632124da8419d-3":{"type":"variant_picker","settings":{"variant_popup_option":"Size","variant_popup_text":"Size guide","variant_popup_page":""}},"16502632124da8419d-1":{"type":"price","settings":{"price_text_size":24}},"16502632124da8419d-4":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false}},"d67fefdf-0af3-411d-8a3e-44bb5cd5150d":{"type":"inventory_counter","settings":{"show_label":true,"inventory_max":"100","low_inventory_threshold":"40"}}},"block_order":["16502632124da8419d-0","f10ad0a7-2bd6-4659-bce1-e740adc0816a","16502632124da8419d-2","16502632124da8419d-3","16502632124da8419d-1","16502632124da8419d-4","d67fefdf-0af3-411d-8a3e-44bb5cd5150d"],"settings":{"product":"gravity-gewichtsdecke","section_style":"default","image_size":"50","enable_video_looping":false}},"165245753794e8a12a":{"type":"custom-liquid","settings":{"paddings":false,"custom_liquid":"{% render 'gravity-sets-section' %}"}},"16511620865d7539df":{"type":"custom-liquid","disabled":true,"settings":{"paddings":true,"custom_liquid":"{% render 'banner' %}"}},"165115686133991bab":{"type":"image-with-text","blocks":{"1651156861accb3469-2":{"type":"subheading","settings":{"subheading":"<style>\n.image-with-list .media span{\n  font-size: 60px;\n}\n<\/style>\n<ul class=\"image-with-list\">\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-handmade\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Handgefertigte und hochwertige Gewichtsdecke<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-wellbeing\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Steigerung des Wohlbefindens<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-relax\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span\n                    class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Völlige Entspannung des Körpers und Nervensystems<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-days\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>28-Tage Probeschlafen<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-four-seasons\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span\n                    class=\"path16\"><\/span><span class=\"path17\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Hochwertiger 4-Jahreszeiten- oder Baumwollbezug<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n<\/ul>","text_max_width":50}}},"block_order":["1651156861accb3469-2"],"settings":{"section_style":"default","image":"shopify:\/\/shop_images\/icons_side_57f7fa3d-b173-4eb3-ba94-e434bf94df7c.jpg","video_url":"","image_width":"two-third","aspect_ratio":"natural","focal_point":"center_center","image_position":"right","text_alignment":"left","text_color":"#000000","text_container_color":"","button_background_color":"#000000"}},"1650463024bd7d3973":{"type":"rich-text","blocks":{"16504630240f4c42f3-0":{"type":"overline","settings":{"overline":""}},"16504630240f4c42f3-1":{"type":"title","settings":{"title":"Gravity Gewichtsdecken hergestellt in Europa","text_max_width":36}},"16504630240f4c42f3-2":{"type":"text","settings":{"text":"<p>Die Gravity Gewichtsdecke wird in Handarbeit hergestellt und besteht zu 100% aus zertifizierter Baumwolle (Öko Tex Standard 100 Siegel), die in Spanien ökologisch angebaut wird. Die Gewichtsdecke ist mit vielen, quadratischen Feldern durchzogen, die mit sandfeinen Glasperlen gefüllt sind. Dadurch wird sichergestellt, dass das Gewicht der Decke gleichmäßig über die gesamte Länge verteilt wird.<\/p>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0050\/7717\/2288\/files\/certificate-icons-line.svg?v=1652456217\">","text_max_width":50}}},"block_order":["16504630240f4c42f3-0","16504630240f4c42f3-1","16504630240f4c42f3-2"],"settings":{"section_style":"default","alignment":"center","image_bg":"shopify:\/\/shop_images\/fabrication_home.jpg"}},"1650462048ca7b8b46":{"type":"image-with-text","blocks":{"eb21f88f-3a35-4c8f-8e33-3b352a199796":{"type":"overline","settings":{"overline":"Die Wirkung der Gravity Gewichtsdecke"}},"16504620480e4b226b-1":{"type":"heading","settings":{"heading":"10% des eigenen Körpergewichts","text_max_width":46}},"16504620480e4b226b-2":{"type":"subheading","settings":{"subheading":"<p>Bei der Auswahl Ihrer persönlichen Gravity Decke sollten Sie Ihr eigenes Körpergewicht berücksichtigen.<\/p><p>Eine Gravity Decke sollte ungefähr 10% Ihres Körpergewichtes ausmachen. Denken Sie daran, dass Ihre Decke eine einzigartige und langjährige Investition ist.<\/p>","text_max_width":40}}},"block_order":["eb21f88f-3a35-4c8f-8e33-3b352a199796","16504620480e4b226b-1","16504620480e4b226b-2"],"settings":{"section_style":"contrast","image":"shopify:\/\/shop_images\/10_percent_scale.png","video_url":"","image_width":"one-half","aspect_ratio":"natural","focal_point":"center_center","image_position":"left","text_alignment":"left","text_color":"#3a3a3a","text_container_color":"","button_background_color":"#000000"}},"1650599194732f77d0":{"type":"image-with-text","disabled":true,"blocks":{"165059919420ee3e1d-0":{"type":"overline","settings":{"overline":"Gravity Decke"}},"165059919420ee3e1d-1":{"type":"heading","settings":{"heading":"Weitere Vorteile","text_max_width":46}},"165059919420ee3e1d-2":{"type":"subheading","settings":{"subheading":"<ul>\n<li>ADD und ADHS<\/li>\n<li>Asperger-Syndrom und Autismus<\/li>\n<li>Restless Legs Syndrom (RLS, Unruhige Beine), das auf Chemotherapie oder Menopause zurückzuführen ist<\/li>\n<li>Innerliche und körperliche Anspannung<\/li>\n<li>Sensorische Integrationsstörungen<\/li>\n<li>Bei Menschen über 65 Jahren oder älter konnten Symptome von z.B. Alzheimer oder Parkinson gemindert werden Demenz<\/li>\n<\/ul>","text_max_width":36}}},"block_order":["165059919420ee3e1d-0","165059919420ee3e1d-1","165059919420ee3e1d-2"],"settings":{"section_style":"default","image":"shopify:\/\/shop_images\/Gravity_Gewichtsdecke_Slider_November_2020.jpg","video_url":"","image_width":"one-half","aspect_ratio":"natural","focal_point":"center_center","image_position":"right","text_alignment":"left","text_color":"#000000","text_container_color":"","button_background_color":"#000000"}},"16515920240b709421":{"type":"custom-liquid","settings":{"paddings":false,"custom_liquid":"<span id=\"gravity_set\"><\/span>"}},"16511568662682a6ab":{"type":"featured-collection-row","settings":{"section_style":"contrast","text_position":"left","collection":"gravity-gewichtsdecken","columns":3,"aspect_ratio":"natural","overline":"Original Gravity Therapiedecken","title":"Verfügbare Gravity Modelle","subheading":"","link_text":"","text_max_width":36}}},"order":["slideshow_split_1","1651603791b59fab4d","1650852998ebd91b2a","16502631901a60459b","16505782497c419352","165159607509277cef","1652452390bee6e1a7","16502629331d2ca294","1650263212d53823fc","165245753794e8a12a","16511620865d7539df","165115686133991bab","1650463024bd7d3973","1650462048ca7b8b46","1650599194732f77d0","16515920240b709421","16511568662682a6ab"]}
+{
+  "sections": {
+    "slideshow_split_1": {
+      "type": "slideshow-split",
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gravity_balance_cover.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/home_main_mobile.jpg",
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_1"
+      ],
+      "settings": {
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "timer": 7,
+        "overline": "",
+        "title": "Original Gravity Gewichtsdecke",
+        "subheading": "<p>Schlaf verbessern dank der Gravity Gewichtsdecke<\/p>",
+        "link": "shopify:\/\/products\/gravity-gewichtsdecke",
+        "link_text": "Jetzt testen",
+        "alignment": "left_center",
+        "heading_text_size": 70,
+        "subheading_text_size": 21,
+        "heading_max_width": 60,
+        "text_max_width": 48,
+        "text_container_color": "rgba(0,0,0,0)",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40
+      }
+    },
+    "1651603791b59fab4d": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'slider-quote-logos' %}"
+      }
+    },
+    "1650852998ebd91b2a": {
+      "type": "image-with-video",
+      "blocks": {
+        "16508529985fafcb83-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Das Konzept der Gravity Gewichtsdecke",
+            "text_max_width": 46
+          }
+        },
+        "16508529985fafcb83-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Etwa 80% aller Deutschen kommen innerlich nicht zur Ruhe. Stress und Schlafprobleme sind oft Ursache und Folge zugleich. Mit der Gravity Gewichtsdecke haben wir eine Idee umgesetzt, die diesen Menschen helfen soll. Die Gravity Gewichtsdecke bringt den Körper aufgrund des gleichmäßig ausgeübten Druck innerlich und körperlich zur Ruhe. Die Ausschüttung von Glücks- und Schlafhormonen führt den Körper auf natürliche Weise in einen Zustand der Entspannung.<\/p><p>Ein besserer Schlaf, reduzierter Stress und ein gesteigertes Wohlbefinden sind das Ergebnis.<\/p>",
+            "text_max_width": 50
+          }
+        },
+        "65a9a744-de08-4a3e-84ab-f8db7fa681cf": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/products\/gravity-gewichtsdecke",
+            "link_text": "Zur Gravity Decke"
+          }
+        }
+      },
+      "block_order": [
+        "16508529985fafcb83-1",
+        "16508529985fafcb83-2",
+        "65a9a744-de08-4a3e-84ab-f8db7fa681cf"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "video_url": "https:\/\/vimeo.com\/386953516",
+        "image_width": "two-third",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_color": "#3a3a3a",
+        "text_container_color": "",
+        "button_background_color": "#fac636"
+      }
+    },
+    "16502631901a60459b": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": true,
+        "custom_liquid": "{% render 'reviews-info' %}"
+      }
+    },
+    "16505782497c419352": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1650578249346cf38e-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-days\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>",
+            "image_max_width": 30,
+            "title": "28 Tage Probeschlafen ab Erhalt",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "1650578249346cf38e-1": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-europe\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><span class=\"path19\"><\/span><\/span>",
+            "image_max_width": 30,
+            "title": "Nachhaltig hergestellt in Europa",
+            "subheading": "",
+            "text_max_width": 40,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "1650578249346cf38e-2": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-shipping\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><\/span>",
+            "image_max_width": 30,
+            "title": "Schneller Versand aus Deutschland",
+            "subheading": "",
+            "text_max_width": 40,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "50b12fa2-9be9-41b3-a2f5-225e6134b8c3": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span class=\"icon-payment\" style=\"font-size: 60px; padding-bottom: 10px\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><\/span>",
+            "image_max_width": 30,
+            "title": "Bequem in Raten\/auf Rechnung zahlen",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "1650578249346cf38e-0",
+        "1650578249346cf38e-1",
+        "1650578249346cf38e-2",
+        "50b12fa2-9be9-41b3-a2f5-225e6134b8c3"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "main_bg": "#efefef",
+        "columns": 4,
+        "overline": "",
+        "title": "",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "text_alignment": "center",
+        "text_max_width": 36
+      }
+    },
+    "165159607509277cef": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "<span id=\"gravity\"><\/span>"
+      }
+    },
+    "1652452390bee6e1a7": {
+      "type": "image-text-slider",
+      "settings": {
+      }
+    },
+    "16502629331d2ca294": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'brand-intro-logos' %}"
+      }
+    },
+    "1650263212d53823fc": {
+      "type": "featured-product",
+      "blocks": {
+        "16502632124da8419d-0": {
+          "type": "title",
+          "settings": {
+            "title_text_size": 26
+          }
+        },
+        "f10ad0a7-2bd6-4659-bce1-e740adc0816a": {
+          "type": "text",
+          "settings": {
+            "text": "{% render 'featured-product-reviews' %}"
+          }
+        },
+        "16502632124da8419d-2": {
+          "type": "border",
+          "settings": {
+          }
+        },
+        "16502632124da8419d-3": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": ""
+          }
+        },
+        "16502632124da8419d-1": {
+          "type": "price",
+          "settings": {
+            "price_text_size": 24
+          }
+        },
+        "16502632124da8419d-4": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "d67fefdf-0af3-411d-8a3e-44bb5cd5150d": {
+          "type": "inventory_counter",
+          "settings": {
+            "show_label": true,
+            "inventory_max": "100",
+            "low_inventory_threshold": "40"
+          }
+        }
+      },
+      "block_order": [
+        "16502632124da8419d-0",
+        "f10ad0a7-2bd6-4659-bce1-e740adc0816a",
+        "16502632124da8419d-2",
+        "16502632124da8419d-3",
+        "16502632124da8419d-1",
+        "16502632124da8419d-4",
+        "d67fefdf-0af3-411d-8a3e-44bb5cd5150d"
+      ],
+      "settings": {
+        "product": "gravity-gewichtsdecke",
+        "section_style": "default",
+        "image_size": "50",
+        "enable_video_looping": false
+      }
+    },
+    "165245753794e8a12a": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'gravity-sets-section' %}"
+      }
+    },
+    "16511620865d7539df": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "paddings": true,
+        "custom_liquid": "{% render 'banner' %}"
+      }
+    },
+    "165115686133991bab": {
+      "type": "image-with-text",
+      "blocks": {
+        "1651156861accb3469-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<style>\n.image-with-list .media span{\n  font-size: 60px;\n}\n<\/style>\n<ul class=\"image-with-list\">\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-handmade\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Handgefertigte und hochwertige Gewichtsdecke<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-wellbeing\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Steigerung des Wohlbefindens<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-relax\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span\n                    class=\"path16\"><\/span><span class=\"path17\"><\/span><span class=\"path18\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Völlige Entspannung des Körpers und Nervensystems<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-days\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>28-Tage Probeschlafen<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n    <li>\n        <div class=\"media\">\n            <span class=\"icon-four-seasons\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span\n                    class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span\n                    class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span\n                    class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><span class=\"path15\"><\/span><span\n                    class=\"path16\"><\/span><span class=\"path17\"><\/span><\/span>\n            <div class=\"media-body\">\n                <strong>Hochwertiger 4-Jahreszeiten- oder Baumwollbezug<\/strong>\n            <\/div>\n        <\/div>\n    <\/li>\n<\/ul>",
+            "text_max_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "1651156861accb3469-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "image": "shopify:\/\/shop_images\/icons_side_57f7fa3d-b173-4eb3-ba94-e434bf94df7c.jpg",
+        "video_url": "",
+        "image_width": "two-third",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
+    "1650463024bd7d3973": {
+      "type": "rich-text",
+      "blocks": {
+        "16504630240f4c42f3-0": {
+          "type": "overline",
+          "settings": {
+            "overline": ""
+          }
+        },
+        "16504630240f4c42f3-1": {
+          "type": "title",
+          "settings": {
+            "title": "Gravity Gewichtsdecken hergestellt in Europa",
+            "text_max_width": 36
+          }
+        },
+        "16504630240f4c42f3-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Die Gravity Gewichtsdecke wird in Handarbeit hergestellt und besteht zu 100% aus zertifizierter Baumwolle (Öko Tex Standard 100 Siegel), die in Spanien ökologisch angebaut wird. Die Gewichtsdecke ist mit vielen, quadratischen Feldern durchzogen, die mit sandfeinen Glasperlen gefüllt sind. Dadurch wird sichergestellt, dass das Gewicht der Decke gleichmäßig über die gesamte Länge verteilt wird.<\/p>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0050\/7717\/2288\/files\/certificate-icons-line.svg?v=1652456217\">",
+            "text_max_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "16504630240f4c42f3-0",
+        "16504630240f4c42f3-1",
+        "16504630240f4c42f3-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "alignment": "center",
+        "image_bg": "shopify:\/\/shop_images\/fabrication_home.jpg"
+      }
+    },
+    "1650462048ca7b8b46": {
+      "type": "image-with-text",
+      "blocks": {
+        "eb21f88f-3a35-4c8f-8e33-3b352a199796": {
+          "type": "overline",
+          "settings": {
+            "overline": "Die Wirkung der Gravity Gewichtsdecke"
+          }
+        },
+        "16504620480e4b226b-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "10% des eigenen Körpergewichts",
+            "text_max_width": 46
+          }
+        },
+        "16504620480e4b226b-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Bei der Auswahl Ihrer persönlichen Gravity Decke sollten Sie Ihr eigenes Körpergewicht berücksichtigen.<\/p><p>Eine Gravity Decke sollte ungefähr 10% Ihres Körpergewichtes ausmachen. Denken Sie daran, dass Ihre Decke eine einzigartige und langjährige Investition ist.<\/p>",
+            "text_max_width": 40
+          }
+        }
+      },
+      "block_order": [
+        "eb21f88f-3a35-4c8f-8e33-3b352a199796",
+        "16504620480e4b226b-1",
+        "16504620480e4b226b-2"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "image": "shopify:\/\/shop_images\/10_percent_scale.png",
+        "video_url": "",
+        "image_width": "one-half",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "left",
+        "text_alignment": "left",
+        "text_color": "#3a3a3a",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
+    "1650599194732f77d0": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "165059919420ee3e1d-0": {
+          "type": "overline",
+          "settings": {
+            "overline": "Gravity Decke"
+          }
+        },
+        "165059919420ee3e1d-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Weitere Vorteile",
+            "text_max_width": 46
+          }
+        },
+        "165059919420ee3e1d-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<ul>\n<li>ADD und ADHS<\/li>\n<li>Asperger-Syndrom und Autismus<\/li>\n<li>Restless Legs Syndrom (RLS, Unruhige Beine), das auf Chemotherapie oder Menopause zurückzuführen ist<\/li>\n<li>Innerliche und körperliche Anspannung<\/li>\n<li>Sensorische Integrationsstörungen<\/li>\n<li>Bei Menschen über 65 Jahren oder älter konnten Symptome von z.B. Alzheimer oder Parkinson gemindert werden Demenz<\/li>\n<\/ul>",
+            "text_max_width": 36
+          }
+        }
+      },
+      "block_order": [
+        "165059919420ee3e1d-0",
+        "165059919420ee3e1d-1",
+        "165059919420ee3e1d-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "image": "shopify:\/\/shop_images\/Gravity_Gewichtsdecke_Slider_November_2020.jpg",
+        "video_url": "",
+        "image_width": "one-half",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
+    "16515920240b709421": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "<span id=\"gravity_set\"><\/span>"
+      }
+    },
+    "16511568662682a6ab": {
+      "type": "featured-collection-row",
+      "settings": {
+        "section_style": "contrast",
+        "text_position": "left",
+        "collection": "gravity-gewichtsdecken",
+        "columns": 3,
+        "aspect_ratio": "natural",
+        "overline": "Original Gravity Therapiedecken",
+        "title": "Verfügbare Gravity Modelle",
+        "subheading": "",
+        "link_text": "",
+        "text_max_width": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_split_1",
+    "1651603791b59fab4d",
+    "1650852998ebd91b2a",
+    "16502631901a60459b",
+    "16505782497c419352",
+    "165159607509277cef",
+    "1652452390bee6e1a7",
+    "16502629331d2ca294",
+    "1650263212d53823fc",
+    "165245753794e8a12a",
+    "16511620865d7539df",
+    "165115686133991bab",
+    "1650463024bd7d3973",
+    "1650462048ca7b8b46",
+    "1650599194732f77d0",
+    "16515920240b709421",
+    "16511568662682a6ab"
+  ]
+}
