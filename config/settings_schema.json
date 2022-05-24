@@ -622,8 +622,14 @@
       {
         "type": "text",
         "id": "gift_product_variant_id",
-        "label": "Gift product",
-        "info": "Find the Id of the variant of the product you want to give for free and add it here and add the rule on the [discounts tab](https:\/\/balancedecke.myshopify.com\/admin\/discounts)"
+        "label": "Gift product ID",
+        "info": "Find the Id of the variant of the product you want to give for free and add it here and add the product that goes for free in here as well [discounts tab](https:\/\/holtas.myshopify.com\/admin\/discounts\/automatic\/1003888705667)"
+      },
+      {
+        "type": "number",
+        "id": "gift_product_min_spend",
+        "label": "Minimum to spend to get the free product",
+        "info": "Set the minimum amount to spend to get the free item and add again the amount in here [discounts tab](https:\/\/holtas.myshopify.com\/admin\/discounts\/automatic\/1003888705667)"
       }
     ]
   }
