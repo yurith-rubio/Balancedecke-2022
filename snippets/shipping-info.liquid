@@ -1,0 +1,15 @@
+{% assign currentVariant = product.selected_or_first_available_variant %}
+
+{% for variant in product.variants %}
+  {% assign shippingType = variant.metafields.bgd['availability'] %}
+  {% if variant.id == currentVariant.id %}
+	<div class="shipping-info" id="shipping-info-{{ variant.id }}">
+       {{ shippingType }}
+    </div>
+  	{% else %}
+      <div class="shipping-info hide" id="shipping-info-{{ variant.id }}">
+        {{ shippingType }}
+    </div>
+  {% endif %}
+
+{% endfor %}

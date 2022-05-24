@@ -89,8 +89,10 @@
                         {%- assign media_alt = item.title -%}
                       {%- endif -%}
                       <img src="{{ featured_media | img_url: '240x240' }}" alt="{{ media_alt }}">
+                    {%comment%}
                     {% else %}
                       {% render 'icon-article-placeholder' %}
+                    {%endcomment%}
                     {% endif %}
                   {% endif %}
                 </div>

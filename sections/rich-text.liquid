@@ -14,7 +14,7 @@
   {% assign modifiers = modifiers | append: ' section--bordered' %}
 {% endunless %}
 
-{% assign image = section.settings.image_bg | img_url:'master'  %}
+{% assign image = section.settings.image_bg  %}
 
 {% if image != blank %}
   {% style %}
@@ -23,8 +23,6 @@
         background: white;
         max-width: {{ block.settings.text_max_width }}rem;
         padding: 40px;
-		margin-left: auto;
-		margin-right: auto;
       }
 	{% endfor %}
   {% endstyle %}
@@ -35,7 +33,7 @@
   data-section-type="rich-text"
   class="section rich-text{{ modifiers }}"
   {% if image != blank %}
-  	style="background-image:url('{{ image }}'); background-size: cover;"
+  	style="background-image:url('{{ image | img_url:'master' }}'); background-size: cover;"
   {% endif %}
 >
   <div class="general-container-width rich-text__inner text-block animation__staggered-children-fade-in">
@@ -195,7 +193,7 @@
             "id": "text_max_width",
             "label": "t:shared.settings.text_max_width.label",
             "min": 16,
-            "max": 50,
+            "max": 80,
             "step": 1,
             "default": 36
           }

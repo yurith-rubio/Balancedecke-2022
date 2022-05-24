@@ -1,0 +1,96 @@
+<style>
+  .gravity-sets-section{
+  	background: #3a3a3a;
+  }
+  .gravity-title{
+  	text-transform: uppercase;
+    background: #fac636;
+    color: #3a3a3a;
+    font-size:14px;
+    text-align:center;
+    letter-spacing: .1em;
+    padding: 5px 0;
+    font-weight:500;
+    margin: 0;
+  }
+  .gravity-sets-text{
+  	width: 300px;
+    padding-left: 15px;
+  }
+  .gravity-sets-text p{
+  	font-size: 20px;
+    color: #fff;
+    margin-top: 0;
+    font-weight: 500;
+  }
+  .gravity-content-div{
+  	max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items:center;
+    padding: 10px 0;
+  }
+  .gravity-sets-section .bttn{
+  	display: inline-block;
+    line-height: 48px;
+    transition: background-color .25s ease;
+  }
+  .gravity-sets-section .bttn:hover{
+  	background: #fff;
+    color: var(--color-button-hover-bg);
+  }
+  .mobile-set{
+  	display: none;
+  }
+  @media (max-width: 1200px){
+  	.gravity-sets-text{
+    	padding-left: 0;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1200px){
+    .gravity-sets-text p{
+    	font-size: 18px;
+    }
+  }
+  @media (max-width: 768px){
+  	.desktop-set{
+    	display: none;
+    }
+    .mobile-set{
+    	display: block;
+        margin: 0 auto;
+    }
+    .gravity-content-div{
+    	padding: 30px 0;
+    }
+  }
+  @media (min-width: 641px) and (max-width: 768px){
+    .gravity-content-div{
+    	display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 640px){
+    .gravity-content-div{
+    	display: block;
+    }
+    .gravity-sets-text{
+    	text-align:center;
+      	margin: 0 auto;
+    }
+  }
+</style>
+<div class="gravity-sets-section">
+  	<p class="gravity-title">Neue Gravity sets</p>
+    <div class="gravity-content-div">
+      <div class="gravity-sets-image">
+        <img src="https://cdn.shopify.com/s/files/1/0050/7717/2288/files/set_desktop.png?v=1652459821" class="desktop-set">
+        <img src="https://cdn.shopify.com/s/files/1/0050/7717/2288/files/set_mobile.png?v=1652459822" class="mobile-set">
+      </div>
+      <div class="gravity-sets-text">
+        <p>Interesse am Gravity Set<br>(4-Jahreszeiten- und Baumwollbezug)?</p>
+        <a href="https://gravitydecke.de/collections/sparsets/products/gravity-gewichtsdecken-set-fur-erwachsene" class="bttn btn-banner">ZU DEN SETS</a>
+      </div>
+    </div>
+</div>

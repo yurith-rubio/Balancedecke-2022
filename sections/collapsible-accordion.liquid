@@ -1,0 +1,44 @@
+{{ 'collapsible-accordion.css' | asset_url | stylesheet_tag }}
+
+<ul class="collapsible-accordion-ul">
+  {% for block in section.blocks %}
+    <li class="collapsible-accordion-li">
+      <input class="collapsible-accordion-input" type="checkbox" checked>
+      <i class="collapsible-accordion-i"></i>
+      <h2 class="h4 collapsible-accordion-h2 text-block__item text-block__heading type-heading-1">{{ block.settings.question_title }}</h2>
+      <div class="collapsible-accordion-p">{{ block.settings.anwer }}</div>
+    </li>
+  {% endfor %}
+</ul>
+
+{% schema %}
+  {
+    "name": "Accordion",
+    "settings": [],
+	"blocks": [
+	  {
+		"type": "question",
+		"name": "question",
+		"settings": [
+		  {
+			"type": "text",
+			"id": "question_title",
+			"label": "Question title",
+			"default": "Question title in here"
+		  },
+		  {
+			"type": "liquid",
+			"id": "anwer",
+			"label": "Answer",
+			"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		  }
+		]
+	  }
+	],
+	"presets": [
+	  {
+		"name": "Collapsible accordion"
+	  }
+	]
+  }
+{% endschema %}

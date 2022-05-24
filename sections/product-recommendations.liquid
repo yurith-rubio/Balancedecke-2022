@@ -17,27 +17,29 @@
   {% comment %} class="product-recommendations product-recommendations--column-{{ columns }}" {% endcomment %}
   class="section section--bordered product-recommendations carousel carousel--columns-{{ columns }} carousel--items-{{ product_count }}"
 >
-  {%- if recommendations.products_count > 0 -%}
-    {% render 'text-block' with
-      id: id,
-      modifiers: 'mb5 animation__staggered-children-fade-in',
-      heading_alignment: 'center',
-      overline: overline,
-      heading: heading,
-      subheading: subheading,
-      text_max_width: text_max_width
-    %}
+  <div class="product-recommendations--content">
+    {%- if recommendations.products_count > 0 -%}
+      {% render 'text-block' with
+        id: id,
+        modifiers: 'mb5 animation__staggered-children-fade-in',
+        heading_alignment: 'center',
+        overline: overline,
+        heading: heading,
+        subheading: subheading,
+        text_max_width: text_max_width
+      %}
 
-    {% render 'carousel-navigation' %}
+      {% render 'carousel-navigation' %}
 
-    <div class="carousel__slides" data-carousel>
-      {%- for product in recommendations.products -%}
-        <div class="carousel__slide">
-          {% render 'product-item', product: product, aspect_ratio: section.settings.aspect_ratio %}
-        </div>
-      {%- endfor -%}
-    </div>
-  {%- endif -%}
+      <div class="carousel__slides" data-carousel>
+        {%- for product in recommendations.products -%}
+          <div class="carousel__slide">
+            {% render 'product-item', product: product, aspect_ratio: section.settings.aspect_ratio %}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
 </section>
 
 {% schema %}

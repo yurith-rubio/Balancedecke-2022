@@ -1,0 +1,100 @@
+<!-- icons-text-boxes.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'icons-text-boxes.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .icons-text-boxes-icon{
+	color: {{ section.settings.icons_color }};
+  }
+{% endstyle %}
+<div class="icons-text-boxes">
+  <p class="text-block__item text-block__overline overline">{{ section.settings.subheading | escape }}</p>
+  <h2 class="text-block__item text-block__heading type-heading-1">{{ section.settings.title | escape }}</h2>
+
+  <div class="icons-text-boxes-sub">
+    {% for block in section.blocks %}
+    <div class="icons-text-boxes-sub-col">
+      <span class="icons-text-boxes-icon">{{ block.settings.icon_span }}</span>
+      <h3 class="type-heading-2">{{ block.settings.title-icon }}</h3>
+      <div class="icons-text-boxes-sub-background">    
+        <div class="icons-text-boxes-sub-text">{{ block.settings.content }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% if section.settings.button_label != blank %}
+    <div class="icons-text-boxes-button_link"><a class="Button Button--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></div>
+  {% endif %}
+</div>
+
+
+{% schema %}
+{
+  "name": "Icons Text Boxes",
+  "max_blocks": 4,
+  "settings": [
+	{
+        "type": "color",
+        "id": "icons_color",
+        "label": "Icons' color",
+		"default": "#FAC636"
+    },
+	{
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading Section",
+		"default": "Subheading Example"
+    },
+	{
+        "type": "text",
+        "id": "title",
+        "label": "Title Section",
+		"default": "Title Section Example"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+    },
+    {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button"
+    }
+	],
+ "blocks": [
+        {
+            "type": "blocks_outcome",
+            "name": "Box block",
+            "settings": [
+                {
+                    "type": "html",
+                    "id": "icon_span",
+                    "label": "Icon Span Tag",
+                    "info": "Place here the ICOMOON span tag or tags"
+                },
+                {
+                    "type": "text",
+                    "id": "title-icon",
+                    "label": "Title Icon",
+                    "default": "Title Icon Example"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Content Block",
+                    "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+                }
+            ]
+        }
+    ],
+  "presets": [
+    {
+      "category": "Product Sections",
+      "name": "Icons Text Boxes",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

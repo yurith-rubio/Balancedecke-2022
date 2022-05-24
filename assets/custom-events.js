@@ -38,18 +38,46 @@ document.addEventListener('flu:quick-cart:close', function () {
 
 document.addEventListener('flu:product:variant-change', function (evt) {
   console.log('Product variant changed', evt.detail.variant);
+  const variantId = evt.detail.variant.id;
+  console.log("variantId: " + variantId);
+  
+  // Finds the element that was triggered.
+  console.log(evt.target);
+  const productType = evt.target.activeElement.getAttribute("data-swatch-product-one");
+  console.log(productType);
   
   setTimeout(function () {
-    const path = location.search;
-    if (path.indexOf("variant") >= 0) {
-      const variantId = path.split("=")[1];
-      console.log("variant" + variantId);
+    
+    if (productType == 'standard-home-option' ){
+      const showBezugsartInfo = document.getElementById("bezugsart-option-" + variantId);
+      const showWeighttInfo = document.getElementById("weight-option-" + variantId);
+      $("div.bezugsart-option").addClass("hide");
+      $("div.weight-option").addClass("hide");
+      showBezugsartInfo.classList.remove("hide");
+      showWeighttInfo.classList.remove("hide");
       
-      // Hide all and show only the selected one.
-      const showSwatchInfo = document.getElementById("swatch-option-" + variantId);
-      $("div.swatch-option").addClass("hide");
-      showSwatchInfo.classList.remove("hide");
+    } else if (productType == 'set-swatch-option' ) {
+      const showBezugsartInfo = document.getElementById("set-bezugsart-option-" + variantId);
+      const showWeighttInfo = document.getElementById("set-weight-option-" + variantId);
+      $("div.set-bezugsart-option").addClass("hide");
+      $("div.set-weight-option").addClass("hide");
+      showBezugsartInfo.classList.remove("hide");
+      showWeighttInfo.classList.remove("hide");
+      
+    } else if (productType == null ) {
+      const showBezugsartInfo = document.getElementById("bezugsart-option-" + variantId);
+      const showWeighttInfo = document.getElementById("weight-option-" + variantId);
+      const showShippingInfo = document.getElementById("shipping-info-" + variantId);
+      
+      // Hide all and show only the selected one.   
+      $("div.bezugsart-option").addClass("hide");
+      $("div.weight-option").addClass("hide");
+      $("div.shipping-info").addClass("hide");
+      showBezugsartInfo.classList.remove("hide");
+      showWeighttInfo.classList.remove("hide");
+      showShippingInfo.classList.remove("hide");
     }
+
   }, 0);
  
 }); // This event fires whenever a product quanatiy is updated.

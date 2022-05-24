@@ -1,3 +1,6 @@
+{{ 'judgeme-custom.css' | asset_url | stylesheet_tag }}
+{{ 'product.css' | asset_url | stylesheet_tag }}
+
 {% liquid
   assign enable_thumbnails = section.settings.enable_thumbnails
   assign thumbnail_position = section.settings.thumbnail_position
@@ -91,18 +94,20 @@
           {% endif %}
         </div>
 
+       
         {% if product.media[0].media_type == 'image' %}
           <div class="product__media-action">
             <button
               type="button"
               class="product__media-action-button"
-              aria-label="{{ 'products.product.zoom' | t }}"
+                aria-label="{{ 'products.product.zoom' | t }}"
             >
-              <span class="visually-hidden">{{ 'products.product.zoom' | t }}</span>
+                <span class="visually-hidden">{{ 'products.product.zoom' | t }}</span>
               {% render 'icon-plus' %}
             </button>
           </div>
         {% endif %}
+
 
         {%- if show_thumbnails and thumbnail_position == 'horizontal' -%}
           {% render 'product-thumbnails' with featured_media: featured_media, disable_style: disable_thumbnail_style %}
@@ -217,16 +222,22 @@
                       form_id: form_id,
                       show_quantity_input: true
                     %}
+              		{% comment %}
                     <div class="product__quantity-error hidden" data-quantity-error>
                       {{ 'products.product.quantity_error' | t }}
                     </div>
+                    --------------
+                    <div data-ajax-cart-messages="form"></div>
+              		{% endcomment %}
 
                   {%- when 'buy_buttons' -%}
-                    {%- unless has_quantity_selector -%}
-                      <div class="product__quantity-error hidden" data-quantity-error>
-                        {{ 'products.product.quantity_error' | t }}
-                      </div>
-                    {%- endunless -%}
+                    {% comment %}
+                      {%- unless has_quantity_selector -%}
+                        <div class="product__quantity-error hidden" data-quantity-error>
+                          {{ 'products.product.quantity_error' | t }}
+                        </div>
+                      {%- endunless -%}
+                    {% endcomment %}
 
                     {% render 'product-buy-buttons' with
                       product: product,
@@ -235,6 +246,9 @@
                       form: form
                     %}
 
+              		{% comment %} Dynamic info on product shipping info form - Yurith {% endcomment %}
+              		{% render 'shipping-info', option: option, product: product %}
+              
                   {%- when 'inventory_counter' -%}
                     {%- render 'inventory-counter' with
                       product: product,
@@ -832,7 +846,7 @@
           },
           {
             "id": "text",
-            "type": "richtext",
+            "type": "liquid",
             "label": "t:sections.main_product_overview.blocks.shared_feature_widget.settings.text.label",
             "default": "<p>Add a feature to tell customers more about your product.</p>"
           },

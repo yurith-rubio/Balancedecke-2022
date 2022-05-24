@@ -48,17 +48,26 @@
             {{ guide_trigger }}
           {% endif %}
         </div>
-
+               
         <div class="product-form__option-swatches-wrapper">
           {% for value in option.values %}
             <button
-              type="button"
-              data-button="{{ value | handleize }}--{{ forloop.index0 }}"
-              class="product-form__color-swatch {% if option.selected_value == value %}selected{% endif %}"
-              style="background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }}); background-color: {{ value | handle }};"
-              tabindex="0"
-              aria-label="{{ value }}"
-            >
+                  type="button"
+                  data-button="{{ value | handleize }}--{{ forloop.index0 }}"
+                  class="product-form__color-swatch 
+                         {% if option.selected_value == value %}selected{% endif %}"
+                  style="background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }}); background-color: {{ value | handle }};"
+                  tabindex="0"
+                  aria-label="{{ value }}"
+                  {% if template == 'index' %}
+                    {% if product.title == 'STANDARD Gravity® - Gewichtsdecke für Erwachsene' %}
+                       data-swatch-product-one="standard-home-option"
+                    {% endif %}
+                    {% if product.title == 'STANDARD Gravity® - Gewichtsdecken Set für Erwachsene' %}
+                       data-swatch-product-one="set-swatch-option"
+                    {% endif %}
+                  {% endif %}
+                  >
             </button>
           {% endfor %}
         </div>
@@ -77,10 +86,10 @@
             </option>
           {% endfor %}
         </select>
-        
-        {% render 'swatch-options-meta-info', option: option, product: product %}
       </div>
     </div>
+    {% comment %} Dynamic info on product swatch form - Yurith {% endcomment %}
+    {% render 'options-dynamic-info', option: option, product: product %}
   {% endif %}
 {% endfor %}
 
@@ -96,10 +105,9 @@
                 {{ option.name }}
               </label>
               
+              {% comment %} Static info on product button form - Yurith {% endcomment %}
               {% render 'options-static-info', option:option %}
             </div>
-            
-
 
             {% if variant_popup_content_exists and option_name == variant_popup_option %}
               {{ guide_trigger }}
@@ -113,6 +121,14 @@
               class="product-form__chip {% if option.selected_value == value %}selected{% endif %}"
               tabindex="0"
               aria-label="{{ value }}"
+              {% if template == 'index' %}
+                 {% if product.title == 'STANDARD Gravity® - Gewichtsdecke für Erwachsene' %}
+                    data-swatch-product-one="standard-home-option"
+                 {% endif %}
+                 {% if product.title == 'STANDARD Gravity® - Gewichtsdecken Set für Erwachsene' %}
+                    data-swatch-product-one="set-swatch-option"
+                 {% endif %}
+              {% endif %}
             >
               {{ value }}
             </button>
@@ -133,8 +149,10 @@
             {% endfor %}
           </select>
         </div>
-        
       </div>
+
+	  {% comment %} Dynamic info on product swatch form - Yurith {% endcomment %}
+      {% render 'options-dynamic-info', option: option, product: product %}
     {% endif %}
   {% endunless %}
 {% endfor %}

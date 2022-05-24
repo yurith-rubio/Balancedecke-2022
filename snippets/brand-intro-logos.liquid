@@ -1,53 +1,63 @@
 {% style %}
+  .brand-intro-logos-main-container{
+	background-color: #F7F7F7;
+	padding: 70px 0;
+  }
+  .bekannt-images {
+      text-align: center;
+	  margin: 2.5% 0
+  }
+.bekannt-desktop h2{
+	text-align:center;
+}
+
+  img.bekannt-img {
+      width: 47%;
+      margin-top: 05px;
+      margin-bottom: 0px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    img.bekannt-img {
+      width: 100%;
+      margin-bottom: 0px;
+	  padding: 0 30px;
+      }
+    }
+
+  img.bekannt-img-product {
+      width: 20%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+  }
+
+  .custom-content-wrapper--top-margin {
+      padding-top: 0px!important;
+  }
+
+  .custom-content-wrapper--bottom-margin {
+      padding-bottom: 0px!important;
+  }
+
   @media only screen and (min-width: 400px){
     .bekannt-desktop{
-      margin-top: -40px;
-      margin-bottom: -40px;
+	  max-width: 1200px;
+	  margin: -40px auto;
     }
   }
 {% endstyle %}
 
-
-<div class="bekannt-desktop">
-<div class="bekannt-images">
-<img class="bekannt-img" src="https://cdn.shopify.com/s/files/1/0053/3243/4990/files/Bekannt_aus_Gewichtsdecke_Brigitte_Galileo_Freundin_1.jpg?v=1576853617" alt=""><img class="bekannt-img" src="https://cdn.shopify.com/s/files/1/0053/3243/4990/files/Bekannt_aus_therapiedecke_gewichtsdecke_welt_handelsblatt_2.jpg?v=1576853835" alt="">
+<div class="brand-intro-logos-main-container">
+  <div class="bekannt-desktop">
+    <h2 class="type-heading-1">Bekannt aus</h2>
+    <div class="bekannt-images hide-small">
+      <img class="bekannt-img" src="https://cdn.shopify.com/s/files/1/0050/7717/2288/files/Bekannt_aus_Gewichtsdecke_Brigitte_Galileo_Freundin_1.png?v=1652465756" alt="">
+      <img class="bekannt-img" src="https://cdn.shopify.com/s/files/1/0050/7717/2288/files/Bekannt_aus_therapiedecke_gewichtsdecke_welt_handelsblatt_2.png?v=1652465756" alt="">
+    </div>
+    <div class="bekannt-images hide-medium-up">
+      <img class="bekannt-img" src="https://cdn.shopify.com/s/files/1/0050/7717/2288/files/Bekkant_mobile.png?v=1652485837" alt="">
+    </div>
+    
+  </div>
 </div>
-</div>
-
-
-
-
-
-<style>
-.bekannt-images {
-    text-align: center;
-}
-
-img.bekannt-img {
-    width: 40%;
-    margin-top: 05px;
-    margin-bottom: 0px;
-}
-
-@media only screen and (max-width: 400px) {
-  img.bekannt-img {
-    width: 100%;
-    margin-bottom: 0px;
-	}
-  }
-
-img.bekannt-img-product {
-    width: 20%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
-}
-
-.custom-content-wrapper--top-margin {
-    padding-top: 0px!important;
-}
-
-.custom-content-wrapper--bottom-margin {
-    padding-bottom: 0px!important;
-}
-</style>

@@ -1,0 +1,72 @@
+<script type="application/json" data-ajax-cart-initial-state >
+    {{ cart | json }}
+</script>
+
+<script type="module">
+    import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+</script>
+
+<script type="application/json" data-ajax-cart-configuration >
+    {
+      "addToCartCssClass": "js-my-cart-open"
+    }
+</script>
+
+{% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
+{% assign promoVariant = settings.gift_product_variant_id  %}
+
+{% if promoVariant != blank %}
+  <script type="module">
+      import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+
+      subscribeToCartStateUpdate( state => {
+          const promoVariant = {{ promoVariant }};
+          const promoSubtotal = 300000;
+
+          // If cart state exists and there is no Ajax Cart API request in progress
+          if ( state.status.cartStateSet && !state.status.requestInProgress ) {
+              let currentSubtotal = state.cart.items_subtotal_price;
+
+              // Find out if there is a product that was automatically added before
+              const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+                  return lineItem.properties?._autoadded === 'Yes' ;
+              });
+
+              // If there is the automaticaly added product —
+              // lets calculate the currentSubtotal without the product
+              if ( autoAddedLineItem > -1 ) {
+                  currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
+              }
+
+              if ( currentSubtotal >= promoSubtotal ) {
+
+                  // If there is no a promoVariant product with an applied discount
+                  // lets add one with _autoadded property
+                  if ( autoAddedLineItem === -1 ) {
+                      setTimeout(function(){
+                        cartRequestAdd({ 
+                            items: [{
+                                id: promoVariant,
+                                quantity: 1,
+                                properties: { "_autoadded": "Yes" }
+                            }]  
+                        });
+
+                      },100);
+                  }
+              } else {
+
+                  // If current cart subtotal is less than $100
+                  // and an autoadded product is still in the cart —
+                  // lets remove it
+                  if ( autoAddedLineItem > -1 ) {
+                      cartRequestChange({ 
+                          "line": autoAddedLineItem + 1,
+                          "quantity": 0
+                      });
+                  }
+              }
+          }
+       });
+  </script>
+{% endif %}

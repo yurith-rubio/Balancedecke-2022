@@ -45,6 +45,8 @@
         data-lang-unavailable="{{ 'products.product.unavailable' | t }}"
         data-lang-sold-out="{{ 'products.product.sold_out' | t }}"
         data-add-to-cart
+        data-ajax-cart-request-button
+        onclick="overlayOn()"
         {% unless current_variant.available %}
           disabled="disabled"
         {% endunless %}
@@ -71,7 +73,8 @@
             {{ 'products.product.add_to_cart' | t }}
           {% endunless %}
         </span>
-      </button>
+      </button>    
+      
     </div>
 
     {%- if product.selling_plan_groups.size == 0 -%}
@@ -103,3 +106,4 @@
 {% comment %} Surface pick-up {% endcomment %}
 
 <div class="store-availability-container__wrapper" data-store-availability-container data-base-url="{{ shop.url }}{{ routes.root_url }}"></div>
+  

@@ -1,0 +1,351 @@
+{% style %}
+  a, .link{
+    color: #828282 !important;
+  }
+  .checkout-cert-con {
+    background: #f8f8f8;
+    border-radius: 5px;
+    margin: auto auto 30px auto;
+    padding: 5% 10%;
+    display: grid;
+    max-width: 78.5714285714em;
+  }
+  .sidebar::after{
+	background: #ededed !important;
+  }
+  .order-summary__sections {
+    height: auto !important;
+    margin-bottom: 30px;
+  }
+  div[dynamic-checkout] {
+    display: none !important;
+  }
+  div[data-alternative-payments] {
+    display: none !important;
+  }
+  div[alternative-payment-separator] {
+    display: none !important;
+  }
+  span.slimpay-name-fix {
+    position: relative;
+    top: -8px;
+    font-size: 12px;
+  }
+  img[alt="Splitit Monthly Payments"]{
+    display:inline-block;
+    margin-right: 10px;
+  }
+  span.sofort-name-fix {
+    position: relative;
+    top: -4px;
+    font-size: 12px;
+  }
+  img[alt="SOFORT Banking (DIRECTebanking)"]{
+    display:inline-block;
+    margin-right: 10px;
+  }
+  .countdown-holder {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .countdown-main {
+    background: #fff5d2;
+    padding: 10px 20px;
+    border: 1px solid #e3df74;
+    font-size: 12px;
+    color: #2c2c2c;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  span#time {
+    color: #018201;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 999px) {
+    .countdown-placeholder {
+      margin-top: 15px;
+    }
+  }
+  .product__description__property.order-summary__small-text {
+  	display: none;
+  }
+  .h4{
+  	font-weight: bold;
+  }
+  .point_wrapper{
+    display: flex;
+    padding: 10px 0;
+  }
+  .point_wrapper div{
+  	padding-left:10px;
+  }
+  .icon-css:before {
+    font-size: 40px;
+    line-height: 1.2;
+    padding-right: 15px;
+    color: #323232 !important;
+  }
+  ul.checkout-advt li:before {
+    content: '✓ ';
+    padding-right: 8px;
+    margin-left: -20px;
+  }
+  ul.checkout-advt li {
+    padding: 10px 5px;
+    text-align: left;
+  }
+  ul.checkout-advt {
+    column-count: 2;
+    column-gap: 35px;
+    font-size: 12px;
+    margin: auto;
+    display: inline-block;
+    padding: 15px 0px 20px 45px;
+  }
+  h3.checkout-cert-title {
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .title_area{
+  	display:flex;
+  }
+  .line_title{
+    border-top: 1px solid #ccc;
+    flex-grow: 1;
+    margin-top: 10px;
+  }
+  .sidebar::after{
+  	background: #ededed;
+  }
+  img.checkout-cert {
+    padding: 5px;
+    text-align: center;
+  }
+  .checkout-cert {
+    text-align: center;
+    width: 80%!important;
+    margin: auto;
+    padding-top: 10px;
+  }
+  .checkout-cert img {
+    padding: 0 15px;
+    width: 35%;
+  } 
+  li.reduction-code {
+    font-weight: 500;
+    background: #c6ffc6;
+    display: inline-block;
+    padding: 3px 7px!important;
+    font-size: 12px;
+  }
+  .product__description .reduction-code__text {
+  	color: #008f2d!important;
+  }
+  .field__additional-info {
+  	display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .checkout-cert-con {
+      background: #f8f8f8;
+	}
+    .sidebar::after{
+      background: #f8f8f8;
+	}
+    .main{
+      order:2;
+	}
+    .title_area{
+      padding-top:15px;
+	}
+  }
+  @media only screen and (max-width: 1000px) {
+    #order-summary.order-summary--is-expanded {
+      margin-bottom: -30px;
+	}
+    ul.checkout-advt li {
+      font-size: 10px;
+      padding: 5px;
+	}
+    ul.checkout-advt {
+      padding: 15px 10px;
+	}
+    img.checkout-cert {
+      max-width: 50%;
+      margin: auto;
+      display: block;
+      padding: 5px;
+	}
+    .checkout-cert-con {
+    background: none;
+      padding: 15px 15px 35px 15px;
+	}
+    .checkout-cert img {
+      padding: 0 15px;
+    }              
+  }
+  button.step__footer__continue-btn.btn { 
+    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
+    padding: 15px 28px;
+    border-radius: 5px;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    transition: color .45s cubic-bezier(.785, .135, .15, .86),border .45s cubic-bezier(.785, .135, .15, .86);
+    z-index: 1;
+  }   
+  button.step__footer__continue-btn.btn:hover { 
+    background-color: #3c3a3a;
+    background: #3c3a3a;
+    color: white;
+  }
+  .js .sidebar .btn--disabled{
+    border: none;
+  }
+  button.field__input-btn.btn {
+    border: 1px black solid;
+  }
+  .field__input{
+    border: 1px solid #d9d9d9;
+    background-color: white;
+  }
+  .total-line--shipping .total-line__name, .total-line--shipping .total-line__price{
+  	padding-bottom: 10px;
+  }
+  .order-summary__emphasis, .payment-due__price{
+  	letter-spacing: .3px !important;
+  }
+  @media only screen and (max-width: 768px){
+    .total-line-table__footer .total-line .total-line__name, .total-line-table__footer .total-line .total-line__price{
+      padding-top: 1rem !important;
+    } 
+    .total-line-table__footer{
+      border-top: 1px solid #d9d9d9;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .Summary_Container{
+      display: none;
+    }
+    .Summary_Container_mobile{
+      padding: 0 20px;
+      border-bottom: 1px solid rgba(174,174,174,0.34);
+      background-color: #f8f8f8;
+    }
+  }
+  @media only screen and (min-width: 769px){
+    .Summary_Container_mobile{
+      display: none;
+    }
+  }
+
+{% endstyle %}
+
+{% comment %} ICOMOON link - Yurith {% endcomment%}
+	<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTWCheckoutIcons/style-cf.css?pv87nq">
+
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+  </head>
+  <body>
+    {{ skip_to_content_link }}
+
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </header>
+
+    {{ order_summary_toggle }}
+    
+    
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {{ content_for_layout }}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+
+            
+            
+            <div class="Summary_Container">{{ content_for_order_summary }}</div>
+            
+            <div class="checkout-cert-con">
+              <div class="title_area">
+                <div class="line_title"></div>
+                <div><h3 class="checkout-cert-title">Einige Vorteile im Überblick</h3></div>
+                <div class="line_title"></div>
+              </div>
+              <div class="point_wrapper">
+				  <span class="icon-css icon-days"></span>
+                <div>
+                  <h4 class="h4">28 Tage Probeschlafen</h4>
+                  <p>Wir geben Ihnen ausreichend Zeit zum Testen, um das passende Modell und Gewicht Ihrer Therapiedecke zu finden.</p>
+                </div>
+              </div>
+              <div class="point_wrapper">
+				  <span class="icon-css icon-EU"></span>
+                <div>
+                  <h4 class="h4">Hergestellt in Europa</h4>
+                  <p>Dank europäischer Produktion und kurzen Lieferwegen kaufen Sie bei uns nachhaltig und mit gutem Gewissen ein.</p>
+                </div>
+              </div>
+              <div class="point_wrapper">
+				  <span class="icon-css icon-costumers"></span>
+                <div>
+                  <h4 class="h4">Über 50.000 zufriedene Kunden</h4>
+                  <p>Unsere vielen zufriedenen Kunden bestätigen die Qualität und Wirksamkeit unserer Therapiedecken.</p>
+                </div>
+              </div>
+              <div class="point_wrapper">
+				  <span class="icon-css icon-exchange"></span>
+                <div>
+                  <h4 class="h4">Gratis Umtausch</h4>
+                  <p>Sollte Ihre gewählte Therapiedecke zu leicht oder zu schwer sein, können Sie kostenlos in ein anderes Modell tauschen.</p>
+                </div>
+              </div>
+              <div class="checkout-cert">
+              <img src="https://cdn.shopify.com/s/files/1/2451/6611/files/Trusted_shops_reviews.png?v=1630170422">
+              <img src="https://cdn.shopify.com/s/files/1/2451/6611/files/Google_reviews.png?v=1630170422">
+              </div>            
+            </div> 
+            
+            
+            
+            
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+  </body>
+</html>

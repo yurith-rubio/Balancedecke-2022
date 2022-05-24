@@ -35,6 +35,8 @@
     {%- assign item_width = 'one-third' -%}
   {%- when 4 -%}
     {%- assign item_width = 'one-quarter' -%}
+  {%- when 5 -%}
+    {%- assign item_width = 'one-fifth' -%}
 {%- endcase -%}
 
 <section
@@ -61,21 +63,25 @@
   <div class="general-container-width text-columns__content grid-display grid-display--{{ item_width }}">
     {% for block in blocks %}
       <div class="text-block text-columns__feature animates">
-        {%- if block.settings.image != blank -%}
-          {% if block.settings.link != blank %}
-            <a href="{{ block.settings.link }}" class="mb3 w-100 text-columns__image db" style="max-width: {{ block.settings.image_max_width }}%;">
+        {%- if block.settings.image != blank or block.settings.icon_span != blank -%}
+          {%- if block.settings.icon_span != blank %}
+            {{ block.settings.icon_span }}
           {% else %}
-            <div class="mb3 w-100 text-columns__image db" style="max-width: {{ block.settings.image_max_width }}%;">
-          {% endif %}
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}" class="mb3 w-100 text-columns__image db" style="max-width: {{ block.settings.image_max_width }}%;">
+            {% else %}
+              <div class="mb3 w-100 text-columns__image db" style="max-width: {{ block.settings.image_max_width }}%;">
+            {% endif %}
 
-          {% render 'image' with image: block.settings.image %}
+            {% render 'image' with image: block.settings.image %}
 
-          {% if block.settings.link != blank %}
-            </a>
-          {% else %}
-            </div>
+            {% if block.settings.link != blank %}
+              </a>
+            {% else %}
+              </div>
+            {%- endif -%}
           {%- endif -%}
-        {%- endif -%}
+        {% endif %}
         {%- if block.settings.title != blank -%}
           <h3
             class="text-block__item text-block__heading type-heading-3"
@@ -147,7 +153,7 @@
         "id": "columns",
         "label": "t:sections.text_columns_with_images.settings.columns.label",
         "min": 1,
-        "max": 4,
+        "max": 5,
         "step": 1,
         "default": 3
       },
@@ -208,6 +214,11 @@
         "type": "column",
         "name": "t:sections.text_columns_with_images.blocks.column.name",
         "settings": [
+          {
+            "type": "liquid",
+            "id": "icon_span",
+            "label": "Icomoon span"
+          },
           {
             "type": "image_picker",
             "id": "image",

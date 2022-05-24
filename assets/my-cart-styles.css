@@ -1,0 +1,213 @@
+body.js-my-cart-open{
+  height: 100vh;
+  overflow-y: hidden;
+  width: 100%;
+}
+@keyframes mycartmove {
+  from {
+    right: -450px;
+  }
+  to {
+    right: 0;
+  }
+}
+#cart_slider{
+  z-index: 1000;
+  transition: 0.4s transform;
+  box-shadow: 0 0 14px 0 rgba(0,0,0,0.09),0 0 4px 0 rgba(0,0,0,0.21),0 0 0 1px rgba(0,0,0,0.09);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow-y: scroll;
+  position: fixed;
+  width: 440px;
+  height: 100%;
+  top: 0;
+  animation: mycartmove .5s;
+  right: 0;
+  justify-content: space-between;
+}
+#cart-overlay{
+  z-index:var(--z-index-drawer-overlay);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  display: none; /* Hidden by default */
+  background-color: rgb(58 58 58 / 71%);
+  opacity:1;
+  transition:opacity 0.15s ease-in-out
+  height: 100vh;
+  overflow-y: hidden;
+  width: 100%;
+  cursor:pointer;
+}
+.cart-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h2_cart, .my-cart_itemPrice{
+  font-weight: 500;
+  color: #3A3A3A;
+  line-height: 1.1 !important;
+}
+
+.heading_cart{
+  text-align: center;
+  text-transform: uppercase;
+}
+.close-slide-cart{
+  position: absolute;
+  right: 20px;
+}
+.item_wrapper{
+  display: inline-flex;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  width: 100%
+}
+.content_cart_wrapper{
+  flex-grow: 3;
+  padding-right: 30px;
+}
+.quantity_price_wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.remove_cart{
+  position: absolute;
+  right: 30px;
+  margin-top: -10px;
+}
+.image_cart{
+  width: 70px;
+  margin: 15px;
+}
+.quantity-selector{
+  display: inline-flex;
+  align-items: center;
+}
+.button_cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+input.input_cart{
+  display: inline-flex;
+  line-height: 28px;
+  height: 30px;
+  max-height: none;
+  min-height: 0;
+  border: none;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: medium;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+  background: transparent;
+  border-top: 1px solid rgba(0,0,0,0.1) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  width: 45px;
+  text-align: center;
+  font-size: 13px;
+  padding: 0;
+  border-radius: 0;
+  min-height: 0 !important;
+  margin: 0 !important;
+  -webkit-appearance: none !important;
+  -moz-appearance:textfield !important;
+}
+
+.my-container__content {
+  flex: 1 1 auto;
+}
+
+.my-container__cart {
+  display: none;
+}
+
+.my-cart_totalPrice, .my-cart_gratis{
+  font-weight: 500;
+}
+
+.my-cart_gratis{
+  color: #DD2200;
+}
+
+.p_cart{
+  margin: 0;
+}
+.my-cart_optionValue{
+  margin: 0;
+  line-height: 1.2;
+  font-size: 14px;
+  color: gray;
+}
+
+body.js-my-cart-open .my-container__cart {
+  flex: 0 0 300px;
+  display: block;
+  transition:opacity 0.15s ease-in-out
+}
+
+body.js-ajax-cart-request-in-progress .my-cart__items {
+  opacity: .5;
+}
+
+form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
+  opacity: .5;
+}
+
+/* Hides or shows the quantity bubble on the cart icon */
+body.js-ajax-cart-empty .icon-cart-header {
+  display: none !important;
+}
+
+body.js-ajax-cart-not-empty .icon-cart-header {
+  
+}
+
+.my-floating-cart { display: none; }
+
+/* Show the floating cart if the 'js-my-cart-open' CSS class exists */
+.js-my-cart-open .my-floating-cart { 
+  display: block; 
+}
+
+.my-cart_button{
+  margin-top: 20px;
+}
+
+/* Footer of cart */
+.footer_cart_wrapper{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfc;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -5px 10px #EEE;
+}
+
+.total_cart_wrapper, .versand_cart_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*.total_cart_wrapper{
+  border-top: 1px solid rgba(0,0,0,0.1);
+}*/
+
+@media only screen and (max-width: 450px){
+  #cart_slider{
+    width: 100%;
+  }
+}

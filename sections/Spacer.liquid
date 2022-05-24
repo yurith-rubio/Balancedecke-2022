@@ -1,0 +1,42 @@
+<div class="hidden-phone" style="height:{{ section.settings.spacer }}px"></div>
+<div class="hidden-tablet-and-up" style="height:{{ section.settings.spacer_mobile }}px"></div>
+
+{% schema %}
+{
+  "name": "Spacer",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "range",
+      "id": "spacer",
+	  "min": 0,
+	  "max": 150,
+	  "step": 10,
+      "label": "Space for Tablet and Desktop",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "spacer_mobile",
+	  "min": 0,
+	  "max": 150,
+	  "step": 10,
+      "label": "Space for Mobile",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Spacer",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

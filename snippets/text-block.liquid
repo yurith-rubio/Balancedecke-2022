@@ -35,14 +35,14 @@
     {% if link != blank and link_text != blank %}
       <a
         href="{{ link }}"
-        class="text-block__item text-block__button bttn bttn--secondary bttn--inline mt4"
+        class="text-block__item text-block__button bttn bttn--inline mt4"
         data-theme-editor-setting="section.{{ id }}.link_text"
       >
         {{ link_text }}
       </a>
 
     {% elsif show_placeholder_link %}
-      <a class="text-block__item text-block__button bttn bttn--secondary bttn--inline mt4">
+      <a class="text-block__item text-block__button bttn bttn--inline mt4">
         {{ link_text }}
       </a>
     {% endif %}

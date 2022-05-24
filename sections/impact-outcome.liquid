@@ -1,0 +1,90 @@
+<!-- impact-outcome.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'impact-outcome.css' | asset_url | stylesheet_tag }}
+
+<div class="icons-text-boxes">
+  <p class="SectionHeader__SubHeading Heading overline">{{ section.settings.subheading | escape }}</p>
+  <h2 class="SectionHeader__Heading type-heading-1">{{ section.settings.title | escape }}</h2>
+     
+<div class ="product-page-title-line"></div>
+	<div class="icons-text-boxes-sub">
+    	{% for block in section.blocks %}
+          <div class="icons-text-boxes-sub-col">
+            <p class="icons21_font_size margin-less-20">{{ block.settings.icon_span }}</p>
+            <h3 class="Heading type-heading-2 margin-bottom-0">{{ block.settings.title-icon }}</h3>
+            <div class="icons-text-boxes-sub-background">    
+               <div class="icons-text-boxes-sub-text">{{ block.settings.content }}</div>
+            </div>
+          </div>
+		{% endfor %}
+	</div>
+	{% if section.settings.button_label != blank %}
+		<div class="button_link_outcome"><a class="Button Button--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></div>
+  	{% endif %}
+</div>
+
+
+{% schema %}
+{
+  "name": "Impact Outcome",
+  "max_blocks": 4,
+  "settings": [
+	{
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading Section",
+		"default": "Subheading Example"
+    },
+	{
+        "type": "text",
+        "id": "title",
+        "label": "Title Section",
+		"default": "Title Section Example"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+    },
+    {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button"
+    }
+	],
+ "blocks": [
+        {
+            "type": "blocks_outcome",
+            "name": "Box block",
+            "settings": [
+                {
+                    "type": "html",
+                    "id": "icon_span",
+                    "label": "Icon Span Tag",
+                    "info": "Place here the ICOMOON span tag or tags"
+                },
+                {
+                    "type": "text",
+                    "id": "title-icon",
+                    "label": "Title Icon",
+                    "default": "Title Icon Example"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Content Block",
+                    "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+                }
+            ]
+        }
+    ],
+  "presets": [
+    {
+      "category": "Product Sections",
+      "name": "Impact Outcome",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

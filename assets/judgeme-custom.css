@@ -1,0 +1,50 @@
+.jdgm-widget .jdgm-temp-hidden, .jdgm-write-rev-link, .jdgm-rev-widg__sort-wrapper, .jdgm-branding-footer{
+  display: none !important;
+}
+.jdgm-all-reviews-widget, .jdgm-rev-widg, .jdgm-quest, .jdgm-rev{
+  border: unset !important;
+}
+.jdgm-rev-widg__title{
+  font-size: var(--font-size-heading-1);
+  line-height: var(--line-height-heading);
+  font-family: var(--font-heading),sans-serif;
+  font-weight: var(--font-heading-weight);
+  font-style: var(--font-heading-style);
+}
+#judgeme_product_reviews, .jdgm-all-reviews-widget{
+  max-width: 900px !important;
+  margin: auto !important;
+}
+
+.jdgm-rev-widg__header, .jdgm-rev-widg__summary{
+  text-align: center;
+  display: contents;
+}
+.jdgm-all-reviews__header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.jdgm-rev__content{
+  margin-left: 58px
+}
+.jdgm-star{
+  color: #FAC636 !important;
+}
+.jdgm-rev__author:before{
+  content: "Verifiziert";
+  display: inline-block;
+  color: #ffffff;
+  background-color: #3A3A3A;
+  padding: 3px 7px;
+  font-size: 11px;
+  line-height: 1;
+  vertical-align: middle;
+  margin-right: 4px;
+  top:-2px;
+  position: relative;
+  top: -1px
+}
+.jdgm-rev__icon:after, .jdgm-rev__buyer-badge{
+  display: none !important;
+}

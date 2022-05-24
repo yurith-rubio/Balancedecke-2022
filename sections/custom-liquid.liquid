@@ -1,5 +1,5 @@
-<div class="section section--bordered">
-{{ section.settings.custom_liquid }}
+<div class="{% if section.settings.paddings %}section{% endif %} section--bordered">
+	{{ section.settings.custom_liquid }}
 </div>
 
 {% schema %}
@@ -8,6 +8,12 @@
   "tag": "section",
   "class": "section-dynamic section-borderable",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "paddings",
+      "label": "Add spacing",
+	  "default": false
+    },
     {
       "type": "liquid",
       "id": "custom_liquid",

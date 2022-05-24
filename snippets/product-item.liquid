@@ -65,6 +65,9 @@
       {% endif %}
     </a>
 
+    {% comment %} Hid badges on featured collection - Yurith {% endcomment %}
+  
+    {% comment %}
     {% comment %} SALE BADGE {% endcomment %}
     {% if product.compare_at_price > product.price %}
       <div class="badge type-body-small ttu lh-title absolute top-0 right-0 mt3 mr3 bg-sale same-as-bg">
@@ -78,7 +81,7 @@
         {{ 'products.product.sold_out' | t }}
       </div>
     {% endunless %}
-
+	{% endcomment %}
   {% else %}
     <a
       href="{{ product.url | within: collection }}" 
@@ -95,6 +98,8 @@
     </a>
   {% endif %}
 
+  {% render 'item-information', product:product %}
+  
   <div class="product-item__details-wrapper relative">
     {% comment %} PRODUCT SWATCHES {% endcomment %}
     {% if swatches_enabled %}

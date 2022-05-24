@@ -1,4 +1,7 @@
 <style>
+  .custom-content-wrapper{
+    padding: 0 30px;
+  }
   .custom-content-wrapper--{{ section.id }} .custom-content__section-header  {
     color: {{ section.settings.heading_color }};
   }
@@ -10,7 +13,7 @@
   {% endif %}
 </style>
 
-<div class="custom-content-wrapper custom-content-wrapper--{{ section.id }} {% if section.settings.top_margin %}custom-content-wrapper--top-margin{% endif %} {% if section.settings.bottom_margin %}custom-content-wrapper--bottom-margin{% endif %} one-whole" data-section-id="{{ section.id }}" data-section-type="custom-content">
+<div class="border--top custom-content-wrapper custom-content-wrapper--{{ section.id }} {% if section.settings.top_margin %}custom-content-wrapper--top-margin{% endif %} {% if section.settings.bottom_margin %}custom-content-wrapper--bottom-margin{% endif %} one-whole" data-section-id="{{ section.id }}" data-section-type="custom-content">
   <div class="page-width">
     {% if section.settings.heading_text != blank %}
       <h2 class="custom-content__section-header text-center">{{ section.settings.heading_text | escape }}</h2>
@@ -76,7 +79,7 @@
                 </style>
 
 
-                <div class="text-{{ block.settings.align_text }}">
+                <div style="text-align:{{ block.settings.align_text }}">
                   {% if block.settings.heading_text != blank %}
                     <h2 class="custom__block-heading-text {{ block.settings.heading_style }}">{{ block.settings.heading_text | escape }}</h2>
                   {% endif %}
@@ -756,7 +759,7 @@
       "name": "Custom HTML",
       "settings": [
         {
-          "type": "html",
+          "type": "liquid",
           "id": "code",
           "label": "HTML",
           "default": "<div><p>Write your own custom HTML content.</p></div>"

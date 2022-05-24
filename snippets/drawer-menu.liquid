@@ -1,3 +1,4 @@
+{% comment %} changed the currency_visible to 'false' in both cases as the settings have a location that sets it on true but we do not want it - Yurith {% endcomment %}
 {% liquid
   assign links = linklists[menu].links
 
@@ -13,7 +14,7 @@
 
   assign currency_visible = false
   if localization.available_countries.size > 1
-    assign currency_visible = true
+    assign currency_visible = false
   endif
 
   assign logo_uppercase = settings.logo_uppercase

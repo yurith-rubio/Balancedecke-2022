@@ -248,14 +248,21 @@
                   class="quick-cart__trigger color-inherit js-cart-drawer-toggle"
                   aria-expanded="false"
                   aria-controls="cart-flyout-drawer"
+                  data-ajax-cart-toggle-class-button="js-my-cart-open"
+                  onclick="overlayOn()"
                   >
                   {%- if header_style_is_icon -%}
+                  
                     {% render 'icon-header-button' with icon: 'cart' %}
-                    <div class="quick-cart__icon-indicator js-cart-count{% unless cart.item_count > 0 %} hidden{% endunless %}">
-                      <span class="quick-cart__indicator-inner">
-                        {{ cart.item_count }}
-                      </span>
-                    </div>
+                    <div class="icon-cart-header quick-cart__icon-indicator" data-ajax-cart-bind-state="cart.item_count"></div>
+                    {% comment %}
+                      <div class=" js-cart-count{% unless cart.item_count > 0 %} hidden{% endunless %}">
+                        <span class="quick-cart__indicator-inner">
+                          <div class="icon-cart-header quick-cart__icon-indicator" data-ajax-cart-bind-state="cart.item_count"></div>
+
+                        </span>
+                      </div>
+                    {% endcomment %}
                   {%- else -%}
                     <div class="quick-cart__indicator js-cart-count">
                       <span class="quick-cart__indicator-inner{% if cart.item_count > 0 %} quick-cart--cart-has-item{% endif %}">

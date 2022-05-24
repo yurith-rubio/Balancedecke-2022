@@ -1,0 +1,9 @@
+{% assign featured_product1 = all_products['gravity-gewichtsdecke'] %}
+<a href="https://gravitydecke.de/pages/erfahrungsberichte">
+  <div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' 
+       data-id='{{ featured_product1.id }}'
+       data-template='{% if concierge_install == true or concierge_install == nil %}{{ template }}{% else %}manual-installation{% endif %}'
+       data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false{% endif %}'>
+       {{ featured_product1.metafields.judgeme.badge }}
+  </div>
+</a>

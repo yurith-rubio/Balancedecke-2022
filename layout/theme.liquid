@@ -31,10 +31,35 @@
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
   
   {% comment %} ICOMOON Link - Yurith {% endcomment %}
-  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/Gravity/style-cf.css?nhalcr">
+  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/Gravity/style-cf.css?eum63c">
   {% comment %} JQuery Library - Yurith {% endcomment %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  {% comment %} Styling for dynamic and static product info on Homepage - Yurith {% endcomment %}
+  {{ 'dynamic-static-product-info.css' | asset_url | stylesheet_tag }}
+  {% comment %}  Gift item styles - with slidecart styles - Yurith {% endcomment %}
+  {{ 'my-cart-styles.css' | asset_url | stylesheet_tag }}
+  {% comment %}  Add FREE GIFT to SLIDE CART code - Yurith {% endcomment %}
+  {% render 'my-cart-scripts', settings: settings %}
+  {% comment %} Commented it as we already had one library but left it for testing in case something does not work to change the library
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  {% endcomment %}
+  {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
+
+  <!-- Global site tag (gtag.js) - Google Ads: 773142135 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-773142135"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-773142135');
+  </script>
   
+  <!-- Google Site verification -->
+  <meta name="google-site-verification" content="6Pxn_nIqgjF9DFDx_ok77XLsxUtDUM1TEKgqbSkjuh8" />
+  <meta name="facebook-domain-verification" content="pgpurwrr2wa4wly4t2p43idc3dz9l6" />
 
   {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
@@ -68,18 +93,14 @@
   {% endif %}
 
   {% render 'social-meta-tags' %}
-
   {% render 'theme-setup' %}
   {% render 'theme-setting-vars' %}
   {{ 'theme.css' | asset_url | stylesheet_tag }}
   {% render 'theme-liquid-css-assets' %}
 
   {{ content_for_header }}
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
-  
+
+  {% if content_for_header contains 'rio.pwztag.com' %}{% render 'productwiz-rio', product: product, shop: shop, installGuard: true %}{% endif %}
 </head>
 
 <body
@@ -90,21 +111,34 @@
   "
   data-zoom-animation-enabled="{{ settings.enable_zoom_on_scroll }}"
 >
-  <header class="header-container">
-    {% section 'utility-bar' %}
-    {% section 'header' %}
-  </header>
-  {% render 'quick-add' %}
-  {% render 'header-overlay' %}
 
-  <div class="theme-editor-scroll-offset"></div>
-  <main id="main-content">{{ content_for_layout }}</main>
-  {% section 'popup' %}
-  {% section 'footer' %}
-  {% render 'cart-drawer' %}
-  {% render 'modal' %}
-  {% render 'store-availability-drawer' %}
-  {% render 'drawer-overlay' %}
+  {% comment %}  Theme modified to add our own SLIDE CART - I am not pulling the slide cart that comes as default with the theme - I did not want to comment all things to leave the theme cleaner, if we want to reuse the old slide cart we would have to check the original intact files for this theme - Yurith {% endcomment %}
+
+  <div class="my-container" data-drawer-push>
+    <div class="my-container__content">
+      <header class="header-container">
+        {% section 'utility-bar' %}
+        {% section 'header' %}
+      </header>
+      {% render 'quick-add' %}
+      {% render 'header-overlay' %}
+
+      <div class="theme-editor-scroll-offset"></div>
+      <main id="main-content">{{ content_for_layout }}</main>
+      {% section 'popup' %}
+      {% section 'footer' %}
+      {% comment %} Theme's added slide cart
+        {% render 'cart-drawer' %}
+      {% endcomment %}
+      {% section 'my-cart' %} 
+      {% render 'modal' %}
+      {% comment %}
+      {% render 'store-availability-drawer' %}
+      {% endcomment %}
+      {% render 'my-cart-overlay' %}
+      {% render 'drawer-overlay' %}
+    </div>
+  </div>
 
   <script>
     window.routes = {
@@ -149,68 +183,6 @@
   {% if useCustomEvents %}
     <script src="{{ 'custom-events.js' | asset_url }}" ></script>
   {% endif %}
-
-  
-  {% comment %}  Add FREE GIFT to slide cart code - Yurith {% endcomment %}
-  <script type="module">
-    import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
-  </script>
-  <script type="application/json" data-ajax-cart-configuration >
-    {
-      "addToCartCssClass": "js-my-cart-open"
-    }
-  </script>
-  
-  <script type="module">
-    import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
-
-  	subscribeToCartStateUpdate( state => {
-		const promoVariant = 39251415302282;
-        const promoSubtotal = 200000;
-        
-        // If cart state exists and there is no Ajax Cart API request in progress
-  		if ( state.status.cartStateSet && !state.status.requestInProgress ) {
-        	let currentSubtotal = state.cart.items_subtotal_price;
-            
-            // Find out if there is a product that was automatically added before
-    		const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
-      			return lineItem.properties?._autoadded === 'Yes' ;
-    		});
-                        
-            // If there is the automaticaly added product —
-    		// lets calculate the currentSubtotal without the product
-   			if ( autoAddedLineItem > -1 ) {
-      			currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
-    		}
-            
-            if ( currentSubtotal >= promoSubtotal ) {
-
-      			// If there is no a promoVariant product with an applied discount
-      			// lets add one with _autoadded property
-      			if ( autoAddedLineItem === -1 ) {
-        			cartRequestAdd({ 
-          				items: [{
-              				id: promoVariant,
-              				quantity: 1,
-              				properties: { "_autoadded": "Yes" }
-          				}]  
-        			});
-      			}
-    		} else {
-
-      			// If current cart subtotal is less than $100
-      			// and an autoadded product is still in the cart —
-      			// lets remove it
-      			if ( autoAddedLineItem > -1 ) {
-        			cartRequestChange({ 
-          				"line": autoAddedLineItem + 1,
-          				"quantity": 0
-        			});
-      			}
-    		}
-    	}
-     });
-  </script>
   
 </body>
 </html>

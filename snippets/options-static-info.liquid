@@ -1,21 +1,4 @@
-{% style %}
-  .static-info{
-	display: flex;
-	font-size: 14px;
-	color: #2E2E2E;
-    line-height: 1.2;
-    padding-bottom: 5px;
-	font-style: italic;
-  }
-  .static-info_icon{
-	padding-right: 5px;
-    position: relative;
-    top: 3px;
-	color: #FAC636;
-  }
-{% endstyle %}
-
-{% if option.name == 'Gewicht' %}
+{% if option.name == 'Gewicht' or option.name == 'Was entspricht ungefähr 10% Ihres Körpergewichts?' %}
   <div class="static-info">
     <span class="static-info_icon icon-info"></span> Das Deckengewicht sollte ungefähr 10% des Körpergewichtes ausmachen.
   </div>

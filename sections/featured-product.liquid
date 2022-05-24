@@ -3,7 +3,7 @@
   if section.settings.product != blank
     assign product = all_products[section.settings.product]
   endif
-
+  
   assign section_style = section.settings.section_style
   assign form_id = 'product_form_' | append: product.id | appened: '_' | append: section.id
   assign enable_video_looping = section.settings.enable_video_looping
@@ -150,11 +150,13 @@
 
             {%- when 'buy_buttons' -%}
               {%- if product != blank -%}
-                {%- unless has_quantity_selector -%}
-                  <div class="product__quantity-error hidden" data-quantity-error>
-                    {{ 'products.product.quantity_error' | t }}
-                  </div>
-                {%- endunless -%}
+        		{% comment %}
+                  {%- unless has_quantity_selector -%}
+                    <div class="product__quantity-error hidden" data-quantity-error>
+                      {{ 'products.product.quantity_error' | t }}
+                    </div>
+                  {%- endunless -%}
+        		{% endcomment %}
 
                 {% render 'product-buy-buttons' with
                   product: product,
@@ -286,10 +288,12 @@
           {%- endcase -%}
 
         {%- endfor -%}
-
+        
         {%- if product != blank -%}
           <a {{ block.shopify_attributes }} href="{{ product.url }}" class="product__link">{{ 'sections.featured_product.view_product' | t }}</a>
         {%- endif -%}
+        
+        {% render 'product_payment_methods' %}
 
         {% comment %}
           The quantity input needs to be on the page for the product form to submit.
@@ -789,7 +793,7 @@
         "name": "t:sections.featured_product.blocks.text.name",
         "settings" : [
           {
-            "type": "richtext",
+            "type": "liquid",
             "id": "text",
             "label": "t:sections.featured_product.blocks.text.settings.text.label",
             "default": "<p>Add some text to tell customers more about your product.</p>"

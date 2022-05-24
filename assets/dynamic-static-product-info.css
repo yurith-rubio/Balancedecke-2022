@@ -1,0 +1,42 @@
+/* Product static info - options-static-info.liquid */
+.static-info{
+  display: flex;
+  font-size: 14px;
+  color: #2E2E2E;
+  line-height: 1.2;
+  padding-bottom: 5px;
+  font-style: italic;
+}
+.static-info_icon{
+  padding-right: 5px;
+  position: relative;
+  top: 3px;
+  color: #2e2e2e;
+}
+
+/* Product dynamic metafields - options-dynamic-info.liquid */
+
+.dynamic-info-wrapper{
+  width: 100%;
+}
+.bezugsart-option, .weight-option, .set-bezugsart-option, .set-weight-option{
+	font-size: 14px;
+    color: #2E2E2E;
+    line-height: 1.2;
+    font-style: italic;
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    align-items: baseline;
+    padding: 10px 10px 10px 30px;
+    width: fit-content;
+    inline-size: fit-content;
+    background: #f1f1f1;
+	margin-top: 10px;
+}
+.bezugsart-option .icon-info, .weight-option .icon-info, .set-bezugsart-option .icon-info, .set-weight-option .icon-info{
+	padding-right: 5px;
+    position: relative;
+    top: 3px;
+    margin-left: -22px;
+}

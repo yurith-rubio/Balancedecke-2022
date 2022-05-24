@@ -1,3 +1,10 @@
+{% style %}
+  .featured-collection-row-bg{
+    background-color: var(--color-contrast-bg);
+    padding: 50px 0;
+  }
+{% endstyle %}
+
 {%- liquid
   assign id = section.id
 
@@ -41,7 +48,7 @@
 <section
   data-section-id="{{ id }}"
   data-section-type="featured-collection-row"
-  class="section featured-collection-row carousel{{ modifiers }}"
+  class="general-container-width section featured-collection-row carousel{{ modifiers }}"
   data-text-position={{ carousel_text_position }}
   data-text-alignment={{ carousel_text_alignment }}
 >
@@ -91,7 +98,7 @@
 {% schema %}
   {
     "name": "Featured collection row",
-    "class": "section-dynamic section-borderable",
+    "class": "section-dynamic section-borderable featured-collection-row-bg",
     "templates": ["404", "article", "blog", "cart", "collection", "list-collections", "customers/account", "customers/activate_account", "customers/addresses", "customers/login", "customers/order", "customers/register", "customers/reset_password", "gift_card", "index", "page", "product", "search"],
     "settings": [
       {

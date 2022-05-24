@@ -76,6 +76,7 @@
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.sale_price' | t }}</span>
     </dt>
     <dd>
+      <span>Ab </span>
       <span class="price-item price-item--sale accent">
         {%- if product.price_varies -%}
           {{ 'products.product.from_lowest_price_html' | t: lowest_price: money_price }}
