@@ -239,7 +239,7 @@
     "name": "t:settings_schema.fonts.name",
     "settings": [
       {
-        "type": "font_picker",
+        "type": "text",
         "id": "font_heading",
         "label": "t:settings_schema.fonts.settings.font_heading.label",
         "default": "electra_n7"
