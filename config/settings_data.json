@@ -1,14 +1,16 @@
 {
   "current": {
-    "color_accent": "#2e2e2e",
-    "color_text": "#3a3a3a",
+    "color_accent": "#440076",
+    "color_text": "#23211b",
     "color_bg": "#ffffff",
-    "color_button": "#fac636",
-    "color_button_text": "#3a3a3a",
-    "color_button_hover": "#3a3a3a",
-    "color_border": "#c1c1c1",
-    "color_input_text": "#8b8b8b",
-    "color_icon": "#b1b1b1",
+    "color_button": "#440076",
+    "color_button_text": "#ffffff",
+    "color_button_hover": "#d9be57",
+    "color_border": "#f2f0eb",
+    "color_input_text": "#440076",
+    "color_icon": "#440076",
+    "color_success": "#005c16",
+    "color_error": "#a9117e",
     "color_utility_bar_text": "#ffffff",
     "color_utility_bar_background": "#3a3a3a",
     "color_header_text": "#3a3a3a",
@@ -132,11 +134,9 @@
           "header_style": "icon-minimal",
           "nav_position": "inline_left",
           "dropdown_interaction": "mouseover",
-          "logo": "shopify:\/\/shop_images\/039fbf33-519c-4230-8a77-2f0ab1f11247.png",
           "logo_max_size": 90,
-          "menu": "main-menu-2022",
+          "menu": "",
           "transparent_index_header_enabled": true,
-          "transparent_logo": "shopify:\/\/shop_images\/gravity_logo_new-02_small_x40_2x_5c8e5d9d-1448-4da8-8d4f-ec7eed52c086.webp",
           "transparent_header_foreground_color": "#ffffff",
           "transparent_header_border_color": "#ffffff",
           "transparent_header_border_opacity": 10
@@ -148,7 +148,7 @@
           "acd84b82-6cd6-4caa-8ef4-da0123caada3": {
             "type": "link_list",
             "settings": {
-              "menu": "gravitydecke-de"
+              "menu": ""
             }
           },
           "1602015986783": {
