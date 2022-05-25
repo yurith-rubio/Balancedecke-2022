@@ -456,7 +456,7 @@ a:focus{
 .type-heading-1{
   font-size:var(--font-size-heading-1);
   line-height:var(--line-height-heading);
-  font-family:var(--font-heading), sans-serif;
+  font-family: Gotham Book, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style)
 }
@@ -470,7 +470,7 @@ a:focus{
 .type-heading-1-small{
   font-size:var(--font-size-heading-1-small);
   line-height:var(--line-height-heading-small);
-  font-family:var(--font-heading), sans-serif;
+  font-family:Gotham Book, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style);
 }
