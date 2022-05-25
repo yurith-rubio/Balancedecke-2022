@@ -487,7 +487,7 @@ a:focus{
 .type-heading-3{
   font-size:var(--font-size-heading-3);
   line-height:var(--line-height-heading);
-  font-family:var(--font-heading), sans-serif;
+  font-family:Gotham Book, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style);
 }
