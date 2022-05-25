@@ -443,7 +443,7 @@ a:focus{
 .type-heading-dynamic{
   font-size:46px;
   line-height:var(--line-height-heading-display);
-  font-family:var(--font-heading), sans-serif;
+  font-family:Gotham Book, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style)
 }
@@ -477,7 +477,7 @@ a:focus{
 .type-heading-2{
   font-size:var(--font-size-heading-2);
   line-height:var(--line-height-heading-2);
-  font-family:var(--font-heading), sans-serif;
+  font-family:Gotham Book, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style)
 }
