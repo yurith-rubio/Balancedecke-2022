@@ -64,7 +64,7 @@
   {{ settings.font_logo | font_face }}
   {{ settings.font_header | font_face }}
 
-  {{ settings.font_heading }}
+  {{ settings.font_heading | font_face }}
   {{ font_heading_bold | font_face }}
   {{ font_heading_italic | font_face }}
 
@@ -73,7 +73,7 @@
   {{ font_body_italic | font_face }}
   {{ font_body_bold_italic | font_face }}
 
-  {{ font_heading }}
+  {{ font_heading | font_face }}
   {{ font_body | font_face }}
 
   :root {
@@ -167,7 +167,7 @@
     --font-logo-weight: {{ settings.font_logo.weight }};
     --font-logo-style: {{ settings.font_logo.style }};
 
-    --font-heading: {{ settings.font_heading }};
+    --font-heading: Gotham Book, {{ settings.font_heading.fallback_families }};
     --font-heading-weight: bold;
     --font-heading-style: {{ settings.font_heading.style }};
     --font-heading-bold-weight: {{ font_heading_bold.weight | default: 'bold' }};
