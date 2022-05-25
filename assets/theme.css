@@ -443,7 +443,7 @@ a:focus{
 .type-heading-dynamic{
   font-size:46px;
   line-height:var(--line-height-heading-display);
-  font-family:Gotham Book, sans-serif;
+  font-family:Gotham Bold, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style)
 }
@@ -456,7 +456,7 @@ a:focus{
 .type-heading-1{
   font-size:var(--font-size-heading-1);
   line-height:var(--line-height-heading);
-  font-family: Gotham Book, sans-serif;
+  font-family: Gotham Bold, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style)
 }
@@ -470,14 +470,14 @@ a:focus{
 .type-heading-1-small{
   font-size:var(--font-size-heading-1-small);
   line-height:var(--line-height-heading-small);
-  font-family:Gotham Book, sans-serif;
+  font-family: Gotham Bold, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style);
 }
 .type-heading-2{
   font-size:var(--font-size-heading-2);
   line-height:var(--line-height-heading-2);
-  font-family:Gotham Book, sans-serif;
+  font-family: Gotham Bold, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style)
 }
@@ -487,7 +487,7 @@ a:focus{
 .type-heading-3{
   font-size:var(--font-size-heading-3);
   line-height:var(--line-height-heading);
-  font-family:Gotham Book, sans-serif;
+  font-family: Gotham Bold, sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style);
 }
@@ -16622,7 +16622,7 @@ a{
 
 /* Extra font added - Yurith */
 @font-face {
-  font-family: "Gotham Book";
+  font-family: "Gotham Bold";
   src: url('https://cdn.shopify.com/s/files/1/0327/7196/5066/files/GothamBold.woff?v=1653480860');
   src: url('https://cdn.shopify.com/s/files/1/0327/7196/5066/files/GothamBold.woff?v=1653480860') format('woff');
   font-weight: black;
