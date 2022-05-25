@@ -444,8 +444,6 @@ a:focus{
   font-size:46px;
   line-height:var(--line-height-heading-display);
   font-family:Gotham Bold, sans-serif;
-  font-weight:var(--font-heading-weight);
-  font-style:var(--font-heading-style)
 }
 @media (max-width: 38em){
 .type-heading-dynamic{
@@ -457,8 +455,6 @@ a:focus{
   font-size:var(--font-size-heading-1);
   line-height:var(--line-height-heading);
   font-family: Gotham Bold, sans-serif;
-  font-weight:var(--font-heading-weight);
-  font-style:var(--font-heading-style)
 }
 @media (max-width: 38em){
 .shopify-policy__container h1,
@@ -471,15 +467,11 @@ a:focus{
   font-size:var(--font-size-heading-1-small);
   line-height:var(--line-height-heading-small);
   font-family: Gotham Bold, sans-serif;
-  font-weight:var(--font-heading-weight);
-  font-style:var(--font-heading-style);
 }
 .type-heading-2{
   font-size:var(--font-size-heading-2);
   line-height:var(--line-height-heading-2);
   font-family: Gotham Bold, sans-serif;
-  font-weight:var(--font-heading-weight);
-  font-style:var(--font-heading-style)
 }
 .type-heading-2 > a{
     color:inherit;
@@ -488,8 +480,6 @@ a:focus{
   font-size:var(--font-size-heading-3);
   line-height:var(--line-height-heading);
   font-family: Gotham Bold, sans-serif;
-  font-weight:var(--font-heading-weight);
-  font-style:var(--font-heading-style);
 }
 .g-uppercase .type-heading-dynamic,
   .g-uppercase .type-heading-1,
