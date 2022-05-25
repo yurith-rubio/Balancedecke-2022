@@ -239,12 +239,6 @@
     "name": "t:settings_schema.fonts.name",
     "settings": [
       {
-        "type": "text",
-        "id": "font_heading",
-        "label": "t:settings_schema.fonts.settings.font_heading.label",
-        "default": "electra_n7"
-      },
-      {
         "type": "range",
         "id": "size_heading",
         "min": 22,
