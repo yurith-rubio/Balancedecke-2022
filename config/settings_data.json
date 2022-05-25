@@ -134,12 +134,14 @@
           "header_style": "icon-minimal",
           "nav_position": "inline_left",
           "dropdown_interaction": "mouseover",
-          "logo_max_size": 90,
+          "logo": "shopify:\/\/shop_images\/BD-logo.png",
+          "logo_max_size": 100,
           "menu": "",
           "transparent_index_header_enabled": true,
+          "transparent_logo": "shopify:\/\/shop_images\/BD-logo-negative.png",
           "transparent_header_foreground_color": "#ffffff",
           "transparent_header_border_color": "#ffffff",
-          "transparent_header_border_opacity": 10
+          "transparent_header_border_opacity": 0
         }
       },
       "footer": {
