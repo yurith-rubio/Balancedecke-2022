@@ -527,27 +527,27 @@ p a{
 }
 .rte h1, .h1{
     font-size:2.2em;
-    font-family:var(--font-heading);
+    font-family: Gotham Bold, sans-serif;
     font-weight:var(--font-heading-weight);
     font-style:var(--font-heading-style);
     line-height:var(--line-height-heading);
   }
 .rte h2, .h2{
     font-size:1.8em;
-    font-family:var(--font-heading);
+    font-family: Gotham Bold, sans-serif;
     font-weight:var(--font-heading-weight);
     font-style:var(--font-heading-style);
     line-height:var(--line-height-heading-2);
   }
 .rte h3, .h3{
     font-size:1.4em;
-    font-family:var(--font-heading);
+    font-family: Gotham Bold, sans-serif;
     font-weight:var(--font-heading-weight);
     font-style:var(--font-heading-style);
   }
 .rte h4, .h4{
     font-size:1.2em;
-    font-family:var(--font-heading);
+    font-family: Gotham Bold, sans-serif;
     font-weight:var(--font-heading-weight);
     font-style:var(--font-heading-style);
   }
