@@ -12015,7 +12015,7 @@ div[data-media-type='external_video'] iframe{
   justify-content:center;
   line-height:1.81em;
   background-color:var(--color-primary-button-bg);
-  color:var(--color-button_text);
+  color:var(--color-button-text);
   border:none;
   border-radius:var(--button-border-radius);
 
