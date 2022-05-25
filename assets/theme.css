@@ -16620,3 +16620,9 @@ a{
   }
 }
 
+@font-face {
+  font-family: "Eigerdals Bold";
+  src: url('https://cdn.shopify.com/s/files/1/0523/6192/0673/files/Eigerdals_W00_Bold.woff?v=1650064095');
+  src: url('https://cdn.shopify.com/s/files/1/0523/6192/0673/files/Eigerdals_W00_Bold.woff?v=1650064095') format('woff');
+  font-weight: black;
+}
