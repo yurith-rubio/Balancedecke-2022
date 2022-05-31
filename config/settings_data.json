@@ -131,13 +131,28 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "b193865b-3cbf-4bdc-b596-997db6718e9b": {
+            "type": "mega_nav",
+            "settings": {
+              "dropdown_parent_link": "",
+              "featured_image_heading": "",
+              "featured_image_link_text": "",
+              "featured_image_link": "",
+              "feature_text": "<p>Mention a new sale, product line, or blog post here. <a href=\"#\">Don't forget to add a link →<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "b193865b-3cbf-4bdc-b596-997db6718e9b"
+        ],
         "settings": {
           "header_style": "icon-minimal",
           "nav_position": "inline_left",
           "dropdown_interaction": "mouseover",
           "logo": "shopify:\/\/shop_images\/BD-logo.png",
           "logo_max_size": 100,
-          "menu": "",
+          "menu": "menu-2022",
           "transparent_index_header_enabled": true,
           "transparent_logo": "shopify:\/\/shop_images\/BD-logo-negative.png",
           "transparent_header_foreground_color": "#ffffff",
