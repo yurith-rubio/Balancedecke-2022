@@ -1,1 +1,71 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "display_type": "all",
+        "columns": 3,
+        "aspect_ratio": "natural",
+        "collection_title_alignment": "left",
+        "show_product_count": true
+      }
+    },
+    "165402647064d78b5f": {
+      "type": "collection-list-grid",
+      "blocks": {
+        "7a60f23c-10dd-4622-a816-81877a493a80": {
+          "type": "collection",
+          "settings": {
+            "collection": "balance-gewichtsdecke-fur-erwachsene"
+          }
+        },
+        "29834284-12d1-4e4c-a14c-76bdd46c9163": {
+          "type": "collection",
+          "settings": {
+            "collection": "balance-gewichtsdecke-fur-kinder"
+          }
+        },
+        "8eb89d48-a99a-48f1-8cb8-da29faa4c5ec": {
+          "type": "collection",
+          "settings": {
+            "collection": "balance-therapiekissen"
+          }
+        },
+        "4017165f-b912-44cd-a954-1090bb931c66": {
+          "type": "collection",
+          "settings": {
+            "collection": "balance-sparsets"
+          }
+        },
+        "0f64e376-9902-4cd3-847e-38bc733c5dbf": {
+          "type": "collection",
+          "settings": {
+            "collection": "balance-therapiedecke-ersatzbezuge"
+          }
+        }
+      },
+      "block_order": [
+        "7a60f23c-10dd-4622-a816-81877a493a80",
+        "29834284-12d1-4e4c-a14c-76bdd46c9163",
+        "8eb89d48-a99a-48f1-8cb8-da29faa4c5ec",
+        "4017165f-b912-44cd-a954-1090bb931c66",
+        "0f64e376-9902-4cd3-847e-38bc733c5dbf"
+      ],
+      "settings": {
+        "section_style": "default",
+        "columns": 3,
+        "aspect_ratio": "square",
+        "overline": "",
+        "title": "Unsere Kollektionen",
+        "subheading": "",
+        "heading_alignment": "center",
+        "text_max_width": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165402647064d78b5f"
+  ]
+}
