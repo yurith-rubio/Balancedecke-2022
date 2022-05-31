@@ -166,13 +166,13 @@
           "acd84b82-6cd6-4caa-8ef4-da0123caada3": {
             "type": "link_list",
             "settings": {
-              "menu": ""
+              "menu": "shop"
             }
           },
           "1602015986783": {
             "type": "link_list",
             "settings": {
-              "menu": "footer"
+              "menu": "informationen"
             }
           },
           "1602297933570": {
