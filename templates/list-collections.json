@@ -26,10 +26,10 @@
             "collection": "balance-gewichtsdecke-fur-kinder"
           }
         },
-        "8eb89d48-a99a-48f1-8cb8-da29faa4c5ec": {
+        "af29b681-2426-43b0-bfa7-25b094a5d37c": {
           "type": "collection",
           "settings": {
-            "collection": "balance-therapiekissen"
+            "collection": "balance-gewichtsdecke-ersatzbezuge"
           }
         },
         "4017165f-b912-44cd-a954-1090bb931c66": {
@@ -38,19 +38,19 @@
             "collection": "balance-sparsets"
           }
         },
-        "0f64e376-9902-4cd3-847e-38bc733c5dbf": {
+        "8eb89d48-a99a-48f1-8cb8-da29faa4c5ec": {
           "type": "collection",
           "settings": {
-            "collection": "balance-therapiedecke-ersatzbezuge"
+            "collection": "balance-therapiekissen"
           }
         }
       },
       "block_order": [
         "7a60f23c-10dd-4622-a816-81877a493a80",
         "29834284-12d1-4e4c-a14c-76bdd46c9163",
-        "8eb89d48-a99a-48f1-8cb8-da29faa4c5ec",
+        "af29b681-2426-43b0-bfa7-25b094a5d37c",
         "4017165f-b912-44cd-a954-1090bb931c66",
-        "0f64e376-9902-4cd3-847e-38bc733c5dbf"
+        "8eb89d48-a99a-48f1-8cb8-da29faa4c5ec"
       ],
       "settings": {
         "section_style": "default",
