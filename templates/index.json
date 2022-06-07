@@ -333,7 +333,7 @@
         "e6cdc1f4-982e-44a9-a653-14f22e1fdca9"
       ],
       "settings": {
-        "section_style": "contrast",
+        "section_style": "default",
         "main_bg": "transparent",
         "columns": 2,
         "overline": "",
