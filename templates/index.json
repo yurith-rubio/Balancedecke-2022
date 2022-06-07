@@ -7,8 +7,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/1-16.jpg",
             "focal_point": "left_bottom",
-            "mobile_focal_point": "right_top",
+            "mobile_focal_point": "center_center",
             "video_url": ""
           }
         }
