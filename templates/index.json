@@ -230,8 +230,48 @@
         "text_max_width": 36
       }
     },
+    "165460061763e21bc7": {
+      "type": "rich-text",
+      "blocks": {
+        "165460061722f3a094-0": {
+          "type": "overline",
+          "settings": {
+            "overline": ""
+          }
+        },
+        "165460061722f3a094-1": {
+          "type": "title",
+          "settings": {
+            "title": "Warum ist die Balance® Gewichtsdecke so besonders?",
+            "text_max_width": 50
+          }
+        },
+        "165460061722f3a094-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Die handgefertigte Balance Gewichtsdecke ist nicht nur eine hochwertig verarbeitete Decke, die gegen Stress, Angst und Schlafstörungen sowie bei psychophysischen Störungen wie ADHD, Down-Syndrom, Asperger-Syndrom oder Autismus helfen kann. Unsere Balance Decke folgt nämlich unserer neu entwickelten Gewichtsdecken-Technik, die es so bisher noch nicht gegeben hat.<\/p>\n<p>Mit dem patentierten Aufbau der Balance Decke kann der Bezug über Reißverschlüsse entfernt oder angebracht werden. Außerdem ergibt sich das Gewicht durch im Inneren angeklebte Edelstahlkügelchen (rostfrei), die in einem bestimmten Muster angebracht werden und so eine gleichmäßige Gewichtsverteilung garantieren.<\/p><p>\nVereint erschaffen beide Eigenschaften das ideale Gleichgewicht – <b>die Balance Gewichtsdecke<\/b>.\n<\/p>",
+            "text_max_width": 80
+          }
+        }
+      },
+      "block_order": [
+        "165460061722f3a094-0",
+        "165460061722f3a094-1",
+        "165460061722f3a094-2"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "alignment": "center"
+      }
+    },
+    "1652452390bee6e1a7": {
+      "type": "image-text-slider",
+      "settings": {
+      }
+    },
     "1651603791b59fab4d": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'slider-quote-logos' %}"
@@ -239,6 +279,7 @@
     },
     "1650852998ebd91b2a": {
       "type": "image-with-video",
+      "disabled": true,
       "blocks": {
         "16508529985fafcb83-1": {
           "type": "heading",
@@ -282,18 +323,15 @@
     },
     "165159607509277cef": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "<span id=\"gravity\"><\/span>"
       }
     },
-    "1652452390bee6e1a7": {
-      "type": "image-text-slider",
-      "settings": {
-      }
-    },
     "16502629331d2ca294": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'brand-intro-logos' %}"
@@ -358,7 +396,7 @@
         "d67fefdf-0af3-411d-8a3e-44bb5cd5150d"
       ],
       "settings": {
-        "product": "gravity-gewichtsdecke",
+        "product": "balance-gewichtsdecke",
         "section_style": "default",
         "image_size": "50",
         "enable_video_looping": false
@@ -553,10 +591,11 @@
     "1650599194732f77d0",
     "16502631901a60459b",
     "1654599369c3a18076",
+    "165460061763e21bc7",
+    "1652452390bee6e1a7",
     "1651603791b59fab4d",
     "1650852998ebd91b2a",
     "165159607509277cef",
-    "1652452390bee6e1a7",
     "16502629331d2ca294",
     "1650263212d53823fc",
     "165245753794e8a12a",
