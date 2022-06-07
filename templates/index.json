@@ -108,6 +108,49 @@
         "text_max_width": 36
       }
     },
+    "1650599194732f77d0": {
+      "type": "image-with-text",
+      "blocks": {
+        "165059919420ee3e1d-0": {
+          "type": "overline",
+          "disabled": true,
+          "settings": {
+            "overline": "Gravity Decke"
+          }
+        },
+        "165059919420ee3e1d-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was ist anders bei der Balance Gewichtsdecke?",
+            "text_max_width": 46
+          }
+        },
+        "165059919420ee3e1d-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<ul>\n<li><b>Kein Verrutschen und 100%ige Gewichtsverteilung<\/b> - durch neuartiges Design und patentierte Funktion<\/li>\n<li><b>Einfache Handhabung<\/b> - unkompliziertes Wechseln des Bezuges durch Reißverschlüsse<\/li>\n\n<\/ul>",
+            "text_max_width": 36
+          }
+        }
+      },
+      "block_order": [
+        "165059919420ee3e1d-0",
+        "165059919420ee3e1d-1",
+        "165059919420ee3e1d-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "video_url": "",
+        "image_width": "one-half",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000000"
+      }
+    },
     "1651603791b59fab4d": {
       "type": "custom-liquid",
       "settings": {
@@ -367,49 +410,6 @@
         "button_background_color": "#000000"
       }
     },
-    "1650599194732f77d0": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "165059919420ee3e1d-0": {
-          "type": "overline",
-          "settings": {
-            "overline": "Gravity Decke"
-          }
-        },
-        "165059919420ee3e1d-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Weitere Vorteile",
-            "text_max_width": 46
-          }
-        },
-        "165059919420ee3e1d-2": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<ul>\n<li>ADD und ADHS<\/li>\n<li>Asperger-Syndrom und Autismus<\/li>\n<li>Restless Legs Syndrom (RLS, Unruhige Beine), das auf Chemotherapie oder Menopause zurückzuführen ist<\/li>\n<li>Innerliche und körperliche Anspannung<\/li>\n<li>Sensorische Integrationsstörungen<\/li>\n<li>Bei Menschen über 65 Jahren oder älter konnten Symptome von z.B. Alzheimer oder Parkinson gemindert werden Demenz<\/li>\n<\/ul>",
-            "text_max_width": 36
-          }
-        }
-      },
-      "block_order": [
-        "165059919420ee3e1d-0",
-        "165059919420ee3e1d-1",
-        "165059919420ee3e1d-2"
-      ],
-      "settings": {
-        "section_style": "default",
-        "video_url": "",
-        "image_width": "one-half",
-        "aspect_ratio": "natural",
-        "focal_point": "center_center",
-        "image_position": "right",
-        "text_alignment": "left",
-        "text_color": "#000000",
-        "text_container_color": "",
-        "button_background_color": "#000000"
-      }
-    },
     "16515920240b709421": {
       "type": "custom-liquid",
       "settings": {
@@ -431,11 +431,54 @@
         "link_text": "",
         "text_max_width": 36
       }
+    },
+    "16545990042d4dcfe2": {
+      "type": "image-with-text",
+      "blocks": {
+        "1654599004f0725e53-0": {
+          "type": "overline",
+          "settings": {
+            "overline": "Image with text"
+          }
+        },
+        "1654599004f0725e53-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text section",
+            "text_max_width": 46
+          }
+        },
+        "1654599004f0725e53-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Use this section to showcase your editorial photography or images from your look book. This Section looks best with two or three sentences of text.<\/p>",
+            "text_max_width": 36
+          }
+        }
+      },
+      "block_order": [
+        "1654599004f0725e53-0",
+        "1654599004f0725e53-1",
+        "1654599004f0725e53-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "video_url": "",
+        "image_width": "two-third",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "left",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000"
+      }
     }
   },
   "order": [
     "slideshow_split_1",
     "16505782497c419352",
+    "1650599194732f77d0",
     "1651603791b59fab4d",
     "1650852998ebd91b2a",
     "16502631901a60459b",
@@ -448,8 +491,8 @@
     "165115686133991bab",
     "1650463024bd7d3973",
     "1650462048ca7b8b46",
-    "1650599194732f77d0",
     "16515920240b709421",
-    "16511568662682a6ab"
+    "16511568662682a6ab",
+    "16545990042d4dcfe2"
   ]
 }
