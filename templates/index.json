@@ -291,10 +291,10 @@
           "settings": {
             "icon_span": "",
             "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "image_max_width": 100,
-            "title": "Column two",
-            "subheading": "<p>Get into your process a bit. The quality of handiwork, proprietary knowledge, or materials that you use that make your products better.<\/p>",
-            "text_max_width": 36,
+            "image_max_width": 90,
+            "title": "Die Lösung für Stress",
+            "subheading": "<p>Das Gewicht lässt das Stresslevel sinken und gleichzeitig Glückshormone vermehrt ausschütten. Es entsteht ein harmonisches Gefühl der Geborgenheit und des Wohlbefindens. Bei stressigen Momenten ist dies eine erholsame Auszeit für Körper und Nervensystem.<\/p>",
+            "text_max_width": 25,
             "link": "",
             "link_text": "Read more"
           }
@@ -304,23 +304,10 @@
           "settings": {
             "icon_span": "",
             "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "image_max_width": 100,
-            "title": "Column three",
-            "subheading": "<p>End it with an action item that the user can take advantage of. Link to a more in-depth page, or go straight to a collection. Your call.<\/p>",
-            "text_max_width": 36,
-            "link": "",
-            "link_text": "Read more"
-          }
-        },
-        "e6cdc1f4-982e-44a9-a653-14f22e1fdca9": {
-          "type": "column",
-          "settings": {
-            "icon_span": "",
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "image_max_width": 100,
-            "title": "Column heading",
-            "subheading": "<p>Column text<\/p>",
-            "text_max_width": 36,
+            "image_max_width": 90,
+            "title": "Steigerung des Wohlbefindens",
+            "subheading": "<p>Die Balance Gewichtsdecke löst durch Auflegen auf den Körper einen Tiefendruck aus, der dem Gehirn das gleiche Gefühl signalisiert, das bei einer sanften Umarmung entsteht. Körper und Geist gelangen in Einklang und man fühlt sich unterstützt, gehalten und geliebt.<\/p>",
+            "text_max_width": 25,
             "link": "",
             "link_text": "Read more"
           }
@@ -329,20 +316,19 @@
       "block_order": [
         "16546011994659d974-0",
         "16546011994659d974-1",
-        "16546011994659d974-2",
-        "e6cdc1f4-982e-44a9-a653-14f22e1fdca9"
+        "16546011994659d974-2"
       ],
       "settings": {
-        "section_style": "default",
-        "main_bg": "transparent",
-        "columns": 2,
-        "overline": "",
+        "section_style": "contrast",
+        "main_bg": "#ffffff",
+        "columns": 3,
+        "overline": "Die Vorteile im Überblick",
         "title": "Die Wirkung der Balance Gewichtsdecke",
-        "subheading": "<p>Die Vorteile im Überblick<\/p>",
+        "subheading": "",
         "link": "",
         "link_text": "",
         "text_alignment": "center",
-        "text_max_width": 36
+        "text_max_width": 50
       }
     },
     "1651603791b59fab4d": {
