@@ -589,7 +589,7 @@
           "type": "heading",
           "settings": {
             "heading": "Das Konzept der Balance® Gewichtsdecke",
-            "text_max_width": 46
+            "text_max_width": 60
           }
         },
         "16508529985fafcb83-2": {
@@ -629,13 +629,6 @@
     "16546124839924c47b": {
       "type": "image-with-video",
       "blocks": {
-        "1654612483ec319bb2-0": {
-          "type": "overline",
-          "disabled": true,
-          "settings": {
-            "overline": "Image with text"
-          }
-        },
         "1654612483ec319bb2-1": {
           "type": "heading",
           "settings": {
@@ -647,7 +640,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p>Aufgrund eines patentierten Designs kann der Bezug der Balance Gewichtsdecke ganz einfach über Reißverschlüsse entfernt oder angebracht werden. Die Fixierung des Bezugs mit dem Inlett ist zu 100% gegeben, sodass auch bei viel Bewegung nichts verrutscht.\n<\/p>",
-            "text_max_width": 36
+            "text_max_width": 27
           }
         },
         "28bda295-552b-42f7-991c-e5b2ee822fd8": {
@@ -659,7 +652,6 @@
         }
       },
       "block_order": [
-        "1654612483ec319bb2-0",
         "1654612483ec319bb2-1",
         "1654612483ec319bb2-2",
         "28bda295-552b-42f7-991c-e5b2ee822fd8"
@@ -667,7 +659,7 @@
       "settings": {
         "section_style": "default",
         "video_url": "",
-        "image_width": "two-third",
+        "image_width": "one-half",
         "aspect_ratio": "natural",
         "focal_point": "center_center",
         "image_position": "left",
