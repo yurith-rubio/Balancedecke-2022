@@ -139,7 +139,7 @@
         "165059919420ee3e1d-2"
       ],
       "settings": {
-        "section_style": "full-height",
+        "section_style": "contrast",
         "image": "shopify:\/\/shop_images\/1-16.jpg",
         "video_url": "",
         "image_width": "two-third",
@@ -150,6 +150,84 @@
         "text_color": "#000000",
         "text_container_color": "",
         "button_background_color": "#000000"
+      }
+    },
+    "16502631901a60459b": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": true,
+        "custom_liquid": "{% render 'reviews-info' %}"
+      }
+    },
+    "1654599369c3a18076": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "165459936927acea59-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "28 Tage Probeschlafen ab Erhalt",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "165459936927acea59-1": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "Schneller Versand aus Deutschland",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "165459936927acea59-2": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "1 Jahr Herstellergarantie",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "c59ba4ff-b2b8-4365-8541-5dcfdf4bfa56": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "Ratenzahlung möglich",
+            "subheading": "",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "165459936927acea59-0",
+        "165459936927acea59-1",
+        "165459936927acea59-2",
+        "c59ba4ff-b2b8-4365-8541-5dcfdf4bfa56"
+      ],
+      "settings": {
+        "section_style": "default",
+        "main_bg": "transparent",
+        "columns": 4,
+        "overline": "",
+        "title": "",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "text_alignment": "center",
+        "text_max_width": 36
       }
     },
     "1651603791b59fab4d": {
@@ -200,13 +278,6 @@
         "text_color": "#3a3a3a",
         "text_container_color": "",
         "button_background_color": "#fac636"
-      }
-    },
-    "16502631901a60459b": {
-      "type": "custom-liquid",
-      "settings": {
-        "paddings": true,
-        "custom_liquid": "{% render 'reviews-info' %}"
       }
     },
     "165159607509277cef": {
@@ -480,9 +551,10 @@
     "slideshow_split_1",
     "16505782497c419352",
     "1650599194732f77d0",
+    "16502631901a60459b",
+    "1654599369c3a18076",
     "1651603791b59fab4d",
     "1650852998ebd91b2a",
-    "16502631901a60459b",
     "165159607509277cef",
     "1652452390bee6e1a7",
     "16502629331d2ca294",
