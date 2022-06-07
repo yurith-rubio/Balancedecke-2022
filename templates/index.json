@@ -6,8 +6,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Gravity_balance_cover.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/home_main_mobile.jpg",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
             "focal_point": "center_center",
             "mobile_focal_point": "center_center",
             "video_url": ""
@@ -280,7 +279,6 @@
       ],
       "settings": {
         "section_style": "default",
-        "image": "shopify:\/\/shop_images\/icons_side_57f7fa3d-b173-4eb3-ba94-e434bf94df7c.jpg",
         "video_url": "",
         "image_width": "two-third",
         "aspect_ratio": "natural",
@@ -323,8 +321,7 @@
       ],
       "settings": {
         "section_style": "default",
-        "alignment": "center",
-        "image_bg": "shopify:\/\/shop_images\/fabrication_home.jpg"
+        "alignment": "center"
       }
     },
     "1650462048ca7b8b46": {
@@ -358,7 +355,6 @@
       ],
       "settings": {
         "section_style": "contrast",
-        "image": "shopify:\/\/shop_images\/10_percent_scale.png",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
@@ -402,7 +398,6 @@
       ],
       "settings": {
         "section_style": "default",
-        "image": "shopify:\/\/shop_images\/Gravity_Gewichtsdecke_Slider_November_2020.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
