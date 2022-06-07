@@ -139,9 +139,10 @@
         "165059919420ee3e1d-2"
       ],
       "settings": {
-        "section_style": "default",
+        "section_style": "full-height",
+        "image": "shopify:\/\/shop_images\/1-16.jpg",
         "video_url": "",
-        "image_width": "one-half",
+        "image_width": "two-third",
         "aspect_ratio": "natural",
         "focal_point": "center_center",
         "image_position": "right",
