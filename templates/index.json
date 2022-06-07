@@ -417,6 +417,56 @@
         "custom_liquid": "{% render 'banner' %}"
       }
     },
+    "165460108212996868": {
+      "type": "icons-text-boxes",
+      "blocks": {
+        "4fd3f1cb-e427-4404-bb8d-4d0097bb1d8e": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Title Icon Example",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          }
+        },
+        "d3d75f8a-bd0e-4e92-a540-d097aee7383a": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Title Icon Example",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          }
+        },
+        "a6398a6d-00f4-4a01-8aec-9f48173f9ce2": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Title Icon Example",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          }
+        },
+        "fb8a7155-dec8-4264-89af-2d1ebb5979e1": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Title Icon Example",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          }
+        }
+      },
+      "block_order": [
+        "4fd3f1cb-e427-4404-bb8d-4d0097bb1d8e",
+        "d3d75f8a-bd0e-4e92-a540-d097aee7383a",
+        "a6398a6d-00f4-4a01-8aec-9f48173f9ce2",
+        "fb8a7155-dec8-4264-89af-2d1ebb5979e1"
+      ],
+      "settings": {
+        "icons_color": "#FAC636",
+        "subheading": "Subheading Example",
+        "title": "Title Section Example",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "1654600911f987480a": {
       "type": "mosaic-grid",
       "blocks": {
@@ -679,6 +729,81 @@
         "text_container_color": "",
         "button_background_color": "#000"
       }
+    },
+    "1654601200cc559961": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16546011994659d974-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image_max_width": 100,
+            "title": "Column one",
+            "subheading": "<p>Start here. Introduce your vision, or explain why what you do or sell is superior to your competitors.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16546011994659d974-1": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image_max_width": 100,
+            "title": "Column two",
+            "subheading": "<p>Get into your process a bit. The quality of handiwork, proprietary knowledge, or materials that you use that make your products better.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16546011994659d974-2": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image_max_width": 100,
+            "title": "Column three",
+            "subheading": "<p>End it with an action item that the user can take advantage of. Link to a more in-depth page, or go straight to a collection. Your call.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "e6cdc1f4-982e-44a9-a653-14f22e1fdca9": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image_max_width": 100,
+            "title": "Column heading",
+            "subheading": "<p>Column text<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "16546011994659d974-0",
+        "16546011994659d974-1",
+        "16546011994659d974-2",
+        "e6cdc1f4-982e-44a9-a653-14f22e1fdca9"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "main_bg": "transparent",
+        "columns": 2,
+        "overline": "",
+        "title": "",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "text_alignment": "center",
+        "text_max_width": 36
+      }
     }
   },
   "order": [
@@ -696,12 +821,14 @@
     "1650263212d53823fc",
     "165245753794e8a12a",
     "16511620865d7539df",
+    "165460108212996868",
     "1654600911f987480a",
     "165115686133991bab",
     "1650463024bd7d3973",
     "1650462048ca7b8b46",
     "16515920240b709421",
     "16511568662682a6ab",
-    "16545990042d4dcfe2"
+    "16545990042d4dcfe2",
+    "1654601200cc559961"
   ]
 }
