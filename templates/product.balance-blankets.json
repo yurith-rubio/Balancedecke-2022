@@ -1,0 +1,165 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_text_size": 28
+          }
+        },
+        "e41dd61f-6610-4e47-95f1-e907647031be": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "border": {
+          "type": "border",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": ""
+          }
+        },
+        "inventory_counter": {
+          "type": "inventory_counter",
+          "settings": {
+            "show_label": true,
+            "inventory_max": "100",
+            "low_inventory_threshold": "40"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_text_size": 22
+          }
+        },
+        "4278bb4e-888d-4bdd-b7e3-5836523392d4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "payment_feature_widget": {
+          "type": "payment_feature_widget",
+          "settings": {
+            "column": "left",
+            "show_payment_icons": true,
+            "title": "Zahlungsmethoden",
+            "text": "<p>Folgende Zahlungsmethoden stehen Ihnen bei Gravity Decke zur Verfügung. Sie haben auch die Möglichkeit auf Raten zu bezahlen.<\/p>",
+            "text_alignment": "left_top",
+            "heading_max_width": 40,
+            "text_max_width": 60,
+            "link_text": "Read more",
+            "link": "",
+            "background_color": "#f4f4f4",
+            "color_text": "#1b1b1b",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#1b1b1b"
+          }
+        },
+        "92f3b01e-1ae1-4658-9b21-ea0bf60f28af": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product_payment_methods' %}"
+          }
+        },
+        "526f42cc-297f-4fa0-8d69-1e691d6dafde": {
+          "type": "feature_widget",
+          "settings": {
+            "column": "left",
+            "feature_height": "content",
+            "aspect_ratio": "landscape",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "title": "Zertifizierte Gewichtsdecken",
+            "text": "<p>Die Gravity Gewichtsdecke ist ein offizielles medizinisches Hilfsmittel. Die aufgeführten Zertifikate bestätigen die Sicherheit und Wirksamkeit.<\/p>\n\n{% render 'certificate-icons-product-page' %}",
+            "text_position": "left_center",
+            "heading_max_width": 40,
+            "text_max_width": 60,
+            "link_text": "Read more",
+            "link": "",
+            "background_color": "#f4f4f4",
+            "color_text": "#1b1b1b",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#1b1b1b",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "e41dd61f-6610-4e47-95f1-e907647031be",
+        "border",
+        "variant_picker",
+        "inventory_counter",
+        "price",
+        "4278bb4e-888d-4bdd-b7e3-5836523392d4",
+        "buy_buttons",
+        "payment_feature_widget",
+        "92f3b01e-1ae1-4658-9b21-ea0bf60f28af",
+        "526f42cc-297f-4fa0-8d69-1e691d6dafde"
+      ],
+      "settings": {
+        "enable_full_width": true,
+        "image_size": "50",
+        "enable_thumbnails": true,
+        "thumbnail_position": "horizontal",
+        "thumbnail_size": "small",
+        "thumbnail_aspect_ratio": "square",
+        "enable_video_looping": true
+      }
+    },
+    "16502641772d80f71a": {
+      "type": "apps",
+      "blocks": {
+        "70004911-e47c-45ba-b160-eea0f1fbb4fc": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "70004911-e47c-45ba-b160-eea0f1fbb4fc"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "columns": 4,
+        "aspect_ratio": "square",
+        "overline": "",
+        "title": "Weitere Produkte",
+        "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen könnten.<\/p>",
+        "text_max_width": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16502641772d80f71a",
+    "recommendations"
+  ]
+}
