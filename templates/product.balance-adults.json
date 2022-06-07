@@ -43,7 +43,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "price_text_size": 16
+            "price_text_size": 24
           }
         },
         "buy_buttons": {
@@ -126,7 +126,6 @@
     },
     "1650264258930fa44c": {
       "type": "mosaic-grid",
-      "disabled": true,
       "blocks": {
         "1650264257d6ea0cfd-0": {
           "type": "medium_square",
@@ -161,6 +160,7 @@
         },
         "1650264257d6ea0cfd-2": {
           "type": "medium_vertical_rect",
+          "disabled": true,
           "settings": {
             "video_url": "",
             "media_fit": "cover",
@@ -183,6 +183,7 @@
         },
         "1650264257d6ea0cfd-3": {
           "type": "medium_horizontal_rect",
+          "disabled": true,
           "settings": {
             "video_url": "",
             "media_fit": "cover",
@@ -202,19 +203,29 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "46e65782-c456-4aff-b985-b005b17596a3": {
+          "type": "small_square",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "background_color": ""
+          }
         }
       },
       "block_order": [
         "1650264257d6ea0cfd-0",
         "1650264257d6ea0cfd-1",
         "1650264257d6ea0cfd-2",
-        "1650264257d6ea0cfd-3"
+        "1650264257d6ea0cfd-3",
+        "46e65782-c456-4aff-b985-b005b17596a3"
       ],
       "settings": {
-        "section_style": "default",
-        "title": "Mosaic grid",
-        "heading": "Mosaic Grid section",
-        "subheading": "<p>Perfect for lookbooks and editorial photography<\/p>",
+        "section_style": "contrast",
+        "title": "",
+        "heading": "",
+        "subheading": "",
         "heading_alignment": "center",
         "text_max_width": 42
       }
@@ -225,7 +236,7 @@
         "16502645913588bba6-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gravitydecke.de_gewichtsdecke_schwere_decke_schlafprobleme_stress_3_1.webp",
+            "icon_span": "",
             "image_max_width": 100,
             "title": "Besser schlafen",
             "subheading": "<p>Durch die tiefe Entspannung, die durch das Auflegen der Decke entsteht, gelingt es dem Körper schneller und länger in der Tiefschlafphase zu bleiben. Er schüttet das Schlafhormon Melatonin aus, sodass Sie friedlich einschlafen können.<\/p>",
@@ -237,7 +248,7 @@
         "16502645913588bba6-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gravitydecke.de_gewichtsdecke_schwere_decke_schlafprobleme_stress_1_1.webp",
+            "icon_span": "",
             "image_max_width": 100,
             "title": "Stressfreier Leben",
             "subheading": "<p>Durch das Auflegen der Decke auf den Körper entsteht ein angenehmes Gefühl von Geborgenheit und Wohlbefinden. Das Ergebnis ist ein euphorisches Gefühl der völligen Entspannung des Körpers und Nervensystems.<\/p>",
@@ -249,7 +260,7 @@
         "16502645913588bba6-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gravitydecke.de_gewichtsdecke_schwere_decke_schlafprobleme_stress_2_2.webp",
+            "icon_span": "",
             "image_max_width": 100,
             "title": "Liebevoll Umarmt",
             "subheading": "<p>Der Tiefendruck, der von dem Gewicht der Decke ausgeübt wird, signalisiert dem Gehirn das gleiche Gefühl, das bei einer liebevollen Umarmung entsteht. Man fühlt sich gehalten, geliebt und unterstützt.<\/p>",
