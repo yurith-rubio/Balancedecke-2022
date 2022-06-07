@@ -278,10 +278,10 @@
           "settings": {
             "icon_span": "",
             "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "image_max_width": 100,
-            "title": "Column one",
-            "subheading": "<p>Start here. Introduce your vision, or explain why what you do or sell is superior to your competitors.<\/p>",
-            "text_max_width": 36,
+            "image_max_width": 90,
+            "title": "Fördert besseren Schlaf",
+            "subheading": "<p>Das Gewicht der Balance Gewichtsdecke wirkt sich positiv auf den Schlaf aus, indem Tiefschlafphasen schneller erreicht werden können. Beim Auflegen der Decke entsteht ein angenehmer Druck, der den Körper entspannen lässt. Die Ausschüttung des Schlafhormons Melatonin wird durch das Gewicht begünstigt, sodass man schneller einschlafen und länger in der Tiefschlafphase verweilen kann.<\/p>",
+            "text_max_width": 25,
             "link": "",
             "link_text": "Read more"
           }
