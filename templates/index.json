@@ -266,7 +266,83 @@
     },
     "1652452390bee6e1a7": {
       "type": "image-text-slider",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "1654601200cc559961": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16546011994659d974-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image_max_width": 100,
+            "title": "Column one",
+            "subheading": "<p>Start here. Introduce your vision, or explain why what you do or sell is superior to your competitors.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16546011994659d974-1": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image_max_width": 100,
+            "title": "Column two",
+            "subheading": "<p>Get into your process a bit. The quality of handiwork, proprietary knowledge, or materials that you use that make your products better.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16546011994659d974-2": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image_max_width": 100,
+            "title": "Column three",
+            "subheading": "<p>End it with an action item that the user can take advantage of. Link to a more in-depth page, or go straight to a collection. Your call.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "e6cdc1f4-982e-44a9-a653-14f22e1fdca9": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image_max_width": 100,
+            "title": "Column heading",
+            "subheading": "<p>Column text<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "16546011994659d974-0",
+        "16546011994659d974-1",
+        "16546011994659d974-2",
+        "e6cdc1f4-982e-44a9-a653-14f22e1fdca9"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "main_bg": "transparent",
+        "columns": 2,
+        "overline": "",
+        "title": "Die Wirkung der Balance Gewichtsdecke",
+        "subheading": "<p>Die Vorteile im Überblick<\/p>",
+        "link": "",
+        "link_text": "",
+        "text_alignment": "center",
+        "text_max_width": 36
       }
     },
     "1651603791b59fab4d": {
@@ -404,6 +480,7 @@
     },
     "165245753794e8a12a": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'gravity-sets-section' %}"
@@ -729,81 +806,6 @@
         "text_container_color": "",
         "button_background_color": "#000"
       }
-    },
-    "1654601200cc559961": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "16546011994659d974-0": {
-          "type": "column",
-          "settings": {
-            "icon_span": "",
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "image_max_width": 100,
-            "title": "Column one",
-            "subheading": "<p>Start here. Introduce your vision, or explain why what you do or sell is superior to your competitors.<\/p>",
-            "text_max_width": 36,
-            "link": "",
-            "link_text": "Read more"
-          }
-        },
-        "16546011994659d974-1": {
-          "type": "column",
-          "settings": {
-            "icon_span": "",
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "image_max_width": 100,
-            "title": "Column two",
-            "subheading": "<p>Get into your process a bit. The quality of handiwork, proprietary knowledge, or materials that you use that make your products better.<\/p>",
-            "text_max_width": 36,
-            "link": "",
-            "link_text": "Read more"
-          }
-        },
-        "16546011994659d974-2": {
-          "type": "column",
-          "settings": {
-            "icon_span": "",
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "image_max_width": 100,
-            "title": "Column three",
-            "subheading": "<p>End it with an action item that the user can take advantage of. Link to a more in-depth page, or go straight to a collection. Your call.<\/p>",
-            "text_max_width": 36,
-            "link": "",
-            "link_text": "Read more"
-          }
-        },
-        "e6cdc1f4-982e-44a9-a653-14f22e1fdca9": {
-          "type": "column",
-          "settings": {
-            "icon_span": "",
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "image_max_width": 100,
-            "title": "Column heading",
-            "subheading": "<p>Column text<\/p>",
-            "text_max_width": 36,
-            "link": "",
-            "link_text": "Read more"
-          }
-        }
-      },
-      "block_order": [
-        "16546011994659d974-0",
-        "16546011994659d974-1",
-        "16546011994659d974-2",
-        "e6cdc1f4-982e-44a9-a653-14f22e1fdca9"
-      ],
-      "settings": {
-        "section_style": "contrast",
-        "main_bg": "transparent",
-        "columns": 2,
-        "overline": "",
-        "title": "",
-        "subheading": "",
-        "link": "",
-        "link_text": "",
-        "text_alignment": "center",
-        "text_max_width": 36
-      }
     }
   },
   "order": [
@@ -814,6 +816,7 @@
     "1654599369c3a18076",
     "165460061763e21bc7",
     "1652452390bee6e1a7",
+    "1654601200cc559961",
     "1651603791b59fab4d",
     "1650852998ebd91b2a",
     "165159607509277cef",
@@ -828,7 +831,6 @@
     "1650462048ca7b8b46",
     "16515920240b709421",
     "16511568662682a6ab",
-    "16545990042d4dcfe2",
-    "1654601200cc559961"
+    "16545990042d4dcfe2"
   ]
 }
