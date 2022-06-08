@@ -108,29 +108,6 @@
         "text_max_width": 36
       }
     },
-    "16546806394d40eace": {
-      "type": "icons-text-boxes",
-      "blocks": {
-        "d967793c-ab0e-4b0e-ade2-efd3049bfd6b": {
-          "type": "blocks_outcome",
-          "settings": {
-            "icon_span": "",
-            "title-icon": "Title Icon Example",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "d967793c-ab0e-4b0e-ade2-efd3049bfd6b"
-      ],
-      "settings": {
-        "icons_color": "#FAC636",
-        "subheading": "Subheading Example",
-        "title": "Title Section Example",
-        "button_label": "",
-        "button_link": ""
-      }
-    },
     "1650599194732f77d0": {
       "type": "image-with-text",
       "blocks": {
@@ -753,7 +730,6 @@
   "order": [
     "slideshow_split_1",
     "16505782497c419352",
-    "16546806394d40eace",
     "1650599194732f77d0",
     "16502631901a60459b",
     "1654599369c3a18076",
