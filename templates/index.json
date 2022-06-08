@@ -108,6 +108,29 @@
         "text_max_width": 36
       }
     },
+    "16546806394d40eace": {
+      "type": "icons-text-boxes",
+      "blocks": {
+        "d967793c-ab0e-4b0e-ade2-efd3049bfd6b": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Title Icon Example",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "d967793c-ab0e-4b0e-ade2-efd3049bfd6b"
+      ],
+      "settings": {
+        "icons_color": "#FAC636",
+        "subheading": "Subheading Example",
+        "title": "Title Section Example",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "1650599194732f77d0": {
       "type": "image-with-text",
       "blocks": {
@@ -219,7 +242,7 @@
       ],
       "settings": {
         "section_style": "default",
-        "main_bg": "transparent",
+        "main_bg": "rgba(0,0,0,0)",
         "columns": 4,
         "overline": "",
         "title": "",
@@ -479,7 +502,7 @@
         "fb8a7155-dec8-4264-89af-2d1ebb5979e1"
       ],
       "settings": {
-        "icons_color": "#FAC636",
+        "icons_color": "#fac636",
         "subheading": "Subheading Example",
         "title": "Title Section Example",
         "button_label": "",
@@ -516,9 +539,9 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_text_button": "#181818",
-            "color_background_button": "#FFFFFF",
+            "color_background_button": "#ffffff",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 0
           }
         },
@@ -539,9 +562,9 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_text_button": "#181818",
-            "color_background_button": "#FFFFFF",
+            "color_background_button": "#ffffff",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 0
           }
         },
@@ -666,7 +689,7 @@
         "text_alignment": "left",
         "text_color": "#000000",
         "text_container_color": "",
-        "button_background_color": "#000"
+        "button_background_color": "#000000"
       }
     },
     "1650463024bd7d3973": {
@@ -730,6 +753,7 @@
   "order": [
     "slideshow_split_1",
     "16505782497c419352",
+    "16546806394d40eace",
     "1650599194732f77d0",
     "16502631901a60459b",
     "1654599369c3a18076",
