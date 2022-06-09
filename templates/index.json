@@ -422,7 +422,6 @@
     },
     "165245753794e8a12a": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'gravity-sets-section' %}"
@@ -501,25 +500,25 @@
         },
         "1654600910560b9c27-2": {
           "type": "medium_vertical_rect",
-          "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/1-16.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
             "overline": "",
-            "title": "",
+            "title": "Einfache Handhabung durch Reißverschlüsse",
             "subheading": "",
-            "text_max_width": 24,
+            "text_max_width": 36,
             "link_text": "",
             "link": "",
-            "text_position": "center_center",
-            "background_color": "",
-            "color_text": "#ffffff",
+            "text_position": "center_bottom",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "#d9be57",
             "color_text_button": "#181818",
             "color_background_button": "#ffffff",
-            "color_text_container": "",
+            "color_text_container": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 39
           }
         },
         "1654600910560b9c27-3": {
