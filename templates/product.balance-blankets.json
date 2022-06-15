@@ -121,7 +121,7 @@
       ],
       "settings": {
         "enable_full_width": true,
-        "image_size": "50",
+        "image_size": "65",
         "enable_thumbnails": true,
         "thumbnail_position": "horizontal",
         "thumbnail_size": "small",
