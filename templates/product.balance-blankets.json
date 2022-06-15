@@ -129,6 +129,64 @@
         "enable_video_looping": true
       }
     },
+    "1655289361c9f7eb08": {
+      "type": "mosaic-grid",
+      "blocks": {
+        "16552893618495fa8c-0": {
+          "type": "medium_square",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "overline": "",
+            "title": "This is medium square block",
+            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
+            "text_max_width": 32,
+            "link_text": "",
+            "link": "",
+            "text_position": "center_center",
+            "background_color": "",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#FFFFFF",
+            "color_text_container": "",
+            "overlay_color": "#000",
+            "overlay_opacity": 60
+          }
+        },
+        "16552893618495fa8c-1": {
+          "type": "small_square",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "background_color": ""
+          }
+        },
+        "454ba1fc-acab-4bdd-a462-17b249781d21": {
+          "type": "small_square",
+          "settings": {
+            "video_url": "",
+            "media_fit": "cover",
+            "focal_point": "center_center",
+            "background_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "16552893618495fa8c-0",
+        "16552893618495fa8c-1",
+        "454ba1fc-acab-4bdd-a462-17b249781d21"
+      ],
+      "settings": {
+        "section_style": "contrast",
+        "title": "",
+        "heading": "",
+        "subheading": "",
+        "heading_alignment": "center",
+        "text_max_width": 42
+      }
+    },
     "16502641772d80f71a": {
       "type": "apps",
       "blocks": {
@@ -159,6 +217,7 @@
   },
   "order": [
     "main",
+    "1655289361c9f7eb08",
     "16502641772d80f71a",
     "recommendations"
   ]
