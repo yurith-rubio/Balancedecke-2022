@@ -7,7 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/1-16.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/2-2.jpg",
             "focal_point": "left_bottom",
             "mobile_focal_point": "center_center",
             "video_url": ""
@@ -96,7 +96,7 @@
         "50b12fa2-9be9-41b3-a2f5-225e6134b8c3"
       ],
       "settings": {
-        "section_style": "contrast",
+        "section_style": "default",
         "main_bg": "#440076",
         "columns": 5,
         "overline": "",
@@ -139,8 +139,8 @@
         "165059919420ee3e1d-2"
       ],
       "settings": {
-        "section_style": "contrast",
-        "image": "shopify:\/\/shop_images\/1-16.jpg",
+        "section_style": "default",
+        "image": "shopify:\/\/shop_images\/brand_comparison_Gravity_VS_Balance_1.jpg",
         "video_url": "",
         "image_width": "two-third",
         "aspect_ratio": "natural",
@@ -218,8 +218,8 @@
         "c59ba4ff-b2b8-4365-8541-5dcfdf4bfa56"
       ],
       "settings": {
-        "section_style": "default",
-        "main_bg": "rgba(0,0,0,0)",
+        "section_style": "contrast",
+        "main_bg": "#454236",
         "columns": 4,
         "overline": "",
         "title": "",
@@ -260,7 +260,7 @@
         "165460061722f3a094-2"
       ],
       "settings": {
-        "section_style": "contrast",
+        "section_style": "default",
         "alignment": "center"
       }
     },
@@ -320,7 +320,7 @@
       ],
       "settings": {
         "section_style": "contrast",
-        "main_bg": "#ffffff",
+        "main_bg": "#f2f0eb",
         "columns": 3,
         "overline": "Die Vorteile im Überblick",
         "title": "Die Wirkung der Balance Gewichtsdecke",
@@ -435,56 +435,6 @@
         "custom_liquid": "{% render 'banner' %}"
       }
     },
-    "165460108212996868": {
-      "type": "icons-text-boxes",
-      "blocks": {
-        "4fd3f1cb-e427-4404-bb8d-4d0097bb1d8e": {
-          "type": "blocks_outcome",
-          "settings": {
-            "icon_span": "",
-            "title-icon": "Title Icon Example",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-          }
-        },
-        "d3d75f8a-bd0e-4e92-a540-d097aee7383a": {
-          "type": "blocks_outcome",
-          "settings": {
-            "icon_span": "",
-            "title-icon": "Title Icon Example",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-          }
-        },
-        "a6398a6d-00f4-4a01-8aec-9f48173f9ce2": {
-          "type": "blocks_outcome",
-          "settings": {
-            "icon_span": "",
-            "title-icon": "Title Icon Example",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-          }
-        },
-        "fb8a7155-dec8-4264-89af-2d1ebb5979e1": {
-          "type": "blocks_outcome",
-          "settings": {
-            "icon_span": "",
-            "title-icon": "Title Icon Example",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-          }
-        }
-      },
-      "block_order": [
-        "4fd3f1cb-e427-4404-bb8d-4d0097bb1d8e",
-        "d3d75f8a-bd0e-4e92-a540-d097aee7383a",
-        "a6398a6d-00f4-4a01-8aec-9f48173f9ce2",
-        "fb8a7155-dec8-4264-89af-2d1ebb5979e1"
-      ],
-      "settings": {
-        "icons_color": "#fac636",
-        "subheading": "Subheading Example",
-        "title": "Title Section Example",
-        "button_label": "",
-        "button_link": ""
-      }
-    },
     "1654600911f987480a": {
       "type": "mosaic-grid",
       "blocks": {
@@ -496,29 +446,6 @@
             "media_fit": "cover",
             "focal_point": "center_center",
             "background_color": ""
-          }
-        },
-        "1654600910560b9c27-2": {
-          "type": "medium_vertical_rect",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
-            "video_url": "",
-            "media_fit": "cover",
-            "focal_point": "center_center",
-            "overline": "",
-            "title": "Handgefertigt in Europa",
-            "subheading": "",
-            "text_max_width": 36,
-            "link_text": "",
-            "link": "",
-            "text_position": "center_bottom",
-            "background_color": "#440076",
-            "color_text": "#f2f0eb",
-            "color_text_button": "#181818",
-            "color_background_button": "#ffffff",
-            "color_text_container": "#454236",
-            "overlay_color": "#454236",
-            "overlay_opacity": 40
           }
         },
         "1654600910560b9c27-3": {
@@ -567,13 +494,12 @@
       },
       "block_order": [
         "1654600910560b9c27-1",
-        "1654600910560b9c27-2",
         "1654600910560b9c27-3",
         "c2514a52-dc15-4622-a1ba-7d72f4f00585",
         "59ed43d9-e730-44a7-979d-d412ba11efc5"
       ],
       "settings": {
-        "section_style": "default",
+        "section_style": "contrast",
         "title": "",
         "heading": "",
         "subheading": "",
@@ -613,7 +539,7 @@
         "65a9a744-de08-4a3e-84ab-f8db7fa681cf"
       ],
       "settings": {
-        "section_style": "contrast",
+        "section_style": "default",
         "video_url": "https:\/\/vimeo.com\/386953516",
         "image_width": "one-half",
         "aspect_ratio": "natural",
@@ -656,9 +582,9 @@
         "28bda295-552b-42f7-991c-e5b2ee822fd8"
       ],
       "settings": {
-        "section_style": "default",
+        "section_style": "contrast",
         "video_url": "",
-        "image_width": "one-half",
+        "image_width": "two-third",
         "aspect_ratio": "natural",
         "focal_point": "center_center",
         "image_position": "left",
@@ -741,7 +667,6 @@
     "1650263212d53823fc",
     "165245753794e8a12a",
     "16511620865d7539df",
-    "165460108212996868",
     "1654600911f987480a",
     "1650852998ebd91b2a",
     "16546124839924c47b",
