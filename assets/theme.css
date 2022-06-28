@@ -9980,9 +9980,9 @@ div[data-media-type='external_video'] iframe{
   pointer-events:none
 }
 .quote__item.is-selected{
-    opacity:1;
-    pointer-events:all;
-  }
+  opacity:1;
+  pointer-events:all;
+}
 .quote__text{
   font-size:38px;
   line-height:1.3;
@@ -9991,10 +9991,13 @@ div[data-media-type='external_video'] iframe{
   font-style:var(--font-heading-style)
 }
 @media (max-width: 38em){
-.quote__text{
-    font-size:32px
-}
+  .quote__text{
+      font-size:32px
   }
+}
+.gallery__description{
+  
+}
 .gallery__slide.animates{
     opacity:0;
   }
