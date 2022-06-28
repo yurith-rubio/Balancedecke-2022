@@ -2,7 +2,7 @@
 
   {% assign alignment = ' text-block--' | append: heading_alignment %}
 
-  <div class="text-block general-container-width {{ modifiers }}{{ alignment }}" style="color:white">
+  <div class="text-block general-container-width {{ modifiers }}{{ alignment }}" style="color:{{ section.settings.text_color }}">
     {% unless overline == blank  %}
       <div
         class="text-block__item text-block__overline overline ma0"
