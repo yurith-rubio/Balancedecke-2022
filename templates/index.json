@@ -98,6 +98,7 @@
       "settings": {
         "section_style": "default",
         "main_bg": "#440076",
+        "text_color": "#ffffff",
         "columns": 5,
         "overline": "",
         "title": "Gut. Besser. Balance",
@@ -220,6 +221,7 @@
       "settings": {
         "section_style": "contrast",
         "main_bg": "#454236",
+        "text_color": "#5b5b5b",
         "columns": 4,
         "overline": "",
         "title": "",
@@ -321,6 +323,7 @@
       "settings": {
         "section_style": "contrast",
         "main_bg": "#f2f0eb",
+        "text_color": "#5b5b5b",
         "columns": 3,
         "overline": "Die Vorteile im Überblick",
         "title": "Die Wirkung der Balance Gewichtsdecke",
