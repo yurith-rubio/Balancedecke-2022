@@ -683,6 +683,13 @@
         "link_text": "",
         "text_max_width": 31
       }
+    },
+    "16564048821934929d": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}"
+      }
     }
   },
   "order": [
@@ -706,6 +713,7 @@
     "16546124839924c47b",
     "1650463024bd7d3973",
     "16515920240b709421",
-    "16511568662682a6ab"
+    "16511568662682a6ab",
+    "16564048821934929d"
   ]
 }
