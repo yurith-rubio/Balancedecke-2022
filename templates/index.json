@@ -168,6 +168,7 @@
     },
     "16502631901a60459b": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": true,
         "main_bg_color": "#ffffff",
