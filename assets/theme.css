@@ -377,6 +377,9 @@ html.supports-no-cookies .supports-cookies{
 .section--outline{
   border:1px solid var(--color-border);
 }
+.home-no-padding{
+  padding: 30px 0 80px;
+}
 .accent-link{
   color:var(--color-accent);
   text-decoration:underline;
