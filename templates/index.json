@@ -170,7 +170,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": true,
-        "main_bg_color": "#fff",
+        "main_bg_color": "#ffffff",
         "custom_liquid": "{% render 'reviews-info' %}"
       }
     },
@@ -179,7 +179,7 @@
       "settings": {
         "paddings": false,
         "main_bg_color": "#f5f3ee",
-        "custom_liquid": "{% style %}\n.rich-text__title{\n  padding-top: 40px !important;\n  margin-bottom: -20px !important;\n  text-align: center;\n}\n.jdgm-carousel-title-and-link{\n  display: none;\n}\n{% endstyle %}\n\n<h2 class=\"type-heading-1 rich-text__title\">Über 3.500+ positive Bewertungen<\/h2>\n\n{% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}"
+        "custom_liquid": "{% style %}\n.rich-text__title{\n  padding-top: 50px !important;\n!important;\n  text-align: center;\n}\n.jdgm-carousel-title-and-link{\n  display: none;\n}\n{% endstyle %}\n\n<h2 class=\"type-heading-1 rich-text__title\">Über 3.500+ positive Bewertungen<\/h2>\n\n{% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}"
       }
     },
     "1654599369c3a18076": {
@@ -361,7 +361,7 @@
       "disabled": true,
       "settings": {
         "paddings": false,
-        "main_bg_color": "#fff",
+        "main_bg_color": "#ffffff",
         "custom_liquid": "{% render 'slider-quote-logos' %}"
       }
     },
@@ -370,7 +370,7 @@
       "disabled": true,
       "settings": {
         "paddings": false,
-        "main_bg_color": "#fff",
+        "main_bg_color": "#ffffff",
         "custom_liquid": "<span id=\"gravity\"><\/span>"
       }
     },
@@ -379,7 +379,7 @@
       "disabled": true,
       "settings": {
         "paddings": false,
-        "main_bg_color": "#fff",
+        "main_bg_color": "#ffffff",
         "custom_liquid": "{% render 'brand-intro-logos' %}"
       }
     },
@@ -452,7 +452,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
-        "main_bg_color": "#fff",
+        "main_bg_color": "#ffffff",
         "custom_liquid": "{% render 'gravity-sets-section' %}"
       }
     },
@@ -461,7 +461,7 @@
       "disabled": true,
       "settings": {
         "paddings": true,
-        "main_bg_color": "#fff",
+        "main_bg_color": "#ffffff",
         "custom_liquid": "{% render 'banner' %}"
       }
     },
@@ -663,7 +663,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
-        "main_bg_color": "#fff",
+        "main_bg_color": "#ffffff",
         "custom_liquid": "<span id=\"gravity_set\"><\/span>"
       }
     },
