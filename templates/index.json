@@ -493,7 +493,7 @@
         "10cc9472-804d-4669-ab2e-99ab3edfbd5a"
       ],
       "settings": {
-        "section_style": "default",
+        "section_style": "contrast",
         "text_position": "top_center",
         "columns": 3,
         "aspect_ratio": "natural",
