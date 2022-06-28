@@ -75,6 +75,16 @@
           {% endif %}
 
             {% if block.settings.image != blank %}
+              
+              {% unless block.settings.description == blank %}
+                <div
+                  class="gallery__description type-body-regular mt3 mb0"
+                  data-theme-editor-setting="section.{{ id }}.block.{{ block.id }}.description"
+                >
+                  {{ block.settings.description }}
+                </div>
+              {% endunless %}
+              
               {% render 'image' with
                 image: block.settings.image
               %}
@@ -88,14 +98,7 @@
             </div>
           {% endif %}
 
-          {% unless block.settings.description == blank %}
-            <div
-              class="gallery__description type-body-regular mt3 mb0"
-              data-theme-editor-setting="section.{{ id }}.block.{{ block.id }}.description"
-            >
-              {{ block.settings.description }}
-            </div>
-          {% endunless %}
+
         </div>
       {%- endfor -%}
     {% else %}
