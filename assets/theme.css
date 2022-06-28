@@ -8891,7 +8891,8 @@ div[data-media-type='external_video'] iframe{
     .image-with-text__text-container{
       display:flex;
       align-items:center;
-      padding-left:var(--spacing-extra-large)
+      padding-left:var(--spacing-extra-large);
+      padding-right:var(--spacing-extra-large);
   }
     }
 @media (min-width: 60em){
