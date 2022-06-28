@@ -48,3 +48,6 @@
 .jdgm-rev__icon:after, .jdgm-rev__buyer-badge{
   display: none !important;
 }
+.jdgm-rev__icon{
+  background: #fac6371c;
+}
