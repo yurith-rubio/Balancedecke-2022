@@ -9999,11 +9999,11 @@ div[data-media-type='external_video'] iframe{
   
 }
 .gallery__slide.animates{
-    opacity:0;
-  }
+  opacity:0;
+}
 .no-js .gallery__slide.animates{
-      opacity:1;
-    }
+  opacity:1;
+}
 .gallery--square .gallery__image, .gallery--landscape .gallery__image, .gallery--portrait .gallery__image{
     overflow:hidden;
   }
