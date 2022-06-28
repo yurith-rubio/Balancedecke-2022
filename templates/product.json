@@ -214,10 +214,10 @@
       "settings": {
         "section_style": "default",
         "main_bg": "#440076",
-        "text_color": "#5b5b5b",
+        "text_color": "#ffffff",
         "columns": 5,
-        "overline": "GUT. BESSER. BALANCE",
-        "title": "",
+        "overline": "",
+        "title": "GUT. BESSER. BALANCE",
         "subheading": "",
         "link": "",
         "link_text": "",
