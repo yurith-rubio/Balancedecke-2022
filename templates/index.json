@@ -459,8 +459,55 @@
         "custom_liquid": "{% render 'banner' %}"
       }
     },
+    "1656430803be4299e1": {
+      "type": "gallery",
+      "blocks": {
+        "e6d1642b-b2d2-46bf-96d1-ee17d2ae5fa7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Einfache_Handhabung_durch_Reissverschlusse.jpg",
+            "description": "Einfache Handhabung durch reißverschlüsse",
+            "link": ""
+          }
+        },
+        "71b649df-3832-4de5-816d-5ddd901ed98c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Handgefertigt_in_Europa.jpg",
+            "description": "Handgefertigt in Europa",
+            "link": ""
+          }
+        },
+        "10cc9472-804d-4669-ab2e-99ab3edfbd5a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Optimale_Gewichtsverteilung.jpg",
+            "description": "Optimale Gewichtsverteilung",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "e6d1642b-b2d2-46bf-96d1-ee17d2ae5fa7",
+        "71b649df-3832-4de5-816d-5ddd901ed98c",
+        "10cc9472-804d-4669-ab2e-99ab3edfbd5a"
+      ],
+      "settings": {
+        "section_style": "default",
+        "text_position": "top_center",
+        "columns": 3,
+        "aspect_ratio": "natural",
+        "overline": "",
+        "title": "",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "text_max_width": 36
+      }
+    },
     "1654600911f987480a": {
       "type": "mosaic-grid",
+      "disabled": true,
       "blocks": {
         "1654600910560b9c27-1": {
           "type": "small_square",
@@ -616,7 +663,7 @@
         "text_alignment": "left",
         "text_color": "#000000",
         "text_container_color": "",
-        "button_background_color": "#000"
+        "button_background_color": "#000000"
       }
     },
     "16546124839924c47b": {
@@ -739,6 +786,7 @@
     "1650263212d53823fc",
     "165245753794e8a12a",
     "16511620865d7539df",
+    "1656430803be4299e1",
     "1654600911f987480a",
     "1650852998ebd91b2a",
     "1656422591ead41064",
