@@ -129,17 +129,6 @@
         "enable_video_looping": true
       }
     },
-    "recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "columns": 4,
-        "aspect_ratio": "square",
-        "overline": "",
-        "title": "Weitere Produkte",
-        "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen könnten.<\/p>",
-        "text_max_width": 32
-      }
-    },
     "1656413372b344187d": {
       "type": "text-columns-with-images",
       "blocks": {
@@ -224,11 +213,22 @@
         "text_alignment": "center",
         "text_max_width": 36
       }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "columns": 4,
+        "aspect_ratio": "square",
+        "overline": "",
+        "title": "Weitere Produkte",
+        "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen könnten.<\/p>",
+        "text_max_width": 32
+      }
     }
   },
   "order": [
     "main",
-    "recommendations",
-    "1656413372b344187d"
+    "1656413372b344187d",
+    "recommendations"
   ]
 }
