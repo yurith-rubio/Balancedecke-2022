@@ -170,6 +170,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": true,
+        "main_bg_color": "#fff",
         "custom_liquid": "{% render 'reviews-info' %}"
       }
     },
@@ -177,7 +178,8 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
-        "custom_liquid": "{% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}"
+        "main_bg_color": "#f5f3ee",
+        "custom_liquid": "{% style %}\n.reviews-info-about{\n  font-size: 20px;\n  margin: auto;\n  text-align: center;\n}\n{% endstyle %}\n\n<h2 class=\"type-heading-1 rich-text__title\">Über 3.500+ positive Bewertungen<\/h2>\n\n{% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}"
       }
     },
     "1654599369c3a18076": {
@@ -359,6 +361,7 @@
       "disabled": true,
       "settings": {
         "paddings": false,
+        "main_bg_color": "#fff",
         "custom_liquid": "{% render 'slider-quote-logos' %}"
       }
     },
@@ -367,6 +370,7 @@
       "disabled": true,
       "settings": {
         "paddings": false,
+        "main_bg_color": "#fff",
         "custom_liquid": "<span id=\"gravity\"><\/span>"
       }
     },
@@ -375,6 +379,7 @@
       "disabled": true,
       "settings": {
         "paddings": false,
+        "main_bg_color": "#fff",
         "custom_liquid": "{% render 'brand-intro-logos' %}"
       }
     },
@@ -447,6 +452,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
+        "main_bg_color": "#fff",
         "custom_liquid": "{% render 'gravity-sets-section' %}"
       }
     },
@@ -455,6 +461,7 @@
       "disabled": true,
       "settings": {
         "paddings": true,
+        "main_bg_color": "#fff",
         "custom_liquid": "{% render 'banner' %}"
       }
     },
@@ -656,6 +663,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
+        "main_bg_color": "#fff",
         "custom_liquid": "<span id=\"gravity_set\"><\/span>"
       }
     },
