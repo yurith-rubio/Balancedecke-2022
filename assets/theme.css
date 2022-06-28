@@ -535,13 +535,13 @@ p a{
     font-style:var(--font-heading-style);
     line-height:var(--line-height-heading);
   }
-.rte h2, .h2, .jdgm-rev-widg__title{
-  font-size:1.8em !important;
-  font-family: Gotham Bold, sans-serif !important;
-  font-weight:var(--font-heading-weight) !important;
-  font-style:var(--font-heading-style) !important;
-  line-height:var(--line-height-heading-2) !important;
-}
+.rte h2, .h2{
+    font-size:1.8em;
+    font-family: Gotham Bold, sans-serif;
+    font-weight:var(--font-heading-weight);
+    font-style:var(--font-heading-style);
+    line-height:var(--line-height-heading-2);
+  }
 .rte h3, .h3{
     font-size:1.4em;
     font-family: Gotham Bold, sans-serif;
@@ -10004,7 +10004,7 @@ div[data-media-type='external_video'] iframe{
   background-color: #D9BE57;
   color: white;
   top: -140px;
-  margin: 20px 20px -140px 20px;
+  margin: 20px;
   padding: 10px 20px;
   max-height: 100px;
   min-height: 100px;
@@ -11654,7 +11654,7 @@ div[data-media-type='external_video'] iframe{
     box-shadow:0 0 0 1px var(--color-text);
   }
 .product-form__color-swatch.selected{
-    box-shadow:0 0 0 3px #FAC636;
+    box-shadow:0 0 0 3px #d9be57;
   }
 .product-form__chip-selected{
   width:100%;
