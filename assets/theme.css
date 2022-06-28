@@ -536,12 +536,12 @@ p a{
     line-height:var(--line-height-heading);
   }
 .rte h2, .h2, .jdgm-rev-widg__title{
-    font-size:1.8em;
-    font-family: Gotham Bold, sans-serif;
-    font-weight:var(--font-heading-weight);
-    font-style:var(--font-heading-style);
-    line-height:var(--line-height-heading-2);
-  }
+  font-size:1.8em !important;
+  font-family: Gotham Bold, sans-serif !important;
+  font-weight:var(--font-heading-weight) !important;
+  font-style:var(--font-heading-style) !important;
+  line-height:var(--line-height-heading-2) !important;
+}
 .rte h3, .h3{
     font-size:1.4em;
     font-family: Gotham Bold, sans-serif;
