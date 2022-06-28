@@ -76,6 +76,10 @@
 
             {% if block.settings.image != blank %}
               
+              {% render 'image' with
+                image: block.settings.image
+              %}
+              
               {% unless block.settings.description == blank %}
                 <div
                   class="gallery__description type-body-regular mt3 mb0"
@@ -85,9 +89,6 @@
                 </div>
               {% endunless %}
               
-              {% render 'image' with
-                image: block.settings.image
-              %}
             {% else %}
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
             {% endif %}
