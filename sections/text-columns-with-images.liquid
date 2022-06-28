@@ -62,7 +62,7 @@
 
   <div class="general-container-width text-columns__content grid-display grid-display--{{ item_width }}">
     {% for block in blocks %}
-      <div class="text-block text-columns__feature animates">
+      <div class="text-block text-columns__feature animates" style="color:white">
         {%- if block.settings.image != blank or block.settings.icon_span != blank -%}
           {%- if block.settings.icon_span != blank %}
             {{ block.settings.icon_span }}
