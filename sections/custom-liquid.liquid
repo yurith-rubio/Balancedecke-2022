@@ -1,6 +1,7 @@
-
-<div class="{% if section.settings.paddings %}section{% endif %} section--bordered">
-	{{ section.settings.custom_liquid }}
+<div style="background-color:{{ section.settings.main_bg }}">
+  <div class="{% if section.settings.paddings %}section{% endif %} section--bordered">
+      {{ section.settings.custom_liquid }}
+  </div>
 </div>
 
 {% schema %}
