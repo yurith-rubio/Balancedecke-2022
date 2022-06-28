@@ -1,4 +1,4 @@
-<div style="background-color:{{ section.settings.main_bg }}">
+<div style="background-color:{{ section.settings.main_bg_color }}">
   <div class="{% if section.settings.paddings %}section{% endif %} section--bordered">
       {{ section.settings.custom_liquid }}
   </div>
@@ -15,6 +15,12 @@
       "id": "paddings",
       "label": "Add spacing",
 	  "default": false
+    },
+    {
+      "type": "color",
+      "id": "main_bg_color",
+      "label": "Main background color",
+	  "default": "#fff"
     },
     {
       "type": "liquid",
