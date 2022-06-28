@@ -265,9 +265,9 @@
       ],
       "settings": {
         "section_style": "default",
-        "title": "Mosaic grid",
-        "heading": "Mosaic Grid section",
-        "subheading": "<p>Perfect for lookbooks and editorial photography<\/p>",
+        "title": "",
+        "heading": "",
+        "subheading": "",
         "heading_alignment": "center",
         "text_max_width": 42
       }
