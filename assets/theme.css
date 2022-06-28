@@ -10007,6 +10007,8 @@ div[data-media-type='external_video'] iframe{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .gallery__slide.animates{
   opacity:0;
