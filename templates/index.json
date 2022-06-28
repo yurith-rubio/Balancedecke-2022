@@ -289,6 +289,35 @@
         "alignment": "center"
       }
     },
+    "16564219193f9630dc": {
+      "type": "custom-content",
+      "blocks": {
+        "16564219197e79ef8c-0": {
+          "type": "text",
+          "settings": {
+            "heading_text": "Warum ist die Balance® Gewichtsdecke so besonders?",
+            "heading_color": "#3a3a3a",
+            "heading_style": "h2",
+            "paragraph_text": "<p>Die handgefertigte Balance Gewichtsdecke ist nicht nur eine hochwertig verarbeitete Decke, die gegen Stress, Angst und Schlafstörungen sowie bei psychophysischen Störungen wie ADHD, Down-Syndrom, Asperger-Syndrom oder Autismus helfen kann. Unsere Balance Decke folgt nämlich unserer neu entwickelten Gewichtsdecken-Technik, die es so bisher noch nicht gegeben hat.<\/p><p>Mit dem patentierten Aufbau der Balance Decke kann der Bezug über Reißverschlüsse entfernt oder angebracht werden. Außerdem ergibt sich das Gewicht durch im Inneren angeklebte Edelstahlkügelchen (rostfrei), die in einem bestimmten Muster angebracht werden und so eine gleichmäßige Gewichtsverteilung garantieren.<br\/><br\/>Vereint erschaffen beide Eigenschaften das ideale Gleichgewicht – <strong>die Balance Gewichtsdecke<\/strong>.<\/p>",
+            "paragraph_color": "#4a4a4a",
+            "paragraph_size": "1",
+            "width": "25%",
+            "alignment": "center",
+            "align_text": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16564219197e79ef8c-0"
+      ],
+      "settings": {
+        "heading_text": "",
+        "heading_color": "#3a3a3a",
+        "background_color": "",
+        "top_margin": true,
+        "bottom_margin": true
+      }
+    },
     "1652452390bee6e1a7": {
       "type": "image-text-slider",
       "disabled": true,
@@ -693,6 +722,7 @@
     "16564048821934929d",
     "1654599369c3a18076",
     "165460061763e21bc7",
+    "16564219193f9630dc",
     "1652452390bee6e1a7",
     "1654601200cc559961",
     "1651603791b59fab4d",
