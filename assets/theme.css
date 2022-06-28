@@ -535,7 +535,7 @@ p a{
     font-style:var(--font-heading-style);
     line-height:var(--line-height-heading);
   }
-.rte h2, .h2{
+.rte h2, .h2, .jdgm-rev-widg__title{
     font-size:1.8em;
     font-family: Gotham Bold, sans-serif;
     font-weight:var(--font-heading-weight);
