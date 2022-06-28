@@ -177,7 +177,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
-        "custom_liquid": "{% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}"
+        "custom_liquid": "{}"
       }
     },
     "1654599369c3a18076": {
