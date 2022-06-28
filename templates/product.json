@@ -397,8 +397,24 @@
         "aspect_ratio": "square",
         "overline": "",
         "title": "Weitere Produkte",
-        "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen könnten.<\/p>",
+        "subheading": "<p>Weitere Balance Produkte, die Ihnen gefallen können<\/p>",
         "text_max_width": 32
+      }
+    },
+    "16564270664cfd2655": {
+      "type": "featured-collection-row",
+      "disabled": true,
+      "settings": {
+        "section_style": "default",
+        "text_position": "left",
+        "collection": "",
+        "columns": 3,
+        "aspect_ratio": "natural",
+        "overline": "Collection",
+        "title": "Weitere Produkte",
+        "subheading": "<p>Add a subheading to provide more details about this collection.<\/p>",
+        "link_text": "Shop now",
+        "text_max_width": 36
       }
     }
   },
@@ -408,6 +424,7 @@
     "16564199245b45b99d",
     "165641405039a8714f",
     "165642035901eec4dc",
-    "recommendations"
+    "recommendations",
+    "16564270664cfd2655"
   ]
 }

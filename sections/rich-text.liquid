@@ -12,6 +12,9 @@
 
 {% unless section_style == 'contrast' %}
   {% assign modifiers = modifiers | append: ' section--bordered' %}
+{% if template.name == "index" %}
+ {% assign modifiers = modifiers | append: ' no-padding' %}
+{% endif %}
 {% endunless %}
 
 {% assign image = section.settings.image_bg  %}
