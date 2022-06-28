@@ -8843,7 +8843,6 @@ div[data-media-type='external_video'] iframe{
   }
 .image-with-text__text-container{
   width:100%;
-  justify-content: center;
 }
 @media (min-width: 60em){
 
@@ -8911,7 +8910,7 @@ div[data-media-type='external_video'] iframe{
   }
     }
 .image-with-text--text-alignment-left .image-with-text__text-container{
-    justify-content:flex-start;
+    justify-content:center;
   }
 .image-with-text--text-alignment-center .image-with-text__text-container{
     justify-content:center;
