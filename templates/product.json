@@ -202,7 +202,7 @@
       ],
       "settings": {
         "section_style": "default",
-        "main_bg": "#454236",
+        "main_bg": "#440076",
         "text_color": "#ffffff",
         "columns": 5,
         "overline": "",
@@ -274,8 +274,8 @@
       ],
       "settings": {
         "section_style": "default",
-        "main_bg": "rgba(0,0,0,0)",
-        "text_color": "#5b5b5b",
+        "main_bg": "#454236",
+        "text_color": "#ffffff",
         "columns": 4,
         "overline": "",
         "title": "",
