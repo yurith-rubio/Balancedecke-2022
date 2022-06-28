@@ -354,6 +354,52 @@
         "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen könnten.<\/p>",
         "text_max_width": 32
       }
+    },
+    "165642035901eec4dc": {
+      "type": "gallery",
+      "blocks": {
+        "2f581e83-0a7e-45d7-a1a2-e3dbae04057d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Einfache_Handhabung_durch_Reissverschlusse.jpg",
+            "description": "",
+            "link": ""
+          }
+        },
+        "4ada10fe-5f7f-44f3-ae45-6b60c467acf5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Handgefertigt_in_Europa.jpg",
+            "description": "",
+            "link": ""
+          }
+        },
+        "3c15dc56-8dc2-4db0-bf13-9ac004a5e309": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Optimale_Gewichtsverteilung.jpg",
+            "description": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2f581e83-0a7e-45d7-a1a2-e3dbae04057d",
+        "4ada10fe-5f7f-44f3-ae45-6b60c467acf5",
+        "3c15dc56-8dc2-4db0-bf13-9ac004a5e309"
+      ],
+      "settings": {
+        "section_style": "default",
+        "text_position": "top_center",
+        "columns": 3,
+        "aspect_ratio": "natural",
+        "overline": "Gallery",
+        "title": "Gallery section",
+        "subheading": "<p>Use this Section to display your favourite images. Automatically crop them to be uniform using the dropdown setting.<\/p>",
+        "link": "",
+        "link_text": "",
+        "text_max_width": 36
+      }
     }
   },
   "order": [
@@ -361,6 +407,7 @@
     "1656413372b344187d",
     "16564199245b45b99d",
     "165641405039a8714f",
-    "recommendations"
+    "recommendations",
+    "165642035901eec4dc"
   ]
 }
