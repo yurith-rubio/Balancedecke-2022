@@ -582,8 +582,53 @@
         "button_background_color": "#fac636"
       }
     },
+    "1656422591ead41064": {
+      "type": "image-with-text",
+      "blocks": {
+        "16564225916658561d-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Leicht entfernbarer Bezug",
+            "text_max_width": 46
+          }
+        },
+        "16564225916658561d-2": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Aufgrund eines patentierten Designs kann der Bezug der Balance Gewichtsdecke ganz einfach über Reißverschlüsse entfernt oder angebracht werden. Die Fixierung des Bezugs mit dem Inlett ist zu 100% gegeben, sodass auch bei viel Bewegung nichts verrutscht.\n<\/p>",
+            "text_max_width": 36
+          }
+        },
+        "9ba29970-ce65-4bb6-901e-2bfadb90a908": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "Zu den Ersatzbezügen"
+          }
+        }
+      },
+      "block_order": [
+        "16564225916658561d-1",
+        "16564225916658561d-2",
+        "9ba29970-ce65-4bb6-901e-2bfadb90a908"
+      ],
+      "settings": {
+        "section_style": "default",
+        "image": "shopify:\/\/shop_images\/Leicht_entfernbarer_Bezug.jpg",
+        "video_url": "",
+        "image_width": "one-half",
+        "aspect_ratio": "natural",
+        "focal_point": "center_center",
+        "image_position": "left",
+        "text_alignment": "left",
+        "text_color": "#000000",
+        "text_container_color": "",
+        "button_background_color": "#000"
+      }
+    },
     "16546124839924c47b": {
       "type": "image-with-video",
+      "disabled": true,
       "blocks": {
         "1654612483ec319bb2-1": {
           "type": "heading",
@@ -613,7 +658,7 @@
         "28bda295-552b-42f7-991c-e5b2ee822fd8"
       ],
       "settings": {
-        "section_style": "contrast",
+        "section_style": "default",
         "image": "shopify:\/\/shop_images\/Leicht_entfernbarer_Bezug.jpg",
         "video_url": "",
         "image_width": "two-third",
@@ -703,6 +748,7 @@
     "16511620865d7539df",
     "1654600911f987480a",
     "1650852998ebd91b2a",
+    "1656422591ead41064",
     "16546124839924c47b",
     "1650463024bd7d3973",
     "16515920240b709421",
