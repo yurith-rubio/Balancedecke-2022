@@ -9999,6 +9999,9 @@ div[data-media-type='external_video'] iframe{
   position: relative;
   background-color: #D9BE57;
   color: white;
+  top: -80px;
+  margin: 20px;
+  padding: 10px 20px;
 }
 .gallery__slide.animates{
   opacity:0;
