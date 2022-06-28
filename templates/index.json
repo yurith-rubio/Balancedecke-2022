@@ -302,7 +302,7 @@
           "type": "column",
           "settings": {
             "icon_span": "",
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image": "shopify:\/\/shop_images\/Fordert_besseren_Schlaf.jpg",
             "image_max_width": 90,
             "title": "Fördert besseren Schlaf",
             "subheading": "<p>Das Gewicht der Balance Gewichtsdecke wirkt sich positiv auf den Schlaf aus, indem Tiefschlafphasen schneller erreicht werden können. Beim Auflegen der Decke entsteht ein angenehmer Druck, der den Körper entspannen lässt. Die Ausschüttung des Schlafhormons Melatonin wird durch das Gewicht begünstigt, sodass man schneller einschlafen und länger in der Tiefschlafphase verweilen kann.<\/p>",
@@ -315,7 +315,7 @@
           "type": "column",
           "settings": {
             "icon_span": "",
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image": "shopify:\/\/shop_images\/Die_Losung_fur_Stress.jpg",
             "image_max_width": 90,
             "title": "Die Lösung für Stress",
             "subheading": "<p>Das Gewicht lässt das Stresslevel sinken und gleichzeitig Glückshormone vermehrt ausschütten. Es entsteht ein harmonisches Gefühl der Geborgenheit und des Wohlbefindens. Bei stressigen Momenten ist dies eine erholsame Auszeit für Körper und Nervensystem.<\/p>",
@@ -328,7 +328,7 @@
           "type": "column",
           "settings": {
             "icon_span": "",
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image": "shopify:\/\/shop_images\/Steigerung_des_Wohlbefindens.jpg",
             "image_max_width": 90,
             "title": "Steigerung des Wohlbefindens",
             "subheading": "<p>Die Balance Gewichtsdecke löst durch Auflegen auf den Körper einen Tiefendruck aus, der dem Gehirn das gleiche Gefühl signalisiert, das bei einer sanften Umarmung entsteht. Körper und Geist gelangen in Einklang und man fühlt sich unterstützt, gehalten und geliebt.<\/p>",
@@ -472,7 +472,7 @@
         "1654600910560b9c27-1": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image": "shopify:\/\/shop_images\/Einfache_Handhabung_durch_Reissverschlusse.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -505,7 +505,7 @@
         "c2514a52-dc15-4622-a1ba-7d72f4f00585": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image": "shopify:\/\/shop_images\/Handgefertigt_in_Europa.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -515,7 +515,7 @@
         "59ed43d9-e730-44a7-979d-d412ba11efc5": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-16.jpg",
+            "image": "shopify:\/\/shop_images\/Optimale_Gewichtsverteilung.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -614,6 +614,7 @@
       ],
       "settings": {
         "section_style": "contrast",
+        "image": "shopify:\/\/shop_images\/Leicht_entfernbarer_Bezug.jpg",
         "video_url": "",
         "image_width": "two-third",
         "aspect_ratio": "natural",
