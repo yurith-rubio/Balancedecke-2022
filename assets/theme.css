@@ -9996,7 +9996,9 @@ div[data-media-type='external_video'] iframe{
   }
 }
 .gallery__description{
-  
+  position: relative:
+  background-color: #D9BE57;
+  color: white;
 }
 .gallery__slide.animates{
   opacity:0;
