@@ -8843,6 +8843,7 @@ div[data-media-type='external_video'] iframe{
   }
 .image-with-text__text-container{
   width:100%;
+  justify-content: center;
 }
 @media (min-width: 60em){
 
