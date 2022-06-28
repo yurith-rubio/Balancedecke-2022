@@ -224,11 +224,84 @@
         "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen könnten.<\/p>",
         "text_max_width": 32
       }
+    },
+    "165641405039a8714f": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16564140503dfed85e-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "Column one",
+            "subheading": "<p>Start here. Introduce your vision, or explain why what you do or sell is superior to your competitors.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16564140503dfed85e-1": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "Column two",
+            "subheading": "<p>Get into your process a bit. The quality of handiwork, proprietary knowledge, or materials that you use that make your products better.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16564140503dfed85e-2": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "Column three",
+            "subheading": "<p>End it with an action item that the user can take advantage of. Link to a more in-depth page, or go straight to a collection. Your call.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "bb3fa5d8-6248-4a9d-9ca6-b28d27891a00": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "Column heading",
+            "subheading": "<p>Column text<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "16564140503dfed85e-0",
+        "16564140503dfed85e-1",
+        "16564140503dfed85e-2",
+        "bb3fa5d8-6248-4a9d-9ca6-b28d27891a00"
+      ],
+      "settings": {
+        "section_style": "default",
+        "main_bg": "transparent",
+        "text_color": "#5b5b5b",
+        "columns": 4,
+        "overline": "",
+        "title": "",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "text_alignment": "center",
+        "text_max_width": 36
+      }
     }
   },
   "order": [
     "main",
     "1656413372b344187d",
-    "recommendations"
+    "recommendations",
+    "165641405039a8714f"
   ]
 }
