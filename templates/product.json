@@ -390,6 +390,22 @@
         "text_max_width": 36
       }
     },
+    "165642998130dc8eff": {
+      "type": "apps",
+      "blocks": {
+        "fe0ea3b1-667f-45ec-b7db-ee958bee15cb": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "fe0ea3b1-667f-45ec-b7db-ee958bee15cb"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -400,22 +416,6 @@
         "subheading": "<p>Weitere Balance Produkte, die Ihnen gefallen können<\/p>",
         "text_max_width": 32
       }
-    },
-    "16564270664cfd2655": {
-      "type": "featured-collection-row",
-      "disabled": true,
-      "settings": {
-        "section_style": "default",
-        "text_position": "left",
-        "collection": "",
-        "columns": 3,
-        "aspect_ratio": "natural",
-        "overline": "Collection",
-        "title": "Weitere Produkte",
-        "subheading": "<p>Add a subheading to provide more details about this collection.<\/p>",
-        "link_text": "Shop now",
-        "text_max_width": 36
-      }
     }
   },
   "order": [
@@ -424,7 +424,7 @@
     "16564199245b45b99d",
     "165641405039a8714f",
     "165642035901eec4dc",
-    "recommendations",
-    "16564270664cfd2655"
+    "165642998130dc8eff",
+    "recommendations"
   ]
 }
