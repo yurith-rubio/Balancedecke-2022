@@ -344,17 +344,6 @@
         "text_max_width": 36
       }
     },
-    "recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "columns": 4,
-        "aspect_ratio": "square",
-        "overline": "",
-        "title": "Weitere Produkte",
-        "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen könnten.<\/p>",
-        "text_max_width": 32
-      }
-    },
     "165642035901eec4dc": {
       "type": "gallery",
       "blocks": {
@@ -393,12 +382,23 @@
         "text_position": "top_center",
         "columns": 3,
         "aspect_ratio": "natural",
-        "overline": "Gallery",
-        "title": "Gallery section",
-        "subheading": "<p>Use this Section to display your favourite images. Automatically crop them to be uniform using the dropdown setting.<\/p>",
+        "overline": "",
+        "title": "",
+        "subheading": "",
         "link": "",
         "link_text": "",
         "text_max_width": 36
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "columns": 4,
+        "aspect_ratio": "square",
+        "overline": "",
+        "title": "Weitere Produkte",
+        "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen könnten.<\/p>",
+        "text_max_width": 32
       }
     }
   },
@@ -407,7 +407,7 @@
     "1656413372b344187d",
     "16564199245b45b99d",
     "165641405039a8714f",
-    "recommendations",
-    "165642035901eec4dc"
+    "165642035901eec4dc",
+    "recommendations"
   ]
 }
