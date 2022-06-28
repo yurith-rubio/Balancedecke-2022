@@ -8940,7 +8940,7 @@ div[data-media-type='external_video'] iframe{
   position:relative;
   overflow:hidden;
   height:100%;
-  padding: 40px;
+  /*padding: 40px;*/
 }
 @media (min-width: 60em){
 .image-with-text__image{
