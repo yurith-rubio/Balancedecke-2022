@@ -91,7 +91,7 @@
         "d7064956-0c50-4ce2-889b-284222961b9e": {
           "type": "column",
           "settings": {
-            "icon_span": "",
+            "icon_span": "<span class=\"icon-28\"><\/span>",
             "image_max_width": 50,
             "title": "Column heading",
             "subheading": "<p>Column text<\/p>",
