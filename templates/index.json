@@ -177,7 +177,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
-        "custom_liquid": "{}"
+        "custom_liquid": "{% render 'custom-reviews-carousel' %}"
       }
     },
     "1654599369c3a18076": {
