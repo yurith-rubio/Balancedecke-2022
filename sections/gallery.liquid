@@ -80,14 +80,14 @@
                 image: block.settings.image
               %}
               
-              {% unless block.settings.description == blank %}
+              {% if block.settings.description != blank %}
                 <div
                   class="gallery__description type-body-regular mt3 mb0"
                   data-theme-editor-setting="section.{{ id }}.block.{{ block.id }}.description"
                 >
                   {{ block.settings.description }}
                 </div>
-              {% endunless %}
+              {% endif %}
               
             {% else %}
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
