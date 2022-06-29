@@ -7525,9 +7525,9 @@ select{
   padding:var(--spacing-extra-large) var(--spacing-medium) 0;
   max-width:1280px;
 }
-.product--full-width .product-page-wrapper__inner{
+/* .product--full-width .product-page-wrapper__inner{
     max-width:unset;
-  }
+  } */
 @media (max-width: 60em){
 .product-page-wrapper__inner{
     overflow:hidden
