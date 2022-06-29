@@ -46,12 +46,12 @@
 	{% assign weightType = variant.metafields.bgd['weight'] %}
 	{% if variant.id == currentVariant.id %}
         <div class="weight-option" id="weight-option-{{ variant.id }}">
-          <span class="icon-info"></span>
+          {% comment %}<span class="icon-info"></span>{% endcomment %}
        	  {{ weightType }}
         </div>
   	{% else %}
         <div class="weight-option hide" id="weight-option-{{ variant.id }}">
-          <span class="icon-info"></span>
+          {% comment %}<span class="icon-info"></span>{% endcomment %}
           {{ weightType }}
         </div>
     {% endif %}
