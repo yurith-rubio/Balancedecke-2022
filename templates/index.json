@@ -180,7 +180,7 @@
       "settings": {
         "paddings": false,
         "main_bg_color": "#f5f3ee",
-        "custom_liquid": "{% style %}\n.rich-text__title{\n  padding-top: 50px !important;\n!important;\n  text-align: center;\n}\n.jdgm-carousel-title-and-link{\n  display: none;\n}\n{% endstyle %}\n\n<h2 class=\"type-heading-1 rich-text__title\">Über 3.500+ positive Bewertungen<\/h2>\n\n{% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}"
+        "custom_liquid": "{% style %}\n.rich-text__title{\n  padding-top: 50px !important;\n!important;\n  text-align: center;\n}\n.jdgm-carousel-title-and-link{\n  display: none;\n}\n{% endstyle %}\n\n<h2 class=\"type-heading-1 rich-text__title\">Über 3.500+ positive Bewertungen<\/h2>\n<div class=\"general-container-width\">\n{% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}\n<\/div>"
       }
     },
     "1654599369c3a18076": {
