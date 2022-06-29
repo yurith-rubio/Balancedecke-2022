@@ -350,15 +350,6 @@
         "text_max_width": 50
       }
     },
-    "1651603791b59fab4d": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "paddings": false,
-        "main_bg_color": "#ffffff",
-        "custom_liquid": "{% render 'slider-quote-logos' %}"
-      }
-    },
     "165159607509277cef": {
       "type": "custom-liquid",
       "disabled": true,
@@ -366,15 +357,6 @@
         "paddings": false,
         "main_bg_color": "#ffffff",
         "custom_liquid": "<span id=\"gravity\"><\/span>"
-      }
-    },
-    "16502629331d2ca294": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "paddings": false,
-        "main_bg_color": "#ffffff",
-        "custom_liquid": "{% render 'brand-intro-logos' %}"
       }
     },
     "1650263212d53823fc": {
@@ -780,9 +762,7 @@
     "165460061763e21bc7",
     "1652452390bee6e1a7",
     "1654601200cc559961",
-    "1651603791b59fab4d",
     "165159607509277cef",
-    "16502629331d2ca294",
     "1650263212d53823fc",
     "165245753794e8a12a",
     "16511620865d7539df",
