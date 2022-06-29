@@ -611,6 +611,41 @@
         "button_background_color": "#000000"
       }
     },
+    "1650463024bd7d3973": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "16504630240f4c42f3-0": {
+          "type": "overline",
+          "settings": {
+            "overline": ""
+          }
+        },
+        "16504630240f4c42f3-1": {
+          "type": "title",
+          "settings": {
+            "title": "Gravity Gewichtsdecken hergestellt in Europa",
+            "text_max_width": 36
+          }
+        },
+        "16504630240f4c42f3-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Die Gravity Gewichtsdecke wird in Handarbeit hergestellt und besteht zu 100% aus zertifizierter Baumwolle (Öko Tex Standard 100 Siegel), die in Spanien ökologisch angebaut wird. Die Gewichtsdecke ist mit vielen, quadratischen Feldern durchzogen, die mit sandfeinen Glasperlen gefüllt sind. Dadurch wird sichergestellt, dass das Gewicht der Decke gleichmäßig über die gesamte Länge verteilt wird.<\/p>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0050\/7717\/2288\/files\/certificate-icons-line.svg?v=1652456217\">",
+            "text_max_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "16504630240f4c42f3-0",
+        "16504630240f4c42f3-1",
+        "16504630240f4c42f3-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "alignment": "center"
+      }
+    },
     "16515920240b709421": {
       "type": "custom-liquid",
       "settings": {
@@ -652,6 +687,7 @@
     "1650852998ebd91b2a",
     "1656422591ead41064",
     "16546124839924c47b",
+    "1650463024bd7d3973",
     "16515920240b709421",
     "16511568662682a6ab"
   ]
