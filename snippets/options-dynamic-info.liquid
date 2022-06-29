@@ -10,12 +10,10 @@
 
       {% if variant.id == currentVariant.id %}
           <div class="bezugsart-option" id="bezugsart-option-{{ variant.id }}">
-            <span class="icon-info"></span>
             {{ coverType }}
           </div>
       {% else %}
           <div class="bezugsart-option hide" id="bezugsart-option-{{ variant.id }}">
-           <span class="icon-info"></span>
             {{ coverType }}
           </div>
       {% endif %}
@@ -29,7 +27,6 @@
 
 	{% if variant.id == currentVariant.id %}
 	  	<div class="set-bezugsart-option" id="set-bezugsart-option-{{ variant.id }}">
-          <span class="icon-info"></span>
        	  {{ coverType }}
         </div>
   	{% else %}
@@ -46,12 +43,10 @@
 	{% assign weightType = variant.metafields.bgd['weight'] %}
 	{% if variant.id == currentVariant.id %}
         <div class="weight-option" id="weight-option-{{ variant.id }}">
-          {% comment %}<span class="icon-info"></span>{% endcomment %}
        	  {{ weightType }}
         </div>
   	{% else %}
         <div class="weight-option hide" id="weight-option-{{ variant.id }}">
-          {% comment %}<span class="icon-info"></span>{% endcomment %}
           {{ weightType }}
         </div>
     {% endif %}
@@ -63,12 +58,10 @@
 	{% assign weightType = variant.metafields.bgd['weight'] %}
 	{% if variant.id == currentVariant.id %}
         <div class="set-weight-option" id="set-weight-option-{{ variant.id }}">
-          <span class="icon-info"></span>
        	  {{ weightType }}
         </div>
   	{% else %}
         <div class="set-weight-option hide" id="set-weight-option-{{ variant.id }}">
-          <span class="icon-info"></span>
           {{ weightType }}
         </div>
     {% endif %}
