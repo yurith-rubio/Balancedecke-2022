@@ -5041,7 +5041,7 @@ select{
   border-bottom:1px solid var(--color-footer-border);
 }
 .footer__copyright{
-  color:var(--color-footer-text-meta);
+  color:var(--color-footer-text);
   display:block;
   font-size:var(--font-size-body-small);
 }
