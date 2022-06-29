@@ -38,6 +38,8 @@
   {{ 'dynamic-static-product-info.css' | asset_url | stylesheet_tag }}
   {% comment %}  Gift item styles - with slidecart styles - Yurith {% endcomment %}
   {{ 'my-cart-styles.css' | asset_url | stylesheet_tag }}
+  {% comment %}  Judge me custom CSS - Yurith {% endcomment %}
+  {{ 'judgeme-custom.css' | asset_url | stylesheet_tag }}
   {% comment %}  Add FREE GIFT to SLIDE CART code - Yurith {% endcomment %}
   {% render 'my-cart-scripts', settings: settings %}
   {% comment %} Commented it as we already had one library but left it for testing in case something does not work to change the library
