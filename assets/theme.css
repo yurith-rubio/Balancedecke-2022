@@ -4987,8 +4987,8 @@ select{
 }
   }
 .footer__col-title{
-  color:var(--color-contrast-secondary-button-bg);
-    font-weight: 500;
+  color:var(--color-footer-text);
+    font-weight: 800;
 }
 .footer__col-text,
 .footer__col-list,
