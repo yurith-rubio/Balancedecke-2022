@@ -9731,7 +9731,7 @@ div[data-media-type='external_video'] iframe{
   }
 .slideshow-split__subheading{
   margin-top:0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 @media (min-width: 38em){
 .slideshow-split__subheading{
