@@ -69,13 +69,16 @@ body{
   -webkit-font-smoothing:antialiased
 }
 body:not(.user-is-tabbing) .flickity-enabled:focus{
-  outline:none;
-}
+      outline:none;
+    }
 body,
 input,
 textarea,
 button{
   font-family:var(--font-body);
+}
+a{
+  color:inherit;
 }
 .theme-editor-scroll-offset{
   position:fixed;
@@ -408,7 +411,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 a{
-  color: #828282;
+  color:inherit;
   text-decoration:none;
 }
 h1,
@@ -9731,7 +9734,7 @@ div[data-media-type='external_video'] iframe{
   }
 .slideshow-split__subheading{
   margin-top:0;
-  margin-bottom: 20px;
+  margin-bottom:0
 }
 @media (min-width: 38em){
 .slideshow-split__subheading{
@@ -12027,10 +12030,7 @@ div[data-media-type='external_video'] iframe{
   font-family: Gotham Bold;
   font-size:var(--font-size-button);
   letter-spacing:var(--font-letter-spacing-button);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding:10px 20px;
   background-color:var(--color-primary-button-bg);
   color:var(--color-button-text);
   border:none;
@@ -12038,11 +12038,8 @@ div[data-media-type='external_video'] iframe{
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease;
 }
-@media only screen and (max-width: 38em){
-  .bttn{
-    padding-top: 23px;
-    padding-bottom: 15px;
-  }
+.bttn:before{
+  position: absolute;
 }
 .bttn:hover, #shopify-product-reviews .spr-summary-actions-newreview:hover, .product__reviews .spr-summary-actions-newreview:hover, #shopify-product-reviews .spr-summary-actions-:hover, .product__reviews .spr-summary-actions-:hover, #shopify-product-reviews .spr-button-primary:hover, .product__reviews .spr-button-primary:hover{
   background-color:var(--color-button-hover-bg);
@@ -16521,7 +16518,9 @@ model-viewer{
     }
 
 /* General - Yurith */
-
+a{
+  color: #828282;
+}
 .general-container-width, .general-container-width-wide, .general-container-width-narrow{
   margin-left: auto;
   margin-right: auto;
