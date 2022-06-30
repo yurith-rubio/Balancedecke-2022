@@ -45,7 +45,7 @@
   position: relative;
   top: -1px
 }
-.jdgm-rev__icon:after, .jdgm-rev__buyer-badge, .jdgm-carousel-item__product-image{
+.jdgm-rev__icon:after, .jdgm-rev__buyer-badge, .jdgm-carousel-item__product-image, .jdgm--shop-review-has-image{
   display: none !important;
 }
 .jdgm-rev__icon{
