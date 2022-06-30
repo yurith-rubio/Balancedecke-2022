@@ -75,7 +75,7 @@ body,
 input,
 textarea,
 button{
-  font-family: Gotham Bold, sans-serif;
+  font-family:var(--font-body);
 }
 a{
   color:inherit;
