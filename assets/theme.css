@@ -12039,7 +12039,6 @@ div[data-media-type='external_video'] iframe{
   color:var(--color-button-text);
   border:none;
   border-radius:var(--button-border-radius);
-
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease
 }
