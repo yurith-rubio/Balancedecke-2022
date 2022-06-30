@@ -12044,9 +12044,6 @@ div[data-media-type='external_video'] iframe{
     padding-bottom: 12px;
   }
 }
-.bttn:before{
-  position: absolute;
-}
 .bttn:hover, #shopify-product-reviews .spr-summary-actions-newreview:hover, .product__reviews .spr-summary-actions-newreview:hover, #shopify-product-reviews .spr-summary-actions-:hover, .product__reviews .spr-summary-actions-:hover, #shopify-product-reviews .spr-button-primary:hover, .product__reviews .spr-button-primary:hover{
   background-color:var(--color-button-hover-bg);
   color:var(--color-button-hover-text);
