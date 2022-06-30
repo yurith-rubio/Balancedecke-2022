@@ -12027,13 +12027,15 @@ div[data-media-type='external_video'] iframe{
   font-family: Gotham Bold;
   font-size:var(--font-size-button);
   letter-spacing:var(--font-letter-spacing-button);
-  padding:10px 20px;
+  padding: 0 20px;
   background-color:var(--color-primary-button-bg);
   color:var(--color-button-text);
   border:none;
   border-radius:var(--button-border-radius);
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  
 }
 .bttn:before{
   position: absolute;
