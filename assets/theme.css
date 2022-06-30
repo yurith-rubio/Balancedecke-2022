@@ -9703,7 +9703,7 @@ div[data-media-type='external_video'] iframe{
     margin-top:var(--spacing-small) !important;
   }
 .slideshow-split__content-inner .slideshow-split__link{
-    margin-top:calc(var(--spacing-unit) * 6) !important;
+    margin-top:calc(var(--spacing-unit) * 6);
     margin-bottom:0;
   }
 .slideshow-split--align-center .slideshow-split__content-inner{
