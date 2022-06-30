@@ -12032,10 +12032,10 @@ div[data-media-type='external_video'] iframe{
   background-color:var(--color-primary-button-bg);
   color:var(--color-button-text);
   border:none;
-  border-radius:var(--button-border-radius);
+  border-radius:50%;
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease;
-    line-height: 48px;
+  line-height: 48px;
 }
 @media only screen and (max-width: 38em){
   .bttn{
