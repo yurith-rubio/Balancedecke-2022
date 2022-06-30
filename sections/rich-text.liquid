@@ -40,7 +40,7 @@
   {% endif %}
 >
   <div class="general-container-width rich-text__inner text-block animation__staggered-children-fade-in">
-    <div class="{% if image != blank %}rich-text__inner_bg{% endif %}">
+    <div {% if image != blank %}class="rich-text__inner_bg"{% endif %}>
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {% when 'overline' %}
