@@ -12027,7 +12027,7 @@ div[data-media-type='external_video'] iframe{
 #shopify-product-reviews .spr-button-primary,
 .product__reviews .spr-button-primary{
   text-transform:var(--button-text-transform);
-  font-family:var(--font-body);
+  font-family:Gotham Bold,sans-serif;
   font-weight:bold;
   font-size:var(--font-size-button);
   letter-spacing:var(--font-letter-spacing-button);
