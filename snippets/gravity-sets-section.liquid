@@ -19,7 +19,7 @@
   	max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 2fr 1fr;
     align-items:center;
     padding: 40px 0;
   }
@@ -55,7 +55,12 @@
     	padding: 30px 0;
     }
   }
-
+  @media (min-width: 641px) and (max-width: 768px){
+    .gravity-content-div{
+    	display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
   @media (max-width: 640px){
     .gravity-content-div{
     	display: block;
@@ -68,10 +73,10 @@
 </style>
 <div class="gravity-sets-section">
   <div class="gravity-content-div">
-
+    <div class="gravity-sets-image">
       <img src="https://cdn.shopify.com/s/files/1/0327/7196/5066/files/Sets_desktop.png?v=1656417483" class="desktop-set">
       <img src="https://cdn.shopify.com/s/files/1/0327/7196/5066/files/Sets_mobile.png?v=1656417483" class="mobile-set">
-
+    </div>
     <div class="gravity-sets-text">
       <p>Haben Sie Interesse <br>am Balance<br>Gewichtsdecken Set?</p>
       <a href="https://gravitydecke.de/collections/sparsets/products/gravity-gewichtsdecken-set-fur-erwachsene" class="bttn btn-banner">JETZT TESTEN</a>
