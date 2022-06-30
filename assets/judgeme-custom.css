@@ -59,3 +59,8 @@
   right: 30px;
   margin-right: 0 !important;
 }
+.jdgm-carousel-wrapper .jdgm-carousel__left-arrow{
+  position: absolute;
+  left: 30px;
+  margin-left: 0 !important;
+}
