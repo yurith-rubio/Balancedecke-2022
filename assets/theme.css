@@ -12034,7 +12034,6 @@ div[data-media-type='external_video'] iframe{
   text-align:center;
   padding:10px var(--spacing-medium);
   display:flex;
-  line-height:1.81em;
   background-color:var(--color-primary-button-bg);
   color:var(--color-button-text);
   border:none;
