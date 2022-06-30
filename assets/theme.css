@@ -9271,7 +9271,7 @@ div[data-media-type='external_video'] iframe{
     text-align:center;
   }
 .rich-text--center .rich-text__subheading,
-    .rich-text--center .rich-text__title{
+    .rich-text--center .rich-text__title, .rich-text__title{
       margin-right:auto;
       margin-left:auto;
     }
