@@ -16540,8 +16540,7 @@ a{
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-}
-    
+}    
 .product-price_css, .price-item--sale{
   color: #DD2200;
   font-weight: bold;
@@ -16549,6 +16548,9 @@ a{
 @media (min-width: 38em){
   .product-compare-price_css{
     font-size: 18px;
+  }
+  .general-container-width{
+    padding: 0 30px;
   }
 }
 @media (max-width: 38em){
