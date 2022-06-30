@@ -12029,6 +12029,7 @@ div[data-media-type='external_video'] iframe{
   letter-spacing:var(--font-letter-spacing-button);
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
   background-color:var(--color-primary-button-bg);
   color:var(--color-button-text);
   border:none;
