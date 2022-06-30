@@ -12035,7 +12035,8 @@ div[data-media-type='external_video'] iframe{
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease;
   display: flex;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
 .bttn:before{
   position: absolute;
