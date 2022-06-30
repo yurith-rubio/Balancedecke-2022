@@ -54,3 +54,7 @@
 .jdgm-carousel__right-arrow, .jdgm-carousel__left-arrow{
   border-color: #440076 !important;
 }
+.jdgm-carousel-wrapper .jdgm-carousel__right-arrow{
+  position: absolute;
+  right: 30px;
+}
