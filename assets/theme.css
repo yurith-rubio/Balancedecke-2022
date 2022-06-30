@@ -16549,13 +16549,13 @@ a{
   .product-compare-price_css{
     font-size: 18px;
   }
-  .general-container-width, .general-container-width-wide, .general-container-width-narrow{
-    padding: 0 30px;
-  }
 }
 @media (max-width: 38em){
   .product-price_css{
     font-size: 20px;
+  }
+  .general-container-width, .general-container-width-wide, .general-container-width-narrow{
+    padding: 0 30px;
   }
 }
 .image-with-list{
