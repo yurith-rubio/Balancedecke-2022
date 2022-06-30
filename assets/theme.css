@@ -12036,7 +12036,7 @@ div[data-media-type='external_video'] iframe{
   border-radius:var(--button-border-radius);
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease;
-  display: flex;
+
   justify-content: center;
   align-items: center;
 }
