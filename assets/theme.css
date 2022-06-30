@@ -8757,29 +8757,29 @@ div[data-media-type='external_video'] iframe{
     border-top:1px solid var(--color-border);
   }
 .featured-product__share-accordion .accordion__group .share__icon{
-      text-decoration:none;
-    }
+  text-decoration:none;
+}
 .featured-product__share-accordion .share{
-    margin-top:0;
-  }
+  margin-top:0;
+}
 .featured-product__social-sharing{
   margin-top:var(--spacing-medium)
 }
 .featured-product__social-sharing.hidden{
-    display:none;
-  }
+  display:none;
+}
 .featured-product__cta{
   display:inline-block
 }
 .featured-product__cta:hover{
-    opacity:0.5;
-  }
+  opacity:0.5;
+}
 .image-with-text.section--full-height{
-    padding-top:0;
-    padding-bottom:0;
-    position:relative;
-    margin-bottom:-1px
-  }
+  padding-top:0;
+  padding-bottom:0;
+  position:relative;
+  margin-bottom:-1px
+}
 .image-with-text__text{
   max-width: 500px;
 }
