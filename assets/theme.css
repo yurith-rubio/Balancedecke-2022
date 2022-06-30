@@ -8780,6 +8780,10 @@ div[data-media-type='external_video'] iframe{
     position:relative;
     margin-bottom:-1px
   }
+  
+.image-with-text__text{
+  max-width: 500px;
+}
 @media (max-width: 60em){
 .image-with-text.section--full-height{
       padding:0
