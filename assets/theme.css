@@ -12029,8 +12029,6 @@ div[data-media-type='external_video'] iframe{
   letter-spacing:var(--font-letter-spacing-button);
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   background-color:var(--color-primary-button-bg);
   color:var(--color-button-text);
   border:none;
@@ -12040,8 +12038,7 @@ div[data-media-type='external_video'] iframe{
 }
 @media only screen and (max-width: 38em){
   .bttn{
-    padding-top: 23px;
-    padding-bottom: 15px;
+    padding-top: 8px;
   }
 }
 .bttn:hover, #shopify-product-reviews .spr-summary-actions-newreview:hover, .product__reviews .spr-summary-actions-newreview:hover, #shopify-product-reviews .spr-summary-actions-:hover, .product__reviews .spr-summary-actions-:hover, #shopify-product-reviews .spr-button-primary:hover, .product__reviews .spr-button-primary:hover{
