@@ -12038,7 +12038,7 @@ div[data-media-type='external_video'] iframe{
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease;
 }
-@media only screen and (max-width: 768px){
+@media (max-width: 768px){
   .bttn{
     padding-top: 20px;
     padding-bottom: 12px;
