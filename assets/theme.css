@@ -12031,20 +12031,19 @@ div[data-media-type='external_video'] iframe{
   font-weight:900;
   font-size:var(--font-size-button);
   letter-spacing:var(--font-letter-spacing-button);
-  text-align:center;
-  height:var(--height-button);
   padding:0 var(--spacing-medium);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  line-height:1.81em;
   background-color:var(--color-primary-button-bg);
   color:var(--color-button-text);
   border:none;
   border-radius:var(--button-border-radius);
-
   opacity:1;
-  transition:color 0.25s ease, border-color 0.25s ease
+  transition:color 0.25s ease, border-color 0.25s ease;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1.81em;
+  text-align:center;
+  height:var(--height-button);
 }
 .bttn:hover, #shopify-product-reviews .spr-summary-actions-newreview:hover, .product__reviews .spr-summary-actions-newreview:hover, #shopify-product-reviews .spr-summary-actions-:hover, .product__reviews .spr-summary-actions-:hover, #shopify-product-reviews .spr-button-primary:hover, .product__reviews .spr-button-primary:hover{
   background-color:var(--color-button-hover-bg);
