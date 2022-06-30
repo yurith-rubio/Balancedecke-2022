@@ -12033,7 +12033,7 @@ div[data-media-type='external_video'] iframe{
   letter-spacing:var(--font-letter-spacing-button);
   text-align:center;
   height:var(--height-button);
-  padding:2px 20px 0;
+  padding:0 var(--spacing-medium);
   display:flex;
   align-items:center;
   justify-content:center;
