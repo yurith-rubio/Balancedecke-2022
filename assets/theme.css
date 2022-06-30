@@ -4496,7 +4496,7 @@ select{
 .measure-narrow{
   max-width:20em;
 }
-.center{
+.center, .rich-text__subheading{
   margin-right:auto;
   margin-left:auto;
 }
