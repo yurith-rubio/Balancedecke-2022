@@ -69,16 +69,13 @@ body{
   -webkit-font-smoothing:antialiased
 }
 body:not(.user-is-tabbing) .flickity-enabled:focus{
-      outline:none;
-    }
+  outline:none;
+}
 body,
 input,
 textarea,
 button{
   font-family:var(--font-body);
-}
-a{
-  color:inherit;
 }
 .theme-editor-scroll-offset{
   position:fixed;
