@@ -12029,20 +12029,26 @@ div[data-media-type='external_video'] iframe{
   letter-spacing:var(--font-letter-spacing-button);
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 18px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color:var(--color-primary-button-bg);
   color:var(--color-button-text);
   border:none;
   border-radius:var(--button-border-radius);
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease;
-
-  justify-content: center;
-  align-items: center;
 }
 @media only screen and (max-width: 38em){
-  
+  .bttn,
+  #shopify-product-reviews .spr-summary-actions-newreview,
+  .product__reviews .spr-summary-actions-newreview,
+  #shopify-product-reviews .spr-summary-actions-,
+  .product__reviews .spr-summary-actions-,
+  #shopify-product-reviews .spr-button-primary,
+  .product__reviews .spr-button-primary{
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
 }
 .bttn:before{
   position: absolute;
