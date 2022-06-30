@@ -90,15 +90,6 @@
             </div>
           {% endif %}
 
-          {% if block.settings.description != blank %}
-          <div
-               class="gallery__description type-body-regular mt3 mb0"
-               data-theme-editor-setting="section.{{ id }}.block.{{ block.id }}.description"
-               >
-            {{ block.settings.description }}
-          </div>
-          {% endif %}
-
         </div>
       {%- endfor -%}
     {% else %}
@@ -111,6 +102,17 @@
       {% endfor %}
     {% endif %}
   </div>
+  {%- for block in blocks -%}
+            {% if block.settings.description != blank %}
+          <div
+               class="gallery__description type-body-regular mt3 mb0"
+               data-theme-editor-setting="section.{{ id }}.block.{{ block.id }}.description"
+               >
+            {{ block.settings.description }}
+          </div>
+          {% endif %}
+  {% endfor %}
+  
 </section>
 
 
