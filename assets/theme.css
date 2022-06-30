@@ -16526,22 +16526,20 @@ model-viewer{
 a{
   color: #828282;
 }
-.general-container-width{
-  max-width: 1000px;
+.general-container-width, .general-container-width-wide, .general-container-width-narrow{
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
 }
+.general-container-width{
+  max-width: 1000px;
+}
 .general-container-width-wide{
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .general-container-width-narrow{
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }    
 .product-price_css, .price-item--sale{
   color: #DD2200;
