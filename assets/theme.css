@@ -12069,7 +12069,7 @@ div[data-media-type='external_video'] iframe{
   .product__reviews .spr-button-primary--secondary,
   .product__reviews .spr-button-primarynewreview{
     position:relative;
-    background-color:white;
+    background-color:transparent;
     z-index:1;
   }
 .secondary_button-style-solid .bttn--secondary, .secondary_button-style-solid .bttnnewreview, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreview--secondary, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreviewnewreview, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreview--secondary, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreviewnewreview, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions---secondary, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreview, .secondary_button-style-solid .product__reviews .spr-summary-actions---secondary, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreview, .secondary_button-style-solid #shopify-product-reviews .spr-button-primary--secondary, .secondary_button-style-solid #shopify-product-reviews .spr-button-primarynewreview, .secondary_button-style-solid .product__reviews .spr-button-primary--secondary, .secondary_button-style-solid .product__reviews .spr-button-primarynewreview{
