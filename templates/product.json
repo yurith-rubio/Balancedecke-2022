@@ -225,8 +225,8 @@
             "media_fit": "cover",
             "focal_point": "center_center",
             "overline": "",
-            "title": "This is medium square block",
-            "subheading": "<p>Mix and match between sizes, set a background color or fill, and add text to blocks that are medium or larger.<\/p>",
+            "title": "",
+            "subheading": "",
             "text_max_width": 32,
             "link_text": "",
             "link": "",
@@ -236,8 +236,8 @@
             "color_text_button": "#181818",
             "color_background_button": "#ffffff",
             "color_text_container": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 60
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0
           }
         },
         "16564199241a510645-1": {
