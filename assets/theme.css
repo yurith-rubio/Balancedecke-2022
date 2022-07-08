@@ -446,10 +446,10 @@ a:focus{
   font-family:Gotham Bold, sans-serif;
 }
 @media (max-width: 38em){
-.type-heading-dynamic{
-    font-size:32px
-}
+  .type-heading-dynamic{
+      font-size:32px
   }
+}
 .shopify-policy__container h1,
 .type-heading-1{
   font-size:var(--font-size-heading-1);
