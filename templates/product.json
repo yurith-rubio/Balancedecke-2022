@@ -242,6 +242,7 @@
         "16564199241a510645-1": {
           "type": "small_square",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1-36.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
