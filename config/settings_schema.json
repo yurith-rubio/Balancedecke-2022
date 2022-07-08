@@ -65,7 +65,25 @@
       {
         "type": "color",
         "id": "color_secondary_button",
-        "label": "t:settings_schema.colors.settings.color_button.label",
+        "label": "Secondary button's color",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary_button_text",
+        "label": "Secondary button text",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary_button_hover",
+        "label": "Secondary bButton hover background",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary_button_text_hover",
+        "label": "Secondary button hover text",
         "default": "#fff"
       },
       {
