@@ -7,6 +7,8 @@
     "color_button_text": "#fff",
     "color_button_hover": "#d9be57",
     "color_border": "#f5f3ee",
+    "color_secondary_button_text": "#454236",
+    "color_secondary_button_hover": "#454236",
     "color_input_text": "#440076",
     "color_icon": "#440076",
     "color_success": "#005c16",
