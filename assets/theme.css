@@ -10014,7 +10014,7 @@ div[data-media-type='external_video'] iframe{
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .gallery__slide.animates{
   opacity:0;
