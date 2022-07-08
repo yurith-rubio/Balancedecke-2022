@@ -11669,6 +11669,7 @@ div[data-media-type='external_video'] iframe{
   font-size:var(--font-size-body-base);
   transition:border-color 0.15s ease-in-out;
   color:var(--color-text);
+  font-weight: bold;
 }
 .product-form__chip label{
     color:var(--color-text);
