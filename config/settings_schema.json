@@ -64,6 +64,12 @@
       },
       {
         "type": "color",
+        "id": "color_secondary_button",
+        "label": "t:settings_schema.colors.settings.color_button.label",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
         "id": "color_input_text",
         "label": "t:settings_schema.colors.settings.color_input_text.label",
         "default": "#737373"
