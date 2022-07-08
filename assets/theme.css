@@ -11659,6 +11659,7 @@ div[data-media-type='external_video'] iframe{
 .product-form__chip-selected{
   width:100%;
   margin-bottom:var(--spacing-small);
+  font-weight: bold;
 }
 .product-form__chip{
   position:relative;
