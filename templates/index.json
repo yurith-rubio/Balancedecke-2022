@@ -79,7 +79,7 @@
         "50b12fa2-9be9-41b3-a2f5-225e6134b8c3": {
           "type": "column",
           "settings": {
-            "icon_span": "<span style=\"font-size:50px; padding-bottom:15px\" class=\"icon-1\"><\/span>",
+            "icon_span": "<span style=\"font-size:50px; padding-bottom:15px\" class=\"icon-100-percent\"><\/span>",
             "image_max_width": 30,
             "title": "Verrutschen des Inletts im Bezug",
             "subheading": "",
