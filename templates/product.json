@@ -206,7 +206,7 @@
         "text_color": "#ffffff",
         "columns": 5,
         "overline": "",
-        "title": "GUT. BESSER. BALANCE",
+        "title": "GUT. BESSER. BALANCE\n{% render 'gut-besser-balance' %}",
         "subheading": "",
         "link": "",
         "link_text": "",
