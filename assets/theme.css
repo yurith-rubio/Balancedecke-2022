@@ -16642,8 +16642,8 @@ model-viewer{
 
 /* Extra font added - Yurith */
 @font-face {
-  font-family: "Gotham Bold";
-  src: url('https://cdn.shopify.com/s/files/1/0327/7196/5066/files/GothamBold.woff?v=1653480860');
-  src: url('https://cdn.shopify.com/s/files/1/0327/7196/5066/files/GothamBold.woff?v=1653480860') format('woff');
+  font-family: "Gotham Book";
+  src: url('https://cdn.shopify.com/s/files/1/0327/7196/5066/files/GothamBook.woff?v=1657281960');
+  src: url('https://cdn.shopify.com/s/files/1/0327/7196/5066/files/GothamBook.woff?v=1657281960') format('woff');
   font-weight: black;
 }
