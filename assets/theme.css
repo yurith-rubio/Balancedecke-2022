@@ -12039,6 +12039,7 @@ div[data-media-type='external_video'] iframe{
   opacity:1;
   transition:color 0.25s ease, border-color 0.25s ease;
   line-height: 40px;
+  border: 2px solid white;
 }
 @media only screen and (max-width: 38em){
   .bttn{
@@ -12048,6 +12049,7 @@ div[data-media-type='external_video'] iframe{
 .bttn:hover, #shopify-product-reviews .spr-summary-actions-newreview:hover, .product__reviews .spr-summary-actions-newreview:hover, #shopify-product-reviews .spr-summary-actions-:hover, .product__reviews .spr-summary-actions-:hover, #shopify-product-reviews .spr-button-primary:hover, .product__reviews .spr-button-primary:hover{
   background-color:var(--color-button-hover-bg);
   color:var(--color-button-hover-text);
+  border: 2px solid white;
   transition:background-color 0.25s ease;
 }
 .bttn:disabled, #shopify-product-reviews .spr-summary-actions-newreview:disabled, .product__reviews .spr-summary-actions-newreview:disabled, #shopify-product-reviews .spr-summary-actions-:disabled, .product__reviews .spr-summary-actions-:disabled, #shopify-product-reviews .spr-button-primary:disabled, .product__reviews .spr-button-primary:disabled{
@@ -12071,11 +12073,13 @@ div[data-media-type='external_video'] iframe{
     position:relative;
     background-color:transparent;
     z-index:1;
+    border: 2px solid white;
   }
 .secondary_button-style-solid .bttn--secondary, .secondary_button-style-solid .bttnnewreview, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreview--secondary, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreviewnewreview, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreview--secondary, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreviewnewreview, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions---secondary, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreview, .secondary_button-style-solid .product__reviews .spr-summary-actions---secondary, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreview, .secondary_button-style-solid #shopify-product-reviews .spr-button-primary--secondary, .secondary_button-style-solid #shopify-product-reviews .spr-button-primarynewreview, .secondary_button-style-solid .product__reviews .spr-button-primary--secondary, .secondary_button-style-solid .product__reviews .spr-button-primarynewreview{
       color:var(--color-secondary-button-text);
       background-color:var(--color-secondary-button-bg);
-      transition:background-color 0.2s ease
+      border: 2px solid white;
+      transition:background-color 0.2s ease;
     }
 .secondary_button-style-solid .bttn--secondary:hover,
       .secondary_button-style-solid .bttn--secondary:focus,
@@ -12107,6 +12111,7 @@ div[data-media-type='external_video'] iframe{
       .secondary_button-style-solid .product__reviews .spr-button-primarynewreview:focus{
         background-color:var(--color-secondary-button-hover-bg);
         color:var(--color-secondary-button-hover-text);
+        border: 2px solid white;
       }
 .secondary_button-style-solid .bttn--secondary:disabled:hover, .secondary_button-style-solid .bttnnewreview:disabled:hover, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreview--secondary:disabled:hover, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreviewnewreview:disabled:hover, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreview--secondary:disabled:hover, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreviewnewreview:disabled:hover, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions---secondary:disabled:hover, .secondary_button-style-solid #shopify-product-reviews .spr-summary-actions-newreview:disabled:hover, .secondary_button-style-solid .product__reviews .spr-summary-actions---secondary:disabled:hover, .secondary_button-style-solid .product__reviews .spr-summary-actions-newreview:disabled:hover, .secondary_button-style-solid #shopify-product-reviews .spr-button-primary--secondary:disabled:hover, .secondary_button-style-solid #shopify-product-reviews .spr-button-primarynewreview:disabled:hover, .secondary_button-style-solid .product__reviews .spr-button-primary--secondary:disabled:hover, .secondary_button-style-solid .product__reviews .spr-button-primarynewreview:disabled:hover{
           background-color:var(--color-secondary-button-bg);
