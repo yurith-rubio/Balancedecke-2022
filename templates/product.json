@@ -252,6 +252,7 @@
         "0c5ea6e0-3b95-4dca-b4af-5d1a00678f10": {
           "type": "small_square",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1-115.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
