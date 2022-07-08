@@ -11663,7 +11663,7 @@ div[data-media-type='external_video'] iframe{
 .product-form__chip{
   position:relative;
   border:1px solid var(--color-border);
-  border-radius:2px;
+  border-radius:5px;
   padding:var(--spacing-small) calc(var(--spacing-unit) * 4);
   background-color:transparent;
   font-size:var(--font-size-body-base);
