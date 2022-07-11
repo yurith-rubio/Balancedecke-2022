@@ -10001,11 +10001,7 @@ div[data-media-type='external_video'] iframe{
 }
 .gallery__description{
   color: #454236;
-
   margin: 20px;
-  padding: 10px 20px;
-  max-height: 100px;
-  min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
