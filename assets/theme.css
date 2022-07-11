@@ -10002,9 +10002,6 @@ div[data-media-type='external_video'] iframe{
 .gallery__description{
   color: #454236;
   margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
