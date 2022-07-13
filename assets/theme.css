@@ -9969,6 +9969,10 @@ div[data-media-type='external_video'] iframe{
     transform:none !important;
   }
 @media (min-width: 38em){
+  .text-columns--alignment-center .text-columns__feature{
+    padding-right:var(--spacing-medium);
+    padding-left:var(--spacing-medium);
+  }
   .user-is-tabbing .quote .carousel__navigation{
     opacity:1;
     transform:translateX(0)
