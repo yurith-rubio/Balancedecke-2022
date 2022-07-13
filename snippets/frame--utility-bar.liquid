@@ -67,9 +67,9 @@
             aria-hidden="{% if forloop.index0 == 0%}true{% else %}false{% endif %}"
             {{ block.shopify_attributes }}
           >
-            <div class="utility-bar__announcement-item-content type-body-small">
+            <div class="h6 utility-bar__announcement-item-content type-body-small">
               {%- if block.settings.link != blank -%}
-                <a class="h3 utility-bar__link color-inherit" href="{{ block.settings.link }}">
+                <a class="utility-bar__link color-inherit" href="{{ block.settings.link }}">
                   {{ block.settings.text | escape }}
                 </a>
               {%- else -%}
