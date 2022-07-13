@@ -9904,13 +9904,13 @@ div[data-media-type='external_video'] iframe{
     display:none
   }
 @media (min-width: 38em){
-.text-columns__content:after{
-      content:''
+  .text-columns__content:after{
+    content:''
   }
-    }
+}
 .text-columns__content .flickity-viewport{
-    width:100%;
-  }
+  width:100%;
+}
 .text-columns__content .flickity-prev-next-button.previous{
     left:calc(var(--spacing-medium) * -1);
   }
