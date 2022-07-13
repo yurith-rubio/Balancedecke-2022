@@ -7519,7 +7519,7 @@ select{
   }
 .product-page-wrapper__inner{
   position:relative;
-  padding:var(--spacing-extra-large) var(--spacing-medium) 0;
+  padding:var(--spacing-extra-large) 0 0;
   max-width:1280px;
 }
 /* .product--full-width .product-page-wrapper__inner{
