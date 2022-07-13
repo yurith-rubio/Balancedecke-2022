@@ -9937,7 +9937,7 @@ div[data-media-type='external_video'] iframe{
 }
 .text-columns--alignment-center .text-columns__feature p,
   .text-columns--alignment-center .text-columns__feature h3{
-    text-align:center;
+    text-align:left;
   }
 .collection-list-grid__image{
   width:100%;
