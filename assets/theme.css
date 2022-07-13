@@ -9929,8 +9929,8 @@ div[data-media-type='external_video'] iframe{
   display:flex;
   flex-direction:column;
   align-items:center;
-  padding-right:var(--spacing-medium);
-  padding-left:var(--spacing-medium);
+  /*padding-right:var(--spacing-medium);
+  padding-left:var(--spacing-medium);*/
 }
 .text-columns--alignment-center .text-columns__feature .image{
   width:100%;
