@@ -114,7 +114,7 @@
         "text_color": "#ffffff",
         "columns": 5,
         "overline": "",
-        "title": "GUT. <span style=\"font-weight: 200\">BESSER<\/span>. BALANCE",
+        "title": "GUT. \n<span style=\"font-weight: normal !important\">\nBESSER\n<\/span>. BALANCE",
         "subheading": "",
         "link": "",
         "link_text": "",
