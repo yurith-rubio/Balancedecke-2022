@@ -9879,16 +9879,16 @@ div[data-media-type='external_video'] iframe{
   top:0;
 }
 .text-columns .responsive-image__wrapper{
-    margin:0;
-  }
+  margin:0;
+}
 .text-columns__intro{
   margin-bottom:var(--spacing-extra-large)
 }
 @media (min-width: 38em){
-.text-columns__intro{
+  .text-columns__intro{
     margin-bottom:var(--spacing-extra-extra-large)
-}
   }
+}
 .text-columns__content{
   display:grid;
   grid-row-gap:var(--spacing-extra-large);
@@ -9896,13 +9896,13 @@ div[data-media-type='external_video'] iframe{
   width:100%
 }
 @media (min-width: 38em){
-.text-columns__content{
+  .text-columns__content{
+  }
 }
-  }
 .text-columns__content:after{
-    content:'flickity';
-    display:none
-  }
+  content:'flickity';
+  display:none
+}
 @media (min-width: 38em){
   .text-columns__content:after{
     content:''
