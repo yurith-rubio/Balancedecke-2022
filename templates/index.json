@@ -579,7 +579,7 @@
       "settings": {
         "section_style": "default",
         "text_position": "left",
-        "collection": "gravity-gewichtsdecken",
+        "collection": "balance-extra",
         "columns": 3,
         "aspect_ratio": "square",
         "overline": "Original Balance Gewichtsdecke",
