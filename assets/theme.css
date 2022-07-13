@@ -443,7 +443,7 @@ a:focus{
 .type-heading-dynamic{
   font-size:46px;
   line-height:var(--line-height-heading-display);
-  font-family:Gotham Book, sans-serif;
+  font-family: var(--font-heading);
 }
 @media (max-width: 38em){
   .type-heading-dynamic{
@@ -454,7 +454,7 @@ a:focus{
 .type-heading-1{
   font-size:var(--font-size-heading-1);
   line-height:var(--line-height-heading);
-  font-family: Gotham Book, sans-serif;
+  font-family: var(--font-heading);
 }
 @media (max-width: 38em){
 .shopify-policy__container h1,
@@ -466,12 +466,12 @@ a:focus{
 .type-heading-1-small{
   font-size:var(--font-size-heading-1-small);
   line-height:var(--line-height-heading-small);
-  font-family: Gotham Book, sans-serif;
+  font-family: var(--font-heading);
 }
 .type-heading-2{
   font-size:var(--font-size-heading-2);
   line-height:var(--line-height-heading-2);
-  font-family: Gotham Book, sans-serif;
+  font-family: var(--font-heading);
 }
 .type-heading-2 > a{
     color:inherit;
@@ -479,7 +479,7 @@ a:focus{
 .type-heading-3{
   font-size:var(--font-size-heading-3);
   line-height:var(--line-height-heading);
-  font-family: Gotham Book, sans-serif;
+  font-family: var(--font-heading);
 }
 .g-uppercase .type-heading-dynamic,
   .g-uppercase .type-heading-1,
@@ -527,27 +527,27 @@ p a{
 }
 .rte h1, .h1{
     font-size:2.2em;
-    font-family: Gotham Book, sans-serif;
+    font-family: var(--font-heading);
     font-weight:var(--font-heading-weight);
     font-style:var(--font-heading-style);
     line-height:var(--line-height-heading);
   }
 .rte h2, .h2{
     font-size:1.8em;
-    font-family: Gotham Book, sans-serif;
+    font-family: var(--font-heading);
     font-weight:var(--font-heading-weight);
     font-style:var(--font-heading-style);
     line-height:var(--line-height-heading-2);
   }
 .rte h3, .h3{
     font-size:1.4em;
-    font-family: Gotham Book, sans-serif;
+    font-family: var(--font-heading);
     font-weight:var(--font-heading-weight);
     font-style:var(--font-heading-style);
   }
 .rte h4, .h4{
     font-size:1.2em;
-    font-family: Gotham Book, sans-serif;
+    font-family: var(--font-heading);
     font-weight:var(--font-heading-weight);
     font-style:var(--font-heading-style);
   }
@@ -12019,7 +12019,7 @@ div[data-media-type='external_video'] iframe{
 #shopify-product-reviews .spr-button-primary,
 .product__reviews .spr-button-primary{
   text-transform:var(--button-text-transform);
-  font-family: Gotham Book;
+  font-family: var(--font-heading);
   font-size:var(--font-size-button);
   letter-spacing:var(--font-letter-spacing-button);
   padding-left: 20px;
@@ -16635,12 +16635,4 @@ model-viewer{
   	display: inherit;
     margin: 0 auto;
   }
-}
-
-/* Extra font added - Yurith */
-@font-face {
-  font-family: "Gotham Book";
-  src: url('https://cdn.shopify.com/s/files/1/0327/7196/5066/files/GothamBook.woff?v=1657281960');
-  src: url('https://cdn.shopify.com/s/files/1/0327/7196/5066/files/GothamBook.woff?v=1657281960') format('woff');
-  font-weight: black;
 }
