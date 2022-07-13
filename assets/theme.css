@@ -16544,10 +16544,6 @@ model-viewer{
   .product-price_css{
     font-size: 20px;
   }
-  .general-container-width, .general-container-width-wide, .general-container-width-narrow{
-    padding-left: 30px;
-    padding-right: 30px;
-  }
 }
 .image-with-list{
    padding: 0;
