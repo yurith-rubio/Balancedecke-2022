@@ -253,7 +253,7 @@ html.supports-no-cookies .supports-cookies{
   margin:0 auto;
   padding:var(--section-vertical-spacing) var(--spacing-medium);
   overflow:hidden;
-  background-color:var(--color-bg)
+  /*background-color:var(--color-bg)*/
 }
 @media (min-width: 38em){
 .section{
