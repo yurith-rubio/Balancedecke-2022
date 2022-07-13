@@ -9969,11 +9969,11 @@ div[data-media-type='external_video'] iframe{
     transform:none !important;
   }
 @media (min-width: 38em){
-    .user-is-tabbing .quote .carousel__navigation{
-        opacity:1;
-        transform:translateX(0)
-    }
-      }
+  .user-is-tabbing .quote .carousel__navigation{
+    opacity:1;
+    transform:translateX(0)
+  }
+}
 .quote__item{
   width:100%;
   height:auto;
