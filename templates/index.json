@@ -40,18 +40,6 @@
     "16505782497c419352": {
       "type": "text-columns-with-images",
       "blocks": {
-        "1650578249346cf38e-0": {
-          "type": "column",
-          "settings": {
-            "icon_span": "<span style=\"font-size:50px; padding-bottom:15px\" class=\"icon-cero-percent\"><\/span>",
-            "image_max_width": 30,
-            "title": "Gewichtsverteilung der Decke",
-            "subheading": "",
-            "text_max_width": 36,
-            "link": "",
-            "link_text": "Read more"
-          }
-        },
         "1650578249346cf38e-1": {
           "type": "column",
           "settings": {
@@ -60,6 +48,18 @@
             "title": "Hochwertige Verarbeitung",
             "subheading": "",
             "text_max_width": 40,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "1650578249346cf38e-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "<span style=\"font-size:50px; padding-bottom:15px\" class=\"icon-cero-percent\"><\/span>",
+            "image_max_width": 30,
+            "title": "Verrutschen des Inletts im Bezug",
+            "subheading": "",
+            "text_max_width": 36,
             "link": "",
             "link_text": "Read more"
           }
@@ -81,7 +81,7 @@
           "settings": {
             "icon_span": "<span style=\"font-size:50px; padding-bottom:15px\" class=\"icon-100-percent\"><\/span>",
             "image_max_width": 30,
-            "title": "Verrutschen des Inletts im Bezug",
+            "title": "Gewichtsverteilung der Decke",
             "subheading": "",
             "text_max_width": 36,
             "link": "",
@@ -102,8 +102,8 @@
         }
       },
       "block_order": [
-        "1650578249346cf38e-0",
         "1650578249346cf38e-1",
+        "1650578249346cf38e-0",
         "1650578249346cf38e-2",
         "50b12fa2-9be9-41b3-a2f5-225e6134b8c3",
         "d7064956-0c50-4ce2-889b-284222961b9e"
