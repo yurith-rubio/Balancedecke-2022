@@ -381,7 +381,7 @@
         "3c15dc56-8dc2-4db0-bf13-9ac004a5e309"
       ],
       "settings": {
-        "section_style": "default",
+        "section_style": "contrast",
         "text_position": "top_center",
         "columns": 3,
         "aspect_ratio": "natural",
