@@ -32,16 +32,16 @@
             "collection": "balance-gewichtsdecke-ersatzbezuge"
           }
         },
-        "4017165f-b912-44cd-a954-1090bb931c66": {
-          "type": "collection",
-          "settings": {
-            "collection": "balance-sparsets"
-          }
-        },
         "9a24b3de-76b0-4cbc-8177-94fe6702ee80": {
           "type": "collection",
           "settings": {
             "collection": "balance-gesundheitskissen"
+          }
+        },
+        "4017165f-b912-44cd-a954-1090bb931c66": {
+          "type": "collection",
+          "settings": {
+            "collection": "balance-sparsets"
           }
         }
       },
@@ -49,8 +49,8 @@
         "7a60f23c-10dd-4622-a816-81877a493a80",
         "29834284-12d1-4e4c-a14c-76bdd46c9163",
         "af29b681-2426-43b0-bfa7-25b094a5d37c",
-        "4017165f-b912-44cd-a954-1090bb931c66",
-        "9a24b3de-76b0-4cbc-8177-94fe6702ee80"
+        "9a24b3de-76b0-4cbc-8177-94fe6702ee80",
+        "4017165f-b912-44cd-a954-1090bb931c66"
       ],
       "settings": {
         "section_style": "default",
