@@ -153,7 +153,7 @@ button{
     }
 @media (min-width: 38em) and (max-width: 60em){
 .grid-display.grid-display--one-quarter{
-      grid-template-columns:repeat(1, 1fr)
+      grid-template-columns:repeat(2, 1fr)
   }
     }
 @media (min-width: 60em){
