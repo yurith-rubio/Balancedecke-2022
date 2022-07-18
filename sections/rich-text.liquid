@@ -31,7 +31,7 @@
   {% endstyle %}
 {% endif %}
 
-<div class="section">
+<div {% if image == blank %}class="section"{% endif %}>
 <section
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
