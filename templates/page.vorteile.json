@@ -13,7 +13,7 @@
         "16517809186efcf82a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Vorteile der Gravity Gewichtsdecke",
+            "heading": "Die Wirkung der Balance Gewichtsdecke",
             "heading_text_size": 48,
             "text_max_width": 46
           }
@@ -21,7 +21,7 @@
         "16517809186efcf82a-1": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p>Die Lösung für ein entspanntes Ein- und Durchschlafen.<\/p>",
+            "subheading": "<p>Für besseren Schlaf dank patentierter Technik<\/p>",
             "subheading_text_size": 14,
             "text_max_width": 40
           }
@@ -35,8 +35,7 @@
         "image_aspect": "custom",
         "desktop_height": 60,
         "mobile_height": 100,
-        "image": "shopify:\/\/shop_images\/advantages_main.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Slide_6_Weihnachten_2019.jpg",
+        "image": "shopify:\/\/shop_images\/hero.jpg",
         "focal_point": "center_center",
         "mobile_focal_point": "center_center",
         "alignment": "left_center",
@@ -68,7 +67,7 @@
           "type": "text",
           "settings": {
             "text": "Die handgefertigte Gravity Decke ist eine hochwertig verarbeitete Decke, die gegen Stress, Angst und Schlafstörungen, sowie bei psychophysischen Störungen wie ADHD, Down-Syndrom, Asperger-Syndrom oder Autismus hilft. \nDas Gewicht der Decke verteilt sich gleichmäßig über Ihren gesamten Körper und schenkt Ihnen das Gefühl einer liebevollen Umarmung. Ihr ganzer Körper ist entspannt, Ihr Stress- und Angstlevel sinkt und Sie können friedlich einschlafen oder entspannen.",
-            "text_max_width": 80
+            "text_max_width": 65
           }
         }
       },
@@ -119,7 +118,6 @@
       ],
       "settings": {
         "section_style": "default",
-        "image": "shopify:\/\/shop_images\/better_sleep_57366c43-a807-4326-a0e5-607f4d88abd1.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
@@ -128,7 +126,7 @@
         "text_alignment": "left",
         "text_color": "#000000",
         "text_container_color": "",
-        "button_background_color": "#000"
+        "button_background_color": "#000000"
       }
     },
     "1652689688f515572e": {
@@ -162,7 +160,6 @@
       ],
       "settings": {
         "section_style": "default",
-        "image": "shopify:\/\/shop_images\/stress_50e2679a-aa9e-4b28-b4d1-e2d470de4b85.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
@@ -171,7 +168,7 @@
         "text_alignment": "left",
         "text_color": "#000000",
         "text_container_color": "",
-        "button_background_color": "#000"
+        "button_background_color": "#000000"
       }
     },
     "1652689774e94df3ca": {
@@ -205,7 +202,6 @@
       ],
       "settings": {
         "section_style": "default",
-        "image": "shopify:\/\/shop_images\/wellbeing_6c1f87b0-2750-4923-909b-6dc8b1e7cbce.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
@@ -214,7 +210,7 @@
         "text_alignment": "left",
         "text_color": "#000000",
         "text_container_color": "",
-        "button_background_color": "#000"
+        "button_background_color": "#000000"
       }
     },
     "1652689844da04ba2c": {
@@ -248,7 +244,6 @@
       ],
       "settings": {
         "section_style": "default",
-        "image": "shopify:\/\/shop_images\/anxiety_8ae006d0-e96b-4518-bdf3-21598c6c7ec9.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
@@ -257,7 +252,7 @@
         "text_alignment": "left",
         "text_color": "#000000",
         "text_container_color": "",
-        "button_background_color": "#000"
+        "button_background_color": "#000000"
       }
     },
     "16526892958d1fcdda": {
@@ -291,14 +286,14 @@
       ],
       "settings": {
         "section_style": "default",
-        "alignment": "left",
-        "image_bg": "shopify:\/\/shop_images\/more_advantages.jpg"
+        "alignment": "left"
       }
     },
     "1652218881ba8969d1": {
       "type": "custom-liquid",
       "settings": {
         "paddings": true,
+        "main_bg_color": "#fff",
         "custom_liquid": "<center><a href=\"\/products\/gravity-gewichtsdecke\" class=\"slideshow-split__link bttn bttn--inline\" data-theme-editor-setting=\"section.template--14222020608133__slideshow_split_1.link_text\">\n          Jetzt testen\n        <\/a><\/center>"
       }
     }
