@@ -81,21 +81,9 @@
         "alignment": "center"
       }
     },
-    "16524466743fe495c3": {
-      "type": "image-text-slider",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "16526895272ec51fc7": {
       "type": "image-with-text",
       "blocks": {
-        "165268952723a2b7d9-0": {
-          "type": "overline",
-          "settings": {
-            "overline": ""
-          }
-        },
         "165268952723a2b7d9-1": {
           "type": "heading",
           "settings": {
@@ -112,7 +100,6 @@
         }
       },
       "block_order": [
-        "165268952723a2b7d9-0",
         "165268952723a2b7d9-1",
         "165268952723a2b7d9-2"
       ],
@@ -302,7 +289,6 @@
     "main",
     "16517809183fb77d91",
     "1651783995c46c0e2a",
-    "16524466743fe495c3",
     "16526895272ec51fc7",
     "1652689688f515572e",
     "1652689774e94df3ca",
