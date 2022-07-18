@@ -10,9 +10,12 @@
   {% endif %}
 >
   {%- if media.media_type == 'image' -%}
+  {% comment %}
     <a class="media__image" href="{{ link }}" data-open="{{ media.id }}">
-      {% render 'image' with image: media %}
+      
     </a>
+  {% endcomment %}
+  {% render 'image' with image: media %}
 
   {%- elsif media.media_type == 'video' -%}
     {{ media | video_tag: image_size: "1024x" }}
