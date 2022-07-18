@@ -20066,7 +20066,7 @@ var heightObserver = callback => {
 var selectors$5 = {
   sectionWrapper: '.product-page-wrapper',
   imagesContainer: '.product__media',
-  //images: '.media__image',
+  images: '.media__image',
   swatches: '[data-product-swatches]',
   chips: '[data-product-chips]',
   quantityInput: '.product-form__quantity',
