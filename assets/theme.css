@@ -11016,7 +11016,10 @@ div[data-media-type='external_video'] iframe{
   display:flex;
   align-items:center;
   color:var(--text-color);
-  padding:calc(var(--spacing-large) + var(--spacing-medium)) var(--spacing-medium)
+  padding:calc(var(--spacing-large) + var(--spacing-medium)) var(--spacing-medium);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 38em){
 .image-hero__content-container{
