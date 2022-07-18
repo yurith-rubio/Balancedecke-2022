@@ -20075,7 +20075,7 @@ var selectors$5 = {
   productDescription: '.product__description',
   accordion: '.accordion',
   productForm: '[data-product-form]',
-  lightboxTrigger: '.product__media-action-button',
+  //lightboxTrigger: '.product__media-action-button',
   thumb: '[data-product-thumbnail]',
   inYourSpace: '[data-in-your-space]'
 };
