@@ -118,7 +118,9 @@ button{
   display:grid;
   grid-gap:var(--spacing-medium);
   gap:var(--spacing-medium);
-  grid-template-columns:repeat(1, 1fr)
+  grid-template-columns:repeat(1, 1fr);
+  max-width: 1400px;
+  margin: auto;
 }
 @media (min-width: 60em){
 .grid-display{
