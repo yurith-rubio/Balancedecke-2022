@@ -120,16 +120,10 @@
     "1652689688f515572e": {
       "type": "image-with-text",
       "blocks": {
-        "165268968841e42f2c-0": {
-          "type": "overline",
-          "settings": {
-            "overline": ""
-          }
-        },
         "165268968841e42f2c-1": {
           "type": "heading",
           "settings": {
-            "heading": "Die Lösung für Stress",
+            "heading": "Die Lösung für weniger Stress",
             "text_max_width": 46
           }
         },
@@ -142,7 +136,6 @@
         }
       },
       "block_order": [
-        "165268968841e42f2c-0",
         "165268968841e42f2c-1",
         "165268968841e42f2c-2"
       ],
