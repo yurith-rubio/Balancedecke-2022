@@ -6361,6 +6361,7 @@ select{
   position:relative;
   width:100%;
   display:block;
+  max-width:1200px;
 }
 .utility-bar__announcement-item{
   text-align:center;
