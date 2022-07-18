@@ -113,16 +113,7 @@
                          {% if option.selected_value == value %}selected{% endif %}"
                   style="background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }}); background-color: {{ value | handle }};"
                   tabindex="0"
-                  aria-label="{{ value }}"
-                  {% if template == 'index' %}
-                    {% if product.title == 'STANDARD Gravity® - Gewichtsdecke für Erwachsene' %}
-                       data-swatch-product-one="standard-home-option"
-                    {% endif %}
-                    {% if product.title == 'STANDARD Gravity® - Gewichtsdecken Set für Erwachsene' %}
-                       data-swatch-product-one="set-swatch-option"
-                    {% endif %}
-                  {% endif %}
-                  >
+                  aria-label="{{ value }}">
             </button>
           {% endfor %}
         </div>
