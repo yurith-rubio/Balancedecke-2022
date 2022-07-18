@@ -40,15 +40,15 @@
             "low_inventory_threshold": "40"
           }
         },
+        "4278bb4e-888d-4bdd-b7e3-5836523392d4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
             "price_text_size": 22
-          }
-        },
-        "4278bb4e-888d-4bdd-b7e3-5836523392d4": {
-          "type": "quantity_selector",
-          "settings": {
           }
         },
         "buy_buttons": {
@@ -112,8 +112,8 @@
         "border",
         "variant_picker",
         "inventory_counter",
-        "price",
         "4278bb4e-888d-4bdd-b7e3-5836523392d4",
+        "price",
         "buy_buttons",
         "payment_feature_widget",
         "92f3b01e-1ae1-4658-9b21-ea0bf60f28af",
