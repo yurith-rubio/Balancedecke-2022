@@ -192,12 +192,6 @@
     "1652689844da04ba2c": {
       "type": "image-with-text",
       "blocks": {
-        "1652689844c772285d-0": {
-          "type": "overline",
-          "settings": {
-            "overline": ""
-          }
-        },
         "1652689844c772285d-1": {
           "type": "heading",
           "settings": {
@@ -214,7 +208,6 @@
         }
       },
       "block_order": [
-        "1652689844c772285d-0",
         "1652689844c772285d-1",
         "1652689844c772285d-2"
       ],
