@@ -93,7 +93,7 @@
           {% endif %}
         </div>
 
-       
+        {% comment %}
         {% if product.media[0].media_type == 'image' %}
           <div class="product__media-action">
             <button
@@ -106,6 +106,7 @@
             </button>
           </div>
         {% endif %}
+        {% endcomment %}
 
 
         {%- if show_thumbnails and thumbnail_position == 'horizontal' -%}
