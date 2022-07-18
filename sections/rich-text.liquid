@@ -31,6 +31,7 @@
   {% endstyle %}
 {% endif %}
 
+<div class="section">
 <section
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
@@ -91,11 +92,12 @@
     </div>
   </div>
 </section>
+</div>
 
 {% schema %}
   {
     "name": "t:sections.rich_text.name",
-    "class": "section section-dynamic section-borderable",
+    "class": "section-dynamic section-borderable",
     "settings": [
       {
         "type": "header",
