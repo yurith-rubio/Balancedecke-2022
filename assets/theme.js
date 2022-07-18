@@ -20283,7 +20283,7 @@ register('product', {
 
   _initLightbox() {
     this.images = this.container.querySelectorAll(selectors$5.images);
-    this.lightboxTrigger = this.container.querySelector(selectors$5.lightboxTrigger);
+    //this.lightboxTrigger = this.container.querySelector(selectors$5.lightboxTrigger);
     //var lightbox = this.container.querySelector('[data-lightbox]');
     this.lightbox = Lightbox(lightbox);
     this.images.forEach(image => {
