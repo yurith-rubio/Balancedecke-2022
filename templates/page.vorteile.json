@@ -104,7 +104,8 @@
         "165268952723a2b7d9-2"
       ],
       "settings": {
-        "section_style": "default",
+        "section_style": "contrast",
+        "image": "shopify:\/\/shop_images\/1.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
