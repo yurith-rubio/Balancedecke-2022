@@ -20066,7 +20066,7 @@ var heightObserver = callback => {
 var selectors$5 = {
   sectionWrapper: '.product-page-wrapper',
   imagesContainer: '.product__media',
-  images: '.media__image',
+  //images: '.media__image',
   swatches: '[data-product-swatches]',
   chips: '[data-product-chips]',
   quantityInput: '.product-form__quantity',
@@ -20075,7 +20075,7 @@ var selectors$5 = {
   productDescription: '.product__description',
   accordion: '.accordion',
   productForm: '[data-product-form]',
-  //lightboxTrigger: '.product__media-action-button',
+  lightboxTrigger: '.product__media-action-button',
   thumb: '[data-product-thumbnail]',
   inYourSpace: '[data-in-your-space]'
 };
