@@ -228,12 +228,6 @@
     "16526892958d1fcdda": {
       "type": "rich-text",
       "blocks": {
-        "16526892957d3df283-0": {
-          "type": "overline",
-          "settings": {
-            "overline": "Gravity Decke"
-          }
-        },
         "16526892957d3df283-1": {
           "type": "title",
           "settings": {
@@ -244,13 +238,12 @@
         "16526892957d3df283-2": {
           "type": "text",
           "settings": {
-            "text": "<ul>\n<li>ADD und ADHS<\/li>\n<li>Asperger-Syndrom und Autismus<\/li>\n<li>Restless Legs Syndrom (RLS, Unruhige Beine), das auf Chemotherapie oder Menopause zurückzuführen ist<\/li>\n<li>Innerliche und körperliche Anspannung<\/li>\n<li>Sensorische Integrationsstörungen<\/li>\n<li>Bei Menschen über 65 Jahren oder älter konnten Symptome von z.B. Alzheimer oder Parkinson gemindert werden Demenz<\/li>\n<\/ul>",
+            "text": "<ul>\n<li>Handgefertigte und hochwertige Gewichtsdecke - Die bei Stress, Angst- und Schlafstörungen, sowie bei Entwicklungsstörungen wie ADHD, Down-Syndrom, Asperger- Syndrom oder Autismus helfen kann.<\/li>\n<li>Völlige Entspannung des Körpers und Nervensystems - Das Gewicht lässt ein angenehmes Wohlgefühl entstehen und der gesamte Körper erholt sich.<\/li>\n<li>Steigerung des Wohlbefindens - Auch bei bereits vorhandenem Wohlbefinden kann die Decke Ihnen zumindest noch ein Stück zusätzliche Zufriedenheit und Gelassenheit schenken.<\/li>\n<li>Hochwertiger 4-Jahreszeiten- oder Baumwollbezug - Dank des neuen Designs leicht abzunehmen und zu wechseln.<\/li>\n<li>Absolute Balance - Das Gewicht der Balance Decke ist mit Hilfe unserer patentierten Technik komplett ausgeglichen verteilt - kein Verrutschen!<\/li>\n<\/ul>",
             "text_max_width": 50
           }
         }
       },
       "block_order": [
-        "16526892957d3df283-0",
         "16526892957d3df283-1",
         "16526892957d3df283-2"
       ],
