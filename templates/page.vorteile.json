@@ -141,6 +141,7 @@
       ],
       "settings": {
         "section_style": "default",
+        "image": "shopify:\/\/shop_images\/2.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
@@ -155,12 +156,6 @@
     "1652689774e94df3ca": {
       "type": "image-with-text",
       "blocks": {
-        "16526897745dad091b-0": {
-          "type": "overline",
-          "settings": {
-            "overline": ""
-          }
-        },
         "16526897745dad091b-1": {
           "type": "heading",
           "settings": {
@@ -171,13 +166,12 @@
         "16526897745dad091b-2": {
           "type": "subheading",
           "settings": {
-            "subheading": "Gewichtsdecken bewirken mit dem gefüllten Gewicht eine Schwere, die sich beim Auflegen auf den Körper durch Entspannung bemerkbar macht. Der Tiefendruck, der dabei entsteht, vermittelt dem Gehirn das gleiche Signal, das bei einer liebevollen Umarmung entsteht. Der Einsatz der Gewichtsdecke ist nach einem erfolgreichen Tag eine Genugtuung für Körper und Seele.",
+            "subheading": "Die Balance Gewichtsdecke löst durch Auflegen auf den Körper einen Tiefendruck aus, der dem Gehirn das gleiche Gefühl signalisiert, das bei einer sanften Umarmung entsteht. Körper und Geist gelangen in Einklang und man fühlt sich unterstützt, gehalten und entspannt.",
             "text_max_width": 50
           }
         }
       },
       "block_order": [
-        "16526897745dad091b-0",
         "16526897745dad091b-1",
         "16526897745dad091b-2"
       ],
