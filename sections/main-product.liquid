@@ -415,9 +415,7 @@
       </div>
 
       {%- assign images = product.media | where: 'media_type', 'image' -%}
-      {% comment %}
       {% render 'lightbox' with images: images %}
-      {% endcomment %}
       {% render 'reviews-drawer' with product: product %}
     </section>
 
