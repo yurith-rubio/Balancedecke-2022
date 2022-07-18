@@ -111,7 +111,7 @@
     {% if settings.uppercase_headings %} g-uppercase{% endif %}
     secondary_button-style-{{ settings.button_secondary_style }}
   "
-  data-zoom-animation-enabled="{{ settings.enable_zoom_on_scroll }}"
+  {% comment %}data-zoom-animation-enabled="{{ settings.enable_zoom_on_scroll }}"{% endcomment %}
 >
 
   {% comment %}  Theme modified to add our own SLIDE CART - I am not pulling the slide cart that comes as default with the theme - I did not want to comment all things to leave the theme cleaner, if we want to reuse the old slide cart we would have to check the original intact files for this theme - Yurith {% endcomment %}
