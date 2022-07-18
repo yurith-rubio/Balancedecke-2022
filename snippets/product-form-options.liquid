@@ -55,16 +55,7 @@
               data-button="{{ value | handleize }}--{{ forloop.index0 }}"
               class="product-form__chip {% if option.selected_value == value %}selected{% endif %}"
               tabindex="0"
-              aria-label="{{ value }}"
-              {% if template == 'index' %}
-                 {% if product.title == 'STANDARD Gravity® - Gewichtsdecke für Erwachsene' %}
-                    data-swatch-product-one="standard-home-option"
-                 {% endif %}
-                 {% if product.title == 'STANDARD Gravity® - Gewichtsdecken Set für Erwachsene' %}
-                    data-swatch-product-one="set-swatch-option"
-                 {% endif %}
-              {% endif %}
-            >
+              aria-label="{{ value }}">
               {{ value }}
             </button>
           {% endfor %}
