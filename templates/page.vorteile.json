@@ -257,8 +257,8 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": true,
-        "main_bg_color": "#fff",
-        "custom_liquid": "<center><a href=\"\/products\/gravity-gewichtsdecke\" class=\"slideshow-split__link bttn bttn--inline\" data-theme-editor-setting=\"section.template--14222020608133__slideshow_split_1.link_text\">\n          Jetzt testen\n        <\/a><\/center>"
+        "main_bg_color": "#ffffff",
+        "custom_liquid": "<center><a href=\"\/collections\/balance-gewichtsdecke-fur-erwachsene\/products\/balance-gewichtsdecke\" class=\"slideshow-split__link bttn bttn--inline\" data-theme-editor-setting=\"section.template--14222020608133__slideshow_split_1.link_text\">\n          Jetzt testen\n        <\/a><\/center>"
       }
     }
   },
