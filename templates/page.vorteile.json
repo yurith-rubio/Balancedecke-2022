@@ -191,6 +191,7 @@
     },
     "1652689844da04ba2c": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1652689844c772285d-1": {
           "type": "heading",
@@ -255,7 +256,8 @@
       ],
       "settings": {
         "section_style": "default",
-        "alignment": "left"
+        "alignment": "left",
+        "image_bg": "shopify:\/\/shop_images\/4.jpg"
       }
     },
     "1652218881ba8969d1": {
