@@ -30,71 +30,6 @@
 
 {% for option in product.options_with_values %}
   {%- assign option_name = option.name | downcase -%}
-
-  {% if swatch_options contains option_name %}
-    <div class="product-form__option product-form__option-swatches js-enabled">
-      <div class="product-form__color-swatches" data-option-buttons data-product-option="Option{{ option.position }}">
-        <div class="product-form__option-label-wrapper">
-          <div>
-            <label class="product-form__option-label type-heading-3" for="Option{{ option.position }}--{{ block.id }}">
-              {{ option.name }} Test1
-            </label>
-
-            <span class="product-form__option-selected" data-option-selected>{{ option.selected_value }}</span>
-
-          </div>
-
-          {% if variant_popup_content_exists and option_name == variant_popup_option %}
-            {{ guide_trigger }}
-          {% endif %}
-        </div>
-               
-        <div class="product-form__option-swatches-wrapper">
-          {% for value in option.values %}
-            <button
-                  type="button"
-                  data-button="{{ value | handleize }}--{{ forloop.index0 }}"
-                  class="product-form__color-swatch 
-                         {% if option.selected_value == value %}selected{% endif %}"
-                  style="background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }}); background-color: {{ value | handle }};"
-                  tabindex="0"
-                  aria-label="{{ value }}"
-                  {% if template == 'index' %}
-                    {% if product.title == 'STANDARD Gravity® - Gewichtsdecke für Erwachsene' %}
-                       data-swatch-product-one="standard-home-option"
-                    {% endif %}
-                    {% if product.title == 'STANDARD Gravity® - Gewichtsdecken Set für Erwachsene' %}
-                       data-swatch-product-one="set-swatch-option"
-                    {% endif %}
-                  {% endif %}
-                  >
-            </button>
-          {% endfor %}
-        </div>
-
-        <select
-          id="Option{{ option.position }}--{{ block.id }}"
-          name="options[{{ option.name | escape }}]"
-          class="product-form__option-select"
-        >
-          {% for value in option.values %}
-            <option
-              data-value-handle="{{ value | handleize }}--{{ forloop.index0 }}"
-              value="{{ value | escape }}"
-              {% if option.selected_value == value %}selected="selected"{% endif %}>
-                {{ value }}
-            </option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
-    {% comment %} Dynamic info on product swatch form - Yurith {% endcomment %}
-    {% render 'options-dynamic-info', option: option, product: product %}
-  {% endif %}
-{% endfor %}
-
-{% for option in product.options_with_values %}
-  {%- assign option_name = option.name | downcase -%}
   {% unless swatch_options contains option_name %}
     {% if chip_options contains option_name %}
       <div class="product-form__option product-form__option-chip js-enabled">
@@ -160,11 +95,76 @@
 {% for option in product.options_with_values %}
   {%- assign option_name = option.name | downcase -%}
 
+  {% if swatch_options contains option_name %}
+    <div class="product-form__option product-form__option-swatches js-enabled">
+      <div class="product-form__color-swatches" data-option-buttons data-product-option="Option{{ option.position }}">
+        <div class="product-form__option-label-wrapper">
+          <div>
+            <label class="product-form__option-label type-heading-3" for="Option{{ option.position }}--{{ block.id }}">
+              {{ option.name }} Test1
+            </label>
+
+            <span class="product-form__option-selected" data-option-selected>{{ option.selected_value }}</span>
+
+          </div>
+
+          {% if variant_popup_content_exists and option_name == variant_popup_option %}
+            {{ guide_trigger }}
+          {% endif %}
+        </div>
+               
+        <div class="product-form__option-swatches-wrapper">
+          {% for value in option.values %}
+            <button
+                  type="button"
+                  data-button="{{ value | handleize }}--{{ forloop.index0 }}"
+                  class="product-form__color-swatch 
+                         {% if option.selected_value == value %}selected{% endif %}"
+                  style="background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }}); background-color: {{ value | handle }};"
+                  tabindex="0"
+                  aria-label="{{ value }}"
+                  {% if template == 'index' %}
+                    {% if product.title == 'STANDARD Gravity® - Gewichtsdecke für Erwachsene' %}
+                       data-swatch-product-one="standard-home-option"
+                    {% endif %}
+                    {% if product.title == 'STANDARD Gravity® - Gewichtsdecken Set für Erwachsene' %}
+                       data-swatch-product-one="set-swatch-option"
+                    {% endif %}
+                  {% endif %}
+                  >
+            </button>
+          {% endfor %}
+        </div>
+
+        <select
+          id="Option{{ option.position }}--{{ block.id }}"
+          name="options[{{ option.name | escape }}]"
+          class="product-form__option-select"
+        >
+          {% for value in option.values %}
+            <option
+              data-value-handle="{{ value | handleize }}--{{ forloop.index0 }}"
+              value="{{ value | escape }}"
+              {% if option.selected_value == value %}selected="selected"{% endif %}>
+                {{ value }}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    {% comment %} Dynamic info on product swatch form - Yurith {% endcomment %}
+    {% render 'options-dynamic-info', option: option, product: product %}
+  {% endif %}
+{% endfor %}
+
+{% for option in product.options_with_values %}
+  {%- assign option_name = option.name | downcase -%}
+
   {% unless swatch_options contains option_name or chip_options contains option_name %}
     <div class="product-form__option js-enabled">
       <div class="product-form__option-label-wrapper">
         <label class="product-form__option-label type-heading-3" for="Option{{ option.position }}--{{ block.id }}">
-          {{ option.name }}
+          {{ option.name }} Test3
         </label>
 
         {% if variant_popup_content_exists and option_name == variant_popup_option %}
