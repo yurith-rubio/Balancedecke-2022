@@ -114,22 +114,22 @@
         "fbb2a404-0c6a-4b06-b444-0ae03adb6e54": {
           "type": "question",
           "settings": {
-            "question_title": "Was unterscheidet eine Gravity Decke von einer normalen Decke?",
-            "anwer": "Normale Decken sind meistens mit Daunen oder Federn gefüttert. Die Gravity Decken sind mit Mikroglaskugeln gefüllt, damit sie an Gewicht gewinnen. Die Glasperlen sind sehr fein und man spürt sie nicht. Die Gewichtsdecken sind hypoallergen und können auch von Allergikern verwendet werden. Im Gegensatz zu Daunendecken ist der Stoff der Gravity Decke luftdurchlässig (atmungsaktiv), wodurch die Temperatur unter der Decke immer angenehm warm bleibt."
+            "question_title": "Was unterscheidet eine Balance Decke von anderen Gewichtsdecken?",
+            "anwer": "Die Balance Therapiedecke hat, wie die Gravity Decke, ebenfalls einen abnehmbaren Bezug. Jedoch folgt die Balance Decke einem anderen Prinzip, denn der Bezug wird ausschließlich über einen Reißverschluss am Inlett befestigt. Auch werden keine Glasperlen für das Gewicht verwendet, sondern Edelstahlkügelchen (rostfrei), die im Inneren des Inletts ankleben. Die Kügelchen sind gleichmäßig über die gesamte Decke verteilt angebracht und verrutschen nicht."
           }
         },
         "8d57893b-13ce-4ef3-9dc5-46c89c1d9d39": {
           "type": "question",
           "settings": {
-            "question_title": "Sind Gravity Decken gefährlich?",
+            "question_title": "Sind Balance Decken gefährlich?",
             "anwer": "Nein, Gewichtsdecken sind sicher. Kleinkinder unter 5 Jahren oder 20 kg sollten die Gravity Decke immer unter Aufsicht verwenden. Wenn Kinder die Decke alleine verwenden, sollten sie stets in der Lage sein, die Decke problemlos zu entfernen.<br><br>\n\nPatienten mit Typ 2 Diabetes in fortgeschrittenem Stadium sollten keine Gewichtsdecke benutzen, da der Kreislauf schwächer ist. Die Gewichtsdecke sollte auf keinen Fall bei Patienten mit sogenannten diabetischen Fuß angewendet werden.\n<br><br>\nPersonen mit Nierenbeschwerden (vor allem Dialyse-Patienten) sollten mit ihrem Arzt sprechen, ob eine Gewichtsdecke verwendet werden darf.\n\nMan sollte stets in der Lage sein, die Decke selbst zu entfernen."
           }
         },
         "b5bac308-ac46-4df6-a7e4-daab1dd93ea2": {
           "type": "question",
           "settings": {
-            "question_title": "Mir wird oft zu warm in meiner normalen Bettdecke. Wie warm wird die Gravity Gewichtsdecke?",
-            "anwer": "Der Stoff der Gravity Gewichtsdecke ist sehr atmungsaktiv, sodass die Temperatur unter der Decke ausgeglichen wird und die Wärme immer als angenehm empfunden wird."
+            "question_title": "Was muss ich über die verwendeten Materialien wissen?",
+            "anwer": "Das Therapiedecken Modell Balance hat im Inneren geklebte Edelstahlkügelchen. Entgegen einiger Spekulationen sehen wir in der Verwendung von Edelstahl keine Gefahr, es gibt dahingehend auch keinerlei wissenschaftliche Bedenken oder Belege, dass es einen negativen Einfluss haben könnte.\nUm die Kügelchen gleichmäßig verteilen zu können, verwenden wir geruchlosen, nicht toxischen Klebstoff auf Wasserbasis. Der Klebstoff kommt mit der Haut nicht in Berührung, es besteht aber auch bei möglichem Hautkontakt keine Gefahr. Das Sicherheitsdatenblatt zu dem verwendeten Klebstoff können Sie hier vom Hersteller einsehen."
           }
         },
         "eb0607dc-a0bb-4d84-adcf-deb40fd6da65": {
@@ -143,7 +143,7 @@
           "type": "question",
           "settings": {
             "question_title": "Wie wasche ich die Gewichtsdecke?",
-            "anwer": "Unsere Gravity Decke besteht aus zwei Teilen: dem weichen Bezug und der Gewichtsdecke. <br><br>Beides lässt sich bei 30°C in der Waschmaschine waschen. Überprüfen Sie zuerst, ob das Gewicht der Decke für die Trommel nicht zu schwer sein wird. Es reicht meistens aus, wenn Sie nur den Bezug waschen. <br>Bitte benutzen Sie keinen Trockner, da der Stoff davon beschädigt werden kann."
+            "anwer": "Unsere Balance Decke besteht aus zwei Teilen: dem weichen Bezug und der Gewichtsdecke. <br>Der Bezug lässt sich bei 30°C in der Waschmaschine waschen. <br>Überprüfen Sie zuerst, ob das Gewicht der Decke für die Trommel nicht zu schwer sein wird. Es reicht meistens aus, wenn Sie nur den Bezug waschen. <br> Das Inlett der Balance Decke ist nicht waschbar.\n\n<br>Bitte benutzen Sie keinen Trockner, da der Stoff davon beschädigt werden kann."
           }
         },
         "0dc92f36-3f8e-4690-a6c2-c045672029ff": {
@@ -164,7 +164,7 @@
           "type": "question",
           "settings": {
             "question_title": "Muss ich die Gewichtsdecke mit Bettwäsche überziehen?",
-            "anwer": "Die Gewichtsdecke muss nicht mit Bettwäsche überzogen werden. Die Gravity Decke enthält bereits einen abnehmbaren Bezug. Aufgrund des Gewichts kann ein eigener Bezug ohne Befestigungen an der Decke zum Verrutschen führen."
+            "anwer": "Die Gewichtsdecke muss nicht mit Bettwäsche überzogen werden. Die Balance Decke enthält bereits einen abnehmbaren Bezug. Aufgrund des Gewichts kann ein eigener Bezug ohne Befestigungen an der Decke zum Verrutschen führen."
           }
         },
         "728d9abb-abda-4231-b281-3784bb3edf29": {
@@ -185,35 +185,7 @@
           "type": "question",
           "settings": {
             "question_title": "Warum lag in meinem Paket keine Rechnung bei?",
-            "anwer": "Aus Rücksicht auf die Umwelt verzichten wir darauf in jedes Paket eine Rechnung zu legen. Diese kann per E-Mail an kundenservice@gravitydecke.de angefordert werden."
-          }
-        },
-        "7733fcda-b800-4b58-aa0f-0e5c6284b664": {
-          "type": "question",
-          "settings": {
-            "question_title": "Warum ist das Inlett der Gravity Decke größer als der Gravity Bezug?",
-            "anwer": "Damit das dünne Inlett möglichst gefüllt und eng im Bezug liegt, ist es absichtlich etwas größer als der Bezug. Da nur die Gravity Decke mit einem Bezug kommt, gilt dies nur für Gravity Decken. Die Inlett Größen sind wie folgt:<br><br>\n\n<ul class=\"collapsible-ul\">\n<li>Bei der 135 cm x 200 cm Gravity Gewichtsdecke ist das Inlett 150 cm x 215 cm groß.<\/li>\n<li>Bei der 155 cm x 220 cm Gravity Gewichtsdecke ist das Inlett 155 cm x 235 cm groß.<\/li><\/ul>"
-          }
-        },
-        "9dc84b3a-a02b-4474-b84a-1807fbbfbe45": {
-          "type": "question",
-          "settings": {
-            "question_title": "Die Füllung in meiner Gewichtsdecke verteilt sich nicht gleichmäßig. Warum ist das so?",
-            "anwer": "Jedes Quadrat einer Gewichtsdecke wird mit der gleichen Menge Mikroglaskugeln befüllt. Die Füllung wird sich immer in den unteren Ecken sammeln und sich nicht im gesamten Quadrat verteilen. Dies ist kein Konstruktionsfehler. Die Füllung drückt punktuell auf den Körper und übt damit das Gewicht aus."
-          }
-        },
-        "2d4fa7ea-4ffc-4661-8fa3-c88d8ed3e1d1": {
-          "type": "question",
-          "settings": {
-            "question_title": "Das Inlett von meiner Gravity Decke verrutscht. Warum ist das so?",
-            "anwer": "Es liegt sehr wahrscheinlich daran, dass eine Schlaufe aufgegangen ist, die das Inlett an den Bezug befestigt. Das lässt sich sehr schnell lösen. Öffnen Sie bitte den Bezug und prüfen Sie, ob das Inlett gut angebunden ist."
-          }
-        },
-        "35edb488-f6f7-4ed0-a17e-fec95edb22ee": {
-          "type": "question",
-          "settings": {
-            "question_title": "Wiegt der Gravity Sommerbezug so viel wie der Gravity 4-Jahreszeiten-Bezug?",
-            "anwer": "Nein, die Sommerbezüge sind leichter, da man im Sommer weniger Druck benötigt. <br><br><ul class=\"collapsible-ul\"><li>Der Bezug in der Größe 135 x 200 cm ist 0,5 kg leichter und der Bezug in der Größe 155 x 220 cm ist max. 1 kg leichter, als der 4-Jahreszeiten-Bezug.<\/li><\/ul>"
+            "anwer": "Aus Rücksicht auf die Umwelt verzichten wir darauf in jedes Paket eine Rechnung zu legen. Diese kann per E-Mail an kundenservice@balancedecke.de angefordert werden."
           }
         }
       },
@@ -236,11 +208,7 @@
         "3548e9fc-243f-4ad8-a239-0fd6bbd5b30f",
         "728d9abb-abda-4231-b281-3784bb3edf29",
         "5d6a6bb2-65f6-49a0-98c8-877f133bb64e",
-        "5e213fa1-b061-417f-be4e-96178b211a26",
-        "7733fcda-b800-4b58-aa0f-0e5c6284b664",
-        "9dc84b3a-a02b-4474-b84a-1807fbbfbe45",
-        "2d4fa7ea-4ffc-4661-8fa3-c88d8ed3e1d1",
-        "35edb488-f6f7-4ed0-a17e-fec95edb22ee"
+        "5e213fa1-b061-417f-be4e-96178b211a26"
       ],
       "settings": {
       }
