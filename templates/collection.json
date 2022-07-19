@@ -7,11 +7,11 @@
         "focal_point": "center_top",
         "overlay_opacity": 40,
         "overlay_color": "#000000",
-        "text_color": "#ffffff",
+        "text_color": "#454236",
         "show_border": true,
         "show_heading": true,
         "show_small_heading": true,
-        "show_description": false,
+        "show_description": true,
         "heading_alignment": "left",
         "text_max_width": 38
       }
