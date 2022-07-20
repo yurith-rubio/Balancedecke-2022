@@ -123,16 +123,9 @@
         "enable_video_looping": true
       }
     },
-    "165220396040161e27": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "paddings": false,
-        "custom_liquid": "{% render 'slider-quote-logos' %}"
-      }
-    },
     "16522047234ea09167": {
       "type": "text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "16522047237f6b0db8-0": {
           "type": "column",
@@ -192,6 +185,7 @@
       "settings": {
         "section_style": "contrast",
         "main_bg": "#efefef",
+        "text_color": "#5b5b5b",
         "columns": 4,
         "overline": "",
         "title": "",
@@ -265,9 +259,9 @@
             "background_color": "",
             "color_text": "#ffffff",
             "color_text_button": "#181818",
-            "color_background_button": "#FFFFFF",
+            "color_background_button": "#ffffff",
             "color_text_container": "",
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "overlay_opacity": 0
           }
         },
@@ -346,6 +340,7 @@
       "settings": {
         "section_style": "default",
         "main_bg": "#efefef",
+        "text_color": "#5b5b5b",
         "columns": 3,
         "overline": "",
         "title": "Gesundheitskissen mit 3 Optionen",
@@ -387,7 +382,6 @@
       ],
       "settings": {
         "section_style": "default",
-        "image": "shopify:\/\/shop_images\/zirbenholz.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
@@ -396,7 +390,7 @@
         "text_alignment": "left",
         "text_color": "#000000",
         "text_container_color": "",
-        "button_background_color": "#000"
+        "button_background_color": "#000000"
       }
     },
     "16502641772d80f71a": {
@@ -429,7 +423,6 @@
   },
   "order": [
     "main",
-    "165220396040161e27",
     "16522047234ea09167",
     "1650264258930fa44c",
     "16529611515cfdd968",
