@@ -66,15 +66,20 @@
   <div class="grid-display{{ grid_modifiers }}">
       {% if blocks.size > 0 %}
         {% for block in blocks %}
-    	{% if block.settings.collection_link == blank %}
+    	
           {% assign featured_collection = collections[block.settings.collection] %}
-    	{% else %}
+    	
     	  {% assign featured_collection_link = block.settings.collection_link %}
-    	{% endif %}
+    	
 
           {% if featured_collection != empty %}
 
-            <a href="{{ featured_collection.url }}" class="collection-list-grid__collection animates">
+            <a href="{% if block.settings.collection_link == blank %}
+                       {{ featured_collection.url }}
+                     {% else %}
+                       {{ featured_collection_link.url }}
+                     {% endif %}
+                     " class="collection-list-grid__collection animates">
 
               {%- assign image_object = featured_collection.image | default: featured_collection.products.first.featured_media.preview_image -%}
 
