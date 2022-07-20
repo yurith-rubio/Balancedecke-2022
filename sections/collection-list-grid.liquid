@@ -66,7 +66,11 @@
   <div class="grid-display{{ grid_modifiers }}">
       {% if blocks.size > 0 %}
         {% for block in blocks %}
+    	{% if block.settings.collection_link == blank %}
           {% assign featured_collection = collections[block.settings.collection] %}
+    	{% else %}
+    	  {% assign featured_collection = block.settings.collection_link %}
+    	{% endif %}
 
           {% if featured_collection != empty %}
 
