@@ -69,7 +69,7 @@
     	{% if block.settings.collection_link == blank %}
           {% assign featured_collection = collections[block.settings.collection] %}
     	{% else %}
-    	  {% assign featured_collection = block.settings.collection_link %}
+    	  {% assign featured_collection_link = block.settings.collection_link %}
     	{% endif %}
 
           {% if featured_collection != empty %}
