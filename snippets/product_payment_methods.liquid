@@ -1,17 +1,22 @@
 {% style %}
-  .Product__PaymentList{
-    margin: 15px 0 0 0;
-	padding-left: 0;
-  }
-  .HorizontalList {
-    list-style: none;
-  }
-  .HorizontalList__Item {
-    display: inline-block;
-    margin: 6px 8px 6px 8px;
-  }
+.Product__PaymentList{
+  margin: 15px 0 0 0;
+  padding-left: 0;
+}
+.HorizontalList {
+	list-style: none;
+}
+.HorizontalList__Item {
+  display: inline-block;
+  margin: 6px 8px 6px 8px;
+}
 .HorizontalList__Item:first-child{
 	margin-left: 0;
+}
+@media only screen and (max-width: 640){
+  .Product__PaymentList{
+    display:none;
+  }
 }
 {% endstyle %}
 
