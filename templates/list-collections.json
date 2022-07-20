@@ -17,31 +17,36 @@
         "7a60f23c-10dd-4622-a816-81877a493a80": {
           "type": "collection",
           "settings": {
-            "collection": "balance-gewichtsdecke-fur-erwachsene"
+            "collection": "balance-gewichtsdecke-fur-erwachsene",
+            "collection_link": "shopify:\/\/products\/balance-gewichtsdecke"
           }
         },
         "29834284-12d1-4e4c-a14c-76bdd46c9163": {
           "type": "collection",
           "settings": {
-            "collection": "balance-gewichtsdecke-fur-kinder"
+            "collection": "balance-gewichtsdecke-fur-kinder",
+            "collection_link": ""
           }
         },
         "af29b681-2426-43b0-bfa7-25b094a5d37c": {
           "type": "collection",
           "settings": {
-            "collection": "balance-therapiedecke-ersatzbezuge"
+            "collection": "balance-therapiedecke-ersatzbezuge",
+            "collection_link": ""
           }
         },
         "9a24b3de-76b0-4cbc-8177-94fe6702ee80": {
           "type": "collection",
           "settings": {
-            "collection": "balance-gesundheitskissen"
+            "collection": "balance-gesundheitskissen",
+            "collection_link": ""
           }
         },
         "4017165f-b912-44cd-a954-1090bb931c66": {
           "type": "collection",
           "settings": {
-            "collection": "balance-sparsets"
+            "collection": "balance-sparsets",
+            "collection_link": ""
           }
         }
       },
