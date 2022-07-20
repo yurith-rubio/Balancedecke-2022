@@ -128,6 +128,7 @@
       "disabled": true,
       "settings": {
         "paddings": false,
+        "main_bg_color": "#fff",
         "custom_liquid": "{% render 'slider-quote-logos' %}"
       }
     },
@@ -192,6 +193,7 @@
       "settings": {
         "section_style": "contrast",
         "main_bg": "#efefef",
+        "text_color": "#5b5b5b",
         "columns": 4,
         "overline": "",
         "title": "",
@@ -208,7 +210,7 @@
         "1650264257d6ea0cfd-1": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/production-cotton.jpg",
+            "image": "shopify:\/\/shop_images\/production-cotton_720x_9d607ded-3177-4e29-80ef-b699de597de2.webp",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -218,7 +220,7 @@
         "1650264257d6ea0cfd-0": {
           "type": "medium_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-2_1_1_1_1_1.jpg",
+            "image": "shopify:\/\/shop_images\/2-1_1.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -241,7 +243,7 @@
         "d6ec6483-6ce9-4745-a457-d92967797f3f": {
           "type": "small_square",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-25_2.jpg",
+            "image": "shopify:\/\/shop_images\/Einfache_Handhabung_durch_Reissverschlusse.jpg",
             "video_url": "",
             "media_fit": "cover",
             "focal_point": "center_center",
@@ -335,7 +337,6 @@
       ],
       "settings": {
         "section_style": "default",
-        "image": "shopify:\/\/shop_images\/1-46_1.jpg",
         "video_url": "",
         "image_width": "one-half",
         "aspect_ratio": "natural",
