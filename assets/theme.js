@@ -14332,7 +14332,6 @@ var productItem = node => {
   }
 
   function handleOver(e) {
-    console.log("handleOver");
     var second = imageWrapper.querySelector('.not-first');
 
     if (second) {
@@ -14341,7 +14340,6 @@ var productItem = node => {
   }
 
   function handleOut(e) {
-    console.log("handleOut");
     var second = imageWrapper.querySelector('.not-first');
 
     if (second) {
