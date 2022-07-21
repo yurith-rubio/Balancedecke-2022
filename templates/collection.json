@@ -30,7 +30,7 @@
         "products_per_row_mobile": 2,
         "aspect_ratio": "square",
         "per_page": 12,
-        "pagination": "click"
+        "pagination": "paginated"
       }
     }
   },
