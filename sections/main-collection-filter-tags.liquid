@@ -111,7 +111,7 @@
           {% if show_sort or show_filters %}
             {%- if filter_style == 'sidebar' -%}
               <div class="collection__sidebar" data-sidebar>
-                {% render 'collection-sidebar' with
+                {% render 'collection-sidebar-filter-tags' with
                   current_tags: current_tags,
                   resource: collection,
                   show_sort: show_sort,
