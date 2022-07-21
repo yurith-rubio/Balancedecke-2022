@@ -448,7 +448,7 @@
       "log_out": "Abmelden"
     },
     "footer": {
-      "copyright": "Gravitydecke.de",
+      "copyright": "Balancedecke.de",
       "payment_methods": "Akzeptierte Zahlungsarten",
       "social_platform": "{{ name }} auf {{ platform }}"
     },
