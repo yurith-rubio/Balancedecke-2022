@@ -12877,7 +12877,7 @@ div[data-media-type='external_video'] iframe{
   .animation__staggered-children-fade-in:not(.animation-disabled) > :nth-child(2),
   .animation__staggered-children-fade-in:not(.animation-disabled) > :nth-child(3),
   .animation__staggered-children-fade-in:not(.animation-disabled) > :nth-child(4){
-    opacity:0;
+    /*opacity:0;*/
     transition:opacity 0.25s var(--cubic), background-color 0.2s ease;
   }
 .no-js .animation__staggered-children-fade-in:not(.animation-disabled) > :nth-child(1), .no-js .animation__staggered-children-fade-in:not(.animation-disabled) > :nth-child(2), .no-js .animation__staggered-children-fade-in:not(.animation-disabled) > :nth-child(3), .no-js .animation__staggered-children-fade-in:not(.animation-disabled) > :nth-child(4){
