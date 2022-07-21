@@ -1,0 +1,273 @@
+<!-- snippet: drawer-tags-filters.liquid -->
+
+<div class="mobile-filteredby-container">
+
+  {% if current_tags.size > 0 %}
+    <div class="clear-all-wr"><a href="https://gravitydecke.de/collections/gravity-gesundheitskissen" class="Heading u-h5 tag_clear_all">Alle Filter entfernen</a></div>
+    <div class="">Filtern nach</div>
+  {% endif %}
+
+  <div class="tag_top_wr">
+    {% for tag in current_tags %}
+      {% assign tag_value = tag | split: "-" | slice: 1 %}
+        <div class="tag_top">{{ tag_value[0] | link_to_remove_tag: tag }}</div>
+    {% endfor %}
+  </div>
+</div> 
+
+<ul class="filter_ul">
+  <li class="answer filter_li">
+    <input type="checkbox" id="section1" class="answer__radio" hidden>
+    <label for="section1" class="answer__question filter_buttonLabel type-heading-3">
+      <span> Farbe </span>
+      <svg class="filter_arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+        <path d="M2.753.357l4.39 4.39a.357.357 0 0 1 0 .506l-4.39 4.39" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+      </svg>
+    </label>
+    <div class="answer__content">
+      <div class="filter_sectionOptions answer__content--inner">
+        <ul class="drawer-menu__primary-links filter_linkList Linklist-filters-mobile">
+          {% for tag in collection.all_tags %}
+          {% assign tag_value = tag | split: "-" | slice: 1 %}
+          {% assign tag_key = tag | split: "-" | slice: 0 %}
+          {% assign selected = "" %}
+
+          {% if tag_key[0] == "farbe" %}
+          <li class="no-transition filter_li">
+            {% if current_tags contains tag %}
+            {% assign selected = "filter_color_selected" %}	
+            {% endif %}       
+            {% if tag_key[0] == "farbe" %}
+            <div class="filter_color_wr {{ selected }}" data-color="{{ tag }}">
+              <div class="filter_color {{ selected }} filter_color_{{ tag_value[0] }}" data-color="{{ tag }}"></div>
+            </div>
+            {% endif %}
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </li>
+  
+  <li class="answer filter_li">
+    <input type="checkbox" id="section2" class="answer__radio" hidden>
+    <label for="section2" class="answer__question filter_buttonLabel type-heading-3">
+      <span> Thema </span>
+      <svg class="filter_arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+        <path d="M2.753.357l4.39 4.39a.357.357 0 0 1 0 .506l-4.39 4.39" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+      </svg>
+    </label>
+    <div class="answer__content">
+      <div class="filter_sectionOptions answer__content--inner">
+        <ul class="filter_linkList">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li class="filter_li">
+              {% if tag_key[0] == "thema" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  
+                  <div class="filter_theme filter_styling" data-theme="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-theme="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-theme="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                  
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </li>
+  
+  <li class="answer filter_li">
+    <input type="checkbox" id="section3" class="answer__radio" hidden>
+    <label for="section3" class="answer__question filter_buttonLabel type-heading-3">
+      <span> Größe </span>
+      <svg class="filter_arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+        <path d="M2.753.357l4.39 4.39a.357.357 0 0 1 0 .506l-4.39 4.39" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+      </svg>
+    </label>
+    <div class="answer__content">
+      <div class="filter_sectionOptions answer__content--inner">
+        <ul class="filter_linkList">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li class="filter_li">
+              {% if tag_key[0] == "size" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_size filter_styling" data-size="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-size="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-size="{{ tag }}">{{ tag_value[0] | replace: "0", ' ' | lstrip |replace: ' ', '0' }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </li>
+  
+  <li class="answer filter_li">
+    <input type="checkbox" id="section4" class="answer__radio" hidden>
+    <label for="section4" class="answer__question filter_buttonLabel type-heading-3">
+      <span> Alter </span>
+      <svg class="filter_arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+        <path d="M2.753.357l4.39 4.39a.357.357 0 0 1 0 .506l-4.39 4.39" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+      </svg>
+    </label>
+    <div class="answer__content">
+      <div class="filter_sectionOptions answer__content--inner">
+        <ul class="filter_linkList">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li class="filter_li">
+              {% if tag_key[0] == "alter" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_size filter_styling" data-size="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-size="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-size="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </li>
+  
+  <li class="answer filter_li">
+    <input type="checkbox" id="section5" class="answer__radio" hidden>
+    <label for="section5" class="answer__question filter_buttonLabel type-heading-3">
+      <span> Material </span>
+      <svg class="filter_arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+        <path d="M2.753.357l4.39 4.39a.357.357 0 0 1 0 .506l-4.39 4.39" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+      </svg>
+    </label>
+    <div class="answer__content">
+      <div class="filter_sectionOptions answer__content--inner">
+        <ul class="filter_linkList">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li class="filter_li">
+              {% if tag_key[0] == "material" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_material filter_styling" data-material="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-material="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-material="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </li>
+  
+  <li class="answer filter_li">
+    <input type="checkbox" id="section6" class="answer__radio" hidden>
+    <label for="section6" class="answer__question filter_buttonLabel type-heading-3">
+      <span> Muster </span>
+      <svg class="filter_arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+        <path d="M2.753.357l4.39 4.39a.357.357 0 0 1 0 .506l-4.39 4.39" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+      </svg>
+    </label>
+    <div class="answer__content">
+      <div class="filter_sectionOptions answer__content--inner">
+        <ul class="filter_linkList">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li class="filter_li">
+              {% if tag_key[0] == "muster" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_pattern filter_styling" data-pattern="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-pattern="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-pattern="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </li>
+  
+  <li class="answer filter_li">
+    <input type="checkbox" id="section7" class="answer__radio" hidden>
+    <label for="section7" class="answer__question filter_buttonLabel type-heading-3">
+      <span> Stil </span>
+      <svg class="filter_arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+        <path d="M2.753.357l4.39 4.39a.357.357 0 0 1 0 .506l-4.39 4.39" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+      </svg>
+    </label>
+    <div class="answer__content">
+      <div class="filter_sectionOptions answer__content--inner">
+        <ul class="filter_linkList">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li class="filter_li">
+              {% if tag_key[0] == "stil" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_style filter_styling" data-style="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-style="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-style="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </li>
+
+
+</ul>
+
