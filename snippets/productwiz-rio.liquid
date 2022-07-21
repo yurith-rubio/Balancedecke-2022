@@ -379,7 +379,7 @@ __productWizRio.config = {
     "dark": true,
     "magnify": false,
     "thumbnails": false,
-    "lightBox": true,
+    "lightBox": false,
     "lightBoxZoom": 2
   },
   "desktop": {
@@ -388,12 +388,18 @@ __productWizRio.config = {
     "swipe": true,
     "dark": true,
     "magnify": false,
-    "thumbnails": false,
-    "lightBox": true,
-    "lightBoxZoom": 2,
-    "vertical": true,
-    "verticalSpacing": "15px"
-  }
+    "thumbnails": {
+      "orientation": "bottom",
+      "multiRow": false,
+      "thumbnailsPerRow": 5,
+      "navigation": true
+    },
+    "lightBox": false,
+    "lightBoxZoom": 2
+  },
+  "lightBoxBackgroundColor": "rgb(0, 0, 0)",
+  "thumbnailSelectionColor": "rgb(0, 0, 0)",
+  "changeVariantOnVariantImageSelection": false
 };
 }
 
