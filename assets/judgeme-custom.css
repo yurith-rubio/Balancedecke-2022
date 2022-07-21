@@ -11,7 +11,7 @@
   font-weight: var(--font-heading-weight);
   font-style: var(--font-heading-style);
 }
-#judgeme_product_reviews, .jdgm-all-reviews-widget{
+#judgeme_product_reviews{
   max-width: 900px !important;
   margin: auto !important;
 }
