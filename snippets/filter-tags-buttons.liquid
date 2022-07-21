@@ -1,0 +1,16 @@
+{% if show_sort or show_filters %}
+
+  <div class="collection-top-bar__filters">
+    <a 
+       href="#collection-sidebar--tag-filters" 
+       class="collection__button type-body-regular" 
+       data-filter-open="__tag-filters"
+       aria-expanded="false"
+       aria-controls="collection-sidebar--tag-filters"
+       >
+      Filter
+      {% render 'icon-chevron-down' %}
+    </a>
+  </div>
+
+{% endif %}
