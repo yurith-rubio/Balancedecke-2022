@@ -1,0 +1,31 @@
+{% assign chip_options = settings.chip_options | downcase | split: ', ' %}
+{% assign swatch_options = settings.swatch_options | downcase | split: ', ' %}
+
+<div class="collection-sidebar">
+
+  <form class="collection-sidebar__form" data-filer-sidebar-form data-filer-modal-wrapper data-filter-form>
+    {%- if show_filters -%}
+
+    {% render 'sidebar-tags-filters' with current_tags: current_tags, resource: collection, %}
+    
+    {%- endif -%}
+
+    {% if show_sort %}
+      {%- assign heading = 'collections.sorting.title' | t -%}
+      <div class="collection-sidebar__group" data-group="{{ heading }}">
+        {%- render 'collection-sidebar-heading' with 
+          heading: heading, 
+          collapse_filter_groups: collapse_filter_groups
+        -%}
+        <ul data-sort-by="{{ collection.sort_by }}" {% if collapse_filter_groups %}style="display: none;"{% endif %}>
+          {% for option in collection.sort_options %}
+            {% render 'filter-sort-item' with
+              option: option,
+              scope: 'sidebar'
+            %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </form>
+</div>
