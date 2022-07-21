@@ -44,6 +44,8 @@ __productWizRioOptions.queueRender = (...params) => {
   }
 };
 
+const delayMs = t => new Promise(resolve => setTimeout(resolve, t));
+
 function debugLog(...x) {
   console.log(...x);
 }
@@ -180,6 +182,13 @@ function getTheme() {
   return __productWizRio.theme;
 }
 
+function isPhantom() {
+  const {
+    phantom
+  } = __productWizRioOptions;
+  return !!phantom;
+}
+
 function getBeforeChild(root, beforeChildSelector) {
   const rootFirstChild = root.firstChild;
 
@@ -208,7 +217,7 @@ function getBeforeChild(root, beforeChildSelector) {
 let injectRioOptionsDivBeforeChildNotFound = null;
 
 function injectRioOptionsDiv(root, config, style = {}, onInjected = () => {}, beforeChildSelector = null, deferredQueue = false) {
-  const rioOptionsClassName = 'rio-options';
+  const rioOptionsClassName = isPhantom() ? 'rio-options-phantom' : 'rio-options';
 
   if (!document.querySelector(`.${rioOptionsClassName}`)) {
     debugLog('Inserting rio-options!');
@@ -365,17 +374,12 @@ __productWizRio.config = {
   "breakpoint": "960px",
   "mobile": {
     "navigation": false,
-    "pagination": false,
+    "pagination": true,
     "swipe": true,
     "dark": true,
     "magnify": false,
-    "thumbnails": {
-      "orientation": "bottom",
-      "multiRow": false,
-      "thumbnailsPerRow": 3,
-      "navigation": true
-    },
-    "lightBox": false,
+    "thumbnails": false,
+    "lightBox": true,
     "lightBoxZoom": 2
   },
   "desktop": {
@@ -384,23 +388,14 @@ __productWizRio.config = {
     "swipe": true,
     "dark": true,
     "magnify": false,
-    "thumbnails": {
-      "orientation": "bottom",
-      "multiRow": false,
-      "thumbnailsPerRow": 5,
-      "navigation": true
-    },
-    "lightBox": false,
-    "lightBoxZoom": 2
-  },
-  "lightBoxBackgroundColor": "rgb(0, 0, 0)",
-  "thumbnailSelectionColor": "rgb(0, 0, 0)"
+    "thumbnails": false,
+    "lightBox": true,
+    "lightBoxZoom": 2,
+    "vertical": true,
+    "verticalSpacing": "15px"
+  }
 };
 }
-  
-  {% if formListener %}
-  __productWizRio.useFormListener = true;
-  {% endif %}
 
 const variantImages = addedNode => {
   try {
@@ -495,6 +490,10 @@ const options = () => {
   };
 
   const hideElements = root => {
+    if (isPhantom()) {
+      return;
+    }
+
     root.querySelectorAll('.product-form__controls-group--options, .product-form__controls-group-options').forEach(elem => {
       elem.style.display = 'none';
     });
@@ -544,10 +543,16 @@ const options = () => {
         const hasVariantImages = productMetafield && productMetafield.enabled && !productMetafield.empty;
         const variantImagesInit = (!shopMetafield || !shopMetafield.disabled) && hasVariantImages;
         const productGalleryDisabledWithTag = Array.isArray(product.tags) && product.tags.includes('vw-disable-product-gallery');
+        const changeVariantOnVariantImageSelection = Array.isArray(product.tags) && product.tags.includes('vw-variant-vi-link');
         const productGalleryInit = productGalleryMetafield && !productGalleryMetafield.disabled && !productGalleryDisabledWithTag;
         if (variantImagesInit || productGalleryInit) {
           __productWizRio.enabled = true;
           __productWizRio.product = product;
+          if (changeVariantOnVariantImageSelection && 
+            __productWizRio.config && 
+            !__productWizRio.config.changeVariantOnVariantImageSelection) {
+              __productWizRio.config.changeVariantOnVariantImageSelection = true;
+          }
           if (variantImagesInit) {
             __productWizRio.productRio = productMetafield.mapping;
             __productWizRio.imageFilenames = productMetafield.imageFilenames;
@@ -592,8 +597,32 @@ const options = () => {
           __productWizRioOptions.settings = productMetafield.settings;
         }
       }
+      let hook = false;
       if (__productWizRioOptions.enabled) {
+        hook = true;
         options();
+      } else {
+        if (__productWizRio?.config?.changeVariantOnVariantImageSelection) {
+          __productWizRioOptions.phantom = true;
+          __productWizRioOptions.queueRender = () => {};
+          hook = true;
+          options();
+        }
+      }
+      if (hook) {
+        __productWizRioOptions.change = async (variant) => {
+          if (__productWizRioOptions.enabled && __productWizRioOptions.cbs) {
+            for (const option of variant.options) {
+              const fn = __productWizRioOptions.cbs[option.id];
+              if (typeof fn === 'function') {
+                fn(option.value);
+              }
+              await delayMs(50);
+            }
+          } else if (typeof __productWizRioOptions.onChange === 'function') {
+            __productWizRioOptions.onChange(variant.options, variant);
+          }
+        };
       }
     })()
     
