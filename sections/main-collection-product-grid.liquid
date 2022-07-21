@@ -86,7 +86,17 @@
   {% assign proper_alpha = overlay_opacity | divided_by: 100.00 %}
 
   <style>
+    {% if show_collection_image and collection.image %}
+      .collection__image-overlay{
+        background-color: {{ overlay_color | color_modify: 'alpha', proper_alpha }};
+      }
 
+      @media (min-width: 38em) {
+        .collection__details {
+          color: {{ text_color }};
+        }
+      }
+    {% endif %}
   </style>
 
   {%- if collection.all_products_count > 0 -%}
