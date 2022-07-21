@@ -16,6 +16,10 @@
   margin: auto !important;
 }
 
+.jdgm-all-reviews-widget{
+  margin-top: -40px !important;
+}
+
 .jdgm-rev-widg__header, .jdgm-rev-widg__summary{
   text-align: center;
   display: contents;
