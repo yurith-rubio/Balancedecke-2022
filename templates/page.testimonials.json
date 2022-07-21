@@ -4,6 +4,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
+        "main_bg_color": "#fff",
         "custom_liquid": "{{ 'judgeme-custom.css' | asset_url | stylesheet_tag }}"
       }
     },
@@ -19,7 +20,7 @@
         "b8163dad-e61b-40c1-a544-afce131b4224": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/all_reviews_page\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "extra_wrapper_classes": "page-width page-width--narrow"
+            "extra_wrapper_classes": ""
           }
         }
       },
