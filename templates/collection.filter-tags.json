@@ -16,8 +16,8 @@
         "text_max_width": 38
       }
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "filter-tags": {
+      "type": "main-collection-filter-tags",
       "settings": {
         "show_sort": false,
         "show_filters": false,
@@ -36,6 +36,6 @@
   },
   "order": [
     "banner",
-    "product-grid"
+    "filter-tags"
   ]
 }
