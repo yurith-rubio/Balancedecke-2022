@@ -14347,6 +14347,7 @@ var productItem = node => {
     }
   }
 
+  /*
   function initImageHover() {
     imageWrapper.addEventListener('mouseover', handleOver);
     imageWrapper.addEventListener('mouseout', handleOut);
@@ -14358,7 +14359,8 @@ var productItem = node => {
       imageWrapper.removeEventListener('mouseout', handleOut);
     }
   };
-
+  */
+  
   return {
     unload
   };
