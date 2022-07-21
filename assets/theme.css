@@ -8608,7 +8608,7 @@ div[data-media-type='external_video'] iframe{
     }
       }
 .featured-collection-row__slide.animates{
-    opacity:0;
+    /*opacity:0;*/
   }
 .no-js .featured-collection-row__slide.animates{
       opacity:1;
