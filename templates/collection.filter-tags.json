@@ -22,7 +22,7 @@
         "show_sort": false,
         "show_filters": true,
         "show_filter_swatches": false,
-        "show_filter_chips": false,
+        "show_filter_chips": true,
         "filter_style": "sidebar",
         "collapse_filter_groups": false,
         "show_swatches": false,
