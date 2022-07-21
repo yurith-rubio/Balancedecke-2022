@@ -14341,6 +14341,7 @@ var productItem = node => {
   }
 
   function handleOut(e) {
+    console.log("handleOut");
     var second = imageWrapper.querySelector('.not-first');
 
     if (second) {
