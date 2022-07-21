@@ -1,4 +1,4 @@
-.jdgm-widget .jdgm-temp-hidden, .jdgm-write-rev-link, .jdgm-rev-widg__sort-wrapper, .jdgm-branding-footer{
+.jdgm-widget .jdgm-temp-hidden, .jdgm-write-rev-link, .jdgm-rev-widg__sort-wrapper, .jdgm-branding-footer, .jdgm-widget-actions-wrapper{
   display: none !important;
 }
 .jdgm-all-reviews-widget, .jdgm-rev-widg, .jdgm-quest, .jdgm-rev{
