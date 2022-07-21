@@ -20,7 +20,7 @@
       "type": "main-collection-filter-tags",
       "settings": {
         "show_sort": false,
-        "show_filters": false,
+        "show_filters": true,
         "show_filter_swatches": false,
         "show_filter_chips": false,
         "filter_style": "sidebar",
