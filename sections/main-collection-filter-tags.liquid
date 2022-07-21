@@ -1,3 +1,6 @@
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'tag-filters.css' | asset_url | stylesheet_tag}}
+
 {% liquid
   assign id = section.id
   assign show_swatches = section.settings.show_swatches
@@ -109,6 +112,8 @@
             {%- if filter_style == 'sidebar' -%}
               <div class="collection__sidebar" data-sidebar>
                 {% render 'collection-sidebar' with
+                  current_tags: current_tags,
+                  resource: collection,
                   show_sort: show_sort,
                   show_filters: show_filters,
                   show_filter_swatches: show_filter_swatches,
@@ -198,7 +203,7 @@
 
 {% schema %}
   {
-    "name": "filter tags",
+    "name": "filter-tags",
     "class": "section-dynamic section-borderable",
     "settings": [
       {
@@ -322,3 +327,124 @@
     ]
   }
 {% endschema %}
+
+
+<script>
+  
+  $(".filter_color").click(function (e) {
+  	const selectedColor = $(e.target).attr("data-color");
+    doFilter(selectedColor);
+  });
+  
+  $(".filter_theme").click(function (e) {
+  	const selectedTheme = $(e.target).attr("data-theme");
+    doFilter(selectedTheme);
+  });
+  
+  $(".filter_size").click(function (e) {
+  	const selectedSize = $(e.target).attr("data-size");
+    doFilter(selectedSize);
+  });
+  
+  $(".filter_age").click(function (e) {
+  	const selectedAge = $(e.target).attr("data-age");
+    doFilter(selectedAge);
+  });
+  
+  $(".filter_material").click(function (e) {
+  	const selectedMaterial = $(e.target).attr("data-material");
+    doFilter(selectedMaterial);
+  });
+  
+  $(".filter_pattern").click(function (e) {
+  	const selectedPattern = $(e.target).attr("data-pattern");
+    doFilter(selectedPattern);
+  });
+  
+  $(".filter_style").click(function (e) {
+  	const selectedStyle = $(e.target).attr("data-style");
+    doFilter(selectedStyle);
+  });
+
+
+  function getCurrentFilters() {
+    const collection = "{{ collection.handle }}";
+    const parts = location.pathname.split("/");
+    const tags = parts[parts.length - 1];
+    
+    if (tags == "") {
+    	return [];
+    }
+    
+    if (tags == collection) {
+    	return [];
+    }
+    
+    const filters = tags.split("+");
+    return filters.map(parseFilter);
+  }
+  
+  function parseFilter(filter) {
+    const parts = filter.split("-");
+    return {
+      key: parts[0],
+      value: parts[1],
+      active: true
+    };
+  }
+  
+  function insertFilter(activeFilters, newFilter) {
+    let filterUpdated = false;
+    let updatedFilters = [];
+    
+    for (const filter of activeFilters) {
+      // If the exact same filter is already active, deactivate it
+      if (filter.key == newFilter.key && filter.value == newFilter.value) {
+        filter.active = false;
+        return activeFilters;
+      }
+      
+      // There was already a filter of the same type: update value.
+      if (filter.key == newFilter.key) {
+        filter.value = newFilter.value;
+        return activeFilters;
+      }
+    }
+    
+    activeFilters.push(newFilter);
+    return activeFilters;
+  }
+  
+  function getTagline(filters) {
+    if (!filters || filters.length == 0) {
+    	return "";
+    }
+    
+    filters = filters.filter(f => f.active);
+    
+    return filters.map(f => { 
+      return f.key + "-" + f.value; 
+    }).join("+");
+  }
+  
+  function doFilter(filter) {
+    console.log("---- filter clicked");
+    
+    const newFilter = parseFilter(filter);
+    
+    // Get current filters from URL params
+    const activeFilters = getCurrentFilters();
+    
+    // Apply the new filter
+    const updatedFilters = insertFilter(activeFilters, newFilter);
+    
+    const tags = getTagline(updatedFilters);
+    
+    const newUrl = window.location.protocol + '//' + window.location.host + "/collections/{{ collection.handle }}" + "/" + tags;
+	
+    window.history.pushState({ path: newUrl }, '', newUrl);
+
+    document.dispatchEvent(new CustomEvent('theme:loading:start'));
+    location.href = newUrl;
+  }
+</script>
