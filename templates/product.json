@@ -415,8 +415,8 @@
         "columns": 4,
         "aspect_ratio": "square",
         "overline": "",
-        "title": "Weitere Produkte",
-        "subheading": "<p>Weitere Balance Produkte, die Ihnen gefallen können<\/p>",
+        "title": "Weitere Produkte, die Ihnen gefallen könnten",
+        "subheading": "",
         "text_max_width": 32
       }
     }
