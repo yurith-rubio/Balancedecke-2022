@@ -579,10 +579,10 @@
       "settings": {
         "section_style": "default",
         "text_position": "left",
-        "collection": "balance-extra",
+        "collection": "balance-gesundheitskissen",
         "columns": 3,
         "aspect_ratio": "square",
-        "overline": "Original Balance Gewichtsdecke",
+        "overline": "",
         "title": "Weitere Produkte, die Ihnen auch gefallen könnten",
         "subheading": "",
         "link_text": "",
