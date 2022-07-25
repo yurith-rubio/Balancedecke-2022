@@ -15,6 +15,9 @@
 {% if template.name == "index" %}
  {% assign modifiers = modifiers | append: ' home-no-padding' %}
 {% endif %}
+{% if template.name == "product" %}
+ {% assign modifiers = modifiers | append: ' home-no-padding' %}
+{% endif %}
 {% endunless %}
 
 {% assign image = section.settings.image_bg  %}
