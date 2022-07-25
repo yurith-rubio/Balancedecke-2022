@@ -33,13 +33,13 @@
   margin-left: 58px
 }
 .jdgm-star{
-  color: #F98300 !important;
+  color: #D9BE57 !important;
 }
 .jdgm-rev__author:before{
   content: "Verifiziert";
   display: inline-block;
   color: #ffffff;
-  background-color: #F98300;
+  background-color: #440076;
   padding: 3px 7px;
   font-size: 11px;
   line-height: 1;
