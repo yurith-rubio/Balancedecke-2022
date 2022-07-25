@@ -24,7 +24,7 @@
         "show_filter_swatches": false,
         "show_filter_chips": true,
         "filter_style": "sidebar",
-        "collapse_filter_groups": false,
+        "collapse_filter_groups": true,
         "show_swatches": false,
         "products_per_row": 4,
         "products_per_row_mobile": 2,
