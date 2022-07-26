@@ -11491,6 +11491,31 @@ div[data-media-type='external_video'] iframe{
 .price--unit-available .price__unit{
     display:block;
   }
+.back_to_selection{
+  width: 100%;
+  position: fixed;
+  bottom: -3px;
+  z-index: 2;
+}
+.back_to_selection-hide{
+  opacity: 0;
+}
+.back_to_selection-show{
+  opacity: 1;
+}
+.back_to_selection a{
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  height: 50px;
+  padding: 16px;
+  font-size: var(--font-size-button-large);
+}
+@media only screen and (min-width:641px){
+  .back_to_selection{
+    display: none;
+  }
+}
 @media (max-width: 60em){
 .product-form{
     margin-top:var(--spacing-small)
