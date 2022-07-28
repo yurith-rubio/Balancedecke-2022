@@ -1,6 +1,6 @@
 {% if overline != blank or heading != blank or subheading != blank or link_text != blank %}
 
-  {% assign alignment = ' text-block--' | append: center %}
+  {% assign alignment = ' text-block--center' %}
 
   <div class="text-block general-container-width {{ modifiers }}{{ alignment }}" style="color:{{ section.settings.text_color }}">
     {% unless overline == blank  %}
