@@ -267,6 +267,7 @@
     },
     "1653044371cca2a38d": {
       "type": "icons-text-boxes",
+      "disabled": true,
       "blocks": {
         "4acb0e14-72b1-47cf-bab6-257861174546": {
           "type": "blocks_outcome",
@@ -304,6 +305,65 @@
         "title": "Unsere Auswahl an Ersatzbezügen",
         "button_label": "",
         "button_link": ""
+      }
+    },
+    "1659001915eb3e406d": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16590019156839575a-0": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "Material",
+            "subheading": "<p>Die 4-Jahreszeiten Bezüge bestehen aus einem Baumwoll-Polyester-Gemisch und sind kuschelig weich. Die Baumwollbezüge sind aus 100% Baumwolle gefertigt, daher atmungsaktiv und ideal für warme Nächte und Menschen, die schnell schwitzen.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16590019156839575a-1": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "Bezugssystem",
+            "subheading": "<p>Wenn Sie bereits eine Balance Gewichtsdecke besitzen, wählen Sie das Bezugssystem mit Reißverschluss. So können Sie den Bezug am Inlett befestigen ohne zu verrutschen. Normale Ersatzbezüge eignen sich für herkömmliche Bettdecken ohne Gewicht.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "16590019156839575a-2": {
+          "type": "column",
+          "settings": {
+            "icon_span": "",
+            "image_max_width": 50,
+            "title": "500+ Ersatzbezüge",
+            "subheading": "<p>Unsere eigene Produktion ermöglicht es uns, Bezüge in vielen verschiedenen Designs und Farben anzubieten. So findet jeder das, was er<br\/> sucht - egal ob groß oder klein. Wir erweitern dabei stetig unsere Auswahl der Ersatzbezüge und sind auch für Motivvorschläge offen.<\/p>",
+            "text_max_width": 36,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "16590019156839575a-0",
+        "16590019156839575a-1",
+        "16590019156839575a-2"
+      ],
+      "settings": {
+        "section_style": "default",
+        "main_bg": "#f7f7f7",
+        "text_color": "#5b5b5b",
+        "columns": 3,
+        "overline": "",
+        "title": "Unsere Auswahl an Ersatzbezügen",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "text_alignment": "left",
+        "text_max_width": 36
       }
     },
     "16530449496199ce3f": {
@@ -383,6 +443,7 @@
     "16522047234ea09167",
     "1650264258930fa44c",
     "1653044371cca2a38d",
+    "1659001915eb3e406d",
     "16530449496199ce3f",
     "16502641772d80f71a",
     "recommendations"
