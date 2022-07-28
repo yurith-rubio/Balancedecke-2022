@@ -267,6 +267,7 @@
     },
     "1653044371cca2a38d": {
       "type": "icons-text-boxes",
+      "disabled": true,
       "blocks": {
         "4acb0e14-72b1-47cf-bab6-257861174546": {
           "type": "blocks_outcome",
@@ -326,8 +327,8 @@
           "settings": {
             "icon_span": "",
             "image_max_width": 50,
-            "title": "Column two",
-            "subheading": "<p>Get into your process a bit. The quality of handiwork, proprietary knowledge, or materials that you use that make your products better.<\/p>",
+            "title": "Bezugssystem",
+            "subheading": "<p>Wenn Sie bereits eine Balance Gewichtsdecke besitzen, wählen Sie das Bezugssystem mit Reißverschluss. So können Sie den Bezug am Inlett befestigen ohne zu verrutschen. Normale Ersatzbezüge eignen sich für herkömmliche Bettdecken ohne Gewicht.<\/p>",
             "text_max_width": 36,
             "link": "",
             "link_text": "Read more"
@@ -338,8 +339,8 @@
           "settings": {
             "icon_span": "",
             "image_max_width": 50,
-            "title": "Column three",
-            "subheading": "<p>End it with an action item that the user can take advantage of. Link to a more in-depth page, or go straight to a collection. Your call.<\/p>",
+            "title": "500+ Ersatzbezüge",
+            "subheading": "<p>Unsere eigene Produktion ermöglicht es uns, Bezüge in vielen verschiedenen Designs und Farben anzubieten. So findet jeder das, was er<br\/> sucht - egal ob groß oder klein. Wir erweitern dabei stetig unsere Auswahl der Ersatzbezüge und sind auch für Motivvorschläge offen.<\/p>",
             "text_max_width": 36,
             "link": "",
             "link_text": "Read more"
@@ -353,11 +354,11 @@
       ],
       "settings": {
         "section_style": "default",
-        "main_bg": "transparent",
+        "main_bg": "#f7f7f7",
         "text_color": "#5b5b5b",
         "columns": 3,
         "overline": "",
-        "title": "",
+        "title": "Unsere Auswahl an Ersatzbezügen",
         "subheading": "",
         "link": "",
         "link_text": "",
