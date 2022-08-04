@@ -2,10 +2,11 @@
 <div id="my-container__cart" class="my-container__cart open-cart">
   <div class="my-floating-cart"> 
     <form id="cart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
+    
       <!-- data-ajax-cart-section makes the element's HTML update
       when the cart gets changed -->
+      
       <div data-ajax-cart-section>
-
         <div class="cart-header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
           <h2 class="heading_cart">Warenkorb</h2>
           <a class="close-slide-cart" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
@@ -19,6 +20,7 @@
         <div class="my-cart__items" data-ajax-cart-section-scroll>
 
           {% for item in cart.items %} 
+          
           <div class="item_wrapper">
             <!-- remove button -->
             <div class="remove_cart">
@@ -59,7 +61,7 @@
                          type="number" />
                   <!-- data-ajax-cart-request-button ajaxifies the "Plus one" button -->
                   <a class="button_cart"
-                     data-ajax-cart-request-button 
+                     data-ajax-cart-request-button
                      href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
 
                     <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
@@ -79,25 +81,41 @@
             <div data-ajax-cart-messages="{{ item.key }}"></div>
             {% endcomment %}
             </div>
+          
           {% endfor %}
 
         </div>
       </div>
       
-      <div class="footer_cart_wrapper">
-        <div class="versand_cart_wrapper">
-          <p class="p_cart">Versand</p>
-          <p class="p_cart my-cart_gratis">Gratis</p>
+      <!-- data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated -->
+      <div data-ajax-cart-static-element class="my-cart__app-container"></div>
+      
+      <div class="myCart_bottomSection">
+        {% comment %}{% render 'my-cart-upsells' %}{% endcomment %}
+        <div class="myCart_footerSection">
+          <div class="footer_cart_wrapper">
+            <div class="versand_cart_wrapper" data-ajax-cart-section>
+              {% assign price_to_compare = cart.total_price | money_without_trailing_zeros | plus: 0 %}
+              {% if price_to_compare > 99 %}
+                <p class="p_cart">Versand</p>
+                <p class="p_cart my-cart_gratis">
+                  Gratis
+                </p>
+              {% endif %}
+            </div>
+            <div class="total_cart_wrapper">
+              <p class="p_cart">Zwischensumme</p>
+              <p class="p_cart my-cart_totalPrice" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
+            </div>
+            <button class="my-cart_button bttn" 
+                    type="submit" 
+                    name="checkout">
+              Zur Kasse
+            </button>
+          </div>
+
+          {% render 'my-cart-payment-icons' %}
         </div>
-        <div class="total_cart_wrapper">
-          <p class="p_cart">Zwischensumme</p>
-          <p class="p_cart my-cart_totalPrice" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
-        </div>
-        <button class="my-cart_button bttn" 
-                type="submit" 
-                name="checkout">
-          Zur Kasse
-        </button>
       </div>
 
         {% comment %}
@@ -109,71 +127,20 @@
         </textarea>
         {% endcomment %}
 
-        <!-- data-ajax-cart-static-element keeps the container unchanged
-        when the cart and the surrounding HTML get updated -->
-        <div data-ajax-cart-static-element class="my-cart__app-container"></div>
     </form>
   </div>
 </div>
 
 <script>
-$(document).ready(function () {
-  console.log("jquery works!");
-    var offsetY = window.pageYOffset,
-        $body = $('body'),
-        $win = $(window),
-        $close = $('.close-cart'),
-        $open = $('.open-cart'),
-        $holder = $('#my-container__cart'),
-    // Close with 'esc' key
-    $(document).keyup(function (e) {
-        if (e.keyCode == 27) $close.trigger('click');
-    });
-    $open.click(function () {
-        offsetY = window.pageYOffset;
-        // Block scrolling
-        $body.css({
-            'position': 'fixed',
-                'color': '#FFFF00',
-                'backgroundColor': '#00D',
-                'top': -offsetY + 'px'
-        });
-        // Show popup
-        $holder.css('display', 'block');
-    });
-
-    $close.click(function () {
-        // Allow scrolling again
-        $body.css({
-            'position': 'static',
-                'color': '',
-                'backgroundColor': ''
-        });
-        /**
-         * Remove the following scrollTop()'s if you want.
-         * just a UI tweak that the user would expect.
-         **/
-        // Make the page stay at the position it was at before the overlay
-        $win.scrollTop(offsetY);
-        // Reset the overlay scroll position to the top
-        $stuff.scrollTop(0);
-        // Hide popup
-        $holder.css('display', 'none');
-    });
-});
+  function overlayOn() {
+    document.getElementById("cart-overlay").style.display = "block";
+  }
   
+  function overlayOff() {
+    document.getElementById("cart-overlay").style.display = "none";
+  }
 </script>
 
-
-<script>
-function overlayOn() {
-  document.getElementById("cart-overlay").style.display = "block";
-}
-
-function overlayOff() {
-  document.getElementById("cart-overlay").style.display = "none";
-}
-</script>
 
 
 {% schema %}
