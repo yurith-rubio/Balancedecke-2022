@@ -106,23 +106,33 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "#1 Testsieger Therapiedecke",
+              "simple_icons": "test-winner",
+              "text": "Testsieger aller Therapiedecken",
               "link": ""
             }
           },
           "51c6b612-4c82-4885-b651-5b184c8665ff": {
             "type": "announcement",
             "settings": {
-              "text": "Jetzt 28 Tage testen",
+              "simple_icons": "days-test",
+              "text": "28 Tage Probeschlafen",
+              "link": ""
+            }
+          },
+          "5dc5d06e-beb9-480d-b529-6a7625a504a9": {
+            "type": "announcement",
+            "settings": {
+              "simple_icons": "patent",
+              "text": "Patentierte & einzigartige Bezugstechnik",
               "link": ""
             }
           }
         },
         "block_order": [
           "announcement-bar-0",
-          "51c6b612-4c82-4885-b651-5b184c8665ff"
+          "51c6b612-4c82-4885-b651-5b184c8665ff",
+          "5dc5d06e-beb9-480d-b529-6a7625a504a9"
         ],
         "settings": {
           "show_utility_bar": true,
