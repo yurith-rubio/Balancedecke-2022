@@ -7604,7 +7604,9 @@ select{
 @media (min-width: 60em){
 
   .product--thumbnails-horizontal .product__media-container{
-      display:block
+      display:block;
+      position: sticky;
+      top: 110px;
   }
     }
 .product__media{
