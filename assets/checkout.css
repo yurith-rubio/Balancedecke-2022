@@ -53,6 +53,9 @@ span#time {
   line-height: 1.2;
   padding-right: 15px;
   color: #323232 !important;}
+.icon-Checkout-Gewichtsdecke-Testsieger:before {
+  content: "\e951";
+}
 .checkout-cert-con {
   margin-top: 20px;
   margin-bottom: 30px;
