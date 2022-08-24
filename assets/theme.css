@@ -6422,9 +6422,12 @@ select{
   padding-left:calc(var(--spacing-unit) * 2);
   white-space:nowrap;
   overflow-x:scroll;
-
+  height: 99%;
   -ms-overflow-style:none;
   scrollbar-width:none
+}
+.utility-bar__announcement-item-content > span{
+  margin-right: 5px;
 }
 .utility-bar__announcement-item-content::-webkit-scrollbar{
     display:none;
