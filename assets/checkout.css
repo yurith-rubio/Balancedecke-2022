@@ -52,6 +52,8 @@ span#time {
   font-size: 40px;
   line-height: 1.2;
   padding-right: 15px;
+  width: 40px;
+  display: inline-block;
   color: #323232 !important;}
 .checkout-cert-con {
   margin-top: 20px;
