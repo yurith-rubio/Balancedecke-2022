@@ -356,7 +356,7 @@
         "afd121e2-21af-401b-9223-7c4ae2879e09": {
           "type": "blocks_outcome",
           "settings": {
-            "icon_span": "",
+            "icon_span": "<span class=\"icon-logs\"><\/span>",
             "title-icon": "Füllung mit Zirbenholz",
             "content": "Gesundheitskissen mit Zirbenholz gefüllt. Späne der Zirbenkiefer wird aus toten oder natürlich gefallenen Bäumen gewonnen. Aus nachhaltiger Forstwirtschaft."
           }
@@ -364,7 +364,7 @@
         "79f5324c-3ccb-45da-9cf2-b93644952d4b": {
           "type": "blocks_outcome",
           "settings": {
-            "icon_span": "",
+            "icon_span": "<span class=\"icon-cloud-computing\"><\/span>",
             "title-icon": "Füllung mit Polyester",
             "content": "Das mit Polyester gefüllte Kissen entspricht einem Standardkopfkissen. Es hat die perfekte Füllmenge, um gemütlich darauf zu liegen und perfekt gestützt zu werden."
           }
@@ -372,7 +372,7 @@
         "35f6e403-4fd7-4608-a0b6-a570445dafe3": {
           "type": "blocks_outcome",
           "settings": {
-            "icon_span": "",
+            "icon_span": "<span class=\"icon-pillow\"><\/span>",
             "title-icon": "Kissenbezug",
             "content": "Alle Kissen können auch ohne Füllung gekauft werden. Die Kissenbezüge sind handgefertigt und bestehen aus 100% Baumwolle oder einem Baumwoll-Polyester-Gemisch."
           }
