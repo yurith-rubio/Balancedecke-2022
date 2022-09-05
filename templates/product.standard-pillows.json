@@ -293,6 +293,7 @@
     },
     "16529611515cfdd968": {
       "type": "text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "1652961151ae41a146-0": {
           "type": "column",
@@ -384,7 +385,7 @@
         "35f6e403-4fd7-4608-a0b6-a570445dafe3"
       ],
       "settings": {
-        "icons_color": "#FAC636",
+        "icons_color": "#fac636",
         "subheading": "",
         "title": "Gravity® - Gewichtsdecke für Erwachsene",
         "button_label": "",
