@@ -350,6 +350,47 @@
         "text_max_width": 45
       }
     },
+    "1662380402fd67d475": {
+      "type": "icons-text-boxes",
+      "blocks": {
+        "afd121e2-21af-401b-9223-7c4ae2879e09": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Füllung mit Zirbenholz",
+            "content": "Gesundheitskissen mit Zirbenholz gefüllt. Späne der Zirbenkiefer wird aus toten oder natürlich gefallenen Bäumen gewonnen. Aus nachhaltiger Forstwirtschaft."
+          }
+        },
+        "79f5324c-3ccb-45da-9cf2-b93644952d4b": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Füllung mit Polyester",
+            "content": "Das mit Polyester gefüllte Kissen entspricht einem Standardkopfkissen. Es hat die perfekte Füllmenge, um gemütlich darauf zu liegen und perfekt gestützt zu werden."
+          }
+        },
+        "35f6e403-4fd7-4608-a0b6-a570445dafe3": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Kissenbezug",
+            "content": "Alle Kissen können auch ohne Füllung gekauft werden. Die Kissenbezüge sind handgefertigt und bestehen aus 100% Baumwolle oder einem Baumwoll-Polyester-Gemisch."
+          }
+        }
+      },
+      "block_order": [
+        "afd121e2-21af-401b-9223-7c4ae2879e09",
+        "79f5324c-3ccb-45da-9cf2-b93644952d4b",
+        "35f6e403-4fd7-4608-a0b6-a570445dafe3"
+      ],
+      "settings": {
+        "icons_color": "#FAC636",
+        "subheading": "",
+        "title": "Gravity® - Gewichtsdecke für Erwachsene",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "16529610409c8f655a": {
       "type": "image-with-text",
       "blocks": {
@@ -426,6 +467,7 @@
     "16522047234ea09167",
     "1650264258930fa44c",
     "16529611515cfdd968",
+    "1662380402fd67d475",
     "16529610409c8f655a",
     "16502641772d80f71a",
     "recommendations"
