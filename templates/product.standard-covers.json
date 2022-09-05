@@ -366,6 +366,47 @@
         "text_max_width": 36
       }
     },
+    "1662381461fa4d7084": {
+      "type": "icons-text-boxes",
+      "blocks": {
+        "0f65c1a3-02d8-4588-bb80-e33bb3f7c08a": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Material",
+            "content": "Die 4-Jahreszeiten Bezüge bestehen aus einem Baumwoll-Polyester-Gemisch und sind kuschelig weich. Die Baumwollbezüge sind aus 100% Baumwolle gefertigt, daher atmungsaktiv und ideal für warme Nächte und Menschen, die schnell schwitzen."
+          }
+        },
+        "bcd8f63b-b0b0-4476-9ccd-2d1db6e3412a": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "Bezugssystem",
+            "content": "Wenn Sie bereits eine Balance Gewichtsdecke besitzen, wählen Sie das Bezugssystem mit Reißverschluss. So können Sie den Bezug am Inlett befestigen ohne zu verrutschen. Normale Ersatzbezüge eignen sich für herkömmliche Bettdecken ohne Gewicht."
+          }
+        },
+        "a6c7760b-b7ba-4e0a-808d-bf8886566c9c": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "",
+            "title-icon": "500+ Ersatzbezüge",
+            "content": "Unsere eigene Produktion ermöglicht es uns, Bezüge in vielen verschiedenen Designs und Farben anzubieten. So findet jeder das, was er sucht - egal ob groß oder klein. Wir erweitern dabei stetig unsere Auswahl der Ersatzbezüge und sind auch für Motivvorschläge offen."
+          }
+        }
+      },
+      "block_order": [
+        "0f65c1a3-02d8-4588-bb80-e33bb3f7c08a",
+        "bcd8f63b-b0b0-4476-9ccd-2d1db6e3412a",
+        "a6c7760b-b7ba-4e0a-808d-bf8886566c9c"
+      ],
+      "settings": {
+        "icons_color": "#FAC636",
+        "subheading": "",
+        "title": "Unsere Auswahl an Ersatzbezügen",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "16530449496199ce3f": {
       "type": "image-with-text",
       "blocks": {
@@ -444,6 +485,7 @@
     "1650264258930fa44c",
     "1653044371cca2a38d",
     "1659001915eb3e406d",
+    "1662381461fa4d7084",
     "16530449496199ce3f",
     "16502641772d80f71a",
     "recommendations"
