@@ -431,9 +431,9 @@
         "columns": 4,
         "aspect_ratio": "square",
         "overline": "",
-        "title": "Weitere Produkte",
-        "subheading": "<p>Weitere Produkte, die Ihnen auch gefallen können.<\/p>",
-        "text_max_width": 32
+        "title": "Weitere Produkte, die Ihnen auch gefallen könnten",
+        "subheading": "",
+        "text_max_width": 42
       }
     }
   },
