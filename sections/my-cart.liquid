@@ -1,150 +1,317 @@
 <!-- sections/my-cart.liquid -->
-<div id="my-container__cart" class="my-container__cart open-cart">
-  <div class="my-floating-cart"> 
-    <form id="cart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
-    
-      <!-- data-ajax-cart-section makes the element's HTML update
-      when the cart gets changed -->
+
+<div class="MyCart_FloatingCart" data-ajax-cart-section> 
+  <div id="MyCart_Slider" data-ajax-cart-section-scroll>
+    <form id="MyCart_Form" action="{{ routes.cart_url }}" method="post" class="my-cart" >
       
-      <div data-ajax-cart-section>
-        <div class="cart-header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
-          <h2 class="heading_cart">Warenkorb</h2>
-          <a class="close-slide-cart" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
-             onclick="overlayOff()">
-            <svg width="15" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
-          </a>
-        </div>
+        {% comment %} data-ajax-cart-section makes the element's HTML update
+        when the cart gets changed {% endcomment %}
 
-        <!-- data-ajax-cart-section-scroll keeps the scroll position unchanged
-        when the element's HTML is changed -->
-        <div class="my-cart__items" data-ajax-cart-section-scroll>
+        <div>
+          <div class="MyCart_Header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
+            <h2 class="MyCart_Heading">Warenkorb</h2>
+            <a class="MyCart_CloseSlideCart" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
+               onclick="overlayOff()">
+              <svg width="15" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
+            </a>
+          </div>
 
-          {% for item in cart.items %} 
-          
-          <div class="item_wrapper">
-            <!-- remove button -->
-            <div class="remove_cart">
-              <a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0">
-                <svg width="9" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
-              </a>
-            </div>
-            <!-- remove button -->
-            <div>
-              <img class="image_cart" src="{{ item.image | image_url: width: 300 }} ">
-            </div>
-            <div class="content_cart_wrapper">
-              {% assign item_index = forloop.index %}
-              <!-- item title -->
-              <h2 class="h2_cart">
-                <a class="h2_cart" href="{{ item.url }}">{{ item.product.title }}</a>
-              </h2>
-              {% for option in item.options_with_values %}
-              <p class="my-cart_optionValue">{{ option.value }}</p>
-              {% endfor %}
-
-              <div class="quantity_price_wrapper">
-                <!-- quanity selector -->
-                <div class="quantity-selector">
-                  <!-- data-ajax-cart-request-button ajaxifies the "Minus one" button -->
-                  <a class="button_cart" 
-                     data-ajax-cart-request-button 
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
-
-                    <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
-
-                  </a>
-                  <!-- Input -->
-                  <input class="input_cart" 
-                         data-ajax-cart-quantity-input="{{ item_index }}" 
-                         name="updates[]" 
-                         value="{{ item.quantity }}" 
-                         type="number" />
-                  <!-- data-ajax-cart-request-button ajaxifies the "Plus one" button -->
-                  <a class="button_cart"
-                     data-ajax-cart-request-button
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
-
-                    <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
-
-                  </a>
-                </div>
-
-                <!-- final price of item -->
-                <div class="my-cart_itemPrice">
-                  {{ item.final_line_price | money }}
-                </div>
+          {% if cart.item_count > 0 %}
+            {% assign total_price_number = cart.total_price | plus: 0 %}
+            {% if total_price_number < 10000 %}
+              {% assign add_for_free_shipping = 10000 | minus: total_price_number %}
+              <div class="MyCart_Message">
+                Nur noch <span class="MyCart_HighlightedText">{{ add_for_free_shipping | money_with_currency }}</span> für gratis Versand!  
               </div>
-            </div>
+            {% endif %}
+          {% endif %}
+    
+          {% comment %} data-ajax-cart-section-scroll keeps the scroll position unchanged
+          when the element's HTML is changed {% endcomment %}
+          <div class="MyCart_ItemsContainer">
 
-            {% comment %}
-            <!-- Container for errors -->
-            <div data-ajax-cart-messages="{{ item.key }}"></div>
-            {% endcomment %}
-            </div>
-          
-          {% endfor %}
+            {% if cart.item_count == 0 %}
+              <div class="MyCart_EmptyMessage">
+                <h2 class="Heading u-h3">Der Warenkorb ist leer</h2>
+                <div style="font-size: 60px;"><span class="icon-shopping-cart"></span></div>
+              </div>
+            {% endif %}
+  
+            {% for item in cart.items %} 
+            
+            <div class="MyCart_ItemWrapper">
+              {% comment %} remove button {% endcomment %}
+              <div class="MyCart_RemoveItem">
+                <a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0">
+                  <svg width="9" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
+                </a>
+              </div>
+              {% comment %} image {% endcomment %}
+              <div>
+                <img class="MyCart_ImageItem" src="{{ item.image | image_url: width: 300 }} ">
+              </div>
+              <div class="MyCart_ContentItem">
+                {% assign item_index = forloop.index %}
+                {% comment %} item title {% endcomment %}
+                <h2 class="MyCart_H2">
+                  <a class="MyCart_H2" href="{{ item.url }}">{{ item.product.title }}</a>
+                </h2>
+                {% for option in item.options_with_values %}
+                  <p class="MyCart_ValueItem">{{ option.value }}</p>
+                {% endfor %}
+  
+                <div class="MyCart_QuantityItemWrapper">
+                  {% comment %} quanity selector {% endcomment %}
+                  <div class="MyCart_QuantityItem">
+                    {% comment %} data-ajax-cart-request-button ajaxifies the "Minus one" button {% endcomment %}
+                    <a class="MyCart_QuantityButtonItem" 
+                       data-ajax-cart-request-button 
+                       href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
+                      <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
+                    </a>
+                    {% comment %} Input {% endcomment %}
+                    <input class="MyCart_InputItem" 
+                           data-ajax-cart-quantity-input="{{ item_index }}" 
+                           name="updates[]" 
+                           value="{{ item.quantity }}" 
+                           type="number" />
+                    {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
+                    <a class="MyCart_QuantityButtonItem"
+                       data-ajax-cart-request-button
+                       href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
+                      <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
+                    </a>
+                  </div>
+  
+                  {% comment %} final price of item 
+                  <div class="MyCart_PriceItem">
+                    {{ item.final_line_price | money }}
+                  </div>
+                  {% endcomment %}
+                  <div class="Heading MyCart_PriceContainer">
+                    {% if item.original_line_price > item.final_line_price %}
+                      <span class="MyCart_Price MyCart_HighlightedText">{{ item.final_line_price | money }}</span>
+                      <span class="MyCart_Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
+                    {%- elsif item.variant.compare_at_price > item.original_price -%}
+                      <span class="MyCart_Price MyCart_HighlightedText">{{ item.final_line_price | money }}</span>
+                      <span class="MyCart_Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }} </span>
+                    {% else %}
+                      <span class="MyCart_Price">{{ item.final_line_price | money }}</span>
+                    {%- endif -%}
+                  </div>
+                </div>
+                
+                {% comment %} discount message with free gift products {% endcomment %}
+                {%- if item.line_level_discount_allocations != blank -%}
+                  <div>
+                    <ul class="MyCartItem__DiscountList" style="margin:0;">
+                      {%- for discount_allocation in item.line_level_discount_allocations -%}
+                      <li class="MyCartItem__Discount">
+                        {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
+                      </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
+              </div>
+  
+              {% comment %}
+              <!-- Container for errors -->
+              <div data-ajax-cart-messages="{{ item.key }}"></div>
+              {% endcomment %}
+              </div>
+              
+            {% endfor %}
+  
+          </div>
+        </div>
+      </form>
+    
+      {% assign upsell_count = 0 %}
+      
+      <script type="text/javascript">
+        {%  for block in section.blocks %}
+          {% assign loop = forloop.index | plus: 0 %}
+          // Add an exeption later
+          window.upsell1_block{{ loop }} = {{ all_products[block.settings.upsell_product_1.handle] | json }}
+          window.upsell2_block{{ loop }} = {{ all_products[block.settings.upsell_product_2.handle] | json }}
+          window.upsell3_block{{ loop }} = {{ all_products[block.settings.upsell_product_3.handle] | json }}
+          window.upsell4_block{{ loop }} = {{ all_products[block.settings.upsell_product_4.handle] | json }}
+        {% endfor %}
+      </script>
 
+      <div class="myCartUpsells_suggestedSpacerWrapper">
+          <div class="MyCart_Spacer"></div>
+      </div>
+    {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
+    <div style="display:none" data-ajax-cart-static-element class="my-cart__app-container"></div>
+    
+    <div class="MyCart_BottomSection">
+
+      <div class="MyCartUpsells_SuggestedContainer">
+          <div class="owl-carousel">
+  
+            {%  for block in section.blocks %}
+              {% assign product_list = block.settings.product_list %}
+               
+              {% assign upsell_product_1 = block.settings.upsell_product_1 %}
+              {% assign upsell_product_2 = block.settings.upsell_product_2 %}
+              {% assign upsell_product_3 = block.settings.upsell_product_3 %}
+              {% assign upsell_product_4 = block.settings.upsell_product_4 %}
+              
+              {% assign upsell_product_1_variant_id = block.settings.upsell_product_1_variant_id %}
+              {% assign upsell_product_2_variant_id = block.settings.upsell_product_2_variant_id %}
+              {% assign upsell_product_3_variant_id = block.settings.upsell_product_3_variant_id %}
+              {% assign upsell_product_4_variant_id = block.settings.upsell_product_4_variant_id %}
+                 
+              {% render 'my-cart-suggested-upsells', 
+                cart: cart, item: item,
+                section: section,
+                settings: settings,
+                block:block, forloop: forloop,
+                product_list: product_list,
+                enable_upsell_1: enable_upsell_1, enable_upsell_2: enable_upsell_2, enable_upsell_3: enable_upsell_3, enable_upsell_4: enable_upsell_4,
+                upsell_product_1: upsell_product_1, upsell_product_1_variant_id: upsell_product_1_variant_id,
+                upsell_product_2: upsell_product_2, upsell_product_2_variant_id: upsell_product_2_variant_id,
+                upsell_product_3: upsell_product_3, upsell_product_3_variant_id: upsell_product_3_variant_id,
+                upsell_product_4: upsell_product_4, upsell_product_4_variant_id: upsell_product_4_variant_id
+              %}
+            {% endfor %}
         </div>
       </div>
-      
-      <!-- data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated -->
-      <div data-ajax-cart-static-element class="my-cart__app-container"></div>
-      
-      <div class="myCart_bottomSection">
-        {% comment %}{% render 'my-cart-upsells' %}{% endcomment %}
-        <div class="myCart_footerSection">
-          <div class="footer_cart_wrapper">
-            <div class="versand_cart_wrapper" data-ajax-cart-section>
+      {% if cart.item_count != 0 %}
+        <div class="MyCart_FooterContainer">
+          <div class="MyCart_FooterWrapper">
+            <div class="MyCart_FooterInfoWrapper MyCart_FooterText">
               {% assign price_to_compare = cart.total_price | money_without_trailing_zeros | plus: 0 %}
               {% if price_to_compare > 99 %}
-                <p class="p_cart">Versand</p>
-                <p class="p_cart my-cart_gratis">
+                <p class="">Versand</p>
+                <p class="MyCart_HighlightedText MyCart_DiscountInfo">
                   Gratis
                 </p>
               {% endif %}
             </div>
-            <div class="total_cart_wrapper">
-              <p class="p_cart">Zwischensumme</p>
-              <p class="p_cart my-cart_totalPrice" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
+            <div id="MyCart_TotalFinalWrapper" class="MyCart_FooterInfoWrapper MyCart_FooterText">
+              <p class="">Zwischensumme</p>
+              <p class="MyCart_FinalPrice" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
             </div>
-            <button class="my-cart_button bttn" 
+            <button class="MyCart_CheckoutButton bttn" 
                     type="submit" 
-                    name="checkout">
+                    name="checkout"
+                    form="MyCart_Form">
               Zur Kasse
             </button>
           </div>
-
           {% render 'my-cart-payment-icons' %}
         </div>
-      </div>
-
-        {% comment %}
-        <!-- data-ajax-cart-property-input ajaxifies the cart note textarea -->
-        <textarea data-ajax-cart-property-input
-          name="note" 
-          placeholder="Cart note">
-          {{ cart.note }}
-        </textarea>
-        {% endcomment %}
-
-    </form>
+      {% endif %}
+    </div>
+      
   </div>
 </div>
 
-<script>
-  function overlayOn() {
-    document.getElementById("cart-overlay").style.display = "block";
-  }
-  
-  function overlayOff() {
-    document.getElementById("cart-overlay").style.display = "none";
-  }
-</script>
 
 
+<section>
+  {% for block in section.blocks %}
+    {% assign product_list = block.settings.product_list %}
+    {% assign upsell_product_1 = block.settings.upsell_product_1 %}
+    {% assign upsell_product_2 = block.settings.upsell_product_2 %}
+    {% assign upsell_product_3 = block.settings.upsell_product_3 %}
+    {% assign upsell_product_4 = block.settings.upsell_product_4 %}
+    {% assign upsell_product_1_variant_id = block.settings.upsell_product_1_variant_id %}
+    {% assign upsell_product_2_variant_id = block.settings.upsell_product_2_variant_id %}
+    {% assign upsell_product_3_variant_id = block.settings.upsell_product_3_variant_id %}
+    {% assign upsell_product_4_variant_id = block.settings.upsell_product_4_variant_id %}
+    {% assign loop = forloop.index %}
+    
+     {% render 'my-cart-upsells', 
+      cart: cart, 
+      section: section,
+      settings: settings,
+      block: block,
+      loop: loop,
+      upsell_count: upsell_count,
+      product_list: product_list,
+      upsell_product_1: upsell_product_1, upsell_product_1_variant_id: upsell_product_1_variant_id,
+      upsell_product_2: upsell_product_2, upsell_product_2_variant_id: upsell_product_2_variant_id,
+      upsell_product_3: upsell_product_3, upsell_product_3_variant_id: upsell_product_3_variant_id,
+      upsell_product_4: upsell_product_4, upsell_product_4_variant_id: upsell_product_4_variant_id
+    %}
+    
+{% endfor %}
+</section>
 
+        
 {% schema %}
   {
-	"name": "My Cart" 
+	"name": "My Cart",
+    "settings": [],
+    "presets": [
+      {
+        "name": "My cart"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "Trigger",
+        "name": "Product trigger",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Product triggers"
+          },
+          {
+            "type": "product_list",
+            "id": "product_list",
+            "label": "Product trigger"
+          },
+          {
+            "type": "header",
+            "content": "Upsells"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_upsell_1",
+            "label": "Enable upsell 1"
+          },
+          {
+            "type": "product",
+            "id": "upsell_product_1",
+            "label": "Upsell product 1"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_upsell_2",
+            "label": "Enable upsell 2"
+          },
+          {
+            "type": "product",
+            "id": "upsell_product_2",
+            "label": "Upsell product 2"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_upsell_3",
+            "label": "Enable upsell 3"
+          },
+          {
+            "type": "product",
+            "id": "upsell_product_3",
+            "label": "Upsell product 3"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_upsell_4",
+            "label": "Enable upsell 4"
+          },
+          {
+            "type": "product",
+            "id": "upsell_product_4",
+            "label": "Upsell product 4"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
