@@ -1,0 +1,54 @@
+<section>
+  {% for block in section.blocks %}
+    {% assign product_list = block.settings.product_list %}
+      
+    {% assign enable_upsell_1 = block.settings.enable_upsell_1 %}
+    {% assign enable_upsell_2 = block.settings.enable_upsell_2 %}
+    {% assign enable_upsell_3 = block.settings.enable_upsell_3 %}
+    {% assign enable_upsell_4 = block.settings.enable_upsell_4 %}
+    
+    {% assign upsell_product_1 = block.settings.upsell_product_1 %}
+    {% assign upsell_product_2 = block.settings.upsell_product_2 %}
+    {% assign upsell_product_3 = block.settings.upsell_product_3 %}
+    {% assign upsell_product_4 = block.settings.upsell_product_4 %}
+    
+    {% assign upsell_product_1_variant_id = block.settings.upsell_product_1_variant_id %}
+    {% assign upsell_product_2_variant_id = block.settings.upsell_product_2_variant_id %}
+    {% assign upsell_product_3_variant_id = block.settings.upsell_product_3_variant_id %}
+    {% assign upsell_product_4_variant_id = block.settings.upsell_product_4_variant_id %}
+  
+    {% assign enable_selected_upsell = "enable_upsell_" | append: forloop.index %}
+    {% assign selected_upsell = "upsell_product_" | append: forloop.index %}
+    {% assign selected_open_button = "openCartUpsell" | append: forloop.index %}
+    {% assign loop = forloop.index %}
+    
+     {% render 'my-cart-upsells', 
+      cart: cart, 
+      section: section,
+      settings: settings,
+      block: block,
+      loop: loop,
+      upsell_count: upsell_count,
+      product_list: product_list,
+      upsell_product_1: upsell_product_1, upsell_product_1_variant_id: upsell_product_1_variant_id,
+      upsell_product_2: upsell_product_2, upsell_product_2_variant_id: upsell_product_2_variant_id,
+      upsell_product_3: upsell_product_3, upsell_product_3_variant_id: upsell_product_3_variant_id,
+      upsell_product_4: upsell_product_4, upsell_product_4_variant_id: upsell_product_4_variant_id
+    %}
+  {% endfor %}
+  
+</section>
+
+
+{% schema %}
+  {
+    "name": "Cart upsells",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
