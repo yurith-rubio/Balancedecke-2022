@@ -16,11 +16,12 @@
 {% assign promoVariant = settings.gift_product_variant_id  %}
 {% assign promoSubtotal = settings.gift_product_min_spend  %}
 
-{% if promoVariant != blank and promoSubtotal != blank %}
+
   <script type="module">
       import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
       subscribeToCartStateUpdate( state => {
+        {% if promoVariant != blank and promoSubtotal != blank %}
           const promoVariant = {{ promoVariant }};
           const promoSubtotal = {{ promoSubtotal }}00;
 
@@ -67,7 +68,7 @@
                       });
                   }
               }
-              
+              {% endif %}
               // Slider for suggested upsell products
               $('.owl-carousel').owlCarousel({
                   loop:true,
@@ -99,7 +100,7 @@
           }
        });
   </script>
-{% endif %}
+
 
 <script type="module">
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
@@ -109,9 +110,9 @@
     const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
     const totalCartWrapper = document.querySelector("#MyCart_TotalFinalWrapper");
     const discountsWrapper = document.querySelector("#MyCart_DiscountWrapper");
-    //console.log("discounts" + discounts);
-    //console.log("totalCartWrapper" + totalCartWrapper);
-    //console.log("discountsWrapper" + discountsWrapper);
+    console.log("discounts" + discounts);
+    console.log("totalCartWrapper" + totalCartWrapper);
+    console.log("discountsWrapper" + discountsWrapper);
     
     if(discountsWrapper){
       discountsWrapper.remove();
@@ -165,16 +166,16 @@
   }
   
   function openCartUpsell() {
-    console.log("openCartUpsell");
+    //console.log("openCartUpsell");
     const id = event.target.dataset.upsellId;
-    console.log(id); 
+    //console.log(id); 
     const firstPrice = event.target.dataset.firstPriceAvailable;
     const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
     cartUpsellWrapper.style.display = "block";
     cartUpsellWrapper.setAttribute("data-status", "active");
     const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_PriceItem");
     priceElement.textContent = firstPrice;
-    console.log(priceElement); 
+    //console.log(priceElement); 
   }
 
   function selectVariable() {
