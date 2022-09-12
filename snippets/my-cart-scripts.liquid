@@ -85,7 +85,9 @@
             
               // Heading for upsells
               const upsellActive = document.querySelector(".MyCartUpsells_ItemWrapper");
+              console.log("upsellActive " + upsellActive);
               const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
+              console.log("upsellActive " + upsellActive);
               if(upsellActive){
                 upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
               } else {
