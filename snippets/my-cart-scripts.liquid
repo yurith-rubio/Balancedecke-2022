@@ -26,10 +26,11 @@
     subscribeToCartStateUpdate( state => {
       console.log("cart state ");
       
-      {% if promoVariant != blank and promoSubtotal != blank %}
+      
         const promoVariant = {{ promoVariant }};
         const promoSubtotal = {{ promoSubtotal }}00;
-
+      
+        {% if promoVariant != blank and promoSubtotal != blank %}
         // If cart state exists and there is no Ajax Cart API request in progress
         if ( state.status.cartStateSet && !state.status.requestInProgress ) {
             let currentSubtotal = state.cart.items_subtotal_price;
