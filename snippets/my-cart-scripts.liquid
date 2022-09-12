@@ -17,95 +17,95 @@
 {% assign promoSubtotal = settings.gift_product_min_spend  %}
 
 
-  <script type="module">
-      import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+<script type="module">
+    import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-      subscribeToCartStateUpdate( state => {
-        console.log("cart state ");
-        
-        {% if promoVariant != blank and promoSubtotal != blank %}
-          const promoVariant = {{ promoVariant }};
-          const promoSubtotal = {{ promoSubtotal }}00;
+    subscribeToCartStateUpdate( state => {
+      console.log("cart state ");
+      
+      {% if promoVariant != blank and promoSubtotal != blank %}
+        const promoVariant = {{ promoVariant }};
+        const promoSubtotal = {{ promoSubtotal }}00;
 
-          // If cart state exists and there is no Ajax Cart API request in progress
-          if ( state.status.cartStateSet && !state.status.requestInProgress ) {
-              let currentSubtotal = state.cart.items_subtotal_price;
+        // If cart state exists and there is no Ajax Cart API request in progress
+        if ( state.status.cartStateSet && !state.status.requestInProgress ) {
+            let currentSubtotal = state.cart.items_subtotal_price;
 
-              // Find out if there is a product that was automatically added before
-              const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
-                  return lineItem.properties?._autoadded === 'Yes' ;
-              });
-  
-              // If there is the automaticaly added product —
-              // lets calculate the currentSubtotal without the product
-              if ( autoAddedLineItem > -1 ) {
-                  currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
-              }
+            // Find out if there is a product that was automatically added before
+            const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+                return lineItem.properties?._autoadded === 'Yes' ;
+            });
 
-              if ( currentSubtotal >= promoSubtotal ) {
+            // If there is the automaticaly added product —
+            // lets calculate the currentSubtotal without the product
+            if ( autoAddedLineItem > -1 ) {
+                currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
+            }
 
-                  // If there is no a promoVariant product with an applied discount
-                  // lets add one with _autoadded property
-                  if ( autoAddedLineItem === -1 ) {
-                      setTimeout(function(){
-                        cartRequestAdd({ 
-                            items: [{
-                                id: promoVariant,
-                                quantity: 1,
-                                properties: { "_autoadded": "Yes" }
-                            }]  
-                        });
+            if ( currentSubtotal >= promoSubtotal ) {
 
-                      },100);
-                  }
-              } else {
-
-                  // If current cart subtotal is less than $100
-                  // and an autoadded product is still in the cart —
-                  // lets remove it
-                  if ( autoAddedLineItem > -1 ) {
-                      cartRequestChange({ 
-                          "line": autoAddedLineItem + 1,
-                          "quantity": 0
+                // If there is no a promoVariant product with an applied discount
+                // lets add one with _autoadded property
+                if ( autoAddedLineItem === -1 ) {
+                    setTimeout(function(){
+                      cartRequestAdd({ 
+                          items: [{
+                              id: promoVariant,
+                              quantity: 1,
+                              properties: { "_autoadded": "Yes" }
+                          }]  
                       });
-                  }
-              }
-              {% endif %}
-              
-              console.log("here I am ");
-              // Slider for suggested upsell products
-              $('.owl-carousel').owlCarousel({
-                  loop:true,
-                  margin:10,
-                  responsiveClass:true,
-                  responsive:{
-                      0:{
-                          items:1,
-                          nav:true
-                      }
-                  }
-              });
-            
-              // Heading for upsells
-              const upsellActive = document.querySelector(".MyCartUpsells_ItemWrapper");
-              console.log("upsellActive " + upsellActive);
-              const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
-              console.log("upsellsWrapper " + upsellsWrapper);
-              if(upsellActive){
-                upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
-              } else {
-                console.log("no upsell active");
-              }
 
-              const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
-              submitButtons.forEach(button => {
-                button.addEventListener("click", event => {
-                  closeUpsell();
-                });
+                    },100);
+                }
+            } else {
+
+                // If current cart subtotal is less than $100
+                // and an autoadded product is still in the cart —
+                // lets remove it
+                if ( autoAddedLineItem > -1 ) {
+                    cartRequestChange({ 
+                        "line": autoAddedLineItem + 1,
+                        "quantity": 0
+                    });
+                }
+            }
+            {% endif %}
+            
+            console.log("here I am ");
+            // Slider for suggested upsell products
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    }
+                }
+            });
+          
+            // Heading for upsells
+            const upsellActive = document.querySelector(".MyCartUpsells_ItemWrapper");
+            console.log("upsellActive " + upsellActive);
+            const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
+            console.log("upsellsWrapper " + upsellsWrapper);
+            if(upsellActive){
+              upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
+            } else {
+              console.log("no upsell active");
+            }
+
+            const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
+            submitButtons.forEach(button => {
+              button.addEventListener("click", event => {
+                closeUpsell();
               });
-          }
-       });
-  </script>
+            });
+        }
+     });
+</script>
 
 
 <script type="module">
