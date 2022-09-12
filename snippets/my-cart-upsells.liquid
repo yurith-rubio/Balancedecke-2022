@@ -1,0 +1,412 @@
+{% if upsell_product_1 != blank %}
+  {% assign upsell = upsell_product_1 %}
+  <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
+    
+    <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
+      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant.available }}">
+  
+      {%- assign image_url = upsell.featured_image.src | image_url: width: 300 -%}
+  
+      <div class="MyCartUpsells_HeaderWrapper">
+        <a class="MyCartUpsells_ProductHeader" href="{{ upsell.url }}">
+          <img class="MyCartUpsells_SuggestedImageWrapper" data-rimg="lazy" data-rimg-template="{{ image_url }}" src="{{ image_url }}">
+          <div>
+            <h2 class="MyCart_H2">{{ upsell.title }}</h2>
+            <span class="MyCart_PriceItem">300€</span>
+          </div>
+          
+        </a>
+        <div onclick="closeUpsell()" class="MyCartUpsells_Close">
+          {% render 'icon-close-cart-element' %}
+        </div>
+      </div>
+  
+    <div class="UpProdOpt_infoWr">
+        <div class="MyCartUpsells_SelectorsWrapper">
+          {% if upsell.variants.size > 1 %}
+                {% if upsell.options[0] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-one-{{ upsell.id }}">{{ upsell.options[0] }}</label>
+                      <select id="select-one-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option1 %}
+                                  <option value="{{ variant.option1 }}">{{ variant.option1 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+                {% if upsell.options[1] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-two-{{ upsell.id }}">{{ upsell.options[1] }}</label>
+                      <select id="select-two-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option2 %}
+                                  <option value="{{ variant.option2 }}">{{ variant.option2 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option2 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+                {% if upsell.options[2] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-three-{{ upsell.id }}">{{ upsell.options[2] }}</label>
+                      <select id="select-three-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option3 %}
+                                  <option value="{{ variant.option3 }}">{{ variant.option3 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option3 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+          {% endif %}
+          </div>
+  
+          {% comment %}Settings automatically the Live Preview App options{% endcomment %}
+          <div data-live-options="{{ upsell.id }}" class="MyCartUpsells_ImageUploadButton" style="margin-top:3px"></div>
+  
+          <button
+                  type="submit"
+                  name="formUpsell_{{ upsell.id }}"
+                  class="MyCartUpsells_SubmitButton bttn"
+                  {% if upsell.first_available_variant.available == false %}disabled{% endif %}
+                  >
+            <span>
+              {%- if upsell.first_available_variant.available -%}
+                Hinzufügen
+              {%- else -%}
+                Sold out
+              {%- endif -%}
+            </span>      
+          </button>
+        </div>
+    </form>
+  </div>
+{%- endif -%}
+
+
+
+{% if upsell_product_2 != blank %}
+  {% assign upsell = upsell_product_2 %}
+  <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
+    
+    <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
+      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant.available }}">
+  
+      
+      {%- assign image_url = upsell.featured_image.src | image_url: width: 300 -%}
+  
+      <div class="MyCartUpsells_HeaderWrapper">
+        <a class="MyCartUpsells_ProductHeader" href="{{ upsell.url }}">
+          <img class="MyCartUpsells_SuggestedImageWrapper" data-rimg="lazy" data-rimg-template="{{ image_url }}" src="{{ image_url }}">
+          <div>
+            <h2 class="MyCart_H2">{{ upsell.title }}</h2>
+            <span class="MyCart_PriceItem">300€</span>
+          </div>
+          
+        </a>
+        <div onclick="closeUpsell()" class="MyCartUpsells_Close">
+          {% render 'icon-close-cart-element' %}
+        </div>
+      </div>
+  
+    <div class="UpProdOpt_infoWr">
+        <div class="MyCartUpsells_SelectorsWrapper">
+          {% if upsell.variants.size > 1 %}
+                {% if upsell.options[0] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-one-{{ upsell.id }}">{{ upsell.options[0] }}</label>
+                      <select id="select-one-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option1 %}
+                                  <option value="{{ variant.option1 }}">{{ variant.option1 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+                {% if upsell.options[1] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-two-{{ upsell.id }}">{{ upsell.options[1] }}</label>
+                      <select id="select-two-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option2 %}
+                                  <option value="{{ variant.option2 }}">{{ variant.option2 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option2 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+                {% if upsell.options[2] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-three-{{ upsell.id }}">{{ upsell.options[2] }}</label>
+                      <select id="select-three-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option3 %}
+                                  <option value="{{ variant.option3 }}">{{ variant.option3 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option3 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+          {% endif %}
+          </div>
+  
+          {% comment %}Settings automatically the Live Preview App options{% endcomment %}
+          <div data-live-options="{{ upsell.id }}" class="MyCartUpsells_ImageUploadButton" style="margin-top:3px"></div>
+  
+          <button
+                  type="submit"
+                  name="formUpsell_{{ upsell.id }}"
+                  class="MyCartUpsells_SubmitButton bttn"
+                  {% if upsell.first_available_variant.available == false %}disabled{% endif %}
+                  >
+            <span>
+              {%- if upsell.first_available_variant.available -%}
+                Hinzufügen
+              {%- else -%}
+                Sold out
+              {%- endif -%}
+            </span>      
+          </button>
+        </div>
+    </form>
+  </div>
+{%- endif -%}
+
+{% if upsell_product_3 != blank %}
+  {% assign upsell = upsell_product_3 %}
+  <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
+    
+    <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
+      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant.available }}">
+  
+      
+      {%- assign image_url = upsell.featured_image.src | image_url: width: 300 -%}
+  
+      <div class="MyCartUpsells_HeaderWrapper">
+        <a class="MyCartUpsells_ProductHeader" href="{{ upsell.url }}">
+          <img class="MyCartUpsells_SuggestedImageWrapper" data-rimg="lazy" data-rimg-template="{{ image_url }}" src="{{ image_url }}">
+          <div>
+            <h2 class="MyCart_H2">{{ upsell.title }}</h2>
+            <span class="MyCart_PriceItem">300€</span>
+          </div>
+          
+        </a>
+        <div onclick="closeUpsell()" class="MyCartUpsells_Close">
+          {% render 'icon-close-cart-element' %}
+        </div>
+      </div>
+  
+    <div class="UpProdOpt_infoWr">
+        <div class="MyCartUpsells_SelectorsWrapper">
+          {% if upsell.variants.size > 1 %}
+                {% if upsell.options[0] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-one-{{ upsell.id }}">{{ upsell.options[0] }}</label>
+                      <select id="select-one-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option1 %}
+                                  <option value="{{ variant.option1 }}">{{ variant.option1 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+                {% if upsell.options[1] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-two-{{ upsell.id }}">{{ upsell.options[1] }}</label>
+                      <select id="select-two-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option2 %}
+                                  <option value="{{ variant.option2 }}">{{ variant.option2 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option2 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+                {% if upsell.options[2] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-three-{{ upsell.id }}">{{ upsell.options[2] }}</label>
+                      <select id="select-three-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option3 %}
+                                  <option value="{{ variant.option3 }}">{{ variant.option3 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option3 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+          {% endif %}
+          </div>
+  
+          {% comment %}Settings automatically the Live Preview App options{% endcomment %}
+          <div data-live-options="{{ upsell.id }}" class="MyCartUpsells_ImageUploadButton" style="margin-top:3px"></div>
+  
+          <button
+                  type="submit"
+                  name="formUpsell_{{ upsell.id }}"
+                  class="MyCartUpsells_SubmitButton bttn"
+                  {% if upsell.first_available_variant.available == false %}disabled{% endif %}
+                  >
+            <span>
+              {%- if upsell.first_available_variant.available -%}
+                Hinzufügen
+              {%- else -%}
+                Sold out
+              {%- endif -%}
+            </span>      
+          </button>
+        </div>
+    </form>
+  </div>
+{%- endif -%}
+
+{% if upsell_product_4 != blank %}
+  {% assign upsell = upsell_product_4 %}
+  <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
+    
+    <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
+      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant.available }}">
+  
+      
+      {%- assign image_url = upsell.featured_image.src | image_url: width: 300 -%}
+  
+      <div class="MyCartUpsells_HeaderWrapper">
+        <a class="MyCartUpsells_ProductHeader" href="{{ upsell.url }}">
+          <img class="MyCartUpsells_SuggestedImageWrapper" data-rimg="lazy" data-rimg-template="{{ image_url }}" src="{{ image_url }}">
+          <div>
+            <h2 class="MyCart_H2">{{ upsell.title }}</h2>
+            <span class="MyCart_PriceItem">300€</span>
+          </div>
+          
+        </a>
+        <div onclick="closeUpsell()" class="MyCartUpsells_Close">
+          {% render 'icon-close-cart-element' %}
+        </div>
+      </div>
+  
+    <div class="UpProdOpt_infoWr">
+        <div class="MyCartUpsells_SelectorsWrapper">
+          {% if upsell.variants.size > 1 %}
+                {% if upsell.options[0] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-one-{{ upsell.id }}">{{ upsell.options[0] }}</label>
+                      <select id="select-one-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option1 %}
+                                  <option value="{{ variant.option1 }}">{{ variant.option1 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+                {% if upsell.options[1] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-two-{{ upsell.id }}">{{ upsell.options[1] }}</label>
+                      <select id="select-two-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option2 %}
+                                  <option value="{{ variant.option2 }}">{{ variant.option2 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option2 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+                {% if upsell.options[2] %}
+                    {% assign used = '' %}
+                    <div class="MyCartUpsells_OptionWrapper">
+                      <label class="MyCartUpsells_OptionLabel" for="select-three-{{ upsell.id }}">{{ upsell.options[2] }}</label>
+                      <select id="select-three-{{ upsell.id }}" class="MyCartUpsells_Select" 
+                              onchange="selectVariable()"
+                              data-block-index="{{ loop }}"
+                              data-product-id="{{ upsell.id }}">
+                          {% for variant in upsell.variants %}
+                              {% unless used contains variant.option3 %}
+                                  <option value="{{ variant.option3 }}">{{ variant.option3 }}</option>
+                                  {% capture used %}{{ used }} {{ variant.option3 }}{% endcapture %}
+                              {% endunless %}
+                          {% endfor %}
+                      </select>
+                    </div>
+                {% endif %}
+          {% endif %}
+          </div>
+  
+          {% comment %}Settings automatically the Live Preview App options{% endcomment %}
+          <div data-live-options="{{ upsell.id }}" class="MyCartUpsells_ImageUploadButton" style="margin-top:3px"></div>
+  
+          <button
+                  type="submit"
+                  name="formUpsell_{{ upsell.id }}"
+                  class="MyCartUpsells_SubmitButton bttn"
+                  {% if upsell.first_available_variant.available == false %}disabled{% endif %}
+                  >
+            <span>
+              {%- if upsell.first_available_variant.available -%}
+                Hinzufügen
+              {%- else -%}
+                Sold out
+              {%- endif -%}
+            </span>      
+          </button>
+        </div>
+    </form>
+  </div>
+{%- endif -%}
