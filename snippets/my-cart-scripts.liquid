@@ -1,9 +1,10 @@
 <script type="application/json" data-ajax-cart-initial-state >
-  console.log("script module abcs ");
     {{ cart | json }}
 </script>
 
 <script type="module">
+  console.log("script module abcs ");
+  
     import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 </script>
 
