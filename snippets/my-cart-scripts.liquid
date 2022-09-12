@@ -183,7 +183,7 @@
     const id = event.target.dataset.upsellId;
     console.log(id);
     const firstPrice = event.target.dataset.firstPriceAvailable;
-    console.log(firstPrice);
+    console.log(event.target);
     const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
     cartUpsellWrapper.style.display = "block";
     cartUpsellWrapper.setAttribute("data-status", "active");
