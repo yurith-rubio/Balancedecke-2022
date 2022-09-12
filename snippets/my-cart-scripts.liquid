@@ -18,8 +18,9 @@
 
 
 <script type="module">
-    import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
-
+  import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  console.log("script module ");
+  
     subscribeToCartStateUpdate( state => {
       console.log("cart state ");
       
