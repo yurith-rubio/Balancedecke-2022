@@ -21,6 +21,8 @@
       import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
       subscribeToCartStateUpdate( state => {
+        console.log("cart state ");
+        
         {% if promoVariant != blank and promoSubtotal != blank %}
           const promoVariant = {{ promoVariant }};
           const promoSubtotal = {{ promoSubtotal }}00;
@@ -69,6 +71,7 @@
                   }
               }
               {% endif %}
+              
               console.log("here I am ");
               // Slider for suggested upsell products
               $('.owl-carousel').owlCarousel({
