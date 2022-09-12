@@ -32,7 +32,7 @@
               const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
                   return lineItem.properties?._autoadded === 'Yes' ;
               });
-
+  
               // If there is the automaticaly added product —
               // lets calculate the currentSubtotal without the product
               if ( autoAddedLineItem > -1 ) {
@@ -67,7 +67,254 @@
                       });
                   }
               }
+              
+              // Slider for suggested upsell products
+              $('.owl-carousel').owlCarousel({
+                  loop:true,
+                  margin:10,
+                  responsiveClass:true,
+                  responsive:{
+                      0:{
+                          items:1,
+                          nav:true
+                      }
+                  }
+              });
+            
+              // Heading for upsells
+              const upsellActive = document.querySelector(".MyCartUpsells_ItemWrapper");
+              const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
+              if(upsellActive){
+                upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
+              } else {
+                console.log("no upsell active");
+              }
+
+              const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
+              submitButtons.forEach(button => {
+                button.addEventListener("click", event => {
+                  closeUpsell();
+                });
+              });
           }
        });
   </script>
 {% endif %}
+
+<script type="module">
+  import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  
+  function addCartTotalDiscount(){
+    //console.log("cart state update");
+    const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
+    const totalCartWrapper = document.querySelector("#MyCart_TotalFinalWrapper");
+    const discountsWrapper = document.querySelector("#MyCart_DiscountWrapper");
+    console.log("discounts" + discounts);
+    console.log("totalCartWrapper" + totalCartWrapper);
+    console.log("discountsWrapper" + discountsWrapper);
+    
+    if(discountsWrapper){
+      discountsWrapper.remove();
+    }
+    if(discounts){
+      if(totalCartWrapper ){
+        totalCartWrapper.insertAdjacentHTML("afterend", 
+                                    `<div id="MyCart_DiscountWrapper" class="MyCart_DiscountInfo MyCart_FooterText MyCart_HighlightedText">
+                                        <span>Sie sparen  </span>
+                                        <p id="MyCart_ItemDiscountTotal"></p>
+                                      </div>`);        
+      }
+    }
+
+    var sum = 0;
+    if (discounts){
+      discounts.forEach(element => {
+        var discount = element.innerText.replace("€", "").trim();
+        sum = sum + parseFloat(discount.replace(".", "").replace(",", "."));
+      });
+      sum = Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
+    }
+    const totalDiscount = sum;
+    const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
+    if(totalDiscountElement){
+      totalDiscountElement.innerText = totalDiscount;    
+    }
+  }
+  
+  addCartTotalDiscount();
+  
+  subscribeToCartStateUpdate(state => {
+    addCartTotalDiscount();
+  });
+</script>
+
+<script>
+  function overlayOn() {
+    document.getElementById("MyCart_Overlay").style.display = "block";
+  }
+  
+  function overlayOff() {
+    document.getElementById("MyCart_Overlay").style.display = "none";
+  }
+  
+  function closeUpsell() {
+    const cartUpsellWrapper = document.querySelectorAll(".MyCartUpsells_MainContainer");
+    cartUpsellWrapper.forEach(element => {
+      element.style.display = "none";
+    });
+  }
+  
+  function openCartUpsell() {
+    //console.log("openCartUpsell");
+    const id = event.target.dataset.upsellId;
+    //console.log(id); 
+    const firstPrice = event.target.dataset.firstPriceAvailable;
+    const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
+    cartUpsellWrapper.style.display = "block";
+    cartUpsellWrapper.setAttribute("data-status", "active");
+    const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_PriceItem");
+    priceElement.textContent = firstPrice;
+    //console.log(priceElement); 
+  }
+
+  function selectVariable() {
+    const productId = event.target.dataset.productId;
+    let blockIndex = parseInt(event.target.dataset.blockIndex, 10);
+    
+    let selectedUpsell = null;
+    
+    if(blockIndex == 1){
+      let upsellsBlock1 = [window.upsell1_block1, window.upsell2_block1, window.upsell3_block1, window.upsell4_block1];
+      
+      upsellsBlock1 = upsellsBlock1.map(upsell => {
+        if (!upsell.error){
+          return upsell;
+        }
+      });
+      
+      upsellsBlock1 = upsellsBlock1.filter(upsell => {
+        return upsell;
+      });
+      
+      upsellsBlock1.find(upsell => {
+      if (productId == upsell.id) {
+          selectedUpsell = upsell;
+        }
+      });
+    } else if(blockIndex == 2){
+      let upsellsBlock2 = [window.upsell1_block2, window.upsell2_block2, window.upsell3_block2, window.upsell4_block2];
+      
+      upsellsBlock2 = upsellsBlock2.map(upsell => {
+        if (!upsell.error){
+          return upsell;
+        }
+        return upsell;
+      });
+      
+      upsellsBlock2.find(upsell => {
+      if (productId == upsell.id) {
+          selectedUpsell = upsell;
+        }
+      });
+    } else if(blockIndex == 3){
+      let upsellsBlock3 = [window.upsell1_block3, window.upsell2_block3, window.upsell3_block3, window.upsell4_block3];
+      
+      upsellsBlock3 = upsellsBlock3.map(upsell => {
+        if (!upsell.error){
+          return upsell;
+        }
+      });
+      
+      upsellsBlock3 = upsellsBlock3.filter(upsell => {
+        return upsell;
+      });
+      
+      upsellsBlock3.find(upsell => {
+      if (productId == upsell.id) {
+          selectedUpsell = upsell;
+        }
+      });
+    } else if(blockIndex == 4){
+      let upsellsBlock4 = [window.upsell1_block4, window.upsell2_block4, window.upsell3_block4, window.upsell4_block4];
+      
+      upsellsBlock4 = upsellsBlock4.map(upsell => {
+        if (!upsell.error){
+          return upsell;
+        }
+      });
+      
+      upsellsBlock4 = upsellsBlock4.filter(upsell => {
+        return upsell;
+      });
+      
+      upsellsBlock4.find(upsell => {
+      if (productId == upsell.id) {
+          selectedUpsell = upsell;
+        }
+      });
+    } 
+
+    var available = false;
+
+    const opt1 = document.getElementById('select-one-' + productId)?.value;
+    const opt2 = document.getElementById('select-two-' + productId)?.value;
+    const opt3 = document.getElementById('select-three-' + productId)?.value;
+      
+    for(var i = 0; i < selectedUpsell.variants.length; i++) {
+      var variant = selectedUpsell.variants[i];
+      
+      if (opt3 && opt2){
+        if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
+          var variantId = variant.id;
+          var variantPrice = variant.price;
+          var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+          variantPrice = variantPrice/100;
+          priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+          available = true;
+          break;
+        }
+      }
+      if (!opt3 && opt2){
+        if (variant.option1 == opt1 && variant.option2 == opt2 && variant.available) {
+          var variantId = variant.id;
+          var variantPrice = variant.price;
+          var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+          variantPrice = variantPrice/100;
+          priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+          available = true;
+          break;
+        }
+      }
+     if (!opt3 && !opt2){
+        if (variant.option1 == opt1 && variant.available) {
+          var variantId = variant.id;
+          var variantPrice = variant.price;
+          var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+          variantPrice = variantPrice/100;
+          priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+          available = true;
+          break;
+        }
+      }
+    }
+    
+    if(variantId!='') {
+      document.getElementById('product-select-' + productId).value = variantId;
+    } else {
+      document.getElementById('product-select-' + productId).value = '';
+    }
+    
+    if(available){
+      document.querySelector('button.MyCartUpsells_SubmitButton span').innerHTML = 'Hinzufügen';
+      document.querySelector('button.MyCartUpsells_SubmitButton').removeAttribute("disabled");
+    } else {
+      document.querySelector('button.MyCartUpsells_SubmitButton span').innerHTML = 'Unavailable';
+      document.querySelector('button.MyCartUpsells_SubmitButton').setAttribute("disabled", "disabled");
+    }
+  }
+
+</script>
+
+
+
+
