@@ -14,8 +14,12 @@
 </script>
 
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
-{% assign promoVariant = settings.gift_product_variant_id  %}
-{% assign promoSubtotal = settings.gift_product_min_spend  %}
+{% if settings.gift_product_variant_id != blank %}
+  {% assign promoVariant = settings.gift_product_variant_id %}
+{% endif %}
+{% if settings.gift_product_min_spend != blank %}
+  {% assign promoSubtotal = settings.gift_product_min_spend %}
+{% endif %}
 
 <script type="module">
   
