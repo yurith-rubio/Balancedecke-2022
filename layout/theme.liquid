@@ -42,9 +42,6 @@
   {{ 'judgeme-custom.css' | asset_url | stylesheet_tag }}
   {% comment %}  Add FREE GIFT to SLIDE CART code - Yurith {% endcomment %}
   {% render 'my-cart-scripts', settings: settings %}
-  {% comment %} Commented it as we already had one library but left it for testing in case something does not work to change the library
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  {% endcomment %}
   {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
