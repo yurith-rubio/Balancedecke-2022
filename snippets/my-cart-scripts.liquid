@@ -1,3 +1,4 @@
+<script>console.log("script module1ss ");</script>
 <script type="application/json" data-ajax-cart-initial-state >
     {{ cart | json }}
 </script>
@@ -17,7 +18,7 @@
 {% assign promoSubtotal = settings.gift_product_min_spend  %}
 
 <script type="module">
-  console.log("script module1 ");
+  
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   console.log("script module ");
   
