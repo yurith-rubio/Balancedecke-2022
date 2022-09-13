@@ -359,11 +359,11 @@
     }
     
     if(available){
-      console.log("remove disabled to the attribute");
+      //console.log("remove disabled to the attribute");
       document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton span').innerHTML = 'Hinzufügen';
       document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').removeAttribute("disabled");
     } else {
-      console.log("add disabled to the attribute");
+      //console.log("add disabled to the attribute");
       document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton span').innerHTML = 'Ausverkauft';
       document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').setAttribute("disabled", "disabled");
     }
