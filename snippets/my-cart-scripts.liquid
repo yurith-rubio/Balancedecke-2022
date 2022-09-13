@@ -217,7 +217,6 @@
       upsellsBlock1.find(upsell => {
         console.log("find upsell ");
         if (productId == upsell.id) {
-          console.log("same ids ");
           selectedUpsell = upsell;
         }
       });
@@ -273,7 +272,9 @@
         }
       });
     } 
-
+    
+    console.log("selectedUpsell ");
+    console.log(selectedUpsell);
     var available = false;
 
     const opt1 = document.getElementById('select-one-' + productId)?.value;
