@@ -39,14 +39,18 @@
         });
       
         // Heading for upsells
-        const upsellActive = document.querySelectorAll(".MyCartUpsells_ItemWrapper");
+        const upsellsActive = document.querySelectorAll(".MyCartUpsells_ItemWrapper");
         const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
         const suggestionsTitle = document.querySelector("#MyCartUpsells_MainTitle");
-        if(upsellActive && !suggestionsTitle){
-          upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
-        } else {
-          console.log("no upsell active");
-        }
+        
+        upsellsActive.forEach(item => {
+          if(upsellsActive && !suggestionsTitle){
+            upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
+          } else {
+            console.log("no upsell active");
+          }
+        });
+
 
         const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
         submitButtons.forEach(button => {
