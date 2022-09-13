@@ -246,7 +246,7 @@ input.MyCart_InputItem{
 }
 .MyCart_FooterText > p, .MyCart_Price{
   margin: 0;
-  font-weight: 500;
+  font-weight: bold;
 }
 #MyCart_DiscountWrapper{
   display: flex;
