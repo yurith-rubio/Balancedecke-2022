@@ -235,14 +235,10 @@
     } else if(blockIndex == 3){
       let upsellsBlock3 = [window.upsell1_block3, window.upsell2_block3, window.upsell3_block3, window.upsell4_block3];
       
-      upsellsBlock3 = upsellsBlock3.map(upsell => {
-        if (!upsell.error){
+      upsellsBlock3 = upsellsBlock3.filter(upsell => {
+        if (upsell.id){
           return upsell;
         }
-      });
-      
-      upsellsBlock3 = upsellsBlock3.filter(upsell => {
-        return upsell;
       });
       
       upsellsBlock3.find(upsell => {
