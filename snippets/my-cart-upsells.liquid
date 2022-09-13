@@ -88,11 +88,11 @@
                   {% if upsell.first_available_variant.available == false %}disabled{% endif %}
                   >
             <span>
-              {%- if upsell.first_available_variant.available -%}
+              {%- if upsell.selected_or_first_available_variant.available -%}
                 Hinzufügen
               {%- else -%}
                 {{ 'products.product.sold_out' | t }}
-                {{ upsell | json }}
+                {{ upsell. | json }}
               {%- endif -%}
             </span>      
           </button>
