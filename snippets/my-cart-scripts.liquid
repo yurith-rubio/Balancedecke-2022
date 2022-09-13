@@ -42,11 +42,13 @@
         const upsellActive = document.querySelectorAll(".MyCartUpsells_ItemWrapper");
         const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
         const suggestionsTitle = document.querySelector("#MyCartUpsells_MainTitle");
-        
-        if(upsellActive && !suggestionsTitle){
-          upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
-        } else {
-          console.log("no upsell active");
+
+        if(upsellActive){
+          if(!suggestionsTitle){
+            upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
+          } else {
+            console.log("title already added");
+          }
         }
 
         const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
