@@ -298,11 +298,13 @@
         var variantId = variant.id;
         var variantPrice = variant.price;
         var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
-        variantPrice = variantPrice/100;
-        priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
         
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.available) {
           available = true;
+          break;
+        } else if (variant.option1 == opt1 && variant.option2) {
+          variantPrice = variantPrice/100;
+          priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           break;
         }
       }
