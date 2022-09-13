@@ -85,14 +85,14 @@
                   type="submit"
                   name="formUpsell_{{ upsell.id }}"
                   class="MyCartUpsells_SubmitButton bttn"
-                  {% if upsell.first_available_variant.available == false %}disabled{% endif %}
+                  {% if upsell.selected_or_first_available_variant.available == false %}disabled{% endif %}
                   >
             <span>
               {%- if upsell.selected_or_first_available_variant.available -%}
                 Hinzufügen
               {%- else -%}
                 {{ 'products.product.sold_out' | t }}
-                {{ upsell. | json }}
+                {{ upsell.selected_or_first_available_variant. | json }}
               {%- endif -%}
             </span>      
           </button>
