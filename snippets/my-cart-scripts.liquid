@@ -221,9 +221,11 @@
       });*/
       
       upsellsBlock1 = upsellsBlock1.filter(upsell => {
-        console.log("filtered ");
-        console.log(upsell);
-        return upsell;
+        if (upsell.id){
+          console.log("filtered ");
+          console.log(upsell);
+          return upsell;
+        }
       });
       
       upsellsBlock1.find(upsell => {
