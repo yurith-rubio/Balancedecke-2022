@@ -91,7 +91,7 @@
               {%- if upsell.first_available_variant.available -%}
                 Hinzufügen
               {%- else -%}
-                Sold out
+                {{ 'products.product.sold_out' | t }}
               {%- endif -%}
             </span>      
           </button>
