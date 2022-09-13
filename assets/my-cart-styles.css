@@ -330,7 +330,6 @@ input.MyCart_InputItem{
 }
 .MyCartUpsells_Bttn{
   height: unset !important;
-  padding: 5px 15px !important;
   margin-top: 10px;
   cursor: pointer;
   display: inline-flex !important;
@@ -410,6 +409,11 @@ button.MyCart_CheckoutButton{
 }
 /* Tablet and up */
 @media only screen and (min-width: 441px){
+  /* Balance changes */
+  .MyCartUpsells_Bttn{
+    padding: 5px 15px;
+  }
+  /* End Balance changes */
   #MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
     padding: 5px;
   }
@@ -451,7 +455,7 @@ button.MyCart_CheckoutButton{
 @media only screen and (max-width: 440px){
   /* Balance changes */
   .MyCartUpsells_Bttn{
-    padding: 0 15px !important;
+    padding: 0 15px;
   }
   /* End Balance changes */
    #MyCart_Slider{
