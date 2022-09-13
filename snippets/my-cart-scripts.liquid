@@ -282,6 +282,8 @@
         console.log(priceElement);
         
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
+          variantPrice = variantPrice/100;
+          priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           console.log("available");
           available = true;
           break;
@@ -300,6 +302,8 @@
         var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
         
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.available) {
+          variantPrice = variantPrice/100;
+          priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           available = true;
           break;
         } else if (variant.option1 == opt1 && variant.option2) {
@@ -315,6 +319,8 @@
         var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
        
         if (variant.option1 == opt1 && variant.available) {
+          variantPrice = variantPrice/100;
+          priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           available = true;
           break;
         } else if (variant.option1 == opt1) {
