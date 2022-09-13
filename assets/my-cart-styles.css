@@ -226,7 +226,7 @@ input.MyCart_InputItem{
   position: sticky;
   bottom: 0;
   width: 100%;
-  box-shadow: 0 -5px 10px var(--color-light-shadow);
+  border-top: var(--color-light-border) 1px solid;
   padding: 10px 20px;
 }
 #MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
