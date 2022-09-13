@@ -211,8 +211,10 @@
       
       upsellsBlock1 = upsellsBlock1.map(upsell => {
         if (!upsell.error){
-          console.log(upsell);
+          
           return upsell;
+        } else {
+          console.log("no upsell mapped");
         }
       });
       
