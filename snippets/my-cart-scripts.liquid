@@ -278,6 +278,8 @@
         var variantId = variant.id;
         var variantPrice = variant.price;
         var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        console.log(variantPrice);
+        console.log(priceElement);
         
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
           console.log("available");
