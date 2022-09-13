@@ -373,7 +373,7 @@ input.MyCart_InputItem{
 .MyCartUpsells_MainContainer > form{
   background-color: #fff;
   padding: 20px 30px;
-  box-shadow: 0 -5px 10px var(--color-light-shadow);
+  border-top: lightgray 1px solid;
 }
 .MyCartUpsells_Select{
   border-radius: 3px;
