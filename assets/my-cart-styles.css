@@ -235,6 +235,12 @@ input.MyCart_InputItem{
   font-weight: 400;
 }
 /* Text style */
+/* On Balance */
+  .MyCart_FooterText > p, .MyCart_Price{
+    margin: 0;
+    font-weight: bold;
+  }
+/* End of Balance */
 .MyCart_H2 > a{
   color: var(--color-gral-text);
 }
@@ -243,10 +249,6 @@ input.MyCart_InputItem{
   line-height: 1.2;
   font-size: 14px;
   color: var(--color-secondary-text);
-}
-.MyCart_FooterText > p, .MyCart_Price{
-  margin: 0;
-  font-weight: bold;
 }
 #MyCart_DiscountWrapper{
   display: flex;
