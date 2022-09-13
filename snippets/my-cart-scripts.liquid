@@ -280,9 +280,11 @@
         var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
         
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
+          console.log("available");
           available = true;
           break;
         } else if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3) {
+          console.log("not available");
           variantPrice = variantPrice/100;
           priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           break;
