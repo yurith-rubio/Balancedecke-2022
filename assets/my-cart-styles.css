@@ -456,6 +456,10 @@ button.MyCart_CheckoutButton{
   /* Balance changes */
   .MyCart_ContentItem div.MyCartUpsells_Bttn{
     padding: 0 15px;
+    margin-top: 0;
+  }
+  .MyCart_ItemWrapper{
+    padding: 10px 20px;
   }
   /* End Balance changes */
    #MyCart_Slider{
@@ -481,9 +485,6 @@ button.MyCart_CheckoutButton{
   }
   .SuggestedUpProd_ContentWr{
     padding: 23px 11px 17px 11px;
-  }
-  .MyCart_ItemWrapper{
-    padding: 10px 20px;
   }
   .MyCart_ValueItem, .MyCartUpsells_MainTitle{
     font-size: 12px;
