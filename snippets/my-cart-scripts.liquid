@@ -45,7 +45,7 @@
         console.log("upsellActive");
         console.log(upsellActive);
 
-        if(upsellActive){
+        if(upsellActive.length > 0){
           if(!suggestionsTitle){
             upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
           } else {
