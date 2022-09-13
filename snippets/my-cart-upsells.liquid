@@ -3,7 +3,7 @@
   <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
     
     <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
-      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant.available }}">
+      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant }}">
   
       {%- assign image_url = upsell.featured_image.src | image_url: width: 300 -%}
   
@@ -85,10 +85,10 @@
                   type="submit"
                   name="formUpsell_{{ upsell.id }}"
                   class="MyCartUpsells_SubmitButton bttn"
-                  {% if upsell.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                  {% if upsell.selected_or_first_available_variant == false %}disabled{% endif %}
                   >
             <span>
-              {%- if upsell.selected_or_first_available_variant.available -%}
+              {%- if upsell.selected_or_first_available_variant -%}
                 Hinzufügen
               {%- else -%}
                 {{ 'products.product.sold_out' | t }}
@@ -107,7 +107,7 @@
   <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
     
     <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
-      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant.available }}">
+      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant }}">
   
       
       {%- assign image_url = upsell.featured_image.src | image_url: width: 300 -%}
@@ -190,10 +190,10 @@
                   type="submit"
                   name="formUpsell_{{ upsell.id }}"
                   class="MyCartUpsells_SubmitButton bttn"
-                  {% if upsell.first_available_variant.available == false %}disabled{% endif %}
+                  {% if upsell.selected_or_first_available_variant == false %}disabled{% endif %}
                   >
             <span>
-              {%- if upsell.first_available_variant.available -%}
+              {%- if upsell.selected_or_first_available_variant -%}
                 Hinzufügen
               {%- else -%}
                 Sold out
@@ -210,7 +210,7 @@
   <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
     
     <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
-      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant.available }}">
+      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant }}">
   
       
       {%- assign image_url = upsell.featured_image.src | image_url: width: 300 -%}
@@ -293,10 +293,10 @@
                   type="submit"
                   name="formUpsell_{{ upsell.id }}"
                   class="MyCartUpsells_SubmitButton bttn"
-                  {% if upsell.first_available_variant.available == false %}disabled{% endif %}
+                  {% if upsell.selected_or_first_available_variant == false %}disabled{% endif %}
                   >
             <span>
-              {%- if upsell.first_available_variant.available -%}
+              {%- if upsell.selected_or_first_available_variant -%}
                 Hinzufügen
               {%- else -%}
                 Sold out
@@ -313,7 +313,7 @@
   <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
     
     <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
-      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant.available }}">
+      <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant }}">
   
       
       {%- assign image_url = upsell.featured_image.src | image_url: width: 300 -%}
@@ -396,10 +396,10 @@
                   type="submit"
                   name="formUpsell_{{ upsell.id }}"
                   class="MyCartUpsells_SubmitButton bttn"
-                  {% if upsell.first_available_variant.available == false %}disabled{% endif %}
+                  {% if upsell.selected_or_first_available_variant == false %}disabled{% endif %}
                   >
             <span>
-              {%- if upsell.first_available_variant.available -%}
+              {%- if upsell.selected_or_first_available_variant -%}
                 Hinzufügen
               {%- else -%}
                 Sold out
