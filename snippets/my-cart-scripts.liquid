@@ -263,11 +263,16 @@
     
     //console.log("selectedUpsell ");
     //console.log(selectedUpsell);
+    
     var available = false;
 
     const opt1 = document.getElementById('select-one-' + productId)?.value;
     const opt2 = document.getElementById('select-two-' + productId)?.value;
     const opt3 = document.getElementById('select-three-' + productId)?.value;
+    
+    console.log(opt1);
+    console.log(opt2);
+    console.log(opt3);
       
     for(var i = 0; i < selectedUpsell.variants.length; i++) {
       var variant = selectedUpsell.variants[i];
