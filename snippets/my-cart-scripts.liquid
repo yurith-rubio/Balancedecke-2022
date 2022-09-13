@@ -278,6 +278,7 @@
       var variant = selectedUpsell.variants[i];
       
       if (opt3 && opt2){
+        console.log("opt3 && opt2");
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
           var variantId = variant.id;
           var variantPrice = variant.price;
@@ -289,6 +290,7 @@
         }
       }
       if (!opt3 && opt2){
+        console.log("!opt3 && opt2");
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.available) {
           var variantId = variant.id;
           var variantPrice = variant.price;
@@ -300,6 +302,7 @@
         }
       }
      if (!opt3 && !opt2){
+         console.log("!opt3 && !opt2");
         if (variant.option1 == opt1 && variant.available) {
           var variantId = variant.id;
           var variantPrice = variant.price;
