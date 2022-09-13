@@ -274,7 +274,7 @@
       var variant = selectedUpsell.variants[i];
       
       if (opt3 && opt2){
-        //console.log("opt3 && opt2");
+        console.log("opt3 && opt2");
         var variantId = variant.id;
         var variantPrice = variant.price;
         var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
@@ -296,17 +296,19 @@
         }
       }
       if (!opt3 && opt2){
-        //console.log("!opt3 && opt2");
+        console.log("!opt3 && opt2");
         var variantId = variant.id;
         var variantPrice = variant.price;
         var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
         
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.available) {
+          console.log("available");
           variantPrice = variantPrice/100;
           priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           available = true;
           break;
         } else if (variant.option1 == opt1 && variant.option2) {
+          console.log("not available");
           variantPrice = variantPrice/100;
           priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           available = false;
@@ -314,7 +316,7 @@
         }
       }
      if (!opt3 && !opt2){
-        //console.log("!opt3 && !opt2");
+        console.log("!opt3 && !opt2");
         var variantId = variant.id;
         var variantPrice = variant.price;
         var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
@@ -326,6 +328,7 @@
           available = true;
           break;
         } else if (variant.option1 == opt1) {
+          console.log("not available");
           variantPrice = variantPrice/100;
           priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           available = false;
