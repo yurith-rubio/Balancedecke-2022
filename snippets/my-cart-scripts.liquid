@@ -195,7 +195,7 @@
   }
 
   function selectVariable() {
-    console.log("function select Variable");
+    //console.log("function select Variable");
     const productId = event.target.dataset.productId;
     //console.log("productId " + productId);
     let blockIndex = parseInt(event.target.dataset.blockIndex, 10);
@@ -269,23 +269,22 @@
     const opt1 = document.getElementById('select-one-' + productId)?.value;
     const opt2 = document.getElementById('select-two-' + productId)?.value;
     const opt3 = document.getElementById('select-three-' + productId)?.value;
-    
-    console.log(opt1);
-    console.log(opt2);
-    console.log(opt3);
       
     for(var i = 0; i < selectedUpsell.variants.length; i++) {
       var variant = selectedUpsell.variants[i];
       
       if (opt3 && opt2){
-        console.log("opt3 && opt2");
+        //console.log("opt3 && opt2");
+        var variantId = variant.id;
+        var variantPrice = variant.price;
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
-          var variantId = variant.id;
-          var variantPrice = variant.price;
-          var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+          available = true;
+          break;
+        } else if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3) {
           variantPrice = variantPrice/100;
           priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
-          available = true;
           break;
         }
       }
@@ -305,21 +304,22 @@
         }
       }
      if (!opt3 && !opt2){
-         //console.log("!opt3 && !opt2");
+        //console.log("!opt3 && !opt2");
+        var variantId = variant.id;
+        var variantPrice = variant.price;
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+       
         if (variant.option1 == opt1 && variant.available) {
-          var variantId = variant.id;
-          var variantPrice = variant.price;
-          var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+          available = true;
+          break;
+        } else if (variant.option1 == opt1) {
           variantPrice = variantPrice/100;
           priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
-          available = true;
           break;
         }
       }
     }
 
-    
-    
     if(variantId!='') {
       document.getElementById('product-select-' + productId).value = variantId;
     } else {
