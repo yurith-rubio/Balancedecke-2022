@@ -218,7 +218,6 @@ input.MyCart_InputItem{
   background-color: white;
 }
 .MyCart_Spacer{
-  min-height: 360px;
   width: 100%;
 }
 .MyCart_FooterWrapper{
@@ -444,6 +443,9 @@ button.MyCart_CheckoutButton{
   .MyCart_ImageItem{
     margin: 15px;
   }
+  .MyCart_Spacer{
+    min-height: 420px;
+  }
 }
 /* Mobile */
 @media only screen and (max-width: 440px){
@@ -500,5 +502,8 @@ button.MyCart_CheckoutButton{
   }
   .MyCart_ImageItem{
     margin: 5px 15px 0;
+  }
+  .MyCart_Spacer{
+    min-height: 360px;
   }
 }
