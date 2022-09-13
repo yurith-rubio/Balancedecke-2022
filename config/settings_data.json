@@ -250,7 +250,8 @@
             "type": "Trigger",
             "settings": {
               "product_list": [
-                "balance-gewichtsdecke-fur-kinder"
+                "balance-gewichtsdecke-fur-kinder",
+                "balance-gewichtsdecke"
               ],
               "enable_upsell_1": true,
               "upsell_product_1": "blaues-gesundheitskissen-fur-erwachsene",
@@ -261,27 +262,10 @@
               "enable_upsell_4": false,
               "upsell_product_4": ""
             }
-          },
-          "35e63ddf-d0f6-4488-a94d-99032133c635": {
-            "type": "Trigger",
-            "settings": {
-              "product_list": [
-                "balance-gewichtsdecke-fur-kinder"
-              ],
-              "enable_upsell_1": true,
-              "upsell_product_1": "gesundheitkissen-rot-grosse-blute",
-              "enable_upsell_2": false,
-              "upsell_product_2": "",
-              "enable_upsell_3": false,
-              "upsell_product_3": "",
-              "enable_upsell_4": false,
-              "upsell_product_4": ""
-            }
           }
         },
         "block_order": [
-          "18778ded-fe0a-467a-bf28-4da5718a20b9",
-          "35e63ddf-d0f6-4488-a94d-99032133c635"
+          "18778ded-fe0a-467a-bf28-4da5718a20b9"
         ],
         "settings": {
         }
