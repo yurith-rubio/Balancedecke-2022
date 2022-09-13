@@ -92,7 +92,7 @@
                 Hinzufügen
               {%- else -%}
                 {{ 'products.product.sold_out' | t }}
-                {{ upsell.first_available_variant | json }}
+                {{ upsell | json }}
               {%- endif -%}
             </span>      
           </button>
