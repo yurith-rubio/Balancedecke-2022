@@ -216,10 +216,9 @@
       });
       
       upsellsBlock1.find(upsell => {
-      console.log("find upsell ")
-      console.log(productId);
-      console.log(upsell.id);
-      if (productId == upsell.id) {
+        console.log("find upsell ");
+        if (productId == upsell.id) {
+          console.log("same ids ");
           selectedUpsell = upsell;
         }
       });
