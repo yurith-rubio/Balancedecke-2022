@@ -295,17 +295,13 @@
         console.log(variant.option1);
         console.log(variant.option2);
         console.log(variant.available);
+        var variantId = variant.id;
+        var variantPrice = variant.price;
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        variantPrice = variantPrice/100;
+        priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+        
         if (variant.option1 == opt1 && variant.option2 == opt2 && variant.available) {
-          var variantId = variant.id;
-          var variantPrice = variant.price;
-          var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
-
-          console.log(variantId);
-          console.log(variantPrice);
-          console.log(priceElement);
-                
-          variantPrice = variantPrice/100;
-          priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
           available = true;
           break;
         }
