@@ -410,7 +410,7 @@ button.MyCart_CheckoutButton{
 /* Tablet and up */
 @media only screen and (min-width: 441px){
   /* Balance changes */
-  .MyCartUpsells_Bttn{
+  .MyCart_ContentItem div.MyCartUpsells_Bttn{
     padding: 5px 15px;
   }
   /* End Balance changes */
@@ -454,7 +454,7 @@ button.MyCart_CheckoutButton{
 /* Mobile */
 @media only screen and (max-width: 440px){
   /* Balance changes */
-  .MyCartUpsells_Bttn{
+  .MyCart_ContentItem div.MyCartUpsells_Bttn{
     padding: 0 15px;
   }
   /* End Balance changes */
