@@ -449,6 +449,11 @@ button.MyCart_CheckoutButton{
 }
 /* Mobile */
 @media only screen and (max-width: 440px){
+  /* Balance changes */
+  .MyCartUpsells_Bttn{
+    padding: 0 15px !important;
+  }
+  /* End Balance changes */
    #MyCart_Slider{
     width: 100%;
   }
