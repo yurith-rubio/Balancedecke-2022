@@ -196,8 +196,11 @@
   }
 
   function selectVariable() {
+    console.log("function select Variable");
     const productId = event.target.dataset.productId;
+    console.log("productId " + productId);
     let blockIndex = parseInt(event.target.dataset.blockIndex, 10);
+    console.log("blockIndex " + blockIndex);
     
     let selectedUpsell = null;
     
