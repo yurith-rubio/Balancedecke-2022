@@ -208,7 +208,8 @@
       console.log("block 1 ");
       let upsellsBlock1 = [window.upsell1_block1, window.upsell2_block1, window.upsell3_block1, window.upsell4_block1];
       console.log(upsellsBlock1);
-      
+
+      /*
       upsellsBlock1 = upsellsBlock1.map(upsell => {
         console.log(upsell);
         if (!upsell.error){
@@ -217,12 +218,12 @@
         } else {
           console.log("no upsell mapped");
         }
-      });
+      });*/
       
-      //upsellsBlock1 = upsellsBlock1.filter(upsell => {
-        //console.log(upsell);
-        //return upsell;
-      //});
+      upsellsBlock1 = upsellsBlock1.filter(upsell => {
+        console.log(upsell);
+        return upsell;
+      });
       
       upsellsBlock1.find(upsell => {
       console.log("find upsell ")
