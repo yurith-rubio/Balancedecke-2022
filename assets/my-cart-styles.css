@@ -417,9 +417,9 @@ button.MyCart_CheckoutButton{
 }
 /* Tablet and up */
 @media only screen and (min-width: 441px){
-  #MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
+  /*#MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
     padding: 5px;
-  }
+  }*/
   .MyCartUpsells_MainContainer > form {
     width: 440px;
   }
@@ -456,10 +456,10 @@ button.MyCart_CheckoutButton{
    #MyCart_Slider{
     width: 100%;
   }
-  #MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
+  /*#MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
     padding: 0;
-  }
-  .MyCartUpsells_SuggestedContainer, .MyCartUpsells_MainContainer > form {
+  }*/
+  .MyCartUpsells_Su#MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapperggestedContainer, .MyCartUpsells_MainContainer > form {
     width: 100%;
   }
   .MyCart_BottomSection{
