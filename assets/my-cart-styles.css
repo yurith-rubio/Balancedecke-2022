@@ -114,7 +114,8 @@ body.js-ajax-cart-not-empty .icon-MyCart_Header {
 .MyCart_ItemWrapper{
   display: inline-flex;
   border-top: 1px solid var(--color-light-border);
-  width: 100%
+  width: 100%;
+  padding: 10px 20px;
 }
 .MyCart_ContentItem{
   flex-grow: 3;
@@ -434,9 +435,6 @@ button.MyCart_CheckoutButton{
   .MyCartUpsells_SuggestedImageWrapper{
     max-width: 110px;
   }
-  .MyCart_ItemWrapper{
-    padding: 30px 20px;
-  }
   .MyCartUpsells_MainTitle{
     padding: 7px 15px;
   }
@@ -455,11 +453,6 @@ button.MyCart_CheckoutButton{
 }
 /* Mobile */
 @media only screen and (max-width: 440px){
-  /* Balance changes */
-  .MyCart_ItemWrapper{
-    padding: 10px 20px;
-  }
-  /* End Balance changes */
    #MyCart_Slider{
     width: 100%;
   }
