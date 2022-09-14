@@ -409,13 +409,13 @@ input.MyCart_InputItem{
 button.MyCart_CheckoutButton{
   font-size: 16px;
 }
+.MyCart_ContentItem div.MyCartUpsells_Bttn{
+  padding: 0 15px;
+  margin-top: 0;
+  line-height: 30px !important;
+}
 /* Tablet and up */
 @media only screen and (min-width: 441px){
-  /* Balance changes */
-  .MyCart_ContentItem div.MyCartUpsells_Bttn{
-    padding: 5px 15px;
-  }
-  /* End Balance changes */
   #MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
     padding: 5px;
   }
@@ -456,11 +456,6 @@ button.MyCart_CheckoutButton{
 /* Mobile */
 @media only screen and (max-width: 440px){
   /* Balance changes */
-  .MyCart_ContentItem div.MyCartUpsells_Bttn{
-    padding: 0 15px;
-    margin-top: 0;
-    line-height: 30px !important;
-  }
   .MyCart_ItemWrapper{
     padding: 10px 20px;
   }
