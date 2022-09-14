@@ -14324,7 +14324,6 @@ register('blog-posts', {
 
 });
 
-/*
 var productItem = node => {
   var imageWrapper = node.querySelector('.product-item__image-wrapper');
 
@@ -14365,7 +14364,6 @@ var productItem = node => {
     unload
   };
 };
-*/
 
 var orderCarouselItems = (container, slides) => {
   var animationSlides = [...slides];

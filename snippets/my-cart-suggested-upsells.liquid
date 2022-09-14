@@ -1,0 +1,98 @@
+{% for item in cart.items %}
+  {%  assign one = forloop.index | plus: 0 %}
+  {%  assign loop-header = forloop.index | plus: 0 %}
+
+  {% if one >= 5 %}
+    {% continue %}
+  {% else %}
+    
+    {% for trigger in product_list %}
+      {% if item.product_id == trigger.id %}       
+        {% if upsell_count >= 5 %}
+          {% break %}
+        {% endif %}
+        
+        {% assign upsell_count = upsell_count | plus: 1 %}
+        {% if upsell_product_1 != blank %}
+          {% assign upsell = upsell_product_1 %}
+          <div class="MyCart_ItemWrapper MyCartUpsells_ItemWrapper">
+            <div>
+              <img class="MyCart_ImageItem" src="{{ upsell.featured_image | image_url: width: 70 }}">
+            </div>
+            <div class="MyCart_ContentItem">
+              <h2 class="MyCart_H2">
+                <a class="MyCart_H2" href="{{ upsell.url }}">{{ upsell.title }}</a>
+              </h2>
+              <p class="MyCart_PriceItem">Ab <span class="">{{ upsell.price_min | money_without_trailing_zeros }}</span></p>
+              <div onclick="openCartUpsell()" 
+                class="openUpsell MyCartUpsells_Bttn bttn"
+                data-upsell-id="{{ upsell.id }}"
+                data-first-price-available="{{ upsell.selected_or_first_available_variant.price | money }}"
+                >Hinzufügen</div>
+            </div>
+          </div>
+        {% endif %}
+  
+        {% if upsell_product_2 != blank %}
+          {% assign upsell = upsell_product_2 %}
+          <div class="MyCart_ItemWrapper MyCartUpsells_ItemWrapper">
+            <div>
+              <img class="MyCart_ImageItem" src="{{ upsell.featured_image | image_url: width: 70 }}">
+            </div>
+            <div class="MyCart_ContentItem">
+              <h2 class="MyCart_H2">
+                <a class="MyCart_H2" href="{{ upsell.url }}">{{ upsell.title }}</a>
+              </h2>
+              <p class="MyCart_PriceItem">Ab <span class="">{{ upsell.price_min | money_without_trailing_zeros }}</span></p>
+              <div onclick="openCartUpsell()" 
+                class="openUpsell MyCartUpsells_Bttn bttn"
+                data-upsell-id="{{ upsell.id }}"
+                data-first-price-available="{{ upsell.selected_or_first_available_variant.price | money }}"
+                >Hinzufügen</div>
+            </div>
+          </div>
+        {% endif %}
+  
+        {% if upsell_product_3 != blank %}
+          {% assign upsell = upsell_product_3 %}
+          <div class="MyCart_ItemWrapper MyCartUpsells_ItemWrapper">
+            <div>
+              <img class="MyCart_ImageItem" src="{{ upsell.featured_image | image_url: width: 70 }}">
+            </div>
+            <div class="MyCart_ContentItem">
+              <h2 class="MyCart_H2">
+                <a class="MyCart_H2" href="{{ upsell.url }}">{{ upsell.title }}</a>
+              </h2>
+              <p class="MyCart_PriceItem">Ab <span class="">{{ upsell.price_min | money_without_trailing_zeros }}</span></p>
+              <div onclick="openCartUpsell()" 
+                class="openUpsell MyCartUpsells_Bttn bttn"
+                data-upsell-id="{{ upsell.id }}"
+                data-first-price-available="{{ upsell.selected_or_first_available_variant.price | money }}"
+                >Hinzufügen</div>
+            </div>
+          </div>
+        {% endif %}
+  
+        {% if upsell_product_4 != blank %}
+          {% assign upsell = upsell_product_4 %}
+          <div class="MyCart_ItemWrapper MyCartUpsells_ItemWrapper">
+            <div>
+              <img class="MyCart_ImageItem" src="{{ upsell.featured_image | image_url: width: 70 }}">
+            </div>
+            <div class="MyCart_ContentItem">
+              <h2 class="MyCart_H2">
+                <a class="MyCart_H2" href="{{ upsell.url }}">{{ upsell.title }}</a>
+              </h2>
+              <p class="MyCart_PriceItem">Ab <span class="">{{ upsell.price_min | money_without_trailing_zeros }}</span></p>
+              <div onclick="openCartUpsell()" 
+                class="openUpsell MyCartUpsells_Bttn bttn"
+                data-upsell-id="{{ upsell.id }}"
+                data-first-price-available="{{ upsell.selected_or_first_available_variant.price | money }}"
+                >Hinzufügen</div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}

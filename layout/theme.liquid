@@ -42,24 +42,20 @@
   {{ 'judgeme-custom.css' | asset_url | stylesheet_tag }}
   {% comment %}  Add FREE GIFT to SLIDE CART code - Yurith {% endcomment %}
   {% render 'my-cart-scripts', settings: settings %}
-  {% comment %} Commented it as we already had one library but left it for testing in case something does not work to change the library
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  {% endcomment %}
   {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
 
-<!-- Global site tag (gtag.js) - Google Ads: 656266660 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-656266660"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-656266660');
-</script>
-
+  <!-- Global site tag (gtag.js) - Google Ads: 656266660 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-656266660"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
   
+    gtag('config', 'AW-656266660');
+  </script>
+
   <!-- Google Site verification -->
   <meta name="google-site-verification" content="6Pxn_nIqgjF9DFDx_ok77XLsxUtDUM1TEKgqbSkjuh8" />
   <meta name="facebook-domain-verification" content="pgpurwrr2wa4wly4t2p43idc3dz9l6" />
@@ -103,8 +99,6 @@
 
   {{ content_for_header }}
 
-  
-
   {% if content_for_header contains 'rio.pwztag.com' %}{% render 'productwiz-rio', product: product, shop: shop, installGuard: true %}{% endif %}
 </head>
 
@@ -120,8 +114,8 @@
   {% comment %}  Theme modified to add our own SLIDE CART - I am not pulling the slide cart that comes as default with the theme - I did not want to comment all things to leave the theme cleaner, if we want to reuse the old slide cart we would have to check the original intact files for this theme - Yurith {% endcomment %}
 
   <div class="my-container" data-drawer-push>
-    <div class="my-container__content">
-      <header class="header-container">
+    <div class="MyCart_BodyWrapper">
+      <header id="headerHideShow" {% comment %}class="header-container"{% endcomment %}>
         {% section 'utility-bar' %}
         {% section 'header' %}
       </header>
@@ -129,18 +123,23 @@
       {% render 'header-overlay' %}
 
       <div class="theme-editor-scroll-offset"></div>
-      <main id="main-content">{{ content_for_layout }}</main>
+      <main id="main-content">{{ content_for_layout }}
+        <limespot></limespot>
+      </main>
       {% section 'popup' %}
       {% section 'footer' %}
       {% comment %} Theme's added slide cart
         {% render 'cart-drawer' %}
       {% endcomment %}
-      {% comment %}{% section 'my-cart' %} {% endcomment %}
+      <div id="MyCart_SectionsWrapper" class="MyCart_SectionsWrapper open-cart">
+        {% section 'my-cart-upsells' %}
+        {% section 'my-cart' %}
+      </div>
       {% render 'modal' %}
       {% comment %}
       {% render 'store-availability-drawer' %}
       {% endcomment %}
-      {% comment %}{% render 'my-cart-overlay' %}{% endcomment %}
+      {% render 'my-cart-overlay' %}
       {% render 'drawer-overlay' %}
     </div>
   </div>

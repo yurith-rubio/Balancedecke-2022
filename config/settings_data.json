@@ -245,6 +245,33 @@
       },
       "my-cart": {
         "type": "my-cart",
+        "blocks": {
+          "18778ded-fe0a-467a-bf28-4da5718a20b9": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "balance-gewichtsdecke-fur-kinder",
+                "balance-gewichtsdecke"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "blaues-gesundheitskissen-fur-erwachsene",
+              "enable_upsell_2": true,
+              "upsell_product_2": "balance-gewichtsdecken-sets-fur-erwachsene",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
+          }
+        },
+        "block_order": [
+          "18778ded-fe0a-467a-bf28-4da5718a20b9"
+        ],
+        "settings": {
+        }
+      },
+      "my-cart-upsells": {
+        "type": "my-cart-upsells",
         "settings": {
         }
       }

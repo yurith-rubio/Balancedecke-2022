@@ -13,14 +13,56 @@
 </script>
 
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
-{% assign promoVariant = settings.gift_product_variant_id  %}
-{% assign promoSubtotal = settings.gift_product_min_spend  %}
+{% if settings.gift_product_variant_id != blank %}
+  {% assign promoVariant = settings.gift_product_variant_id %}
+{% endif %}
+{% if settings.gift_product_min_spend != blank %}
+  {% assign promoSubtotal = settings.gift_product_min_spend %}
+{% endif %}
 
-{% if promoVariant != blank and promoSubtotal != blank %}
+
   <script type="module">
       import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+    
+      function suggestedUpsells() {
+        // Slider for suggested upsell products
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                }
+            }
+        });
+      
+        // Heading for upsells
+        const upsellActive = document.querySelectorAll(".MyCartUpsells_ItemWrapper");
+        const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
+        const suggestionsTitle = document.querySelector("#MyCartUpsells_MainTitle");
+
+        if(upsellActive.length > 0){
+          if(!suggestionsTitle){
+            upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
+          } else {
+            //console.log("title already added");
+          }
+        }
+
+        const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
+        submitButtons.forEach(button => {
+          button.addEventListener("click", event => {
+            closeUpsell();
+          });
+        });
+      }
+    
+      suggestedUpsells();
 
       subscribeToCartStateUpdate( state => {
+        {% if promoVariant != blank and promoSubtotal != blank %}
           const promoVariant = {{ promoVariant }};
           const promoSubtotal = {{ promoSubtotal }}00;
 
@@ -32,7 +74,7 @@
               const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
                   return lineItem.properties?._autoadded === 'Yes' ;
               });
-
+  
               // If there is the automaticaly added product —
               // lets calculate the currentSubtotal without the product
               if ( autoAddedLineItem > -1 ) {
@@ -67,7 +109,264 @@
                       });
                   }
               }
-          }
+            }
+          {% endif %}
+        
+          suggestedUpsells();
+          
        });
   </script>
-{% endif %}
+
+
+<script type="module">
+  import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  
+  function addCartTotalDiscount(){
+    //console.log("cart state update");
+    const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
+    const totalCartWrapper = document.querySelector("#MyCart_TotalFinalWrapper");
+    const discountsWrapper = document.querySelector("#MyCart_DiscountWrapper");
+    //console.log("discounts" + discounts);
+    //console.log("totalCartWrapper" + totalCartWrapper);
+    //console.log("discountsWrapper" + discountsWrapper);
+    
+    if(discountsWrapper){
+      discountsWrapper.remove();
+    }
+    if(discounts){
+      if(totalCartWrapper ){
+        totalCartWrapper.insertAdjacentHTML("afterend", 
+                                    `<div id="MyCart_DiscountWrapper" class="MyCart_DiscountInfo MyCart_FooterText MyCart_HighlightedText">
+                                        <span>Sie sparen  </span>
+                                        <p id="MyCart_ItemDiscountTotal"></p>
+                                      </div>`);        
+      }
+    }
+
+    var sum = 0;
+    if (discounts){
+      discounts.forEach(element => {
+        var discount = element.innerText.replace("€", "").trim();
+        sum = sum + parseFloat(discount.replace(".", "").replace(",", "."));
+      });
+      sum = Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
+    }
+    const totalDiscount = sum;
+    const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
+    if(totalDiscountElement){
+      totalDiscountElement.innerText = totalDiscount;    
+    }
+  }
+  
+  addCartTotalDiscount();
+  
+  subscribeToCartStateUpdate(state => {
+    addCartTotalDiscount();
+  });
+</script>
+
+<script>
+  function overlayOn() {
+    document.getElementById("MyCart_Overlay").style.display = "block";
+  }
+  
+  function overlayOff() {
+    document.getElementById("MyCart_Overlay").style.display = "none";
+  }
+  
+  function closeUpsell() {
+    const cartUpsellWrapper = document.querySelectorAll(".MyCartUpsells_MainContainer");
+    cartUpsellWrapper.forEach(element => {
+      element.style.display = "none";
+    });
+  }
+  
+  function openCartUpsell() {
+    //console.log("openCartUpsell");
+    const id = event.target.dataset.upsellId;
+    //console.log(id);
+    const firstPrice = event.target.dataset.firstPriceAvailable;
+    //console.log(firstPrice);
+    const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
+    cartUpsellWrapper.style.display = "block";
+    cartUpsellWrapper.setAttribute("data-status", "active");
+    const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_PriceItem");
+    priceElement.textContent = firstPrice;
+  }
+
+  function selectVariable() {
+    //console.log("function select Variable");
+    const productId = event.target.dataset.productId;
+    //console.log("productId " + productId);
+    let blockIndex = parseInt(event.target.dataset.blockIndex, 10);
+    //console.log("blockIndex " + blockIndex);
+    
+    let selectedUpsell = null;
+    
+    if(blockIndex == 1){
+      let upsellsBlock1 = [window.upsell1_block1, window.upsell2_block1, window.upsell3_block1, window.upsell4_block1];
+     
+      upsellsBlock1 = upsellsBlock1.filter(upsell => {
+        if (upsell.id){
+          return upsell;
+        }
+      });
+      
+      upsellsBlock1.find(upsell => {
+        if (productId == upsell.id) {
+          selectedUpsell = upsell;
+        }
+      });
+    } else if(blockIndex == 2){
+      let upsellsBlock2 = [window.upsell1_block2, window.upsell2_block2, window.upsell3_block2, window.upsell4_block2];
+      
+      upsellsBlock2 = upsellsBlock2.filter(upsell => {
+        if (upsell.id){
+          return upsell;
+        }
+      });
+      
+      upsellsBlock2.find(upsell => {
+      if (productId == upsell.id) {
+          selectedUpsell = upsell;
+        }
+      });
+    } else if(blockIndex == 3){
+      let upsellsBlock3 = [window.upsell1_block3, window.upsell2_block3, window.upsell3_block3, window.upsell4_block3];
+      
+      upsellsBlock3 = upsellsBlock3.filter(upsell => {
+        if (upsell.id){
+          return upsell;
+        }
+      });
+      
+      upsellsBlock3.find(upsell => {
+      if (productId == upsell.id) {
+          selectedUpsell = upsell;
+        }
+      });
+    } else if(blockIndex == 4){
+      let upsellsBlock4 = [window.upsell1_block4, window.upsell2_block4, window.upsell3_block4, window.upsell4_block4];
+      
+      upsellsBlock4 = upsellsBlock4.filter(upsell => {
+        if (upsell.id){
+          return upsell;
+        }
+      });
+      
+      upsellsBlock4.find(upsell => {
+      if (productId == upsell.id) {
+          selectedUpsell = upsell;
+        }
+      });
+    } 
+    
+    //console.log("selectedUpsell ");
+    //console.log(selectedUpsell);
+    
+    var available = false;
+
+    const opt1 = document.getElementById('select-one-' + productId)?.value;
+    const opt2 = document.getElementById('select-two-' + productId)?.value;
+    const opt3 = document.getElementById('select-three-' + productId)?.value;
+      
+    for(var i = 0; i < selectedUpsell.variants.length; i++) {
+      var variant = selectedUpsell.variants[i];
+      
+      if (opt3 && opt2){
+        //console.log("opt3 && opt2");
+        var variantId = variant.id;
+        var variantPrice = variant.price;
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        var variantAvailability = variant.available;
+
+        if (variantAvailability){
+          //console.log("available");
+          if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
+            variantPrice = variantPrice/100;
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            available = true;
+            break;
+          }
+        } else {
+          //console.log("not available");
+          if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3) {
+            variantPrice = variantPrice/100;
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            available = false;
+            break;
+          }
+        }
+      }
+      
+      if (!opt3 && opt2){
+        //console.log("!opt3 && opt2");
+        var variantId = variant.id;
+        var variantPrice = variant.price;
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        var variantAvailability = variant.available;
+        
+        if (variantAvailability){
+          //console.log("available");
+          if(variant.option1 == opt1 && variant.option2 == opt2) {
+            variantPrice = variantPrice/100;
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            available = true;
+            break;
+          }
+        } else {
+          //console.log("not available");
+          if (variant.option1 == opt1 && variant.option2) {
+            variantPrice = variantPrice/100;
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            available = false;
+            break;
+          }
+        }
+      }
+      
+      if (!opt3 && !opt2){
+        //console.log("!opt3 && !opt2");
+        var variantId = variant.id;
+        var variantPrice = variant.price;
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        var variantAvailability = variant.available;
+
+        if (variantAvailability){
+          //console.log("available");
+          if (variant.option1 == opt1) {
+            variantPrice = variantPrice/100;
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            available = true;
+            break;
+          }
+        } else {
+          //console.log("not available");
+          if (variant.option1 == opt1) {
+            variantPrice = variantPrice/100;
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            available = false;
+            break;
+         }
+       } 
+      }
+    }
+    
+    if(variantId!='') {
+      document.getElementById('product-select-' + productId).value = variantId;
+    } else {
+      document.getElementById('product-select-' + productId).value = '';
+    }
+    
+    if(available){
+      //console.log("remove disabled to the attribute");
+      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton span').innerHTML = 'Hinzufügen';
+      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').removeAttribute("disabled");
+    } else {
+      //console.log("add disabled to the attribute");
+      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton span').innerHTML = 'Ausverkauft';
+      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').setAttribute("disabled", "disabled");
+    }
+  }
+
+</script>
