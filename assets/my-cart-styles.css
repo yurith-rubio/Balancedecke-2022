@@ -232,7 +232,7 @@ input.MyCart_InputItem{
 #MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
   display: flex;
   justify-content: space-between;
-  margin: 5px 0;
+  margin: 2px 0;
   font-weight: 400;
 }
 /* Text style */
