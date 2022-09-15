@@ -251,12 +251,12 @@
             "settings": {
               "product_list": [
                 "balance-gewichtsdecke-fur-kinder",
-                "balance-gewichtsdecke"
+                "balance-gewichtsdecken-sets-fur-erwachsene"
               ],
               "enable_upsell_1": true,
-              "upsell_product_1": "blaues-gesundheitskissen-fur-erwachsene",
+              "upsell_product_1": "graues-gesundheitskissen-fur-erwachsene",
               "enable_upsell_2": true,
-              "upsell_product_2": "balance-gewichtsdecken-sets-fur-erwachsene",
+              "upsell_product_2": "therapiedecken-basic-bezug-in-weiss",
               "enable_upsell_3": false,
               "upsell_product_3": "",
               "enable_upsell_4": false,
