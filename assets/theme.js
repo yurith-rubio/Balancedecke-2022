@@ -831,9 +831,11 @@ var stickyHeader = node => {
         if (y < scrollYToSticky) {
           _toggleStickyHeader(false, headerParent);
 
+          /*comment*/
           if (utilityBarHeight) {
             _setElementTopPosition(headerParent, stickyHeaderResetPosition);
           }
+          /*endcomment*/
 
           _setRootVar(offsetRootVar, headerHeight - y);
         } else if (y >= scrollYToSticky) {
