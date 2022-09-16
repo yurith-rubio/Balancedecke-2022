@@ -1,8 +1,8 @@
 <!-- sections/my-cart.liquid -->
 
-<div class="MyCart_FloatingCart" data-ajax-cart-section> 
+<div class="MyCart_FloatingCart"> 
   <div id="MyCart_Slider" data-ajax-cart-section-scroll>
-    <form id="MyCart_Form" action="{{ routes.cart_url }}" method="post" class="my-cart" >
+    <form id="MyCart_Form" action="{{ routes.cart_url }}" method="post" class="my-cart" data-ajax-cart-section>
       
         {% comment %} data-ajax-cart-section makes the element's HTML update
         when the cart gets changed {% endcomment %}
