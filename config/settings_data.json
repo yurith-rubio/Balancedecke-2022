@@ -74,7 +74,7 @@
     "enable_days_view": true,
     "border_radius_countdown": 4,
     "loop_time": 0,
-    "announcement_countdown_enable": true,
+    "announcement_countdown_enable": false,
     "background_countdown": "#ffffff",
     "text_color_countdown": "#e84e1b",
     "gift_product_variant_id": "",
@@ -114,21 +114,18 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "link": "",
               "htmlcontent": "<span class=\"icon-test-winner\"><\/span> Testsieger aller Therapiedecken"
             }
           },
           "51c6b612-4c82-4885-b651-5b184c8665ff": {
             "type": "announcement",
             "settings": {
-              "link": "",
               "htmlcontent": "<span class=\"icon-days-test1\"><\/span> 28 Tage Probeschlafen"
             }
           },
           "5dc5d06e-beb9-480d-b529-6a7625a504a9": {
             "type": "announcement",
             "settings": {
-              "link": "",
               "htmlcontent": "<span class=\"icon-patent\"><\/span> Patentierte &amp; einzigartige Bezugstechnik"
             }
           }
@@ -140,6 +137,7 @@
         ],
         "settings": {
           "show_utility_bar": true,
+          "link": "",
           "show_social_icons": true,
           "show_locale_selector": false,
           "show_currency_selector": false,
