@@ -23,7 +23,6 @@ body.js-my-cart-open{
   height: 100vh;
   overflow-y: hidden;
   width: 100%;
-  animation: mycartmove .5s;
 }
 form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
   opacity: .5;
