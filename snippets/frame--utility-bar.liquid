@@ -86,15 +86,6 @@
             {{ block.shopify_attributes }}
           >
             <div class="h6 utility-bar__announcement-item-content type-body-small">
-              {% if block.settings.simple_icons == 'test-winner'%}
-                 <span class="icon-test-winner"></span>
-              {% endif %}
-              {% if block.settings.simple_icons == 'days-test'%}
-                 <span class="icon-days-test1"></span>
-              {% endif %}
-              {% if block.settings.simple_icons == 'patent'%}
-                 <span class="icon-patent"></span>
-              {% endif %}
               {%- if block.settings.htmlcontent != blank -%}
                   <div>{{ block.settings.htmlcontent }}</div>
                   {% if settings.announcement_countdown_enable %}
