@@ -88,10 +88,10 @@
             <div class="h6 utility-bar__announcement-item-content type-body-small">
               {%- if block.settings.htmlcontent != blank -%}
                   <div>{{ block.settings.htmlcontent }}</div>
-                  {% if settings.announcement_countdown_enable %}
-                    <span class="countdown_announcement"></span>
-                  {% endif %}
               {%- endif -%}
+              {% if settings.announcement_countdown_enable %}
+                <span class="countdown_announcement"></span>
+              {% endif %}
             </div>
           </div>
         {% endfor %}
