@@ -10,10 +10,20 @@
   --color-light-green: #c6ffc6;
   --color-light-border: rgba(0,0,0,0.1);
 }
+/* Animation when cart opens */
+@keyframes mycartmove {
+  from {
+    right: -450px;
+  }
+  to {
+    right: 0;
+  }
+}
 body.js-my-cart-open{
   height: 100vh;
   overflow-y: hidden;
   width: 100%;
+  animation: mycartmove .5s;
 }
 form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
   opacity: .5;
@@ -37,15 +47,6 @@ body.js-ajax-cart-empty .icon-MyCart_Header {
 }
 body.js-ajax-cart-not-empty .icon-MyCart_Header {
   
-}
-/* Animation when cart opens */
-@keyframes mycartmove {
-  from {
-    right: -450px;
-  }
-  to {
-    right: 0;
-  }
 }
 #MyCart_Slider{
   z-index: 1000;
