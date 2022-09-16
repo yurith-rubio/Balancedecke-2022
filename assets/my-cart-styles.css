@@ -45,9 +45,6 @@ body.js-ajax-cart-empty .icon-MyCart_Header {
 .js-my-cart-open .MyCart_FloatingCart { 
   display: block; 
 }
-body.js-ajax-cart-not-empty .icon-MyCart_Header {
-  
-}
 #MyCart_Slider{
   z-index: 1000;
   transition: 0.4s transform;
