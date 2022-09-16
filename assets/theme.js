@@ -830,14 +830,17 @@ var stickyHeader = node => {
       if (!document.body.classList.contains('scroll-lock')) {
         if (y < scrollYToSticky) {
           _toggleStickyHeader(false, headerParent);
+            
+          if (utilityBarHeight) {
+            _setElementTopPosition(headerParent, stickyHeaderResetPosition);
+          }
 
           _setRootVar(offsetRootVar, headerHeight - y);
         } else if (y >= scrollYToSticky) {
           _toggleStickyHeader(true, headerParent);
 
-          if (utilityBarHeight) {
-            _setElementTopPosition(headerParent, -offsetHeight);
-          }
+          
+          //if (utilityBarHeight) { _setElementTopPosition(headerParent, -offsetHeight);}
 
           _setRootVar(offsetRootVar, headerHeight);
         }
