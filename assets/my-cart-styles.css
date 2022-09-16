@@ -10,15 +10,6 @@
   --color-light-green: #c6ffc6;
   --color-light-border: rgba(0,0,0,0.1);
 }
-/* Animation when cart opens */
-@keyframes mycartmove {
-  from {
-    right: -450px;
-  }
-  to {
-    right: 0;
-  }
-}
 body.js-my-cart-open{
   height: 100vh;
   overflow-y: hidden;
@@ -44,6 +35,18 @@ body.js-ajax-cart-empty .icon-MyCart_Header {
 .js-my-cart-open .MyCart_FloatingCart { 
   display: block; 
 }
+body.js-ajax-cart-not-empty .icon-MyCart_Header {
+  
+}
+/* Animation when cart opens */
+@keyframes mycartmove {
+  from {
+    right: -450px;
+  }
+  to {
+    right: 0;
+  }
+}
 #MyCart_Slider{
   z-index: 1000;
   transition: 0.4s transform;
@@ -54,7 +57,7 @@ body.js-ajax-cart-empty .icon-MyCart_Header {
   width: 440px;
   height: 100%;
   top: 0;
-  animation: mycartmove .5s;
+  /*animation: mycartmove .5s;*/
   right: 0;
   justify-content: space-between;
 }
