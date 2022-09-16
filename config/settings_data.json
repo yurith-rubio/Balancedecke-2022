@@ -115,21 +115,21 @@
             "type": "announcement",
             "settings": {
               "link": "",
-              "htmlcontent": "fdgdg"
+              "htmlcontent": "<span class=\"icon-test-winner\"><\/span> Testsieger aller Therapiedecken"
             }
           },
           "51c6b612-4c82-4885-b651-5b184c8665ff": {
             "type": "announcement",
             "settings": {
               "link": "",
-              "htmlcontent": "sdgsdg"
+              "htmlcontent": "<span class=\"icon-days-test1\"><\/span> 28 Tage Probeschlafen"
             }
           },
           "5dc5d06e-beb9-480d-b529-6a7625a504a9": {
             "type": "announcement",
             "settings": {
               "link": "",
-              "htmlcontent": "sdgdgs"
+              "htmlcontent": "<span class=\"icon-patent\"><\/span> Patentierte &amp; einzigartige Bezugstechnik"
             }
           }
         },
