@@ -55,7 +55,6 @@ body.js-ajax-cart-empty .icon-MyCart_Header {
   width: 440px;
   height: 100%;
   top: 0;
-  /*animation: mycartmove .5s;*/
   right: 0;
   justify-content: space-between;
 }
