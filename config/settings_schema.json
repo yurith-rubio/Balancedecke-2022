@@ -641,6 +641,66 @@
     ]
   },
   {
+    "name": "Countdown",
+    "settings": [
+      {
+        "type": "text",
+        "id": "countdown_date",
+        "label": "Limit Date",
+        "info": "November 21, 2022 00:00 GMT+0100"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_days_view",
+        "label": "Hide days on Countdown",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "border_radius_countdown",
+        "label": "Radius for Background on Countdown",
+        "default": 4,
+        "min": 0,
+        "max": 10
+      },
+      {
+        "type": "header",
+        "content": "Loop Countdown"
+      },
+      {
+        "type": "range",
+        "id": "loop_time",
+        "label": "Looping Time",
+        "default": 0,
+        "min": 0,
+        "max": 24,
+        "info": "Hours to reset"
+      },
+      {
+        "type": "header",
+        "content": "Announcement Bar Countdown"
+      },
+      {
+        "type": "checkbox",
+        "id": "announcement_countdown_enable",
+        "label": "Enable Countdown on Announcement Bar",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "background_countdown",
+        "label": "Background for Announcement Countdown Numbers",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "text_color_countdown",
+        "label": "Numbers' Color",
+        "default": "#3A3C3C"
+      }
+    ]
+  },
+  {
     "name": "Gift Product",
     "settings": [
       {

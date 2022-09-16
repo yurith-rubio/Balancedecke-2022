@@ -1,0 +1,67 @@
+{% if settings.announcement_countdown_enable %}
+// countdown.js.liquid
+
+  let endDate = new Date("{{ settings.countdown_date }}").getTime();
+  const intervall = 1000 * 60 * 60 * {{ settings.loop_time }};
+  const now = new Date().getTime();
+
+  const dates = [];
+
+  if (intervall > 0){
+    while (endDate > now) {
+      dates.push(new Date(endDate));
+      endDate -= intervall;
+    }
+  } else {
+      dates.push(new Date(endDate));
+  }
+
+  dates.reverse();
+
+  function getNextDate() {
+    let now = new Date().getTime();
+    for (let date of dates) {
+      if (date > now) {
+        return date;
+      }
+    }
+    return null;
+  }
+  
+  const intervallId = setInterval(function () {
+    /*const owlItem = document.querySelector(".owl-item.active .utility-bar__announcement-item-content");
+    const owlItemWidth = owlItem.clientWidth;
+    const carouselContainer = document.querySelector(".carousel-container");
+    console.log("owlItemWidth");
+    console.log(owlItemWidth);
+    if(owlItemWidth){
+      carouselContainer.style.width = 820 + "px";
+    }*/
+    
+    const countdowns = document.querySelectorAll(".countdown_announcement");
+    
+    let countDown = getNextDate();
+    if (countDown === null) {
+      countdowns.forEach(item => {
+        item.innerHTML = "";
+      });
+      clearInterval(intervallId);
+      return;
+    }
+
+    const distanceNow = countDown - new Date().getTime();
+
+    var days = Math.floor(distanceNow / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distanceNow % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distanceNow % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distanceNow % (1000 * 60)) / 1000);
+
+    {% if settings.announcement_countdown_enable %}
+      countdowns.forEach(item => {
+        item.innerHTML = `<span class="countdown_days"><span class="countdown_text" style="padding-left:5px">${days}</span>` + "T " + `</span>` + `<span class="countdown_text">${hours}</span>` + "STD "
+      + `<span class="countdown_text">${minutes}</span>` + "MIN " + `<span class="countdown_text">${seconds}</span>` + "S ";
+      });
+    {% endif %}
+
+  }, 1000);
+{% endif %} 

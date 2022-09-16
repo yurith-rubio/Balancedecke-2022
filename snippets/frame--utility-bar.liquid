@@ -1,3 +1,18 @@
+{% style %}
+  .countdown_text{
+    color: {{ settings.text_color_countdown }};
+    background-color: {{ settings.background_countdown }};
+    padding: 1px 5px 2px;
+    margin: 0 3px;
+    border-radius: {{ settings.border_radius_countdown }}px;
+  }
+  {% if settings.enable_days_view %}
+    .countdown_days{
+      display:none;
+    }
+  {% endif %}
+{% endstyle %}
+
 {% liquid
   assign timing_in_ms = section.settings.utility_bar_animation_timing | times: 1000
   assign show_locale_selector = section.settings.show_locale_selector
@@ -59,6 +74,9 @@
 
   {%- if has_announcements -%}
     <div class="utility-bar__announcements-container">
+      {%- if section.settings.link != blank -%}
+        <a class="utility-bar__link color-inherit" href="{{ section.settings.link }}">
+      {% endif %}
       <div class="utility-bar__announcements">
         {% for block in section.blocks %}
           <div
@@ -68,32 +86,24 @@
             {{ block.shopify_attributes }}
           >
             <div class="h6 utility-bar__announcement-item-content type-body-small">
-              {% if block.settings.simple_icons == 'test-winner'%}
-                 <span class="icon-test-winner"></span>
-              {% endif %}
-              {% if block.settings.simple_icons == 'days-test'%}
-                 <span class="icon-days-test1"></span>
-              {% endif %}
-              {% if block.settings.simple_icons == 'patent'%}
-                 <span class="icon-patent"></span>
-              {% endif %}
-              {%- if block.settings.link != blank -%}
-                <a class="utility-bar__link color-inherit" href="{{ block.settings.link }}">
-                  {{ block.settings.text | escape }}
-                </a>
-              {%- else -%}
-                {{ block.settings.text | escape }}
+              {%- if block.settings.htmlcontent != blank -%}
+                  <div>{{ block.settings.htmlcontent }}</div>
               {%- endif -%}
+              {% if settings.announcement_countdown_enable %}
+                <span class="countdown_announcement"></span>
+              {% endif %}
             </div>
           </div>
         {% endfor %}
       </div>
-
+      {%- if section.settings.link != blank -%}
+        </a>
+      {% endif %}
       <div class="announcement-bar__gradient-gap announcement-bar__gradient-gap--right"></div>
       <div class="announcement-bar__gradient-gap announcement-bar__gradient-gap--left"></div>
     </div>
   {%- endif -%}
-
+ 
   <div class="utility-bar__disclosure-container">
     {%- if locale_selector or currency_selector -%}
       {% render 'cross-border' with
