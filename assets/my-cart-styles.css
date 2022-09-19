@@ -335,7 +335,7 @@ input.MyCart_InputItem{
 .MyCartUpsells_SubmitButton{
   width: 100%;
 }
-.MyCartUpsells_Bttn{
+.MyCartUpsells_Bttn.bttn{
   height: unset !important;
   margin-top: 10px;
   cursor: pointer;
