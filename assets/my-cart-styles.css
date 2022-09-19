@@ -255,7 +255,7 @@ input.MyCart_InputItem{
 #MyCart_DiscountWrapper > span {
   padding-right: 5px;
 }
-.MyCart_Price.MyCart_ItemDiscount, #MyCart_ItemDiscountTotal{
+.MyCart_Price.MyCart_ItemDiscount, #MyCart_ItemDiscountTotal, .MyCart_ComparedPrice, .MyCartUpsells_OptionLabel[for]{
   font-size: 14px;
 }
 .MyCart_Price.MyCart_ItemDiscount, .MyCart_ComparedPrice{
