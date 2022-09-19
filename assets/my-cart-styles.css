@@ -32,7 +32,6 @@ body.js-my-cart-open .MyCart_SectionsWrapper {
   display: block;
   transition:opacity 0.15s ease-in-out;
 }
-
 body.js-ajax-cart-request-in-progress .MyCart_ItemsContainer {
   opacity: .5;
 }
