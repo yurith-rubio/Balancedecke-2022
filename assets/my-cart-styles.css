@@ -10,6 +10,15 @@
   --color-light-green: #c6ffc6;
   --color-light-border: rgba(0,0,0,0.1);
 }
+/* Animation when cart opens */
+@keyframes mycartmove {
+  from {
+    right: -450px;
+  }
+  to {
+    right: 0;
+  }
+}
 body.js-my-cart-open{
   height: 100vh;
   overflow-y: hidden;
@@ -21,7 +30,7 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
 body.js-my-cart-open .MyCart_SectionsWrapper {
   flex: 0 0 300px;
   display: block;
-  transition:opacity 0.15s ease-in-out
+  transition:opacity 0.15s ease-in-out;
 }
 
 body.js-ajax-cart-request-in-progress .MyCart_ItemsContainer {
@@ -31,21 +40,12 @@ body.js-ajax-cart-request-in-progress .MyCart_ItemsContainer {
 body.js-ajax-cart-empty .icon-MyCart_Header {
   display: none !important;
 }
+.MyCart_FloatingCart, .MyCart_SectionsWrapper, .MyCartUpsells_SuggestedContainer .owl-carousel .owl-dots{
+  display: none;
+}
 /* Show the floating cart if the 'js-my-cart-open' CSS class exists */
 .js-my-cart-open .MyCart_FloatingCart { 
   display: block; 
-}
-body.js-ajax-cart-not-empty .icon-MyCart_Header {
-  
-}
-/* Animation when cart opens */
-@keyframes mycartmove {
-  from {
-    right: -450px;
-  }
-  to {
-    right: 0;
-  }
 }
 #MyCart_Slider{
   z-index: 1000;
@@ -175,9 +175,6 @@ input.MyCart_InputItem{
 }
 .MyCart_BodyWrapper {
   flex: 1 1 auto;
-}
-.MyCart_FloatingCart, .MyCart_SectionsWrapper, .MyCartUpsells_SuggestedContainer .owl-carousel .owl-dots{
-  display: none;
 }
 /* Free gift item - Discount message */
 .MyCartItem__DiscountList{
