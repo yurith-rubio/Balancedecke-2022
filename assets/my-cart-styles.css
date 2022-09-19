@@ -441,6 +441,9 @@ button.MyCart_CheckoutButton{
   .MyCartUpsells_SuggestedImageWrapper{
     max-width: 110px;
   }
+  .MyCart_ItemWrapper{
+    padding: 30px 20px;
+  }
   .MyCartUpsells_MainTitle{
     padding: 7px 15px;
   }
