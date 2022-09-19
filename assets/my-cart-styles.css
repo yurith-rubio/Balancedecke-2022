@@ -336,13 +336,13 @@ input.MyCart_InputItem{
   width: 100%;
 }
 .MyCartUpsells_Bttn.bttn{
-  height: unset !important;
+  height: unset;
   margin-top: 10px;
   cursor: pointer;
-  display: inline-flex !important;
-  font-size: 10px !important;
-  /*padding: 5px 15px !important;*/
-  line-height: 30px !important;
+  display: inline-flex;
+  font-size: 10px;
+  /*padding: 5px 15px;*/
+  line-height: 30px;
 }
 .MyCartUpsells_Bttn[disabled]{
   cursor: none;
