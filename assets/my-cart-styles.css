@@ -248,6 +248,10 @@ input.MyCart_InputItem{
   font-size: 14px;
   color: var(--color-secondary-text);
 }
+.MyCart_FooterText > p, .MyCart_Price{
+margin: 0;
+font-weight: 500;
+}
 #MyCart_DiscountWrapper{
   display: flex;
   justify-content: flex-end;
