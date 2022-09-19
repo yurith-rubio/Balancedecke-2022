@@ -486,8 +486,11 @@ button.MyCart_CheckoutButton{
   .SuggestedUpProd_ContentWr{
     padding: 23px 11px 17px 11px;
   }
-  .MyCart_ValueItem, .MyCartUpsells_MainTitle{
+  /*.MyCart_ValueItem, .MyCartUpsells_MainTitle{
     font-size: 12px;
+  }*/
+  .MyCart_ItemWrapper{
+    padding: 15px 20px;
   }
   .MyCart_PriceItem{
     font-size: 13px;
