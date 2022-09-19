@@ -116,7 +116,6 @@ body.js-ajax-cart-empty .icon-MyCart_Header {
   display: inline-flex;
   border-top: 1px solid var(--color-light-border);
   width: 100%;
-  padding: 10px 20px;
 }
 .MyCart_ContentItem{
   flex-grow: 3;
