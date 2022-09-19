@@ -411,6 +411,7 @@ font-weight: 500;
 }
 .MyCartUpsells_ProductHeader{
   display:flex;
+  width: 100%;
 }
 button.MyCart_CheckoutButton{
   font-size: 16px;
