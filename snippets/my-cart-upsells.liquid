@@ -117,12 +117,13 @@
           <img class="MyCartUpsells_SuggestedImageWrapper" data-rimg="lazy" data-rimg-template="{{ image_url }}" src="{{ image_url }}">
           <div>
             <h2 class="MyCart_H2">{{ upsell.title }}</h2>
-            <span class="MyCart_PriceItem"></span>
+            <div class="MyCart_UpsellPrice MyCart_Price MyCart_HighlightedText"></div>
+            <div class="MyCart_ComparedPrice MyCart_Price"></div>
           </div>
           
         </a>
         <div onclick="closeUpsell()" class="MyCartUpsells_Close">
-          {% render 'my-cart-icon-close' %}
+          {% render 'icon-close-cart-element' %}
         </div>
       </div>
   
@@ -220,12 +221,13 @@
           <img class="MyCartUpsells_SuggestedImageWrapper" data-rimg="lazy" data-rimg-template="{{ image_url }}" src="{{ image_url }}">
           <div>
             <h2 class="MyCart_H2">{{ upsell.title }}</h2>
-            <span class="MyCart_PriceItem">300€</span>
+            <div class="MyCart_UpsellPrice MyCart_Price MyCart_HighlightedText"></div>
+            <div class="MyCart_ComparedPrice MyCart_Price"></div>
           </div>
           
         </a>
         <div onclick="closeUpsell()" class="MyCartUpsells_Close">
-          {% render 'my-cart-icon-close' %}
+          {% render 'icon-close-cart-element' %}
         </div>
       </div>
   
@@ -323,12 +325,13 @@
           <img class="MyCartUpsells_SuggestedImageWrapper" data-rimg="lazy" data-rimg-template="{{ image_url }}" src="{{ image_url }}">
           <div>
             <h2 class="MyCart_H2">{{ upsell.title }}</h2>
-            <span class="MyCart_PriceItem">300€</span>
+            <div class="MyCart_UpsellPrice MyCart_Price MyCart_HighlightedText"></div>
+            <div class="MyCart_ComparedPrice MyCart_Price"></div>
           </div>
           
         </a>
         <div onclick="closeUpsell()" class="MyCartUpsells_Close">
-          {% render 'my-cart-icon-close' %}
+          {% render 'icon-close-cart-element' %}
         </div>
       </div>
   
