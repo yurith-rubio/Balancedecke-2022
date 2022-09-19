@@ -144,6 +144,7 @@
     }
 
     var sum = 0;
+    //console.log(discounts);
     if (discounts){
       discounts.forEach(element => {
         var discount = element.innerText.replace("€", "").trim();
@@ -152,6 +153,7 @@
       sum = Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
     }
     const totalDiscount = sum;
+    console.log(sum);
     const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
     if(totalDiscountElement){
       totalDiscountElement.innerText = totalDiscount;    
@@ -186,12 +188,16 @@
     const id = event.target.dataset.upsellId;
     //console.log(id);
     const firstPrice = event.target.dataset.firstPriceAvailable;
-    //console.log(firstPrice);
+    const comparedPrice = event.target.dataset.firstComparedPrice;
+    console.log("event.target");
+    console.log(event.target);
     const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
     cartUpsellWrapper.style.display = "block";
     cartUpsellWrapper.setAttribute("data-status", "active");
-    const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_PriceItem");
+    const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_UpsellPrice");
+    const comparedPriceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_ComparedPrice");
     priceElement.textContent = firstPrice;
+    comparedPriceElement.textContent = comparedPrice;
   }
 
   function selectVariable() {
@@ -274,10 +280,12 @@
       var variant = selectedUpsell.variants[i];
       
       if (opt3 && opt2){
-        //console.log("opt3 && opt2");
+        console.log("opt3 && opt2");
         var variantId = variant.id;
         var variantPrice = variant.price;
-        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        var variantComparePrice = variant.compare_at_price;
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_UpsellPrice`);
+        var comparePriceElement = document.querySelector(`#formUpsell_${productId} .MyCart_ComparedPrice`);
         var variantAvailability = variant.available;
 
         if (variantAvailability){
@@ -285,6 +293,8 @@
           if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
             variantPrice = variantPrice/100;
             priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            variantComparePrice = variantComparePrice/100;
+            comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
             available = true;
             break;
           }
@@ -293,6 +303,8 @@
           if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3) {
             variantPrice = variantPrice/100;
             priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            variantComparePrice = variantComparePrice/100;
+            comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
             available = false;
             break;
           }
@@ -300,10 +312,12 @@
       }
       
       if (!opt3 && opt2){
-        //console.log("!opt3 && opt2");
+        console.log("!opt3 && opt2");
         var variantId = variant.id;
         var variantPrice = variant.price;
-        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        var variantComparePrice = variant.compare_at_price;
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_UpsellPrice`);
+        var comparePriceElement = document.querySelector(`#formUpsell_${productId} .MyCart_ComparedPrice`);
         var variantAvailability = variant.available;
         
         if (variantAvailability){
@@ -311,6 +325,8 @@
           if(variant.option1 == opt1 && variant.option2 == opt2) {
             variantPrice = variantPrice/100;
             priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            variantComparePrice = variantComparePrice/100;
+            comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
             available = true;
             break;
           }
@@ -319,6 +335,8 @@
           if (variant.option1 == opt1 && variant.option2) {
             variantPrice = variantPrice/100;
             priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            variantComparePrice = variantComparePrice/100;
+            comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
             available = false;
             break;
           }
@@ -326,10 +344,13 @@
       }
       
       if (!opt3 && !opt2){
-        //console.log("!opt3 && !opt2");
+        console.log("!opt3 && !opt2");
         var variantId = variant.id;
         var variantPrice = variant.price;
-        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_PriceItem`);
+        var variantComparePrice = variant.compare_at_price;
+        console.log(variant);
+        var priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_UpsellPrice`);
+        var comparePriceElement = document.querySelector(`#formUpsell_${productId} .MyCart_ComparedPrice`);
         var variantAvailability = variant.available;
 
         if (variantAvailability){
@@ -337,6 +358,8 @@
           if (variant.option1 == opt1) {
             variantPrice = variantPrice/100;
             priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            variantComparePrice = variantComparePrice/100;
+            comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
             available = true;
             break;
           }
@@ -345,6 +368,8 @@
           if (variant.option1 == opt1) {
             variantPrice = variantPrice/100;
             priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            variantComparePrice = variantComparePrice/100;
+            comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
             available = false;
             break;
          }
