@@ -416,11 +416,11 @@ font-weight: 500;
 button.MyCart_CheckoutButton{
   font-size: 16px;
 }
-.MyCart_ContentItem div.MyCartUpsells_Bttn{
+/*.MyCart_ContentItem div.MyCartUpsells_Bttn{
   padding: 0 15px;
   margin-top: 0;
   line-height: 30px !important;
-}
+}*/
 /* Tablet and up */
 @media only screen and (min-width: 441px){
   /*#MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
