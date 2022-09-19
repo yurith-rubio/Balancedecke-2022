@@ -423,9 +423,9 @@ button.MyCart_CheckoutButton{
 }*/
 /* Tablet and up */
 @media only screen and (min-width: 441px){
-  /*#MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
+  #MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
     padding: 5px;
-  }*/
+  }
   .MyCartUpsells_MainContainer > form {
     width: 440px;
   }
