@@ -236,7 +236,7 @@ input.MyCart_InputItem{
 /* On Balance */
   .MyCart_FooterText > p, .MyCart_Price{
     margin: 0;
-    font-weight: 700;
+    font-weight: 900;
   }
 /* End of Balance */
 .MyCart_H2 > a, .MyCart_H2, .MyCartUpsells_ProductHeader{
