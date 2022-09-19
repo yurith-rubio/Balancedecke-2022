@@ -114,7 +114,7 @@ body.js-ajax-cart-empty .icon-MyCart_Header {
 .MyCart_ItemWrapper{
   display: inline-flex;
   border-top: 1px solid var(--color-light-border);
-  width: 100%;
+  width: 100%
 }
 .MyCart_ContentItem{
   flex-grow: 3;
