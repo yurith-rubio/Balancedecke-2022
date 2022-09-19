@@ -447,9 +447,9 @@ button.MyCart_CheckoutButton{
   .MyCartUpsells_MainTitle{
     padding: 7px 15px;
   }
-  .MyCart_FooterText > p, .MyCart_Price{
+  /*.MyCart_FooterText > p, .MyCart_Price{
     font-size: 16px;
-  }
+  }*/
   button.MyCart_CheckoutButton{
     margin-top: 10px;
   }
