@@ -3,210 +3,210 @@
 <div class="MyCart_FloatingCart"> 
   <div id="MyCart_Slider">
     <div data-ajax-cart-section-scroll data-ajax-cart-section>
-    <form id="MyCart_Form" action="{{ routes.cart_url }}" method="post" class="my-cart" data-ajax-cart-section>
+      <form id="MyCart_Form" action="{{ routes.cart_url }}" method="post" class="my-cart" data-ajax-cart-section>
+        
+          {% comment %} data-ajax-cart-section makes the element's HTML update
+          when the cart gets changed {% endcomment %}
+  
+          <div>
+            <div class="MyCart_Header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
+              <h2 class="MyCart_Heading">Warenkorb</h2>
+              <a class="MyCart_CloseSlideCart" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
+                 onclick="overlayOff()">
+                <svg width="15" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
+              </a>
+            </div>
+  
+            {% if cart.item_count > 0 %}
+              {% assign total_price_number = cart.total_price | plus: 0 %}
+              {% if total_price_number < 10000 %}
+                {% assign add_for_free_shipping = 10000 | minus: total_price_number %}
+                <div class="MyCart_Message">
+                  Nur noch <span class="MyCart_HighlightedText">{{ add_for_free_shipping | money_with_currency }}</span> für gratis Versand!  
+                </div>
+              {% endif %}
+            {% endif %}
       
-        {% comment %} data-ajax-cart-section makes the element's HTML update
-        when the cart gets changed {% endcomment %}
-
-        <div>
-          <div class="MyCart_Header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
-            <h2 class="MyCart_Heading">Warenkorb</h2>
-            <a class="MyCart_CloseSlideCart" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
-               onclick="overlayOff()">
-              <svg width="15" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
-            </a>
-          </div>
-
-          {% if cart.item_count > 0 %}
-            {% assign total_price_number = cart.total_price | plus: 0 %}
-            {% if total_price_number < 10000 %}
-              {% assign add_for_free_shipping = 10000 | minus: total_price_number %}
-              <div class="MyCart_Message">
-                Nur noch <span class="MyCart_HighlightedText">{{ add_for_free_shipping | money_with_currency }}</span> für gratis Versand!  
-              </div>
-            {% endif %}
-          {% endif %}
+            {% comment %} data-ajax-cart-section-scroll keeps the scroll position unchanged
+            when the element's HTML is changed {% endcomment %}
+            <div class="MyCart_ItemsContainer">
+  
+              {% if cart.item_count == 0 %}
+                <div class="MyCart_EmptyMessage">
+                  <h2 class="Heading u-h3">Der Warenkorb ist leer</h2>
+                  <div style="font-size: 60px;"><span class="icon-shopping-cart"></span></div>
+                </div>
+              {% endif %}
     
-          {% comment %} data-ajax-cart-section-scroll keeps the scroll position unchanged
-          when the element's HTML is changed {% endcomment %}
-          <div class="MyCart_ItemsContainer">
-
-            {% if cart.item_count == 0 %}
-              <div class="MyCart_EmptyMessage">
-                <h2 class="Heading u-h3">Der Warenkorb ist leer</h2>
-                <div style="font-size: 60px;"><span class="icon-shopping-cart"></span></div>
-              </div>
-            {% endif %}
-  
-            {% for item in cart.items %} 
-            
-            <div class="MyCart_ItemWrapper">
-              {% comment %} remove button {% endcomment %}
-              <div class="MyCart_RemoveItem">
-                <a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0">
-                  <svg width="9" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
-                </a>
-              </div>
-              {% comment %} image {% endcomment %}
-              <div>
-                <img class="MyCart_ImageItem" src="{{ item.image | image_url: width: 300 }} ">
-              </div>
-              <div class="MyCart_ContentItem">
-                {% assign item_index = forloop.index %}
-                {% comment %} item title {% endcomment %}
-                <h2 class="MyCart_H2">
-                  <a class="MyCart_H2" href="{{ item.url }}">{{ item.product.title }}</a>
-                </h2>
-                {% for option in item.options_with_values %}
-                  <p class="MyCart_ValueItem">{{ option.value }}</p>
-                {% endfor %}
-  
-                <div class="MyCart_QuantityItemWrapper">
-                  {% comment %} quanity selector {% endcomment %}
-                  <div class="MyCart_QuantityItem">
-                    {% comment %} data-ajax-cart-request-button ajaxifies the "Minus one" button {% endcomment %}
-                    <a class="MyCart_QuantityButtonItem" 
-                       data-ajax-cart-request-button 
-                       href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
-                      <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
-                    </a>
-                    {% comment %} Input {% endcomment %}
-                    <input class="MyCart_InputItem" 
-                           data-ajax-cart-quantity-input="{{ item_index }}" 
-                           name="updates[]" 
-                           value="{{ item.quantity }}" 
-                           type="number" />
-                    {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
-                    <a class="MyCart_QuantityButtonItem"
-                       data-ajax-cart-request-button
-                       href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
-                      <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
-                    </a>
+              {% for item in cart.items %} 
+              
+              <div class="MyCart_ItemWrapper">
+                {% comment %} remove button {% endcomment %}
+                <div class="MyCart_RemoveItem">
+                  <a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0">
+                    <svg width="9" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
+                  </a>
+                </div>
+                {% comment %} image {% endcomment %}
+                <div>
+                  <img class="MyCart_ImageItem" src="{{ item.image | image_url: width: 300 }} ">
+                </div>
+                <div class="MyCart_ContentItem">
+                  {% assign item_index = forloop.index %}
+                  {% comment %} item title {% endcomment %}
+                  <h2 class="MyCart_H2">
+                    <a class="MyCart_H2" href="{{ item.url }}">{{ item.product.title }}</a>
+                  </h2>
+                  {% for option in item.options_with_values %}
+                    <p class="MyCart_ValueItem">{{ option.value }}</p>
+                  {% endfor %}
+    
+                  <div class="MyCart_QuantityItemWrapper">
+                    {% comment %} quanity selector {% endcomment %}
+                    <div class="MyCart_QuantityItem">
+                      {% comment %} data-ajax-cart-request-button ajaxifies the "Minus one" button {% endcomment %}
+                      <a class="MyCart_QuantityButtonItem" 
+                         data-ajax-cart-request-button 
+                         href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
+                        <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
+                      </a>
+                      {% comment %} Input {% endcomment %}
+                      <input class="MyCart_InputItem" 
+                             data-ajax-cart-quantity-input="{{ item_index }}" 
+                             name="updates[]" 
+                             value="{{ item.quantity }}" 
+                             type="number" />
+                      {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
+                      <a class="MyCart_QuantityButtonItem"
+                         data-ajax-cart-request-button
+                         href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
+                        <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
+                      </a>
+                    </div>
+    
+                    {% comment %} final price of item 
+                    <div class="MyCart_PriceItem">
+                      {{ item.final_line_price | money }}
+                    </div>
+                    {% endcomment %}
+                    <div class="Heading MyCart_PriceContainer">
+                      {% if item.original_line_price > item.final_line_price %}
+                        <span class="MyCart_Price MyCart_HighlightedText">{{ item.final_line_price | money }}</span>
+                        <span class="MyCart_Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
+                      {%- elsif item.variant.compare_at_price > item.original_price -%}
+                        <span class="MyCart_Price MyCart_HighlightedText">{{ item.final_line_price | money }}</span>
+                        <span class="MyCart_Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }} </span>
+                      {% else %}
+                        <span class="MyCart_Price">{{ item.final_line_price | money }}</span>
+                      {%- endif -%}
+                    </div>
                   </div>
-  
-                  {% comment %} final price of item 
-                  <div class="MyCart_PriceItem">
-                    {{ item.final_line_price | money }}
-                  </div>
-                  {% endcomment %}
-                  <div class="Heading MyCart_PriceContainer">
-                    {% if item.original_line_price > item.final_line_price %}
-                      <span class="MyCart_Price MyCart_HighlightedText">{{ item.final_line_price | money }}</span>
-                      <span class="MyCart_Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
-                    {%- elsif item.variant.compare_at_price > item.original_price -%}
-                      <span class="MyCart_Price MyCart_HighlightedText">{{ item.final_line_price | money }}</span>
-                      <span class="MyCart_Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }} </span>
-                    {% else %}
-                      <span class="MyCart_Price">{{ item.final_line_price | money }}</span>
-                    {%- endif -%}
-                  </div>
+                  
+                  {% comment %} discount message with free gift products {% endcomment %}
+                  {%- if item.line_level_discount_allocations != blank -%}
+                    <div>
+                      <ul class="MyCartItem__DiscountList" style="margin:0;">
+                        {%- for discount_allocation in item.line_level_discount_allocations -%}
+                        <li class="MyCartItem__Discount">
+                          {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
+                        </li>
+                        {%- endfor -%}
+                      </ul>
+                    </div>
+                  {%- endif -%}
+                </div>
+    
+                {% comment %}
+                <!-- Container for errors -->
+                <div data-ajax-cart-messages="{{ item.key }}"></div>
+                {% endcomment %}
                 </div>
                 
-                {% comment %} discount message with free gift products {% endcomment %}
-                {%- if item.line_level_discount_allocations != blank -%}
-                  <div>
-                    <ul class="MyCartItem__DiscountList" style="margin:0;">
-                      {%- for discount_allocation in item.line_level_discount_allocations -%}
-                      <li class="MyCartItem__Discount">
-                        {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
-                      </li>
-                      {%- endfor -%}
-                    </ul>
-                  </div>
-                {%- endif -%}
-              </div>
-  
-              {% comment %}
-              <!-- Container for errors -->
-              <div data-ajax-cart-messages="{{ item.key }}"></div>
-              {% endcomment %}
-              </div>
-              
-            {% endfor %}
-  
-          </div>
-        </div>
-      </form>
+              {% endfor %}
     
-      {% assign upsell_count = 0 %}
+            </div>
+          </div>
+        </form>
       
-      <script type="text/javascript">
-        {%  for block in section.blocks %}
-          {% assign loop = forloop.index | plus: 0 %}
-          // Add an exeption later
-          window.upsell1_block{{ loop }} = {{ all_products[block.settings.upsell_product_1.handle] | json }}
-          window.upsell2_block{{ loop }} = {{ all_products[block.settings.upsell_product_2.handle] | json }}
-          window.upsell3_block{{ loop }} = {{ all_products[block.settings.upsell_product_3.handle] | json }}
-          window.upsell4_block{{ loop }} = {{ all_products[block.settings.upsell_product_4.handle] | json }}
-        {% endfor %}
-      </script>
-
-      <div class="myCartUpsells_suggestedSpacerWrapper">
-          <div class="MyCart_Spacer"></div>
-      </div>
-    {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
-    <div style="display:none" data-ajax-cart-static-element class="my-cart__app-container"></div>
-    
-    <div class="MyCart_BottomSection">
-
-      <div class="MyCartUpsells_SuggestedContainer">
-          <div class="owl-carousel">
+        {% assign upsell_count = 0 %}
+        
+        <script type="text/javascript">
+          {%  for block in section.blocks %}
+            {% assign loop = forloop.index | plus: 0 %}
+            // Add an exeption later
+            window.upsell1_block{{ loop }} = {{ all_products[block.settings.upsell_product_1.handle] | json }}
+            window.upsell2_block{{ loop }} = {{ all_products[block.settings.upsell_product_2.handle] | json }}
+            window.upsell3_block{{ loop }} = {{ all_products[block.settings.upsell_product_3.handle] | json }}
+            window.upsell4_block{{ loop }} = {{ all_products[block.settings.upsell_product_4.handle] | json }}
+          {% endfor %}
+        </script>
   
-            {%  for block in section.blocks %}
-              {% assign product_list = block.settings.product_list %}
-               
-              {% assign upsell_product_1 = block.settings.upsell_product_1 %}
-              {% assign upsell_product_2 = block.settings.upsell_product_2 %}
-              {% assign upsell_product_3 = block.settings.upsell_product_3 %}
-              {% assign upsell_product_4 = block.settings.upsell_product_4 %}
-              
-              {% assign upsell_product_1_variant_id = block.settings.upsell_product_1_variant_id %}
-              {% assign upsell_product_2_variant_id = block.settings.upsell_product_2_variant_id %}
-              {% assign upsell_product_3_variant_id = block.settings.upsell_product_3_variant_id %}
-              {% assign upsell_product_4_variant_id = block.settings.upsell_product_4_variant_id %}
+        <div class="myCartUpsells_suggestedSpacerWrapper">
+            <div class="MyCart_Spacer"></div>
+        </div>
+      {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
+      <div style="display:none" data-ajax-cart-static-element class="my-cart__app-container"></div>
+      
+      <div class="MyCart_BottomSection">
+  
+        <div class="MyCartUpsells_SuggestedContainer">
+            <div class="owl-carousel">
+    
+              {%  for block in section.blocks %}
+                {% assign product_list = block.settings.product_list %}
                  
-              {% render 'my-cart-suggested-upsells', 
-                cart: cart, item: item,
-                section: section,
-                settings: settings,
-                block:block, forloop: forloop,
-                product_list: product_list,
-                enable_upsell_1: enable_upsell_1, enable_upsell_2: enable_upsell_2, enable_upsell_3: enable_upsell_3, enable_upsell_4: enable_upsell_4,
-                upsell_product_1: upsell_product_1, upsell_product_1_variant_id: upsell_product_1_variant_id,
-                upsell_product_2: upsell_product_2, upsell_product_2_variant_id: upsell_product_2_variant_id,
-                upsell_product_3: upsell_product_3, upsell_product_3_variant_id: upsell_product_3_variant_id,
-                upsell_product_4: upsell_product_4, upsell_product_4_variant_id: upsell_product_4_variant_id
-              %}
-            {% endfor %}
-        </div>
-      </div>
-      {% if cart.item_count != 0 %}
-        <div class="MyCart_FooterContainer">
-          <div class="MyCart_FooterWrapper">
-            <div class="MyCart_FooterInfoWrapper MyCart_FooterText">
-              {% assign price_to_compare = cart.total_price | money_without_trailing_zeros | plus: 0 %}
-              {% if price_to_compare > 99 %}
-                <p class="">Versand</p>
-                <p class="MyCart_HighlightedText MyCart_DiscountInfo">
-                  Gratis
-                </p>
-              {% endif %}
-            </div>
-            <div id="MyCart_TotalFinalWrapper" class="MyCart_FooterInfoWrapper MyCart_FooterText">
-              <p class="">Zwischensumme</p>
-              <p class="MyCart_FinalPrice" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
-            </div>
-            <button class="MyCart_CheckoutButton bttn" 
-                    type="submit" 
-                    name="checkout"
-                    form="MyCart_Form">
-              Zur Kasse
-            </button>
+                {% assign upsell_product_1 = block.settings.upsell_product_1 %}
+                {% assign upsell_product_2 = block.settings.upsell_product_2 %}
+                {% assign upsell_product_3 = block.settings.upsell_product_3 %}
+                {% assign upsell_product_4 = block.settings.upsell_product_4 %}
+                
+                {% assign upsell_product_1_variant_id = block.settings.upsell_product_1_variant_id %}
+                {% assign upsell_product_2_variant_id = block.settings.upsell_product_2_variant_id %}
+                {% assign upsell_product_3_variant_id = block.settings.upsell_product_3_variant_id %}
+                {% assign upsell_product_4_variant_id = block.settings.upsell_product_4_variant_id %}
+                   
+                {% render 'my-cart-suggested-upsells', 
+                  cart: cart, item: item,
+                  section: section,
+                  settings: settings,
+                  block:block, forloop: forloop,
+                  product_list: product_list,
+                  enable_upsell_1: enable_upsell_1, enable_upsell_2: enable_upsell_2, enable_upsell_3: enable_upsell_3, enable_upsell_4: enable_upsell_4,
+                  upsell_product_1: upsell_product_1, upsell_product_1_variant_id: upsell_product_1_variant_id,
+                  upsell_product_2: upsell_product_2, upsell_product_2_variant_id: upsell_product_2_variant_id,
+                  upsell_product_3: upsell_product_3, upsell_product_3_variant_id: upsell_product_3_variant_id,
+                  upsell_product_4: upsell_product_4, upsell_product_4_variant_id: upsell_product_4_variant_id
+                %}
+              {% endfor %}
           </div>
-          {% render 'my-cart-payment-icons' %}
         </div>
-      {% endif %}
-    </div>
+        {% if cart.item_count != 0 %}
+          <div class="MyCart_FooterContainer">
+            <div class="MyCart_FooterWrapper">
+              <div class="MyCart_FooterInfoWrapper MyCart_FooterText">
+                {% assign price_to_compare = cart.total_price | money_without_trailing_zeros | plus: 0 %}
+                {% if price_to_compare > 99 %}
+                  <p class="">Versand</p>
+                  <p class="MyCart_HighlightedText MyCart_DiscountInfo">
+                    Gratis
+                  </p>
+                {% endif %}
+              </div>
+              <div id="MyCart_TotalFinalWrapper" class="MyCart_FooterInfoWrapper MyCart_FooterText">
+                <p class="">Zwischensumme</p>
+                <p class="MyCart_FinalPrice" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
+              </div>
+              <button class="MyCart_CheckoutButton bttn" 
+                      type="submit" 
+                      name="checkout"
+                      form="MyCart_Form">
+                Zur Kasse
+              </button>
+            </div>
+            {% render 'my-cart-payment-icons' %}
+          </div>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
