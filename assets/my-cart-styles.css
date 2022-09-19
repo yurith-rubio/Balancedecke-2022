@@ -468,7 +468,7 @@ button.MyCart_CheckoutButton{
   /*#MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapper{
     padding: 0;
   }*/
-  .MyCartUpsells_Su#MyCart_TotalFinalWrapper, .MyCart_FooterInfoWrapperggestedContainer, .MyCartUpsells_MainContainer > form {
+  .MyCartUpsells_SuggestedContainer, .MyCartUpsells_MainContainer, .MyCartUpsells_MainContainer > form {
     width: 100%;
   }
   .MyCart_BottomSection{
