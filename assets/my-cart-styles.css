@@ -337,7 +337,7 @@ font-weight: 500;
 }
 .MyCartUpsells_Bttn{
   height: unset !important;
-  padding: 5px 15px !important;
+  /*padding: 5px 15px !important;*/
   margin-top: 10px;
   cursor: pointer;
   display: inline-flex !important;
