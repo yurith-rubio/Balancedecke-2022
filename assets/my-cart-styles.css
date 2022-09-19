@@ -337,11 +337,12 @@ input.MyCart_InputItem{
 }
 .MyCartUpsells_Bttn{
   height: unset !important;
-  /*padding: 5px 15px !important;*/
   margin-top: 10px;
   cursor: pointer;
   display: inline-flex !important;
   font-size: 10px !important;
+  /*padding: 5px 15px !important;*/
+  line-height: 30px !important;
 }
 .MyCartUpsells_Bttn[disabled]{
   cursor: none;
