@@ -258,7 +258,7 @@ input.MyCart_InputItem{
 .MyCart_Price.MyCart_ItemDiscount, #MyCart_ItemDiscountTotal{
   font-size: 14px;
 }
-.MyCart_Price.MyCart_ItemDiscount{
+.MyCart_Price.MyCart_ItemDiscount, .MyCart_ComparedPrice{
   font-weight: normal;
 }
 .MyCart_Price{
