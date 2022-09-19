@@ -239,7 +239,7 @@ input.MyCart_InputItem{
     font-weight: bold;
   }
 /* End of Balance */
-.MyCart_H2 > a{
+.MyCart_H2 > a, .MyCart_H2, .MyCartUpsells_ProductHeader{
   color: var(--color-gral-text);
 }
 .MyCart_ValueItem{
