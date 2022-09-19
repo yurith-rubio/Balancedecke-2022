@@ -213,6 +213,7 @@ input.MyCart_InputItem{
   bottom: 0;
   z-index: 1000;
   background-color: white;
+  animation: mycartmove .5s;
 }
 .MyCart_Spacer{
   width: 100%;
