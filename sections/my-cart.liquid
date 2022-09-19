@@ -1,7 +1,8 @@
 <!-- sections/my-cart.liquid -->
 
 <div class="MyCart_FloatingCart"> 
-  <div id="MyCart_Slider" data-ajax-cart-section-scroll>
+  <div id="MyCart_Slider">
+    <div data-ajax-cart-section-scroll data-ajax-cart-section>
     <form id="MyCart_Form" action="{{ routes.cart_url }}" method="post" class="my-cart" data-ajax-cart-section>
       
         {% comment %} data-ajax-cart-section makes the element's HTML update
@@ -206,7 +207,7 @@
         </div>
       {% endif %}
     </div>
-      
+    </div>
   </div>
 </div>
 
