@@ -97,6 +97,7 @@ body.js-ajax-cart-not-empty .icon-MyCart_Header {
   top: 0;
   background-color: var(--color-light-shadow);
   border-bottom: 1px solid var(--color-light-border);
+  z-index: 1;
 }
 .MyCart_H2, .MyCart_PriceItem{
   font-weight: 400;
